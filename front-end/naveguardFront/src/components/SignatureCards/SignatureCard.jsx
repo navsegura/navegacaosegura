@@ -1,8 +1,9 @@
-function SignatureCard() {
+const SignatureCard = () => {
     return (
         <>
-            <div class="cards">
-            <div/>
+            <div className="cards">
+                
+            </div>
         </>
     );
 }

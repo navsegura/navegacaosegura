@@ -1,26 +1,27 @@
+import { Images } from "../../assets/images"
+
 const Footer = () => {
     // K
 
     return (
         <>
             <footer>
+                <img src={Images.Footer} alt="receba" width={100}/>
+               
                 <div className="conteudo">
                     <h1>NAVEGUARD</h1>
 
                     <p>Naveguard &copy; 2024</p>
-
                     <p>Todos os direitos reservados</p>
                 </div>
 
                 <div className="col-2">
-                    <p>Home</p>
-                        
-                    <p>Sobre</p>
-
-                    <p>Apoie a NaveGuard</p>
-                    
-                    <p>Fale Conosco</p>
-
+                    <ul>
+                        <li>Home</li>                      
+                        <li>Sobre</li>
+                        <li>Apoie a NaveGuard</li>                        
+                        <li>Fale Conosco</li>
+                    </ul>
                 </div>
                 
                 <div className="col-3">
@@ -31,8 +32,7 @@ const Footer = () => {
                 </div>
 
                 <div className="col-4">
-                    <p>Receba Novidades</p>
-
+                    <label>Receba Novidades:</label>
                     <input type="email" placeholder="Insira seu Email"/>
                 </div>
             </footer>
