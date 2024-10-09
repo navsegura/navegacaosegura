@@ -5,7 +5,7 @@ import Arraia from "./images/arraia.svg";
 import Coqueiro from "./images/coqueiro.svg";
 import Nuvem from "./images/nuvem.svg";
 import Praia from "./images/praia.svg"
-import Receba from "./images/receba.jpeg"
+import Sol from "./images/sol.svg"
 // aqui vcs criam as variaveis especificando o caminho delas
 
 const Images = {
@@ -18,7 +18,7 @@ const Images = {
     Coqueiro,
     Nuvem,
     Praia,
-    Receba
+    Sol
 
     
     // aqui fica as variaveis com o mesmo nome ali em cima
