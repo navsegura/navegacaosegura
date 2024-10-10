@@ -1,4 +1,3 @@
-import { Images } from "../../assets/images";
 import bgImage from "../../assets/images/footer.svg";
 import "./Footer.css";
 

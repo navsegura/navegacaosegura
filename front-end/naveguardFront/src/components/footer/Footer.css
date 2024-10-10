@@ -1,22 +1,20 @@
 footer {
+    background-size: contain;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    justify-content: center;
     display: flex;
-    z-index: 0;
-    overflow-x: hidden;
+    position: fixed;
+    bottom: 0; 
+    left: 0;
+    right: 0;
+    height: 20%;
+    z-index: 10;
+
 }
-
-
-
-
-.bgImage img{
-
-    align-self: end;
-    width: 2rem;
-    position: relative;
-}
-
 
 .conteudo {
-    left: 30%;
+    left: 33%;
     justify-content: space-between;
     text-align: center;
     align-items: center;
@@ -26,7 +24,7 @@ footer {
     position: absolute;
     display:flex;
     flex-direction: row;
-    gap: 35%;
+    gap: 55%;
 
     li {
         list-style: none;   
@@ -35,16 +33,16 @@ footer {
 
 .conteudo p,li {
     width: 7rem;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 0.8rem;
 }
 
 .titulo-footer {
     position: absolute;
-    bottom: 25%;
+    bottom: 65%;
     width: 20%;
     z-index: 2;
-    left: 10%;
+    left: 8%;
     color: #F5F5F5;
     font-weight: 500;
 }
@@ -56,8 +54,6 @@ input[type="radio"] {
 
 .redes-sociais {
     display: flex;
-    
-    
 }
 
 .primeira-coluna, .segunda-coluna, .terceira-coluna {
@@ -68,8 +64,8 @@ input[type="radio"] {
 
     ul, li {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-weight: 400;
-        gap: 0.2rem;
+        font-weight: 300;
+        gap: 0.1rem;
         flex-direction: column;
         display: flex;
     }
@@ -79,7 +75,7 @@ input[type="radio"] {
     display: flex;
     flex-direction: column;
     color: #F5F5F5;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 0.8rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
@@ -92,6 +88,7 @@ input[type="radio"] {
         padding-left: 5px;
         background-color: rgba(255, 255, 255, 0);
         text-decoration-color: #F5F5F5;
+        border-radius: 0.2rem;
     
     }
 
