@@ -10,8 +10,8 @@ function App() {
   return (
     <>
       <Header />
-      {/* <Footer/>
-      <SignatureCard/> */}
+       <Footer/>
+      {/*<SignatureCard/> */}
     </>
   )
 }
