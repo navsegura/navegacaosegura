@@ -12,13 +12,13 @@ const Images = {
    
      
     Footer,
-    Mountain,
     AguaViva,
     Arraia,
     Coqueiro,
     Nuvem,
     Praia,
-    Sol
+    Sol,
+    Mountain,
 
     
     // aqui fica as variaveis com o mesmo nome ali em cima
