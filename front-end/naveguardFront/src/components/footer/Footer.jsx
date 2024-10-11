@@ -13,24 +13,24 @@ const Footer = () => {
         <div className="conteudo">
 
           <div className="primeira-coluna">
-            <p>Naveguard &copy; 2024</p>
-            <p>Todos os direitos reservados</p>
-
+            <div className="textos-footer">
+              <p>Naveguard &copy; 2024</p>
+              <p>Todos os direitos reservados</p>
+            </div>
             <div className="circulos-div">
-              <div class="circulos">
+              <div className="circulos">
                 <img src="" alt="" />
               </div>
-              <div class="circulos">
+              <div className="circulos">
                 <img src="" alt="" />
               </div>
-              <div class="circulos">
+              <div className="circulos">
                 <img src="" alt="" />
               </div>
-              <div class="circulos">
+              <div className="circulos">
                 <img src="" alt="" />
               </div>
             </div>
-            
           </div>
 
           <div className="segunda-coluna">
