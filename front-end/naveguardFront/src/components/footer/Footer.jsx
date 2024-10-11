@@ -1,6 +1,5 @@
 import bgImage from "../../assets/images/footer.svg";
 import "./Footer.css";
-import instaLogo from '../../assets/images/instagramLogo.png'
 
 const Footer = () => {
   // K

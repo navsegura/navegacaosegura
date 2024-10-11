@@ -4,8 +4,8 @@ footer {
     flex-direction: column;
     justify-content: center;
     display: flex;
-    position: fixed;
-    bottom: 0; 
+    position: absolute;
+    bottom: -23%; 
     left: 0;
     right: 0;
     height: 20%;
@@ -16,13 +16,17 @@ footer {
     }
 }
 
+footer img {
+    width: 100%;
+}
+
 .conteudo {
     left: 30.7%;
     justify-content: space-between;
     text-align: left;
     align-items: center;
     justify-content: center;
-    bottom: 10%;
+    bottom: -70%;
     z-index: 2;
     position: absolute;
     display:flex;
@@ -42,7 +46,7 @@ footer {
 
 .titulo-footer {
     position: absolute;
-    bottom: 65%;
+    bottom: 15%;
     width: 20%;
     z-index: 2;
     left: 11%;
