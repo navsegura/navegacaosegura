@@ -14,7 +14,7 @@ footer {
 }
 
 .conteudo {
-    left: 33%;
+    left: 26%;
     justify-content: space-between;
     text-align: center;
     align-items: center;
@@ -24,7 +24,7 @@ footer {
     position: absolute;
     display:flex;
     flex-direction: row;
-    gap: 55%;
+    gap: 30%;
 
     li {
         list-style: none;   
