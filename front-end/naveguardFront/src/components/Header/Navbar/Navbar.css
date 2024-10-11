@@ -1,23 +1,25 @@
 .navbar{
     background-color: #F5F5F5;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 0 30px;
+    min-width: 100vh;
+    
 }
 
 .logo{
     color: #004B8D;
-    padding-left: 5rem;
     font-size: 20px;
+    
 }
 
 .all_links{
     list-style-type: none;
-    padding: 0;
-    margin: 0;
     display: flex;
     gap: 2rem;
-    padding-left: 40rem;
+    margin-left: auto; 
+    padding-right: 7rem;
     
 }
 
@@ -27,6 +29,7 @@
 }
 
 .light_mode{
-    margin-right: 6rem;
+    right: 20px;
+    
 }
 

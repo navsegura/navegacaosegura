@@ -1,0 +1,41 @@
+.cards{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 10rem;
+    gap: 1rem;
+}
+
+.first_card, .second_card, .third_card, .fourth_card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 13rem;
+    height: 10rem;
+    background: linear-gradient(to right, #3EABEE 0%, #289BEB 50%, #118BE9 100%);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.header_card_one, .header_card_two, .header_card_three{
+    display: flex;
+    justify-content: center;
+    background-color: #FFFFFF;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    width: 13rem;
+    color: #FF6F00;
+}
+
+.card_content_one, .card_content_two, .card_content_three{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 12px;
+    width: 9rem;
+    height: 10rem;
+}
