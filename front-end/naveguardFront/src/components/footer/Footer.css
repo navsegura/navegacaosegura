@@ -10,13 +10,16 @@ footer {
     right: 0;
     height: 20%;
     z-index: 10;
-
+    
+    p {
+        white-space: nowrap;
+    }
 }
 
 .conteudo {
-    left: 26%;
+    left: 30.7%;
     justify-content: space-between;
-    text-align: center;
+    text-align: left;
     align-items: center;
     justify-content: center;
     bottom: 10%;
@@ -24,7 +27,7 @@ footer {
     position: absolute;
     display:flex;
     flex-direction: row;
-    gap: 30%;
+    gap: 40%;
 
     li {
         list-style: none;   
@@ -42,20 +45,16 @@ footer {
     bottom: 65%;
     width: 20%;
     z-index: 2;
-    left: 8%;
+    left: 11%;
     color: #F5F5F5;
     font-weight: 500;
-}
-
-input[type="radio"] {
-    pointer-events: none;
-    width: 60%;
 }
 
 .redes-sociais {
     display: flex;
 }
 
+/*textos do footer */
 .primeira-coluna, .segunda-coluna, .terceira-coluna {
     display: flex;
     flex-direction: column;
@@ -89,13 +88,28 @@ input[type="radio"] {
         background-color: rgba(255, 255, 255, 0);
         text-decoration-color: #F5F5F5;
         border-radius: 0.2rem;
-    
     }
 
     input::placeholder {
         color: #F5F5F5;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
+}
+
+/*Ícones das redes sociais*/
+.circulos {
+    display: inline-block;
+    flex-direction: row;
+    width: 100%;
+    border-radius: 100%;
+    background-color: #1f293783;
+
+}
+
+.circulos-div {
+    display: flex;
+    flex-direction: row;
+    gap: 2%;
 }
 
 
