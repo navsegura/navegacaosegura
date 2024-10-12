@@ -3,7 +3,16 @@
     justify-content: center;
     position: relative;
     top: 10rem;
-    gap: 1rem;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 650px) {
+    .cards {
+        align-items: center;
+        flex-direction: column;
+    }
 }
 
 .first_card, .second_card, .third_card, .fourth_card{
@@ -14,19 +23,18 @@
     width: 13rem;
     height: 10rem;
     background: linear-gradient(to right, #3EABEE 0%, #289BEB 50%, #118BE9 100%);
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-radius: 15px;
 }
 
 .header_card_one, .header_card_two, .header_card_three{
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: #FFFFFF;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     width: 13rem;
+    height: 2rem;
     color: #FF6F00;
 }
 
@@ -38,4 +46,5 @@
     font-size: 12px;
     width: 9rem;
     height: 10rem;
+    font-family: var(--secondary-font);
 }

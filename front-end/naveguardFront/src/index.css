@@ -2,27 +2,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-  font-family: "Luckiest Guy", regular;
-  background: linear-gradient(to bottom, #4fc3f7, #0288d1);
+  --main-font: 'Luckiest Guy', cursive;
+  --secondary-font: 'Poppins', sans-serif;
   
 }
 
-body{
+body {
+  font-family: var(--main-font);
   min-width: 100%;
-  min-height: 100vh; 
+  min-height: 100vw;
+  background: linear-gradient(to bottom, #4fc3f7, #0288d1);
+  overflow-x: hidden;
 }
-
-
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
 
-li{
-  font-family: "Poppins", sans-serif;
+li {
+  font-family: var(--secondary-font);
   font-weight: 700;
   font-style: normal;
 }

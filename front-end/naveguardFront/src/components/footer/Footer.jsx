@@ -1,55 +1,37 @@
-import bgImage from "../../assets/images/footer.svg";
 import "./Footer.css";
+import { Images } from "../../assets/images.jsx";
 
 const Footer = () => {
-  // K
+
 
   return (
     <>
       <footer>
-        <img className="bgImage" src={bgImage} alt="" />
-        <h1 className="titulo-footer">NAVEGUARD</h1>
-        <div className="conteudo">
-
-          <div className="primeira-coluna">
-            <div className="textos-footer">
+        <div className="conteudo-geral">
+          <img src={Images.Footer} alt="" width={"100%"}/>
+          <h1>NAVEGUARD</h1>
+          <div className="conteudo-geral-colunas">
+            <div className="primeira-coluna">
               <p>Naveguard &copy; 2024</p>
               <p>Todos os direitos reservados</p>
             </div>
-            <div className="circulos-div">
-              <div className="circulos">
-                <img src="" alt="" />
-              </div>
-              <div className="circulos">
-                <img src="" alt="" />
-              </div>
-              <div className="circulos">
-                <img src="" alt="" />
-              </div>
-              <div className="circulos">
-                <img src="" alt="" />
-              </div>
+
+            <div className="segunda-coluna">
+              <p>Home</p>
+              <p>Sobre</p>
+              <p>Apoie o Naveguard</p>
+              <p>Fale conosco</p>
             </div>
-          </div>
 
-          <div className="segunda-coluna">
-            <ul>
-              <li>Home</li>
-              <li>Sobre</li>
-              <li>Apoie a NaveGuard</li>
-              <li>Fale Conosco</li>
-            </ul>
-          </div>
+            <div className="terceira-coluna">
+              <p>Política de privacidade</p>
+              <p>Termos de uso</p>
+            </div>
 
-          <div className="terceira-coluna">
-            <p>Política de Privacidade</p>
-
-            <p>Termos de Uso</p>
-          </div>
-
-          <div className="quarta-coluna">
-            <label>Receba Novidades:</label>
-            <input className="placeholderText" type="email" placeholder="Insira seu Email" />
+            <div className="quarta-coluna">
+              <p>Receba Novidades</p>
+              <input type="email" placeholder="Insira seu e-mail"/>
+            </div>
           </div>
         </div>
       </footer>

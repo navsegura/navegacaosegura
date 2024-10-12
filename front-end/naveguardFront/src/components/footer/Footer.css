@@ -1,122 +1,26 @@
 footer {
-    background-size: contain;
-    background-repeat: no-repeat;
-    flex-direction: column;
-    justify-content: center;
-    display: flex;
-    position: absolute;
-    bottom: -23%; 
-    left: 0;
-    right: 0;
-    height: 20%;
-    z-index: 10;
-    
-    p {
-        white-space: nowrap;
-    }
-}
-
-footer img {
     width: 100%;
+    position: relative;
+    top: 50rem;
 }
 
-.conteudo {
-    left: 30.7%;
-    justify-content: space-between;
-    text-align: left;
-    align-items: center;
-    justify-content: center;
-    bottom: -70%;
-    z-index: 2;
+.conteudo-geral {
+    display: flex;
+    z-index: 0;
+    position: relative;
+}
+
+.conteudo-geral-colunas {
+    z-index: 1000;
     position: absolute;
-    display:flex;
-    flex-direction: row;
-    gap: 40%;
-
-    li {
-        list-style: none;   
-    }
-}
-
-.conteudo p,li {
-    width: 7rem;
-    font-weight: 300;
-    font-size: 0.8rem;
-}
-
-.titulo-footer {
-    position: absolute;
-    bottom: 15%;
-    width: 20%;
-    z-index: 2;
-    left: 11%;
-    color: #F5F5F5;
-    font-weight: 500;
-}
-
-.redes-sociais {
-    display: flex;
-}
-
-/*textos do footer */
-.primeira-coluna, .segunda-coluna, .terceira-coluna {
-    display: flex;
-    flex-direction: column;
-    color: #F5F5F5;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
-
-    ul, li {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-weight: 300;
-        gap: 0.1rem;
-        flex-direction: column;
-        display: flex;
-    }
-}
-
-.quarta-coluna {
-    display: flex;
-    flex-direction: column;
-    color: #F5F5F5;
-    font-weight: 300;
-    font-size: 0.8rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-    input {
-        height: 2rem;
-        width: 15rem;
-        border-color: #F5F5F5;
-        color: #F5F5F5;
-        text-align: left;
-        padding-left: 5px;
-        background-color: rgba(255, 255, 255, 0);
-        text-decoration-color: #F5F5F5;
-        border-radius: 0.2rem;
-    }
-
-    input::placeholder {
-        color: #F5F5F5;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-}
-
-/*Ícones das redes sociais*/
-.circulos {
-    display: inline-block;
-    flex-direction: row;
-    width: 100%;
-    border-radius: 100%;
-    background-color: #1f293783;
-
-}
-
-.circulos-div {
+    left: 5%;
     display: flex;
     flex-direction: row;
-    gap: 2%;
+    gap: 15%;
+    top: 55%;
 }
 
-
-
-
+.primeira-coluna, .segunda-coluna, .terceira-coluna, .quarta-coluna {
+    display: flex;
+    flex-wrap: wrap;
+}
