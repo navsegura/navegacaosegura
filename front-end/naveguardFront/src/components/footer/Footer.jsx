@@ -2,15 +2,16 @@ import "./Footer.css";
 import { Images } from "../../assets/images.jsx";
 
 const Footer = () => {
-
-
   return (
     <>
       <footer>
         <div className="conteudo-geral">
-          <img src={Images.Footer} alt="" width={"100%"}/>
-          <h1>NAVEGUARD</h1>
+          <img src={Images.Footer} />
+
           <div className="conteudo-geral-colunas">
+            <div className="main-titulo">
+              <h1 className="h1-footer">NAVEGUARD</h1>
+            </div>
             <div className="primeira-coluna">
               <p>Naveguard &copy; 2024</p>
               <p>Todos os direitos reservados</p>
@@ -30,7 +31,11 @@ const Footer = () => {
 
             <div className="quarta-coluna">
               <p>Receba Novidades</p>
-              <input type="email" placeholder="Insira seu e-mail"/>
+              <input
+                className="input-email"
+                type="email"
+                placeholder="Insira seu e-mail"
+              />
             </div>
           </div>
         </div>
