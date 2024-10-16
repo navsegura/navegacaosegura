@@ -4,7 +4,6 @@ import "./FooterContent.css";
 function FooterContent() {
   return (
     <>
-      <div className="footer-container">
         <div className="conteudo-geral-footer">
           <div className="primeira-coluna">
             <div className="main-titulo">
@@ -35,7 +34,6 @@ function FooterContent() {
             />
           </div>
         </div>
-      </div>
     </>
   );
 }
