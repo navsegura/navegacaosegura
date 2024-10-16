@@ -1,19 +1,14 @@
 // import { useState } from 'react'
-import Footer from './components/footer/Footer'
-import SignatureCard from './components/SignatureCards/SignatureCard'
+import Home from './pages/Home.jsx'
 import './App.css'
-import Header from './components/Header/Header'
-import MainContent from './components/MainContent/MainContent'
+
 
 
 function App() {
 
   return (
     <>
-      <Header />
-      <MainContent />
-      {/* <Footer/>
-      <SignatureCard/> */}
+      <Home />
     </>
   )
 }
