@@ -1,68 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 
-footer {
+@media (max-width: 650px) {
+    .footer-container{
+        top: 13rem;
+    }
+}
+
+.Footer-image {
     width: 100%;
-    position: absolute;
-}
-
-footer img {
     position: relative;
-    top: 80rem;
-    height: 35rem;
-}
-
-/*CONTEÚDO DO FOOTER*/
-.main-titulo {
-    color: #f5f5f5;
-    font-weight: 500;
-    font-size: 1.3rem ;
-    font-family: "Luckiest Guy", regular;
-    display: flex;
-    position: relative;
-    top: 58rem;
-    left: 13%;
-}
-
-.primeira-coluna, .segunda-coluna, .terceira-coluna, .quarta-coluna {
-    display: flex;
-    white-space: nowrap;
-    flex-direction: column;
-    font-family: Arial, Helvetica, sans-serif;
-    top:65rem;
-    position: relative;
-    z-index: 5;
-    color: #f5f5f5;
-    flex-direction: column;
-    left: -10%;
-    gap: 0.5rem;
-
-    /*Campo de enviar email*/
-    input {
-        width: 15rem;
-        height: 2rem;
-        border-radius: 3%;
-        border-color: #f5f5f5;
-        background-color: transparent;
-    }
-
-    ::placeholder {
-        color: #f5f5f5;
-        padding-left: 5%;
-    }
-
-}
-
-
-.conteudo-geral-colunas {
-    z-index: 1000;
-    display: flex;
-    flex-direction: row;
-    gap: 10%;
-    text-align: left;
-    justify-content: center;
-    align-items: center;
-    font-size: small;
-    cursor:default;
-    position: relative;
+    bottom: 0;    
 }
 
