@@ -9,6 +9,8 @@ import Sol from "./images/sol.svg"
 import peixesEsquerda from './images/peixesEsquerda.svg'
 import peixesDireita from './images/peixesDireita.svg'
 import papagaio from './images/papagaio.svg'
+import check from './images/check.svg'
+import uncheck from './images/uncheck.svg'
 // aqui vcs criam as variaveis especificando o caminho delas
 
 const Images = {
@@ -24,7 +26,9 @@ const Images = {
     Mountain,
     peixesDireita,
     peixesEsquerda,
-    papagaio
+    papagaio,
+    check,
+    uncheck
     
     // aqui fica as variaveis com o mesmo nome ali em cima
 }
