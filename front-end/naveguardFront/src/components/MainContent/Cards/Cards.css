@@ -22,7 +22,7 @@
     flex-direction: column;
     width: 13rem;
     height: 10rem;
-    background: linear-gradient(to right, #3EABEE 0%, #289BEB 50%, #118BE9 100%);
+    background: linear-gradient(to bottom, #3EABEE 0%, #289BEB 50%, #118BE9 100%);
     border-radius: 15px;
 }
 
