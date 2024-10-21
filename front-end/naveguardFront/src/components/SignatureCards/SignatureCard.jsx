@@ -1,5 +1,6 @@
 import "./SignatureCards.css";
 import { Images } from "../../assets/images.jsx";
+import OceanDecorations from '../MainContent/OceanDecorations/OceanDecorations.jsx'
 
 const SignatureCard = () => {
   return (
@@ -17,15 +18,12 @@ const SignatureCard = () => {
               <img src={Images.check} alt="" />
             </div>
           <div className="first-card-content">
-            
-            <div className="content">
               <h3>ACESSO LIMITADO AOS JOGOS</h3>
               <h3>ACESSO BÁSICO ÁREA RESPONSÁVEL</h3>
               <h3>ACESSO A TUTORIAIS</h3>
               <h3>ACESSO AOS RESULTADOS</h3>
               <h3>ACESSO AO CHATBOT</h3>
-            </div>
-            <button className="btn">ACESSE</button>
+            <button className="btn-card">ACESSE</button>
           </div>
         </div>
 
@@ -47,7 +45,7 @@ const SignatureCard = () => {
             <h3>ACESSO A TUTORIAIS</h3>
             <h3>ACESSO AOS RESULTADOS</h3>
             <h3>ACESSO AO CHATBOT</h3>
-            <button className="btn">ASSINAR</button>
+            <button className="btn-card">ASSINAR</button>
           </div>
         </div>
 
@@ -68,10 +66,12 @@ const SignatureCard = () => {
             <h3>ACESSO A TUTORIAIS</h3>
             <h3>ACESSO AOS RESULTADOS</h3>
             <h3>ACESSO AO CHATBOT</h3>
-            <button className="btn">ASSINAR</button>
+            <button className="btn-card">ASSINAR</button>
           </div>
         </div>
       </div>
+
+      <OceanDecorations/>
     </>
   );
 };
