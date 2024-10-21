@@ -14,7 +14,7 @@ function Carousel() {
         <div className="container_slide">
             <Swiper
                 slidesPerView={1}
-                navigation={true} // Habilitar navegação padrão
+                navigation={true}
             >
                 <SwiperSlide>
                     <div className="first_carousel">
