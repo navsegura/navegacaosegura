@@ -9,13 +9,16 @@ function Navbar() {
           <h1 className="logo">Naveguard</h1>
             <ul className="all_links">
                 <li className="lorem1">
-                    <a href="...">Lorem</a>
+                    <a href="...">Home</a>
                 </li>
                 <li className="lorem1">
-                    <a href="...">Lorem</a>
+                    <a href="...">Planos</a>
                 </li>
                 <li className="lorem1">
-                    <a href="...">Lorem</a>
+                    <a href="...">Sobre</a>
+                </li>
+                <li className="lorem1">
+                    <a href="...">Fale Conosco</a>
                 </li>
             </ul>
             <img src={Images.Sol} alt="sol" className="light_mode" width={40}/>
