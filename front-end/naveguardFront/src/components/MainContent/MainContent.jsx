@@ -9,9 +9,9 @@ function MainContent(){
         <>
             <Section />
             <Cards />
-            <Island />
-            <SignatureCard/>
+            <Island /> 
             <Carousel />
+            <SignatureCard/>
         </>
     )
 }

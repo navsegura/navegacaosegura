@@ -23,9 +23,6 @@
     width: 20rem;
     height: 15rem;
     background: linear-gradient(to right, #3EABEE 0%, #289BEB 50%, #118BE9 100%);
-    width: 13rem;
-    height: 10rem;
-    background: linear-gradient(to bottom, #3EABEE 0%, #289BEB 50%, #118BE9 100%);
     border-radius: 15px;
 }
 
