@@ -11,6 +11,10 @@ import peixesDireita from './images/peixesDireita.svg'
 import papagaio from './images/papagaio.svg'
 import check from './images/check.svg'
 import uncheck from './images/uncheck.svg'
+import logoInsta from './images/Instagram-logo.svg'
+import logoDribbble from './images/Dribbble-logo.svg'
+import logoYoutube from './images/youtube-logo.svg'
+import logoTwitter from './images/twitter-logo.svg'
 // aqui vcs criam as variaveis especificando o caminho delas
 
 const Images = {
@@ -28,7 +32,11 @@ const Images = {
     peixesEsquerda,
     papagaio,
     check,
-    uncheck
+    uncheck,
+    logoInsta,
+    logoYoutube,
+    logoDribbble,
+    logoTwitter
     
     // aqui fica as variaveis com o mesmo nome ali em cima
 }

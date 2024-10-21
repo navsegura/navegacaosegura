@@ -14,6 +14,12 @@
     width: 10rem;
 }
 
+@media (max-width: 930px) {
+    .papagaio-imagem {
+        display: none;
+    }
+}
+
 .papagaio-imagem img {
     width: 20rem;
 }

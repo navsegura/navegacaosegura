@@ -1,5 +1,6 @@
 import React from "react";
 import "./FooterContent.css";
+import { Images } from "../../../assets/images.jsx";
 
 function FooterContent() {
   return (
@@ -11,6 +12,12 @@ function FooterContent() {
             </div>
             <p>Naveguard &copy; 2024</p>
             <p>Todos os direitos reservados</p>
+            <div className="redes-sociais">
+              <img src={Images.logoInsta} alt="" />
+              <img src={Images.logoDribbble} alt="" />
+              <img src={Images.logoTwitter} alt="" />
+              <img src={Images.logoYoutube} alt="" />
+            </div>
           </div>
 
           <div className="segunda-coluna">
