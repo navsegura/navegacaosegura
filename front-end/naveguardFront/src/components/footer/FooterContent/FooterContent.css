@@ -1,3 +1,10 @@
+@media (max-width: 600px) {
+    footer {
+    display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+}
 
 /*CONTEÚDO DO FOOTER*/
 .main-titulo {
@@ -21,6 +28,8 @@
     color: #f5f5f5;
     flex-direction: column;
     gap: 0.5rem;
+    bottom: 0;
+    max-width: 100%;
     position: relative;
     /*Campo de enviar email*/
     input {
@@ -54,8 +63,10 @@
     align-items: center;
     font-size: small;
     max-width: 100%;
+    max-height: 100%;
     cursor:default;
-    
+    bottom: 0;
+    margin: 0;
 }
 
 .redes-sociais img{
