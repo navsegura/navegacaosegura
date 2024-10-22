@@ -3,6 +3,7 @@ import Cards from "./Cards/Cards"
 import Island from "./Island/Island"
 import Carousel from "./Car/Carousel"
 import SignatureCard from "../SignatureCards/SignatureCard"
+import FrequentlyQuestions from "./FrequentlyAskedQuestions/FrequentlyQuestions"
 
 function MainContent(){
     return(
@@ -12,6 +13,7 @@ function MainContent(){
             <Island /> 
             <Carousel />
             <SignatureCard/>
+            <FrequentlyQuestions/>
         </>
     )
 }
