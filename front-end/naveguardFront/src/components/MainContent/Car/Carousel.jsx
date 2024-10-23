@@ -11,6 +11,8 @@ import 'swiper/css/scrollbar';
 
 function Carousel() {
     return (
+
+    <div className='container_principal'>
         <div className="container_slide">
             <Swiper
                 slidesPerView={1}
@@ -65,6 +67,7 @@ function Carousel() {
                 </SwiperSlide>
             </Swiper>
         </div>
+    </div>
     );
 }
 
