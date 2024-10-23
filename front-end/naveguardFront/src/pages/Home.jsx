@@ -1,7 +1,14 @@
+import Header from '../components/Header/Header'
+import MainContent from '../components/MainContent/MainContent'
+import Footer from '../components/footer/Footer'
+
 function Home() {
     return (
         <>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni nam eum quae voluptas saepe repudiandae error placeat ab ex optio libero non quas, sapiente dolor odit perspiciatis. Atque minima, officiis expedita tempora voluptates magni quo aperiam dolore, animi libero eaque.
+            <Header />
+            <MainContent />
+            <Footer />
+            
         </>
     )
 }

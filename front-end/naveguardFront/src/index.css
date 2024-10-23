@@ -4,7 +4,8 @@
 :root {
   font-family: "Luckiest Guy", regular;
   background: linear-gradient(to bottom, #4fc3f7, #0288d1);
-  
+  --main-font: 'Luckiest Guy', cursive;
+  --secondary-font: 'Poppins', sans-serif;
 }
 
 body{
@@ -12,7 +13,13 @@ body{
   min-height: 100vh; 
 }
 
-
+body {
+  font-family: var(--main-font);
+  min-width: 100%;
+  min-height: 100vw;
+  background: linear-gradient(to bottom, #4fc3f7, #0288d1);
+  overflow-x: hidden;
+}
 
 * {
   margin: 0;
@@ -23,6 +30,12 @@ body{
 
 li{
   font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+li {
+  font-family: var(--secondary-font);
   font-weight: 700;
   font-style: normal;
 }

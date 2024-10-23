@@ -1,0 +1,30 @@
+.container_principal{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 40rem;
+    
+}
+
+.container_slide{
+    width: 55%;
+}
+
+.first_carousel, .second_carousel, .third_carousel, .fourth_carousel{
+    width: 50rem;
+    height: 20rem;
+    background: linear-gradient(to bottom, #4fc3f7, #0288d1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    
+}
+
+.content_carousel1, .content_carousel2, .content_carousel3, .content_carousel4{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 13rem
+}
