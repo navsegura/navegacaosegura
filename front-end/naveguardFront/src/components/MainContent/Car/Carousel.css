@@ -3,15 +3,14 @@
     justify-content: center;
     position: relative;
     top: 40rem;
-    
 }
 
 .container_slide{
-    width: 55%;
+    max-width: 45%;
 }
 
 .first_carousel, .second_carousel, .third_carousel, .fourth_carousel{
-    width: 50rem;
+    width: 60rem;
     height: 20rem;
     background: linear-gradient(to bottom, #4fc3f7, #0288d1);
     display: flex;
