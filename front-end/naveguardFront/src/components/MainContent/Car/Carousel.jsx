@@ -8,13 +8,21 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import 'swiper/css/autoplay';
+
 
 function Carousel() {
     return (
+
+    <div className='container_principal'>
         <div className="container_slide">
             <Swiper
                 slidesPerView={1}
-                navigation={true} // Habilitar navegação padrão
+                navigation={true}
+                pagination={{clickable: true}}
+                loop={true}
+                autoplay={{delay: 4000}}
+                
             >
                 <SwiperSlide>
                     <div className="first_carousel">
@@ -65,6 +73,7 @@ function Carousel() {
                 </SwiperSlide>
             </Swiper>
         </div>
+    </div>
     );
 }
 

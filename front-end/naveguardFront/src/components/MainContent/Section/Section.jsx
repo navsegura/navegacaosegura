@@ -11,9 +11,8 @@ function Section() {
             <button type="button">REGISTRAR</button>
           </div>
         </div>
-
         <div className="papagaio-imagem">
-          <img src={Images.papagaio} alt=""/>
+          <img src={Images.papagaio} alt="papagio"/>
         </div>
       </section>
   );
