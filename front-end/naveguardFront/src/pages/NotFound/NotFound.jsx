@@ -37,9 +37,9 @@ const NotFound = () => {
           <ErrorContainer>
             <ErrorContent>
               <Img
-                src={Images.NotFound}
+                src={Images.NotFound2}
                 alt="Página não encontrada"
-                width={850}
+                width={800}
               />
               <Sea>
                   <Return onClick={handleClick}>Voltar à Página Inicial</Return>
