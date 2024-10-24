@@ -1,6 +1,6 @@
 import { useState } from "react";
 // import axios from 'axios'
-import NavBar from "../../components/NavBar/NavBar";
+import NavBar from "../../components/NavBar/";
 import SideBar from "../../components/SideBar/SideBar";
 import Images from "../../assets/images.jsx";
 import { MainContainer, UserProfileContent, Profile, Line, About, Span, Icon, Info, Bio, Location, Strong, Edit, Input, MainContent, UserProfileContainer, FindOutMore, GroupSquare, Square, Graphics, IconElements, P, Next, DropdownMenu, DropdownItem } from './UserProfile.styles'
