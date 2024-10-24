@@ -1,16 +1,12 @@
 // import { useState } from 'react'
 import './App.css'
-import Header from './components/Header/Header.jsx'
-import MainContent from './components/MainContent/MainContent'
-import Footer from './components/footer/Footer.jsx'
+import Home from './pages/Home'
 
 function App() {
 
   return (
     <>
-      <Header />
-      <MainContent/>
-      <Footer/>
+      <Home />
     </>
   )
 }

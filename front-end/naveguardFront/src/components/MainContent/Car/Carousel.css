@@ -7,6 +7,15 @@
 
 .container_slide{
     max-width: 45%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    overflow: hidden; 
+}
+
+@media (min-width: 2130px) {
+    .container_slide {
+      max-width: 50%; 
+    }
 }
 
 .first_carousel, .second_carousel, .third_carousel, .fourth_carousel{
@@ -17,7 +26,12 @@
     justify-content: center;
     align-items: center;
     gap: 10rem;
-    
+}
+
+@media (min-width: 2130px) {
+    .first_carousel, .second_carousel, .third_carousel, .fourth_carousel {
+      width: 100%;
+    }
 }
 
 .content_carousel1, .content_carousel2, .content_carousel3, .content_carousel4{

@@ -19,3 +19,8 @@
     right: 3px;
     height: 5%;
 }
+
+.nuvens{
+    display: flex;
+    justify-content: space-between;
+}

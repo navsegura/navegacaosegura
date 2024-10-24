@@ -6,7 +6,6 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    
 }
 
 .navbar{
@@ -17,8 +16,17 @@
     max-width: 1800px;
     width: 100%;
     flex-direction: row;
-    
 }
+
+@media (max-width: 375px) {
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+    }
+}
+
 
 .logo{
     color: #004B8D;
@@ -39,6 +47,7 @@
     text-decoration: none;
     color: #004B8D;
 }
+
 
 .light_mode{
     right: 20px;
