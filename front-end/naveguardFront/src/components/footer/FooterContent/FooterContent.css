@@ -79,3 +79,10 @@
     width: 2rem;
 
 }
+
+.enviar-seta {
+    position: absolute;
+    left: 88%;
+    top: 51%;
+    cursor: pointer;
+}

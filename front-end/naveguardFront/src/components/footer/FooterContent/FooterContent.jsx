@@ -39,6 +39,7 @@ function FooterContent() {
               type="email"
               placeholder="Insira seu e-mail"
             />
+            <span className="enviar-seta">➤</span>
           </div>
         </div>
     </>
