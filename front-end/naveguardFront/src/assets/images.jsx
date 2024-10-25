@@ -18,6 +18,7 @@ import ameacasonline from './images/ameacasonline.svg'
 import NotFound from './images/notfound.png'
 import NotFound1 from './images/notfound1.png'
 import NotFound2 from './images/notfound2.png'
+import UserChild from './images/UserChild.png'
 // aqui vcs criam as variaveis especificando o caminho delas
 
 const Images = {
@@ -40,7 +41,8 @@ const Images = {
     ameacasonline,
     NotFound,
     NotFound1,
-    NotFound2
+    NotFound2,
+    UserChild
     // aqui fica as variaveis com o mesmo nome ali em cima
 }
 
