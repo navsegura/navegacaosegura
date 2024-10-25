@@ -1,0 +1,8 @@
+.titulo_principal{
+    color: white;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 10rem;
+    z-index: 1000;
+}

@@ -19,6 +19,8 @@ import segurancafamiliar from './images/segurancafamiliar.svg'
 import controleparental from './images/controleparental.svg'
 import jogoseducativos from './images/jogoseducativos.svg'
 import ameacasonline from './images/ameacasonline.svg'
+import icon_github from './images/icon_github.svg'
+import icon_linkedin from './images/icon_linkedin.svg'
 // aqui vcs criam as variaveis especificando o caminho delas
 
 const Images = {
@@ -44,7 +46,9 @@ const Images = {
     segurancafamiliar,
     controleparental,
     jogoseducativos,
-    ameacasonline
+    ameacasonline,
+    icon_github,
+    icon_linkedin
     
     // aqui fica as variaveis com o mesmo nome ali em cima
 }
