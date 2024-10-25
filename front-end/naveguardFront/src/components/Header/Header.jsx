@@ -6,7 +6,6 @@ function Header(){
     return(
         <>
         <Navbar />
-        
         </>
     )
 }

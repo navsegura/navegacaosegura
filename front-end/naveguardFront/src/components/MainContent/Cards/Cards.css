@@ -2,8 +2,23 @@
     display: flex;
     justify-content: center;
     position: relative;
+<<<<<<< HEAD
     top: 10rem;
     gap: 1rem;
+=======
+    bottom: 8rem;
+    gap: 5rem;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+}
+
+@media (max-width: 650px) {
+    .cards {
+        align-items: center;
+        flex-direction: column;
+    }
+>>>>>>> jonas
 }
 
 .first_card, .second_card, .third_card, .fourth_card{
@@ -11,6 +26,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+<<<<<<< HEAD
     width: 13rem;
     height: 10rem;
     background: linear-gradient(to right, #3EABEE 0%, #289BEB 50%, #118BE9 100%);
@@ -18,15 +34,31 @@
     border-top-right-radius: 30px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
+=======
+    width: 20rem;
+    height: 15rem;
+    background: linear-gradient(to right, #3EABEE 0%, #289BEB 50%, #118BE9 100%);
+    border-radius: 15px;
+>>>>>>> jonas
 }
 
 .header_card_one, .header_card_two, .header_card_three{
     display: flex;
     justify-content: center;
+<<<<<<< HEAD
     background-color: #FFFFFF;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     width: 13rem;
+=======
+    align-items: center;
+    background-color: #FFFFFF;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 20rem;
+    height: 5rem;
+    font-size: 1.5rem;
+>>>>>>> jonas
     color: #FF6F00;
 }
 
@@ -35,7 +67,14 @@
     justify-content: center;
     align-items: center;
     color: white;
+<<<<<<< HEAD
     font-size: 12px;
     width: 9rem;
     height: 10rem;
+=======
+    font-size: 1rem;
+    width: 15rem;
+    height: 15rem;
+    font-family: var(--secondary-font);
+>>>>>>> jonas
 }
