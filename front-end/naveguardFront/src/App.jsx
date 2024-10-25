@@ -1,14 +1,15 @@
 // import { useState } from 'react'
+
+
+import Router from './routes/routes'
 import './App.css'
-// import Home from './pages/Home'
-import Sobre from './pages/Sobre'
+
 
 function App() {
-
   return (
     <>
-      {/* <Home /> */}
-      <Sobre />
+      <Router/>
+
     </>
   )
 }

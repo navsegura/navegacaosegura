@@ -12,9 +12,13 @@ footer {
     }
 }
 
-.Footer-image {
-    width: 100%;
+.footer-container {
+    margin-top: 10rem;
+    /* border: red solid 1px; */
+    background-image: url('../../assets/images/footerdefault.svg');
+    height: 500px;
     position: relative;
-    bottom: 0;    
+    width: 100%;
+    z-index: 300;
+    background-size: cover;
 }
-

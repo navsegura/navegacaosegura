@@ -1,4 +1,3 @@
-import React from "react";
 import "./FooterContent.css";
 import { Images } from "../../../assets/images.jsx";
 
