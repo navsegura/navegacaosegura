@@ -19,6 +19,13 @@ import NotFound from './images/notfound.png'
 import NotFound1 from './images/notfound1.png'
 import NotFound2 from './images/notfound2.png'
 import UserChild from './images/UserChild.png'
+import UserMaster from './images/UserMaster.webp'
+import AddChild from './images/AddChild.png'
+import Tutoriais from './images/tutoriais.png'
+import ControleParental from './images/controle-parental.png'
+import AmeacasOnline from './images/ameacas-online.png'
+import ChatBot from './images/chatbot.png'
+import Artigos from './images/artigos.png'
 // aqui vcs criam as variaveis especificando o caminho delas
 
 const Images = {
@@ -42,7 +49,14 @@ const Images = {
     NotFound,
     NotFound1,
     NotFound2,
-    UserChild
+    UserChild,
+    UserMaster,
+    AddChild,
+    Tutoriais,
+    ControleParental,
+    AmeacasOnline,
+    ChatBot,
+    Artigos
     // aqui fica as variaveis com o mesmo nome ali em cima
 }
 

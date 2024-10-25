@@ -1,38 +1,53 @@
-import { ModalOverlay, ModalContent, Input, Button } from './SignUpModal.styles'
+import PropTypes from 'prop-types';
+import { useState } from 'react';
+import { ModalOverlay, ModalContent, Input, Close, ButtonClose, Button } from './SignUpModal.styles';
 
 const SignUpModal = ({ onClose, onAddUser }) => {
-    const [ name, setName ] = useState('')
+  const [name, setName] = useState([]);
 
-    const handleNameBlur = (e) => {
-        setName(e.target.value)
+  const handleNameChange = (e) => {
+    setName(e.target.value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (name.trim()) {
+      onAddUser(name);
+      setName('');
+      onClose();
+    } else {
+      alert("Por favor, digite seu nome.");
     }
+  };
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        if (name) {
-          onAddUser(name);
-          setName('');
-          onClose();
-        }
-      };
   return (
-    <>
-      <ModalOverlay>
+    <ModalOverlay>
       <ModalContent>
-        <h2>Cadastrar Usuário</h2>
+      <Close>
+        <ButtonClose type="button" onClick={onClose}>x</ButtonClose>
+      </Close>
+        <h2>Criar Perfil</h2>
         <form onSubmit={handleSubmit}>
-          <Input
-            type="text"
-            placeholder="Digite seu nome"
-            onBlur={handleNameBlur}
-          />
+          <label>
+            <Input
+              type="text"
+              placeholder="Nome do Usuário"
+              value={name}
+              onChange={handleNameChange}
+              required
+            />
+          </label>
           <Button type="submit">Cadastrar</Button>
-          <Button onClick={onClose}>Fechar</Button>
+
         </form>
       </ModalContent>
     </ModalOverlay>
-    </>
   );
 };
 
-export default SignUpModal
+SignUpModal.propTypes = {
+  onClose: PropTypes.func.isRequired,
+  onAddUser: PropTypes.func.isRequired,
+};
+
+export default SignUpModal;

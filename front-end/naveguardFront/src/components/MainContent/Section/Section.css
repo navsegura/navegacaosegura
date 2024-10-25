@@ -53,5 +53,6 @@ button{
 }
 
 button:hover{
-    background: #df4e10;
+    /* background: #df4e10; */
+    /* esse hover tava pegando global entao tirei daqui */
 }
