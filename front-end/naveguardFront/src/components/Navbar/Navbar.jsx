@@ -16,7 +16,7 @@ function Navbar() {
                     <Link to="/planos">Planos</Link>
                 </List>
                 <List>
-                    <Link to="/sobre">Sobre</Link>
+                    <Link to="/about">Sobre</Link>
                 </List>
                 <List>
                     <Link to="/faleconosco">Fale Conosco</Link>

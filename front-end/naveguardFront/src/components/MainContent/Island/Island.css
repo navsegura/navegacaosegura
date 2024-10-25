@@ -15,9 +15,9 @@
 
 .island_container .Beach{
     position: relative;
-    z-index: -1;
     right: 3px;
     height: 5%;
+    z-index: 0;
 }
 
 .nuvens{

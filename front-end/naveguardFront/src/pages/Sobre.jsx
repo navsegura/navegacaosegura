@@ -3,7 +3,6 @@ import Title from '../components/MainContent/SobreNos/Title'
 import { SectionSobre } from '../components/MainContent/Section/Section'
 import Desenvolvedores from '../components/Desenvolvedores/Desenvolvedores'
 import Footer from '../components/footer/Footer'
-import Nuvem from '../components/Nuvens/Nuvens'
 
 function Sobre () {
     return (
