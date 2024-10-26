@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 
+<<<<<<< HEAD
+.main_text{
+    margin-top: 5rem;
+    padding-left: 12rem;
+}
+
+.text{
+    width: 20rem;
+=======
 
 .main_text{
     display: flex;
@@ -27,6 +36,7 @@
 .text{
     width: 34rem;
     font-size: 3rem;
+>>>>>>> jonas
     color: white;
     text-shadow: 
         1px 1px 0 rgba(0, 0, 0, 0.3),  
@@ -34,11 +44,14 @@
         1px 1px 0 rgba(0, 0, 0, 0.3),
         1px 1px 0 rgba(0, 0, 0, 0.3);
 }
+<<<<<<< HEAD
+=======
 .titulo-e-btn{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+>>>>>>> jonas
 
 .buttons{
     display: flex;
@@ -51,9 +64,15 @@ button{
     background-color: #F46A00;
     border: none;
     border-radius: 2px;
+<<<<<<< HEAD
+    width: 6rem;
+    height: 1.3rem;
+    font-size: 10px;
+=======
     width: 15rem;
     height: 3rem;
     font-size: 1.5rem;
+>>>>>>> jonas
     color: white;
     font-family: "Luckiest Guy", regular;
     cursor: pointer;
