@@ -7,13 +7,15 @@ function Navbar() {
     <>
     <Container>
         <Nav>
-          <Logo>Naveguard</Logo>
+          <Link to="/">
+            <Logo>Naveguard</Logo>
+          </Link>
             <MenuList>
                 <List>
-                    <Link to="/">Home</Link>
+                    <a href="#home">Home</a>
                 </List>
                 <List>
-                    <Link to="/planos">Planos</Link>
+                    <a href="#planos">Planos</a>
                 </List>
                 <List>
                     <Link to="/sobre">Sobre</Link>

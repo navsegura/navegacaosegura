@@ -1,10 +1,21 @@
 import './Cards.css'
+import { useEffect, useRef } from "react";
+import { utilScrollReveal } from '../../../utils/ScrollReveal'
 
 function Cards(){
+    const firstCard = useRef(null);
+    const secondCard = useRef(null);
+    const thirdCard = useRef(null);
+
+    useEffect(() => {
+        utilScrollReveal(firstCard);
+        utilScrollReveal(secondCard);
+        utilScrollReveal(thirdCard);
+      },[])
     return(
-        <div className = "cards">
+        <div className = "cards" id="planos">
             
-            <div className="first_card">
+            <div ref={firstCard} className='first_card'>
                 <div className="header_card_one">
                     PARA TODOS
                 </div>
@@ -13,7 +24,7 @@ function Cards(){
                 </div>
             </div>
 
-            <div className="second_card">
+            <div ref={secondCard} className="second_card">
                 <div className="header_card_two">
                     DIVERSÃO E SEGURANÇA
                 </div>
@@ -22,7 +33,7 @@ function Cards(){
                 </div>
             </div>
 
-            <div className="third_card">
+            <div ref={thirdCard} className="third_card">
                 <div className="header_card_three">
                     PROTEÇÃO GARANTIDA
                 </div>

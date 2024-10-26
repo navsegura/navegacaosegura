@@ -1,14 +1,14 @@
-.container_principal{
+/* .container_principal{
     display: flex;
     justify-content: center;
     position: relative;
     top: 40rem;
     
-}
-
+} */
+/* 
 .container_slide{
     width: 55%;
-}
+} */
 
 .first_carousel, .second_carousel, .third_carousel, .fourth_carousel{
     width: 50rem;
