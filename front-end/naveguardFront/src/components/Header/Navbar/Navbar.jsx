@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import "./Navbar.css";
 import { Images } from "../../../assets/images";
 
@@ -29,3 +30,5 @@ function Navbar() {
 }
 
 export default Navbar;
+=======
+>>>>>>> e3c44e34d116d1ed73297fbd042e49049710edf1

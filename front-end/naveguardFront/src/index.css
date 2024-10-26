@@ -4,13 +4,13 @@
 :root {
   --main-font: 'Luckiest Guy', cursive;
   --secondary-font: 'Poppins', sans-serif;
-  
 }
 
 body {
   font-family: var(--main-font);
-  min-width: 100%;
-  min-height: 100vw;
+  /* min-width: 100%;
+  min-height: 100vw; */
+  /* Isso aqui ta deixando um tamanho no final da pagina */
   background: linear-gradient(to bottom, #4fc3f7, #0288d1);
   overflow-x: hidden;
 }
@@ -19,6 +19,28 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  list-style: none;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #F46A00;
+  /* border-radius: 1px; */
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+li{
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 li {

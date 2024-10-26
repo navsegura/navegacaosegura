@@ -11,7 +11,7 @@ function Island() {
                         <div className="imagem_nuvem_1"><img src={Images.Nuvem} alt="nuvem" width={"90%"} className='nuvem'/></div>
                         <div className="imagem_nuvem_1"><img src={Images.Nuvem} alt="nuvem" width={"90%"} className='nuvem'/></div>
                     </div>
-                    <img src={Images.Praia} alt="beach" width={"100%"} />
+                    <img src={Images.Praia} alt="beach" width={"101%"} />
                 </div>
             </div>
         </>
