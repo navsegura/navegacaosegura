@@ -1,8 +1,5 @@
 import './Cards.css'
-<<<<<<< HEAD
-=======
 import { Images } from "../../../assets/images";
->>>>>>> jonas
 
 function Cards(){
     return(
@@ -16,10 +13,6 @@ function Cards(){
                     Conteúdo especial para os responsáveis, com dicas e orientações para manter a navegação da criança sempre segura.
                 </div>
             </div>
-<<<<<<< HEAD
-
-=======
->>>>>>> jonas
             <div className="second_card">
                 <div className="header_card_two">
                     DIVERSÃO E SEGURANÇA

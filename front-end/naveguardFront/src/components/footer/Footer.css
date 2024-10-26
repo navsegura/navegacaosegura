@@ -11,6 +11,14 @@ footer {
     .footer-container{
         top: 13rem;
     }
+
+    .Footer-image {
+        width: 100%;
+        position: relative;
+        bottom: 0;
+    }
+
+    
 }
 
 .Footer-image {

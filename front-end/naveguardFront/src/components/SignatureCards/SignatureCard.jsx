@@ -35,7 +35,7 @@ const SignatureCard = () => {
             <img src={Images.uncheck} alt="" />
             <img src={Images.uncheck} alt="" />
             <img src={Images.uncheck} alt="" />
-            <img src={Images.check} alt="" />
+            <img src={Images.uncheck} alt="" />
             <img src={Images.check} alt="" />
           </div>
 
@@ -57,8 +57,8 @@ const SignatureCard = () => {
             <img src={Images.uncheck} alt="" />
             <img src={Images.uncheck} alt="" />
             <img src={Images.uncheck} alt="" />
-            <img src={Images.check} alt="" />
-            <img src={Images.check} alt="" />
+            <img src={Images.uncheck} alt="" />
+            <img src={Images.uncheck} alt="" />
           </div>
           <div className="third-card-content">
             <h3>ACESSO LIMITADO AOS JOGOS</h3>

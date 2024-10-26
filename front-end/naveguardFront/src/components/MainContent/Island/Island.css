@@ -7,7 +7,7 @@
     top: 30rem;
 }
 
-@media (max-width: 650px) {
+@media screen and (max-width: 650px) {
     .island_container{
         top: 13rem;
     }
