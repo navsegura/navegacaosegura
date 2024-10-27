@@ -11,8 +11,12 @@ export const CardsContainer = styled.section`
     align-items: center;
     justify-content: center;
     z-index: 10;
-    /* border: red solid 1px; */
     height: 100vh;
+    transition: .4s ease-in-out;
+
+    @media (max-width: 1130px) {
+        flex-direction: column;
+    }
 `
 
 export const Card = styled.div`
@@ -24,7 +28,7 @@ export const Card = styled.div`
     justify-content: center;
     align-items: center;
     text-align:left;
-    padding-left: 1%;
+    padding: 1rem;
     background: linear-gradient(to bottom, #3EABEE 0%, #289BEB 50%, #118BE9 100%);
     border-radius: 2%;
     white-space: nowrap;

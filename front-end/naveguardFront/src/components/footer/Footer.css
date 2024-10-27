@@ -14,7 +14,6 @@ footer {
 
 .footer-container {
     margin-top: 10rem;
-    /* border: red solid 1px; */
     background-image: url('../../assets/images/footerdefault.svg');
     height: 500px;
     position: relative;
