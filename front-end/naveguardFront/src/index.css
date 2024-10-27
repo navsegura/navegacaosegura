@@ -8,9 +8,6 @@
 
 body {
   font-family: var(--main-font);
-  /* min-width: 100%;
-  min-height: 100vw; */
-  /* Isso aqui ta deixando um tamanho no final da pagina */
   background: linear-gradient(to bottom, #4fc3f7, #0288d1);
   overflow-x: hidden;
 }
