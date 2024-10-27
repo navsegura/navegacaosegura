@@ -33,6 +33,7 @@ import ControleParental from './images/controle-parental.png'
 import AmeacasOnline from './images/ameacas-online.png'
 import ChatBot from './images/chatbot.png'
 import Artigos from './images/artigos.png'
+import Seta_Voltar from './images/seta_voltar.svg'
 // aqui vcs criam as variaveis especificando o caminho delas
 
 const Images = {
@@ -70,7 +71,8 @@ const Images = {
     ControleParental,
     AmeacasOnline,
     ChatBot,
-    Artigos
+    Artigos,
+    Seta_Voltar
     // aqui fica as variaveis com o mesmo nome ali em cima
 }
 

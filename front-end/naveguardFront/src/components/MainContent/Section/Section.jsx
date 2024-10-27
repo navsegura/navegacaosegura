@@ -1,5 +1,6 @@
 import "./Section.css";
 import { Images } from "../../../assets/images";
+import { Link } from 'react-router-dom';
 
 function Section() {
   return (
@@ -7,7 +8,9 @@ function Section() {
         <div className="titulo-e-btn">
           <h1 className="text">SE AVENTURE NA WEB, NAVEGUE EM SEGURANÇA</h1>
           <div className="buttons">
-            <button type="button">ENTRAR</button>
+            <Link to="/login">
+            <button>ENTRAR</button>
+            </Link>
             <button type="button">REGISTRAR</button>
           </div>
         </div>

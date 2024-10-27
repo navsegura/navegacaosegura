@@ -1,0 +1,86 @@
+.main_card_login{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.login_card{
+    background: linear-gradient(to bottom, #3EABEE, #118BE9);
+    width: 25rem;
+    height: 30rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.header_login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.seta_voltar{
+    position: relative;
+    right: 5rem;
+}
+
+
+.form_login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.esqueci_senha {
+    font-size: 10px;
+    color: white;
+    font-family: var(--secondary-font);
+}
+
+.login_google{
+    display: flex;
+    justify-content: center;
+}
+
+.ou{
+    
+    font-size: 13px;
+    font-family: var(--secondary-font);
+}
+
+.login_google{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form_login label {
+    color: #FF6C00;
+    text-shadow: 1px 1px 0px #FF9B2F;
+    font-size: 1rem;
+}
+
+.form_login input {
+    width: 100%;
+    height: 2.5rem;
+    padding: 0.5rem;
+    border: 2px solid #FF9B2F;
+    border-radius: 5px;
+    background-color: #F2F2F2;
+    color: black;
+    font-size: 1rem;
+}
+
+.form_login input:focus {
+    outline: none;
+    border-color: #FF6C00;
+}

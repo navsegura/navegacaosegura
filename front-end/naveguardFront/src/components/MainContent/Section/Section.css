@@ -6,8 +6,22 @@
     height: 100vh;
     align-items: center;
     justify-content: space-evenly;
-    /* justify-content: center; */
 }
+
+
+button{
+    background-color: #F46A00; /* background: #df4e10; */ /* esse hover tava pegando global entao tirei daqui */
+    border: none;
+    border-radius: 2px;
+    width: 15rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    color: white;
+    font-family: "Luckiest Guy", regular;
+    cursor: pointer;
+    transition: 1s;
+}
+
 
 .papagaio-imagem {
     width: 10rem;
@@ -43,23 +57,6 @@
     display: flex;
     gap: 1rem;
     margin-top: 1rem;   
-}
-
-button{
-    background-color: #F46A00; /* background: #df4e10; */ /* esse hover tava pegando global entao tirei daqui */
-    border: none;
-    border-radius: 2px;
-    width: 15rem;
-    height: 3rem;
-    font-size: 1.5rem;
-    color: white;
-    font-family: "Luckiest Guy", regular;
-    cursor: pointer;
-    transition: 1s;
-}
-
-button:hover{
-    background: #df4e10;
 }
 
 .todos_sobres {
