@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 
+footer {
+    width: 100%;
+    z-index: 2;
+    margin: 0;
+}
+
 @media (max-width: 650px) {
     .footer-container{
         top: 13rem;

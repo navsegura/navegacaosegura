@@ -7,7 +7,6 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    /* border: red solid 1px; */
 }
 
 .main_text_container {
@@ -16,7 +15,6 @@
     display: flex;
     justify-content: space-around;
     z-index: 10;
-    /* border: solid; */
 }
 
 .nuvem1 {
@@ -45,11 +43,11 @@
     z-index: 1;
     top: 10%;
     display: none;
+    justify-content: space-evenly;
 }
 
 .papagaio-imagem {
     width: 30rem;
-    /* border: orangered solid 1px; */
 }
 
 @media (max-width: 930px) {
@@ -65,21 +63,25 @@
 .text{
     width: 40rem;
     font-size: 4rem;
+    width: 34rem;
+    font-size: 3rem;
     color: white;
     text-shadow: 
         1px 1px 0 rgba(0, 0, 0, 0.3),  
         1px 1px 0 rgba(0, 0, 0, 0.3),
         1px 1px 0 rgba(0, 0, 0, 0.3),
         1px 1px 0 rgba(0, 0, 0, 0.3);
-    /* border: blue solid 1px; */
     width: 100%;
 }
 .titulo-e-btn{
-    /* border: green solid 1px; */
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     justify-content: center;
+}
+.titulo-e-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .buttons{
@@ -106,5 +108,4 @@ button{
 .btn:hover{
     background: transparent;
     border: #F46A00 solid 1px;
-    /* esse hover tava pegando global entao tirei daqui */
 }

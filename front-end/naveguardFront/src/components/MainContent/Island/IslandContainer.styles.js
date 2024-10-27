@@ -18,4 +18,5 @@ export const Beach = styled.div`
     z-index: 1;
     right: 3px;
     height: 5%;
+
 `

@@ -24,7 +24,10 @@ function Cards(){
                 </div>
             </div>
 
+
             <div ref={secondCard} className="second_card">
+
+            <div className="second_card">
                 <div className="header_card_two">
                     DIVERSÃO E SEGURANÇA
                 </div>
@@ -41,6 +44,8 @@ function Cards(){
                     A criança navega em um ambiente seguro e educativo enquanto aprende sobre os perigos da internet e como evitá-los
                 </div>
             </div>
+
+        </div>
 
         </div>
     )

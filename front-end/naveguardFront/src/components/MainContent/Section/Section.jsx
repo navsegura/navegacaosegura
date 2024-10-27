@@ -5,6 +5,7 @@ import { Images } from "../../../assets/images";
 import { utilScrollRevealLeft, utilScrollRevealRight } from '../../../utils/ScrollReveal'
 
 function Section() {
+
   const FirstSection = useRef(null)
   const SecondSection = useRef(null)
 

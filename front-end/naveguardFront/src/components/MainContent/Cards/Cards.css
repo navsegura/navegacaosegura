@@ -3,16 +3,11 @@
     display: flex;
     justify-content: center;
     position: relative;
-    bottom: 3rem;
+    bottom: 8rem;
     gap: 5rem;
-    z-index: 10;
-
-    cursor: pointer;
-
-}
-
-.first_card:hover, .second_card:hover, .third_card:hover, .fourth_card:hover{
-    transform: scale(1.03);
+    margin: 0;
+    padding: 0;
+    z-index: 1;
 }
 
 @media (max-width: 650px) {

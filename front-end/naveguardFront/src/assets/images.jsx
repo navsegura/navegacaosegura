@@ -10,7 +10,12 @@ import Sol from "./images/sol.svg"
 import peixesEsquerda from './images/peixesEsquerda.svg'
 import peixesDireita from './images/peixesDireita.svg'
 import papagaio from './images/papagaio.svg'
-import trilha from './images/trilha.svg'
+import check from './images/check.svg'
+import uncheck from './images/uncheck.svg'
+import logoInsta from './images/Instagram-logo.svg'
+import logoDribbble from './images/Dribbble-logo.svg'
+import logoYoutube from './images/youtube-logo.svg'
+import logoTwitter from './images/twitter-logo.svg'
 import segurancafamiliar from './images/segurancafamiliar.svg'
 import controleparental from './images/controleparental.svg'
 import jogoseducativos from './images/jogoseducativos.svg'
@@ -42,7 +47,12 @@ const Images = {
     peixesDireita,
     peixesEsquerda,
     papagaio,
-    trilha,
+    check,
+    uncheck,
+    logoInsta,
+    logoYoutube,
+    logoDribbble,
+    logoTwitter,
     segurancafamiliar,
     controleparental,
     jogoseducativos,

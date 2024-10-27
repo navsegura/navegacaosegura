@@ -3,22 +3,35 @@
     justify-content: center;
     position: relative;
     top: 40rem;
-    
-} */
-/* 
+    */
+
 .container_slide{
-    width: 55%;
-} */
+    max-width: 45%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    overflow: hidden; 
+}
+
+@media (min-width: 2130px) {
+    .container_slide {
+      max-width: 50%; 
+    }
+}
 
 .first_carousel, .second_carousel, .third_carousel, .fourth_carousel{
-    width: 50rem;
+    width: 60rem;
     height: 20rem;
     background: linear-gradient(to bottom, #4fc3f7, #0288d1);
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10rem;
-    
+}
+
+@media (min-width: 2130px) {
+    .first_carousel, .second_carousel, .third_carousel, .fourth_carousel {
+      width: 100%;
+    }
 }
 
 .content_carousel1, .content_carousel2, .content_carousel3, .content_carousel4{
@@ -26,5 +39,5 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    width: 13rem
+    width: 13rem;
 }
