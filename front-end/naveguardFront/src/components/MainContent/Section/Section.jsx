@@ -4,14 +4,6 @@ import { Link } from 'react-router-dom';
 
 function Section() {
   return (
-<<<<<<< HEAD
-    <section className="main_text">
-      <div className="titulo-e-btn">
-        <h1 className="text">SE AVENTURE NA WEB, NAVEGUE EM SEGURANÇA</h1>
-        <div className="buttons">
-          <button type="button">ENTRAR</button>
-          <button type="button">REGISTRAR</button>
-=======
       <section className="main_text">
         <div className="titulo-e-btn">
           <h1 className="text">SE AVENTURE NA WEB, NAVEGUE EM SEGURANÇA</h1>
@@ -21,13 +13,11 @@ function Section() {
             </Link>
             <button type="button">REGISTRAR</button>
           </div>
->>>>>>> 30999eb60da462129129c6933d5a4bc0e485f9df
         </div>
-      </div>
-      <div className="papagaio-imagem">
-        <img src={Images.papagaio} alt="papagio" />
-      </div>
-    </section>
+        <div className="papagaio-imagem">
+          <img src={Images.papagaio} alt="papagio"/>
+        </div>
+      </section>
   );
 }
 
