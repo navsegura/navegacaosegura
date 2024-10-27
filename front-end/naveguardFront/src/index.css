@@ -24,6 +24,7 @@ body {
   text-decoration: none;
   list-style-type: none;
   list-style: none;
+  scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {

@@ -6,10 +6,48 @@
     height: 100vh;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
+}
+
+.main_text_container {
+    max-width: 1700px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    z-index: 10;
+}
+
+.nuvem1 {
+    position: absolute;
+    z-index: 1;
+    bottom: 20%;
+    display: none;
+}
+
+.nuvem2 {
+    position: absolute;
+    z-index: -1;
+    top: 90%;
+    display: none;
+}
+
+.nuvem3 {
+    position: absolute;
+    z-index: -1;
+    top: 20%;
+    right: 10%;
+}
+
+.nuvem4 {
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    display: none;
+    justify-content: space-evenly;
 }
 
 .papagaio-imagem {
-    width: 10rem;
+    width: 30rem;
 }
 
 @media (max-width: 930px) {
@@ -19,11 +57,13 @@
 }
 
 .papagaio-imagem img {
-    width: 20rem;
+    width: 100%;
 }
 
 .text{
     width: 40rem;
+    font-size: 4rem;
+    width: 34rem;
     font-size: 3rem;
     color: white;
     text-shadow: 
@@ -31,6 +71,17 @@
         1px 1px 0 rgba(0, 0, 0, 0.3),
         1px 1px 0 rgba(0, 0, 0, 0.3),
         1px 1px 0 rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+.titulo-e-btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.titulo-e-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .buttons{
@@ -49,10 +100,12 @@ button{
     color: white;
     font-family: "Luckiest Guy", regular;
     cursor: pointer;
-    transition: 1s;
+    transition: .4s;
+    cursor: pointer;
+    border: transparent solid 1px;
 }
 
-button:hover{
-    /* background: #df4e10; */
-    /* esse hover tava pegando global entao tirei daqui */
+.btn:hover{
+    background: transparent;
+    border: #F46A00 solid 1px;
 }
