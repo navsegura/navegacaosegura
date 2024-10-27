@@ -1,4 +1,4 @@
-.cards{
+/* .cards{
     margin-top: 10rem;
     display: flex;
     justify-content: center;
@@ -8,7 +8,7 @@
     margin: 0;
     padding: 0;
     z-index: 1;
-}
+} */
 
 @media (max-width: 650px) {
     .cards {
@@ -17,7 +17,7 @@
     }
 }
 
-.first_card, .second_card, .third_card, .fourth_card{
+/* .first_card, .second_card, .third_card, .fourth_card{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,9 +31,9 @@
     height: 20rem;
     background: linear-gradient(to right, #3EABEE 0%, #289BEB 50%, #118BE9 100%);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-}
+} */
 
-.header_card_one, .header_card_two, .header_card_three{
+/* .header_card_one, .header_card_two, .header_card_three{
     display: flex;
     justify-content: center;
     background-color: #FFFFFF;
@@ -45,9 +45,9 @@
     height: 5rem;
     font-size: 1.5rem;
     color: #FF6F00;
-}
+} */
 
-.card_content_one, .card_content_two, .card_content_three{
+/* .card_content_one, .card_content_two, .card_content_three{
     display: flex;
     justify-content: center;
     text-align: center;
@@ -58,4 +58,4 @@
     height: 15rem;
     font-family: var(--secondary-font);
     /* border: yellow solid 1px; */
-}
+/* } */

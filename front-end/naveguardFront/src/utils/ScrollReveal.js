@@ -13,6 +13,45 @@ export const utilScrollReveal = (ref) => {
     }
 }
 
+export const utilScrollRevealDelayBottom1 = (ref) => {
+    if (ref &&ref.current) {
+        ScrollReveal().reveal(ref.current, {
+            duration: 800,
+            origin: 'bottom',
+            distance: '100px',
+            easing: 'ease-in-out',
+            reset: false
+        })
+
+    }
+}
+
+export const utilScrollRevealDelayBottom2 = (ref) => {
+    if (ref &&ref.current) {
+        ScrollReveal().reveal(ref.current, {
+            duration: 1200,
+            origin: 'bottom',
+            distance: '100px',
+            easing: 'ease-in-out',
+            reset: false
+        })
+
+    }
+}
+
+export const utilScrollRevealDelayBottom3 = (ref) => {
+    if (ref &&ref.current) {
+        ScrollReveal().reveal(ref.current, {
+            duration: 1500,
+            origin: 'bottom',
+            distance: '100px',
+            easing: 'ease-in-out',
+            reset: false
+        })
+
+    }
+}
+
 export const utilScrollRevealLeft = (ref) => {
     if (ref &&ref.current) {
         ScrollReveal().reveal(ref.current, {

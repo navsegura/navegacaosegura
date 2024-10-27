@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Images } from "../../assets/images";
-import { Container, Nav, Logo, MenuList, List, LightMode } from "./Navbar.styles";
+import { Container, Nav, Logo, MenuList, List, A, LightMode } from "./Navbar.styles";
 
 function Navbar() {
   return (
@@ -12,10 +12,10 @@ function Navbar() {
           </Link>
             <MenuList>
                 <List>
-                    <a href="#home">Home</a>
+                    <A href="#home">Home</A>
                 </List>
                 <List>
-                    <a href="#planos">Planos</a>
+                    <A href="#planos">Planos</A>
                 </List>
                 <List>
                     <Link to="/sobre">Sobre</Link>

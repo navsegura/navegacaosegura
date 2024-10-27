@@ -14,7 +14,6 @@ import 'swiper/css/autoplay';
 
 function Carousel() {
     return (
-
     <ContainerMain>
         <ContainerSlide className="container_slide">
             <Swiper
@@ -24,7 +23,7 @@ function Carousel() {
                 loop={true}
                 autoplay={{delay: 4000}}
                 
-            >
+                >
                 <SwiperSlide>
                     <div className="first_carousel">
                         <div className="content_carousel1">
