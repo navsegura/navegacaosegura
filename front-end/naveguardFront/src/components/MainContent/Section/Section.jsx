@@ -1,23 +1,23 @@
 import "./Section.css";
 import { Images } from "../../../assets/images";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 function Section() {
   return (
-      <section className="main_text">
-        <div className="titulo-e-btn">
-          <h1 className="text">SE AVENTURE NA WEB, NAVEGUE EM SEGURANÇA</h1>
-          <div className="buttons">
-            <Link to="/login">
+    <section className="main_text">
+      <div className="titulo-e-btn">
+        <h1 className="text">SE AVENTURE NA WEB, NAVEGUE EM SEGURANÇA</h1>
+        <div className="buttons">
+          <Link to="/login">
             <button>ENTRAR</button>
-            </Link>
-            <button type="button">REGISTRAR</button>
-          </div>
+          </Link>
+          <button type="button">REGISTRAR</button>
         </div>
-        <div className="papagaio-imagem">
-          <img src={Images.papagaio} alt="papagio"/>
-        </div>
-      </section>
+      </div>
+      <div className="papagaio-imagem">
+        <img src={Images.papagaio} alt="papagio" />
+      </div>
+    </section>
   );
 }
 
@@ -80,9 +80,54 @@ function SectionSobre() {
   );
 }
 
+//seção kids
 function SectionSuaAventura() {
   return (
     <>
+      <div className="nuvens-container">
+        <img
+          src={Images.Nuvem}
+          alt="nuvem-img"
+          width={"30%"}
+          className="nuvem1"
+        />
+        <img
+          src={Images.Nuvem}
+          alt="nuvem-img"
+          width={"30%"}
+          className="nuvem2"
+        />
+        <img
+          src={Images.Nuvem}
+          alt="nuvem-img"
+          width={"30%"}
+          className="nuvem3"
+        />
+        <img
+          src={Images.Nuvem}
+          alt="nuvem-img"
+          width={"30%"}
+          className="nuvem4"
+        />
+        <img
+          src={Images.Nuvem}
+          alt="nuvem-img"
+          width={"30%"}
+          className="nuvem5"
+        />
+        <img
+          src={Images.Nuvem}
+          alt="nuvem-img"
+          width={"30%"}
+          className="nuvem6"
+        />
+        <img
+          src={Images.Nuvem}
+          alt="nuvem-img"
+          width={"30%"}
+          className="nuvem7"
+        />
+      </div>
       <div className="sua-aventura">
         <div className="sua-aventura-titulo">
           <h1>ESCOLHA SUA AVENTURA!</h1>
@@ -106,4 +151,86 @@ function SectionSuaAventura() {
   );
 }
 
-export { Section, SectionSobre, SectionSuaAventura };
+function FooterKidsPage() {
+  return (
+    <footer className="cloud-footer">
+      <img src={Images.Cloud_Footer} alt="footer-section-kids" />
+    </footer>
+  );
+}
+
+function SectionGrandeNavegacao() {
+  return (
+    <>
+      <div className="Game-on-section">
+        <h2>A Grande Navegação</h2>
+        <div className="linha"></div>
+        <div className="container-game"></div>
+        <div className="btn-jogar">
+          <button className="btn-jogo">Jogar ▶</button>
+        </div>
+        <img src={Images.Game_section_background} alt="" />
+      </div>
+    </>
+  );
+}
+
+function SectionDesafiosDoTesouro() {
+  return (
+    <>
+      <div className="desafios-do-tesouro">
+        <h2>Desafios do tesouro</h2>
+        <div className="linha-divisora2"></div>
+        <div className="container-games">
+          <div className="jogo1">
+            1<button className="btn-jogo1">Jogar ▶</button>
+          </div>
+          <div className="jogo2">
+            2<button className="btn-jogo2">Jogar ▶</button>
+          </div>
+          <div className="jogo3">
+            3<button className="btn-jogo3">Jogar ▶</button>
+          </div>
+          <div className="jogo4">
+            4<button className="btn-jogo4">Jogar ▶</button>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
+
+function SectionHistoriasDoMar() {
+  return (
+    <>
+      <div className="historias-do-mar">
+        <h2>Histórias do mar</h2>
+        <div className="linha3-divisao"></div>
+        <div className="numero-historias">
+          <div className="video1">1</div>
+          <div className="video2">2</div>
+          <div className="video3">
+            3
+            <img src={Images.Cadeado} alt="bloqueado" width={'80%'} className="cadeado-jogo3"/>
+          </div>
+          <div className="video4">
+            4
+            <img src={Images.Cadeado} alt="bloqueado" width={'80%'} className="cadeado-jogo4"/>
+          </div>
+          <div className="video-historia"> ▶</div>
+          <button className="video-assistir">Assistir</button>
+        </div>
+      </div>
+    </>
+  );
+}
+
+export {
+  Section,
+  SectionSobre,
+  SectionSuaAventura,
+  FooterKidsPage,
+  SectionGrandeNavegacao,
+  SectionDesafiosDoTesouro,
+  SectionHistoriasDoMar,
+};

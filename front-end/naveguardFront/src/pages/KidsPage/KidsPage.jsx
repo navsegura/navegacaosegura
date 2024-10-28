@@ -1,5 +1,5 @@
-import Footer from "../../components/footer/Footer";
-import { SectionSuaAventura } from "../../components/MainContent/Section/Section";
+import { SectionDesafiosDoTesouro, SectionGrandeNavegacao, SectionHistoriasDoMar, SectionSuaAventura } from "../../components/MainContent/Section/Section";
+import { FooterKidsPage } from "../../components/MainContent/Section/Section"
 import Navbar from "../../components/Navbar/Navbar";
 import './KidsPage.css'
 
@@ -9,7 +9,10 @@ function KidsPage() {
         <>
             <Navbar/>
             <SectionSuaAventura/>
-            <Footer/>
+            <SectionGrandeNavegacao/>
+            <SectionDesafiosDoTesouro/>
+            <SectionHistoriasDoMar/>
+            <FooterKidsPage/>
         </>
     )
 

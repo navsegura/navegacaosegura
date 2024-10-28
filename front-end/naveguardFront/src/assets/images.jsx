@@ -34,6 +34,9 @@ import AmeacasOnline from './images/ameacas-online.png'
 import ChatBot from './images/chatbot.png'
 import Artigos from './images/artigos.png'
 import Seta_Voltar from './images/seta_voltar.svg'
+import Cloud_Footer from './images/CloudFooter.svg'
+import Game_section_background from './images/Game-section-background.svg'
+import Cadeado from './images/cadeado.svg'
 // aqui vcs criam as variaveis especificando o caminho delas
 
 const Images = {
@@ -72,7 +75,10 @@ const Images = {
     AmeacasOnline,
     ChatBot,
     Artigos,
-    Seta_Voltar
+    Seta_Voltar,
+    Cloud_Footer,
+    Game_section_background,
+    Cadeado
     // aqui fica as variaveis com o mesmo nome ali em cima
 }
 
