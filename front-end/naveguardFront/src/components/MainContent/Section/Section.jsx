@@ -1,4 +1,4 @@
-import "./Section.css";
+import './Section.css'
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { Images } from "../../../assets/images";
