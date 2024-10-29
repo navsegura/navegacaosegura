@@ -9,7 +9,6 @@ import { Page, MainContainer, UserProfileContent, Profile, UserImage, Photo, Lin
 const UserProfile = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [isEditing, setIsEditing] = useState(false);
-
   const [name, setName] = useState('');
   const [email, setEmail] = useState('userexample@gmail');
   const [location, setLocation] = useState('Recife');
