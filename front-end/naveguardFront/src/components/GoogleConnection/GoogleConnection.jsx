@@ -17,11 +17,19 @@ function GoogleConnection() {
         setProfilePic(decoded.picture); 
         setIsLoggedIn(true); 
 
+        localStorage.setItem('name', decoded.name);
+        localStorage.setItem('email', decoded.email);
+        localStorage.setItem('profilePic', decoded.picture);
+        localStorage.setItem('isLoggedIn', true);
+
         navigate('/user-profile', { state: { name: decoded.name, email: decoded.email, profilePic: decoded.picture } });
     };
 
     return (
         <>
+        <p>{name}</p>
+        <p>{email}</p>
+        <p>{profilePic}</p>
             {!isLoggedIn ? (
                 <GoogleLogin
                     onSuccess={handleLoginSuccess}

@@ -16,8 +16,7 @@ function Island() {
                 <Beach>
                     <img ref={MainSection} src={Images.Praia} alt="beach" width={"101%"} />
                 </Beach>
-            </IslandContainer>
-
+            </IslandContainer>feature/user-profile
         </>
     );
 }
