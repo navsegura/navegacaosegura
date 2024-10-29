@@ -23,6 +23,45 @@ export const Nav = styled.nav`
   flex-direction: row;
 `;
 
+export const Navigation = styled.div`
+    display: flex;
+    flex-direction: row;
+`
+
+export const UserNavigation = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+`
+
+export const Line = styled.div`
+    height: 8vh;
+    margin-right: 1rem;
+    border: 1px solid #D9D9D9;
+`
+
+export const UserPhoto = styled.img`
+    width: 30px;
+    border-radius: 50%;
+`
+
+export const NameProfile = styled.label`
+  font-size: .8rem;
+`
+
+export const DropDown = styled.nav`
+    /* border: red solid 1px; */
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+`
+
+export const I = styled.i`
+    font-size: 1.2rem;
+`
+
 export const Logo = styled.h1`
   color: #004b8d;
   font-size: 20px;
@@ -33,6 +72,7 @@ export const MenuList = styled.ul`
   gap: 2rem;
   margin-left: auto;
   padding-right: 7rem;
+  /* border: red solid 1px; */
 `;
 
 export const List = styled.li`

@@ -18,7 +18,7 @@ function Navbar() {
                     <A href="#planos">Planos</A>
                 </List>
                 <List>
-                    <Link to="/sobre">Sobre</Link>
+                    <Link to="/about">Sobre</Link>
                 </List>
                 <List>
                     <Link to="/faleconosco">Fale Conosco</Link>
