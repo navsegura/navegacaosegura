@@ -1,4 +1,4 @@
-import Section from "./Section/Section"
+import { Section } from "./Section/Section"
 import Cards from "./Cards/Cards"
 import Island from "./Island/Island"
 import Carousel from "./Carousel/Carousel"
