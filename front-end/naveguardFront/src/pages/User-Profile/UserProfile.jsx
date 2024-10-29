@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 import NavBar from "../../components/NavBar/Navbar";
 import SideBar from "../../components/SideBar/SideBar";
 import { Images } from "../../assets/images.jsx";
-import { Page, MainContainer, UserProfileContent, Profile, UserImage, Photo, Line, About, Span, Icon, Info, Bio, Location, Strong, Edit, Input, MainContent, UserProfileContainer, GroupSquare, Square, Graphics, P, DropdownMenu, DropdownItem } from './UserProfile.styles'
+import { Page, MainContainer, UserProfileContent, Profile, UserImage, Photo, Line, About, Span, NameProfile, Icon, Info, Bio, Location, Strong, Edit, Input, MainContent, UserProfileContainer, GroupSquare, Square, Graphics, P, DropdownMenu, DropdownItem } from './UserProfile.styles'
 
 const UserProfile = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [isEditing, setIsEditing] = useState(false);
 
-  const [name, setName] = useState('User Example');
+  const [name, setName] = useState('');
   const [email, setEmail] = useState('userexample@gmail');
   const [location, setLocation] = useState('Recife');
   // deixem vazio, isso é so p testar a edição
@@ -55,6 +55,11 @@ const UserProfile = () => {
 //       console.log(error)
 //     }
 //   }
+
+  const nameTest = localStorage.getItem('name')
+  const imgTest = localStorage.getItem('profilePic')
+  // const emailTest = localStorage.getItem('email')
+  // const profilePicTest = localStorage.getItem('profilePic')
   return (
     <>
       <NavBar/>
@@ -64,7 +69,7 @@ const UserProfile = () => {
           <UserProfileContent>
               <Profile>
                 <UserImage>
-                  <Photo src={Images.UserMaster} alt="Profile photo" />
+                  <Photo src={imgTest} alt="Profile photo" />
                   </UserImage>
                   <About>
                       <Span>
@@ -75,7 +80,7 @@ const UserProfile = () => {
                             onChange={(e) => setName(e.target.value)}
                           />
                         ) : (
-                          <h1>{name}</h1>
+                          <NameProfile>{nameTest}</NameProfile>
                         )}
                         <Icon className='bx bxs-check-circle' style={{color:'#73a66f'}}  ></Icon>
                       </Span>
