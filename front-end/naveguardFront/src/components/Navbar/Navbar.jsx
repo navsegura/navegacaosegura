@@ -1,19 +1,21 @@
 import { Link } from 'react-router-dom'
 import { Images } from "../../assets/images";
-import { Container, Nav, Logo, MenuList, List, LightMode } from "./Navbar.styles";
+import { Container, Nav, Logo, MenuList, List, A, LightMode } from "./Navbar.styles";
 
 function Navbar() {
   return (
     <>
     <Container>
         <Nav>
-          <Logo>Naveguard</Logo>
+          <Link to="/">
+            <Logo>Naveguard</Logo>
+          </Link>
             <MenuList>
                 <List>
-                    <Link to="/">Home</Link>
+                    <A href="#home">Home</A>
                 </List>
                 <List>
-                    <Link to="/planos">Planos</Link>
+                    <A href="#planos">Planos</A>
                 </List>
                 <List>
                     <Link to="/about">Sobre</Link>

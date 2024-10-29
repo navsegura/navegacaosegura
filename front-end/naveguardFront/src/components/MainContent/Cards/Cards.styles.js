@@ -1,23 +1,26 @@
-/* .cards{
-    margin-top: 10rem;
+import styled from "styled-components";
+
+export const CardsContainer = styled.section`
+    /* margin-top: 10rem; sem efeito aplicado */
     display: flex;
     justify-content: center;
     position: relative;
-    bottom: 8rem;
+    /* bottom: 1rem; */
     gap: 5rem;
     margin: 0;
     padding: 0;
     z-index: 1;
-} */
+    cursor: pointer;
 
-@media (max-width: 650px) {
+    @media (max-width: 650px) {
     .cards {
         align-items: center;
         flex-direction: column;
     }
 }
+`
 
-/* .first_card, .second_card, .third_card, .fourth_card{
+export const Card = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,9 +34,9 @@
     height: 20rem;
     background: linear-gradient(to right, #3EABEE 0%, #289BEB 50%, #118BE9 100%);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-} */
+`
 
-/* .header_card_one, .header_card_two, .header_card_three{
+export const HeaderCard = styled.div`
     display: flex;
     justify-content: center;
     background-color: #FFFFFF;
@@ -45,9 +48,9 @@
     height: 5rem;
     font-size: 1.5rem;
     color: #FF6F00;
-} */
+`
 
-/* .card_content_one, .card_content_two, .card_content_three{
+export const ContentCard = styled.div`
     display: flex;
     justify-content: center;
     text-align: center;
@@ -57,5 +60,4 @@
     width: 15rem;
     height: 15rem;
     font-family: var(--secondary-font);
-    /* border: yellow solid 1px; */
-/* } */
+`

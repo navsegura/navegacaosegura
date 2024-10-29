@@ -6,11 +6,13 @@ export const SideBarMenu = styled.div`
     z-index: 1;
     padding-top: 1rem;
     height: 92vh;
-    width: 4vw;
+    width: 80px;
+    /* width: 4vw; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #F5F5F5;;
+    /* background-color: #F5F5F5; */
+    background-color: #101E43;
     position: fixed;
 `
 

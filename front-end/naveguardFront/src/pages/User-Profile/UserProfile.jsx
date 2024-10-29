@@ -1,9 +1,10 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 // import axios from 'axios'
 import NavBar from "../../components/NavBar/Navbar";
 import SideBar from "../../components/SideBar/SideBar";
 import { Images } from "../../assets/images.jsx";
-import { Page, MainContainer, UserProfileContent, Profile, UserImage, Photo, Line, About, Span, Icon, Info, Bio, Location, Strong, Edit, Input, MainContent, UserProfileContainer, GroupSquare, Square, Graphics, IconElements, P, Next, DropdownMenu, DropdownItem } from './UserProfile.styles'
+import { Page, MainContainer, UserProfileContent, Profile, UserImage, Photo, Line, About, Span, Icon, Info, Bio, Location, Strong, Edit, Input, MainContent, UserProfileContainer, GroupSquare, Square, Graphics, P, DropdownMenu, DropdownItem } from './UserProfile.styles'
 
 const UserProfile = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -137,11 +138,13 @@ const UserProfile = () => {
                 <img src={Images.Artigos} alt="Tutoriais" width={50} />
                 <P>Dicas e informações sobre segurança digital</P>
               </Square>
-              <Square>
-                <Graphics>Controle Parental</Graphics>
-                <img src={Images.ControleParental} alt="Tutoriais" width={50} />
-                <P>Ferramentas para proteger e monitorar suas crianças online</P>
-              </Square>
+              <Link to="/parental-control">
+                <Square>
+                  <Graphics>Controle Parental</Graphics>
+                  <img src={Images.ControleParental} alt="Tutoriais" width={50} />
+                  <P>Ferramentas para proteger e monitorar suas crianças online</P>
+                </Square>
+              </Link>
               <Square>
                 <Graphics>Ameaças Online</Graphics>
                 <img src={Images.AmeacasOnline} alt="Tutoriais" width={50} />

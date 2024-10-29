@@ -1,37 +1,52 @@
 import './Cards.css'
-import { Images } from "../../../assets/images";
+import { useEffect, useRef } from "react";
+import { utilScrollRevealDelayBottom1, utilScrollRevealDelayBottom2, utilScrollRevealDelayBottom3 } from '../../../utils/ScrollReveal'
+import { CardsContainer, Card, HeaderCard, ContentCard } from './Cards.styles'
 
 function Cards(){
+    const firstCard = useRef(null);
+    const secondCard = useRef(null);
+    const thirdCard = useRef(null);
+
+    useEffect(() => {
+        utilScrollRevealDelayBottom1(firstCard);
+        utilScrollRevealDelayBottom2(secondCard);
+        utilScrollRevealDelayBottom3(thirdCard);
+      },[])
     return(
-        <div className = "cards">
+        <CardsContainer className = "cards">
             
-            <div className="first_card">
-                <div className="header_card_one">
+            <Card ref={firstCard} >
+                <HeaderCard>
                     PARA TODOS
-                </div>
-                <div className="card_content_one">
+                </HeaderCard>
+                <ContentCard>
                     Conteúdo especial para os responsáveis, com dicas e orientações para manter a navegação da criança sempre segura.
-                </div>
-            </div>
-            <div className="second_card">
-                <div className="header_card_two">
+                </ContentCard>
+            </Card>
+
+
+            <Card ref={secondCard}>
+
+                <HeaderCard>
                     DIVERSÃO E SEGURANÇA
-                </div>
-                <div className="card_content_two">
+                </HeaderCard>
+                <ContentCard>
                     Com jogos interativos, a criança  aprende a identificar e evitar riscos online de forma divertida e envolvente.
-                </div>
-            </div>
+                </ContentCard>
+            </Card>
 
-            <div className="third_card">
-                <div className="header_card_three">
+            <Card ref={thirdCard}>
+                <HeaderCard>
                     PROTEÇÃO GARANTIDA
-                </div>
-                <div className="card_content_three">
+                </HeaderCard>
+                <ContentCard>
                     A criança navega em um ambiente seguro e educativo enquanto aprende sobre os perigos da internet e como evitá-los
-                </div>
-            </div>
+                </ContentCard>
+            </Card>
 
-        </div>
+        </CardsContainer>
+
     )
 }
 

@@ -29,7 +29,6 @@ export const Logo = styled.h1`
 `;
 
 export const MenuList = styled.ul`
-  list-style-type: none;
   display: flex;
   gap: 2rem;
   margin-left: auto;
@@ -37,9 +36,19 @@ export const MenuList = styled.ul`
 `;
 
 export const List = styled.li`
-  text-decoration: none;
+  border-bottom:  #f5f5f5 dashed 2px;
   color: #004b8d;
+
+  &:hover {
+    color: #FF6F00;
+    transition: 1s ease-in-out;
+    border-bottom: #004b8d dashed 2px;
+  }
 `;
+
+export const A = styled.a`
+  color: #FF6F00;
+`
 
 export const LightMode = styled.img`
   right: 20px;
