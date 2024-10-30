@@ -40,7 +40,15 @@ for (let i = 0; i < cordPersonagem.length; i += 100) {
 const tiposDeObjetos = {
     1959: [], //Baú
     1958: [], //Bloco Invisivel
-    3116: [] // Carangueijo
+    3116: [], // Carangueijo
+    2860: [], // Jonas
+    2924: [], // Antonio
+    2988: [], // Guilherme
+    3052: [], // Mayla
+    2989: [], // Jamylle
+    2925: [], // Digo
+    2861: [], // Theo
+    2862: [], // Heverton
   };
   
   colisoesPersonagem.forEach((linha, i) => {
@@ -62,6 +70,15 @@ const tiposDeObjetos = {
   const coordenadasPersonagem = tiposDeObjetos[1959];
   const coordenadasPersonagem2 = tiposDeObjetos[1958];
   const coordenadasPersonagem3 = tiposDeObjetos[3116];
+
+  const coordenadasPersonagemJonas = tiposDeObjetos[2860];
+  const coordenadasPersonagemAntonio = tiposDeObjetos[2924];
+  const coordenadasPersonagemGuilherme = tiposDeObjetos[2988];
+  const coordenadasPersonagemMayla = tiposDeObjetos[3052];
+  const coordenadasPersonagemJamylle = tiposDeObjetos[2989];
+  const coordenadasPersonagemDigo = tiposDeObjetos[2925];
+  const coordenadasPersonagemTheo = tiposDeObjetos[2861];
+  const coordenadasPersonagemHeverton = tiposDeObjetos[2862];
 
 //////////////////////////////////////////////////////////////////////
 
@@ -86,6 +103,15 @@ const tiposDeObjetos = {
   // Chame a função com suas coordenadas
   criarPersonagens(coordenadasPersonagem2, "./img/playerBaixo.png");
   criarPersonagens(coordenadasPersonagem, "./img/playerBaixo.png");
+
+  criarPersonagens(coordenadasPersonagemJonas, "./img/Jonas/playerBaixo.png");
+  criarPersonagens(coordenadasPersonagemAntonio, "./img/Antonio/playerBaixo.png");
+  criarPersonagens(coordenadasPersonagemGuilherme, "./img/Guilherme/playerBaixo.png");
+  criarPersonagens(coordenadasPersonagemMayla, "./img/Mayla/playerBaixo.png");
+  criarPersonagens(coordenadasPersonagemJamylle, "./img/Jamyle/playerBaixo.png");
+  criarPersonagens(coordenadasPersonagemDigo, "./img/Digo/playerBaixo.png");
+  criarPersonagens(coordenadasPersonagemTheo, "./img/Theo/playerBaixo.png");
+  criarPersonagens(coordenadasPersonagemHeverton, "./img/Heverton/playerBaixo.png");
 
 
 //////////////////////////////////////////////////////////////////////
