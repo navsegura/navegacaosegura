@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); 
+
+
+body {
+    height: 90vh;
+    background-color: #2991e1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+canvas {
+    border: 5px white solid;
+    border-radius: 6px;
+}
+
+#mensagemInteracao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 150px;
+    background-color: #e7cd9a;
+    font-family: "Luckiest Guy", sans-serif;
+    color: #2991e1;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 2rem;
+    width: 1000px;
+    height: 100px;
+    display: none;
+    z-index: 1000;
+    text-align: center;
+    gap: 50px;
+}
+
+
+#botaoProximo {
+    padding: 10px 15px;
+    font-size: 1.5rem;
+    background-color: #2991e1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Luckiest Guy", sans-serif;
+}
