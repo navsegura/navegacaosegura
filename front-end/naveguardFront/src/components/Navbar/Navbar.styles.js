@@ -9,7 +9,7 @@ export const Container = styled.div`
   justify-content: center;
   flex-direction: column;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  z-index: 1000;
+  z-index: 1099;
   position: fixed;
 `;
 
@@ -59,7 +59,52 @@ export const DropDown = styled.nav`
 `
 
 export const I = styled.i`
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    transform: ${({ isOpen }) => (isOpen ? 'rotate(360deg)' : 'rotate(0deg)')};
+    opacity: ${({ isOpen }) => (isOpen ? '1' : '0.5')};
+
+    @media (max-width: 768px) {
+        font-size: 1.2rem;
+        width: 3rem;
+        height: 2rem;
+    };
+`
+
+export const DropdownMenu = styled.div`
+  position: absolute;
+  top: 70%;
+  background-color: white;
+  border-radius: 10px 5px 10px 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  z-index: 100;
+
+  @media (max-width: 768px) {
+    right: 16rem;
+  }
+`;
+
+export const DropdownItem = styled.div`
+  font-size: .8rem;
+  padding: 10px 20px;
+  cursor: pointer;
+
+  @media (max-width: 768px) {
+    padding: 8px 16px;
+  }
+`;
+
+export const UserHover = styled.div`
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  
+  &:hover {
+    background-color: #EEEFF4;
+    padding: .5rem 0;
+    cursor: pointer;
+  }
 `
 
 export const Logo = styled.h1`

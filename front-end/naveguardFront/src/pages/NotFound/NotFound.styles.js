@@ -1,6 +1,7 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 
 export const ErrorContainer = styled.div`
+    padding-top: 6vh;;
     /* border: red 1px solid; */
     position: relative;
     width: 100%;
@@ -21,7 +22,7 @@ export const ErrorContent = styled.div`
 
 export const Img = styled.img`
     z-index: 1000;
-    width: 50rem;
+    width: 40rem;
     margin-top: 2rem;
 `
 
@@ -54,11 +55,69 @@ export const Return = styled.button`
     }
 `
 
+// const fadeInDiagonal = keyframes
+//   0% { 
+//     opacity: 0; 
+//     transform: translate(-20px, 20px); 
+//   }
+//   100% { 
+//     opacity: 1; 
+//     transform: translate(0, 0); 
+//   }
+// `;
+
+// const fadeInOut = 
+//   0%, 100% { 
+//     opacity: 0; 
+//     rotate: 360deg;
+//   }
+//   25% { 
+//     opacity: 1; 
+//     transform: translate(-40px, -40px); esse nao
+
+//   }
+//   50% { 
+//     opacity: 1; 
+//     transform: translate(0, 0);
+//   }
+//   75% { 
+//     opacity: 1; 
+//     transform: translate(0, 0); 
+
+//   }
+//   100% { 
+//     opacity: 1; 
+//     transform: translate(0, 0); 
+//   }
+//   `
+
+const revealDiagonal = keyframes`
+  0% {
+    clip-path: polygon(0% 0%, 0% 100%, 100% 0%, 100% 0%);
+    opacity: 0.5;
+  }
+  100% {
+    clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 100%);
+    opacity: 1;
+  }
+`;
+
 export const Loading = styled.div`
-    width: 100vw;
-    height: 100vh;
-    border: 1px red solid;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+`;
+
+export const Loader = styled.img`
+  width: 350px;
+  height: auto;
+  animation: ${revealDiagonal} 2s ease forwards;
+  filter: invert(1) brightness(2);
+`;

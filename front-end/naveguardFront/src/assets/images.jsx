@@ -35,6 +35,7 @@ import ChatBot from './images/chatbot.png'
 import Artigos from './images/artigos.png'
 import KidLogger from './images/KidLogger-Control.png'
 import Seta_Voltar from './images/seta_voltar.svg'
+import LogoLoading from './images/naveguard-loading.svg'
 // aqui vcs criam as variaveis especificando o caminho delas
 
 const Images = {
@@ -74,7 +75,8 @@ const Images = {
     ChatBot,
     Artigos,
     KidLogger,
-    Seta_Voltar
+    Seta_Voltar,
+    LogoLoading
     // aqui fica as variaveis com o mesmo nome ali em cima
 }
 
