@@ -19,3 +19,4 @@ imagemPersonagemEsquerda.src = "./img/playerLeft.png";
 // Imagens que ficam por cima do mapa
 const imagemObjetoPassaveis = new Image();
 imagemObjetoPassaveis.src = "./img/Objetos-Passaveis.png";
+

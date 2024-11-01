@@ -38,8 +38,6 @@ for (let i = 0; i < cordPersonagem.length; i += 100) {
 }
 
 const tiposDeObjetos = {
-    1959: [], //Baú
-    1958: [], //Bloco Invisivel
     3116: [], // Carangueijo
     2860: [], // Jonas
     2924: [], // Antonio
@@ -67,8 +65,6 @@ const tiposDeObjetos = {
   });
   
   // Acessa os objetos específicos usando o mapeamento `tiposDeObjetos`
-  const coordenadasPersonagem = tiposDeObjetos[1959];
-  const coordenadasPersonagem2 = tiposDeObjetos[1958];
   const coordenadasPersonagem3 = tiposDeObjetos[3116];
 
   const coordenadasPersonagemJonas = tiposDeObjetos[2860];
@@ -87,7 +83,7 @@ const tiposDeObjetos = {
 
   const personagensAdicionais = [];
 
-  function criarPersonagens(coordenadas, imagemSrc) {
+  function criarPersonagens(coordenadas, imagemSrc, id) {
     const imagemPersonagem = new Image();
     imagemPersonagem.src = imagemSrc; // Define a imagem para todos os personagens que serão criados com essas coordenadas
     coordenadas.forEach(coordenada => {
@@ -96,22 +92,84 @@ const tiposDeObjetos = {
         image: imagemPersonagem,
         frames: { max: 4 } // Ajuste conforme necessário
       });
+
+      personagem.id = id; // Cria um ID único para cada personagem
+
       personagensAdicionais.push(personagem);
     });
   }
   
-  // Chame a função com suas coordenadas
-  criarPersonagens(coordenadasPersonagem2, "./img/playerBaixo.png");
-  criarPersonagens(coordenadasPersonagem, "./img/playerBaixo.png");
+  const imagensPersonagens = {
+    spriteJonas: {
+      baixo: "./img/Jonas/playerBaixo.png",
+      esquerda: "./img/Jonas/playerEsquerda.png",
+      direita: "./img/Jonas/playerDireita.png",
+      cima: "./img/Jonas/playerCima.png"
+    },
 
-  criarPersonagens(coordenadasPersonagemJonas, "./img/Jonas/playerBaixo.png");
-  criarPersonagens(coordenadasPersonagemAntonio, "./img/Antonio/playerBaixo.png");
-  criarPersonagens(coordenadasPersonagemGuilherme, "./img/Guilherme/playerBaixo.png");
-  criarPersonagens(coordenadasPersonagemMayla, "./img/Mayla/playerBaixo.png");
-  criarPersonagens(coordenadasPersonagemJamylle, "./img/Jamyle/playerBaixo.png");
-  criarPersonagens(coordenadasPersonagemDigo, "./img/Digo/playerBaixo.png");
-  criarPersonagens(coordenadasPersonagemTheo, "./img/Theo/playerBaixo.png");
-  criarPersonagens(coordenadasPersonagemHeverton, "./img/Heverton/playerBaixo.png");
+    spriteTheo: {
+      baixo: "./img/Theo/playerBaixo.png",
+      esquerda: "./img/Theo/playerEsquerda.png",
+      direita: "./img/Theo/playerDireita.png",
+      cima: "./img/Theo/playerCima.png"
+    },
+
+    spriteAntonio: {
+      baixo: "./img/Antonio/playerBaixo.png",
+      esquerda: "./img/Antonio/playerEsquerda.png",
+      direita: "./img/Antonio/playerDireita.png",
+      cima: "./img/Antonio/playerCima.png"
+    },
+
+    spriteMayla: {
+      baixo: "./img/Mayla/playerBaixo.png",
+      esquerda: "./img/Mayla/playerEsquerda.png",
+      direita: "./img/Mayla/playerDireita.png",
+      cima: "./img/Mayla/playerCima.png"
+    },
+
+    spriteHeverton: {
+      baixo: "./img/Heverton/playerBaixo.png",
+      esquerda: "./img/Heverton/playerEsquerda.png",
+      direita: "./img/Heverton/playerDireita.png",
+      cima: "./img/Heverton/playerCima.png"
+    },
+
+    spriteGuilherme: {
+      baixo: "./img/Guilherme/playerBaixo.png",
+      esquerda: "./img/Guilherme/playerEsquerda.png",
+      direita: "./img/Guilherme/playerDireita.png",
+      cima: "./img/Guilherme/playerCima.png"
+    },
+
+    spriteDigo: {
+      baixo: "./img/Digo/playerBaixo.png",
+      esquerda: "./img/Digo/playerEsquerda.png",
+      direita: "./img/Digo/playerDireita.png",
+      cima: "./img/Digo/playerCima.png"
+    },
+
+    spriteJamyle: {
+      baixo: "./img/Jamyle/playerBaixo.png",
+      esquerda: "./img/Jamyle/playerEsquerda.png",
+      direita: "./img/Jamyle/playerDireita.png",
+      cima: "./img/Jamyle/playerCima.png"
+    }
+  }
+
+  // Chame a função com suas coordenadas
+  criarPersonagens(coordenadasPersonagemJonas, imagensPersonagens.spriteJonas.baixo, "Jonas");
+  criarPersonagens(coordenadasPersonagemAntonio, imagensPersonagens.spriteAntonio.baixo, "Antonio");
+  criarPersonagens(coordenadasPersonagemGuilherme, imagensPersonagens.spriteGuilherme.baixo, "Guilherme");
+  criarPersonagens(coordenadasPersonagemMayla, imagensPersonagens.spriteMayla.baixo, "Mayla");
+  criarPersonagens(coordenadasPersonagemJamylle, imagensPersonagens.spriteJamyle.baixo, "Jamyle");
+  criarPersonagens(coordenadasPersonagemDigo, imagensPersonagens.spriteDigo.baixo, "Digo");
+  criarPersonagens(coordenadasPersonagemTheo, imagensPersonagens.spriteTheo.baixo, "Theo");
+  criarPersonagens(coordenadasPersonagemHeverton, imagensPersonagens.spriteHeverton.baixo, "Heverton");
 
 
 //////////////////////////////////////////////////////////////////////
+
+
+
+
