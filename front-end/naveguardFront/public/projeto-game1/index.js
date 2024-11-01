@@ -107,7 +107,8 @@ function animate() {
     }
 
     ///////////////////////////////////////////////////////////////////////////////
-    function verificarColisao(player, coordenadas, tipo, som) {
+    function verificarColisao(player, coordenadas, tipo, som, imagemInteracao, id) {
+      let colisaoDetectada = false;
       for (let i = 0; i < coordenadas.length; i++) {
         const limite = coordenadas[i];
         if (
@@ -115,34 +116,43 @@ function animate() {
             retangulo1: player,
             retangulo2: { 
               ...limite, 
-              position: { x: limite.position.x, y: limite.position.y + 3 }
+              position: { x: limite.position.x, y: limite.position.y + 3}
             }
           })
         ) {
           movimento = false; // Bloqueia o movimento do personagem
           podeInteragir = true; // Permite interação
-          colidindoComAlgum = true; // Marca que está colidindo
-
+          colisaoDetectada = true; // Marca que está colidindo
+    
           // Define a mensagem de interação
           const spanMensagem = document.querySelector('#mensagemInteracao span');
           spanMensagem.innerText = mensagensInteracao[tipo];
           somGuardado = som;
+    
+            // Encontra o personagem pelo id e atualiza a imagem de interação
+            const personagem = personagensAdicionais.find(p => p.id === id);
+          if (personagem) {
+            personagem.image.src = imagemInteracao; // Altera a imagem para a de interação
+          }
+    
           return true; // Indica que houve uma colisão
         }
       }
+    
+    
       return false; // Indica que não houve colisão
     }
 
     const colidiuComPersonagem3 = verificarColisao(player, coordenadasPersonagem3, 3116, sons.som3);
 
-    const colidiuComPersonagemJonas = verificarColisao(player, coordenadasPersonagemJonas, 2860, sons.som1);
-    const colidiuComPersonagemAntonio = verificarColisao(player, coordenadasPersonagemAntonio, 2924, sons.som2);
-    const colidiuComPersonagemGuilherme = verificarColisao(player, coordenadasPersonagemGuilherme, 2988, sons.som3);
-    const colidiuComPersonagemMayla = verificarColisao(player, coordenadasPersonagemMayla, 3052, sons.som1);
-    const colidiuComPersonagemJamyle = verificarColisao(player, coordenadasPersonagemJamylle, 2989, sons.som2);
-    const colidiuComPersonagemDigo = verificarColisao(player, coordenadasPersonagemDigo, 2925, sons.som3);
-    const colidiuComPersonagemTheo = verificarColisao(player, coordenadasPersonagemTheo, 2861, sons.som2);
-    const colidiuComPersonagemHeverton = verificarColisao(player, coordenadasPersonagemHeverton, 2862, sons.som3);
+    const colidiuComPersonagemJonas = verificarColisao(player, coordenadasPersonagemJonas, 2860, sons.som1, imagensPersonagens.spriteJonas.baixo, "Jonas");
+const colidiuComPersonagemAntonio = verificarColisao(player, coordenadasPersonagemAntonio, 2924, sons.som2, imagensPersonagens.spriteAntonio.baixo, "Antonio");
+const colidiuComPersonagemGuilherme = verificarColisao(player, coordenadasPersonagemGuilherme, 2988, sons.som3, imagensPersonagens.spriteGuilherme.baixo, "Guilherme");
+const colidiuComPersonagemMayla = verificarColisao(player, coordenadasPersonagemMayla, 3052, sons.som1, imagensPersonagens.spriteMayla.baixo, "Mayla");
+const colidiuComPersonagemJamyle = verificarColisao(player, coordenadasPersonagemJamylle, 2989, sons.som2, imagensPersonagens.spriteJamyle.baixo, "Jamyle");
+const colidiuComPersonagemDigo = verificarColisao(player, coordenadasPersonagemDigo, 2925, sons.som3, imagensPersonagens.spriteDigo.baixo, "Digo");
+const colidiuComPersonagemTheo = verificarColisao(player, coordenadasPersonagemTheo, 2861, sons.som2, imagensPersonagens.spriteTheo.baixo, "Theo");
+const colidiuComPersonagemHeverton = verificarColisao(player, coordenadasPersonagemHeverton, 2862, sons.som3, imagensPersonagens.spriteHeverton.baixo, "Heverton");
 
         // Se não houve colisão
     if ( !colidiuComPersonagem3 && 
@@ -187,7 +197,8 @@ function animate() {
 
 
 ///////////////////////////////////////////////////////////////////////////////
-function verificarColisao(player, coordenadas, tipo, som) {
+function verificarColisao(player, coordenadas, tipo, som, imagemInteracao, id) {
+  let colisaoDetectada = false;
   for (let i = 0; i < coordenadas.length; i++) {
     const limite = coordenadas[i];
     if (
@@ -195,34 +206,43 @@ function verificarColisao(player, coordenadas, tipo, som) {
         retangulo1: player,
         retangulo2: { 
           ...limite, 
-          position: { x: limite.position.x + 3, y: limite.position.y}
+          position: { x: limite.position.x + 3, y: limite.position.y }
         }
       })
     ) {
       movimento = false; // Bloqueia o movimento do personagem
       podeInteragir = true; // Permite interação
-      colidindoComAlgum = true; // Marca que está colidindo
+      colisaoDetectada = true; // Marca que está colidindo
 
       // Define a mensagem de interação
       const spanMensagem = document.querySelector('#mensagemInteracao span');
       spanMensagem.innerText = mensagensInteracao[tipo];
       somGuardado = som;
+
+        // Encontra o personagem pelo id e atualiza a imagem de interação
+        const personagem = personagensAdicionais.find(p => p.id === id);
+      if (personagem) {
+        personagem.image.src = imagemInteracao; // Altera a imagem para a de interação
+      }
+
       return true; // Indica que houve uma colisão
     }
   }
+
+
   return false; // Indica que não houve colisão
 }
 
 const colidiuComPersonagem3 = verificarColisao(player, coordenadasPersonagem3, 3116, sons.som3);
 
-const colidiuComPersonagemJonas = verificarColisao(player, coordenadasPersonagemJonas, 2860, sons.som1);
-const colidiuComPersonagemAntonio = verificarColisao(player, coordenadasPersonagemAntonio, 2924, sons.som2);
-const colidiuComPersonagemGuilherme = verificarColisao(player, coordenadasPersonagemGuilherme, 2988, sons.som3);
-const colidiuComPersonagemMayla = verificarColisao(player, coordenadasPersonagemMayla, 3052, sons.som1);
-const colidiuComPersonagemJamyle = verificarColisao(player, coordenadasPersonagemJamylle, 2989, sons.som2);
-const colidiuComPersonagemDigo = verificarColisao(player, coordenadasPersonagemDigo, 2925, sons.som3);
-const colidiuComPersonagemTheo = verificarColisao(player, coordenadasPersonagemTheo, 2861, sons.som2);
-const colidiuComPersonagemHeverton = verificarColisao(player, coordenadasPersonagemHeverton, 2862, sons.som3);
+const colidiuComPersonagemJonas = verificarColisao(player, coordenadasPersonagemJonas, 2860, sons.som1, imagensPersonagens.spriteJonas.direita, "Jonas");
+const colidiuComPersonagemAntonio = verificarColisao(player, coordenadasPersonagemAntonio, 2924, sons.som2, imagensPersonagens.spriteAntonio.direita, "Antonio");
+const colidiuComPersonagemGuilherme = verificarColisao(player, coordenadasPersonagemGuilherme, 2988, sons.som3, imagensPersonagens.spriteGuilherme.direita, "Guilherme");
+const colidiuComPersonagemMayla = verificarColisao(player, coordenadasPersonagemMayla, 3052, sons.som1, imagensPersonagens.spriteMayla.direita, "Mayla");
+const colidiuComPersonagemJamyle = verificarColisao(player, coordenadasPersonagemJamylle, 2989, sons.som2, imagensPersonagens.spriteJamyle.direita, "Jamyle");
+const colidiuComPersonagemDigo = verificarColisao(player, coordenadasPersonagemDigo, 2925, sons.som3, imagensPersonagens.spriteDigo.direita, "Digo");
+const colidiuComPersonagemTheo = verificarColisao(player, coordenadasPersonagemTheo, 2861, sons.som2, imagensPersonagens.spriteTheo.direita, "Theo");
+const colidiuComPersonagemHeverton = verificarColisao(player, coordenadasPersonagemHeverton, 2862, sons.som3, imagensPersonagens.spriteHeverton.direita, "Heverton");
 
     // Se não houve colisão
 if (!colidiuComPersonagem3 && 
@@ -265,7 +285,8 @@ setInterval(() => {
     }
 
     ///////////////////////////////////////////////////////////////////////////////
-    function verificarColisao(player, coordenadas, tipo, som) {
+    function verificarColisao(player, coordenadas, tipo, som, imagemInteracao, id) {
+      let colisaoDetectada = false;
       for (let i = 0; i < coordenadas.length; i++) {
         const limite = coordenadas[i];
         if (
@@ -279,29 +300,38 @@ setInterval(() => {
         ) {
           movimento = false; // Bloqueia o movimento do personagem
           podeInteragir = true; // Permite interação
-          colidindoComAlgum = true; // Marca que está colidindo
-
+          colisaoDetectada = true; // Marca que está colidindo
+    
           // Define a mensagem de interação
           const spanMensagem = document.querySelector('#mensagemInteracao span');
           spanMensagem.innerText = mensagensInteracao[tipo];
           somGuardado = som;
+    
+            // Encontra o personagem pelo id e atualiza a imagem de interação
+            const personagem = personagensAdicionais.find(p => p.id === id);
+          if (personagem) {
+            personagem.image.src = imagemInteracao; // Altera a imagem para a de interação
+          }
+    
           return true; // Indica que houve uma colisão
         }
       }
+    
+    
       return false; // Indica que não houve colisão
     }
 
   
     const colidiuComPersonagem3 = verificarColisao(player, coordenadasPersonagem3, 3116, sons.som3);
 
-    const colidiuComPersonagemJonas = verificarColisao(player, coordenadasPersonagemJonas, 2860, sons.som1);
-    const colidiuComPersonagemAntonio = verificarColisao(player, coordenadasPersonagemAntonio, 2924, sons.som2);
-    const colidiuComPersonagemGuilherme = verificarColisao(player, coordenadasPersonagemGuilherme, 2988, sons.som3);
-    const colidiuComPersonagemMayla = verificarColisao(player, coordenadasPersonagemMayla, 3052, sons.som1);
-    const colidiuComPersonagemJamyle = verificarColisao(player, coordenadasPersonagemJamylle, 2989, sons.som2);
-    const colidiuComPersonagemDigo = verificarColisao(player, coordenadasPersonagemDigo, 2925, sons.som3);
-    const colidiuComPersonagemTheo = verificarColisao(player, coordenadasPersonagemTheo, 2861, sons.som2);
-    const colidiuComPersonagemHeverton = verificarColisao(player, coordenadasPersonagemHeverton, 2862, sons.som3);
+const colidiuComPersonagemJonas = verificarColisao(player, coordenadasPersonagemJonas, 2860, sons.som1, imagensPersonagens.spriteJonas.cima, "Jonas");
+const colidiuComPersonagemAntonio = verificarColisao(player, coordenadasPersonagemAntonio, 2924, sons.som2, imagensPersonagens.spriteAntonio.cima, "Antonio");
+const colidiuComPersonagemGuilherme = verificarColisao(player, coordenadasPersonagemGuilherme, 2988, sons.som3, imagensPersonagens.spriteGuilherme.cima, "Guilherme");
+const colidiuComPersonagemMayla = verificarColisao(player, coordenadasPersonagemMayla, 3052, sons.som1, imagensPersonagens.spriteMayla.cima, "Mayla");
+const colidiuComPersonagemJamyle = verificarColisao(player, coordenadasPersonagemJamylle, 2989, sons.som2, imagensPersonagens.spriteJamyle.cima, "Jamyle");
+const colidiuComPersonagemDigo = verificarColisao(player, coordenadasPersonagemDigo, 2925, sons.som3, imagensPersonagens.spriteDigo.cima, "Digo");
+const colidiuComPersonagemTheo = verificarColisao(player, coordenadasPersonagemTheo, 2861, sons.som2, imagensPersonagens.spriteTheo.cima, "Theo");
+const colidiuComPersonagemHeverton = verificarColisao(player, coordenadasPersonagemHeverton, 2862, sons.som3, imagensPersonagens.spriteHeverton.cima, "Heverton");
 
         // Se não houve colisão
     if ( !colidiuComPersonagem3 && 
@@ -358,7 +388,6 @@ function verificarColisao(player, coordenadas, tipo, som, imagemInteracao, id) {
         }
       })
     ) {
-      console.log("colidindo");
       movimento = false; // Bloqueia o movimento do personagem
       podeInteragir = true; // Permite interação
       colisaoDetectada = true; // Marca que está colidindo
