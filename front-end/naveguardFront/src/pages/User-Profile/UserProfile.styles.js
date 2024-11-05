@@ -75,6 +75,7 @@ export const UserImage = styled.div`
 `
 
 export const Photo = styled.img`
+border-radius: 100%;
     width: 100%;
 `
 
@@ -96,10 +97,15 @@ export const Span = styled.div`
     display: flex;
     align-items: center;
     gap: 0.2rem;
-
+    color: #000;
     @media (max-width: 768px) {
         gap: 0.1rem;
     }
+`
+
+export const NameProfile = styled.h1`
+    color: #2c2c2c;
+    letter-spacing: .1rem;
 `
 
 export const Icon = styled.i`

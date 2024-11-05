@@ -1,9 +1,9 @@
 import "./FooterContent.css";
+import { Images } from "../../../assets/images.jsx";
 
 function FooterContent() {
   return (
     <>
-      <div className="footer-container">
         <div className="conteudo-geral-footer">
           <div className="primeira-coluna">
             <div className="main-titulo">
@@ -11,6 +11,12 @@ function FooterContent() {
             </div>
             <p>Naveguard &copy; 2024</p>
             <p>Todos os direitos reservados</p>
+            <div className="redes-sociais">
+              <img src={Images.logoInsta} alt="" />
+              <img src={Images.logoDribbble} alt="" />
+              <img src={Images.logoTwitter} alt="" />
+              <img src={Images.logoYoutube} alt="" />
+            </div>
           </div>
 
           <div className="segunda-coluna">
@@ -34,7 +40,6 @@ function FooterContent() {
             />
           </div>
         </div>
-      </div>
     </>
   );
 }

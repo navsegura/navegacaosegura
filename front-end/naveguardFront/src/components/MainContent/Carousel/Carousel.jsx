@@ -2,22 +2,28 @@ import './Carousel.css'
 import { Images } from "../../../assets/images";
 import { register } from 'swiper/element/bundle'
 import { Swiper, SwiperSlide } from 'swiper/react'
+import { ContainerMain, ContainerSlide } from './Carousel.styles'
 
 register();
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import 'swiper/css/autoplay';
+
 
 function Carousel() {
     return (
-
-    <div className='container_principal'>
-        <div className="container_slide">
+    <ContainerMain>
+        <ContainerSlide className="container_slide">
             <Swiper
                 slidesPerView={1}
                 navigation={true}
-            >
+                pagination={{clickable: true}}
+                loop={true}
+                autoplay={{delay: 4000}}
+                
+                >
                 <SwiperSlide>
                     <div className="first_carousel">
                         <div className="content_carousel1">
@@ -66,8 +72,8 @@ function Carousel() {
                     </div>
                 </SwiperSlide>
             </Swiper>
-        </div>
-    </div>
+        </ContainerSlide>
+    </ContainerMain>
     );
 }
 

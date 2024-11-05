@@ -11,6 +11,7 @@
     top: 25rem;
     left: 30%;
     position: relative;
+    max-width: 100%;
 }
 
 .peixes-esquerda {

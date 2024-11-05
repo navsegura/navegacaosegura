@@ -6,6 +6,10 @@ import NotFound from '../pages/NotFound/NotFound'
 import UserProfile from '../pages/User-Profile/UserProfile'
 import ParentalControl from '../components/ParentalControl/ParentalControl'
 import Home from '../pages/Home.jsx'
+import Sobre from '../pages/Sobre.jsx'
+import Login from '../pages/Login/Login.jsx'
+import GameComponent from '../pages/GameScreen/GameComponent.jsx'
+
 
 const Router = () => {
     return (
@@ -17,7 +21,9 @@ const Router = () => {
                     <Route path='/choice-screen' element={<ChoiceScreen/>} />
                     <Route path='/user-profile' element={<UserProfile/>} />
                     <Route path='/parental-control' element={<ParentalControl/>} />
-                    
+                    <Route path='/about' element={<Sobre />} />
+                    <Route path='/login' element={<Login />} />
+                    <Route path='/game' element={<GameComponent/>} /> {/* Nova rota */}
                     <Route path='*' element={<NotFound/>} />
                     {/* 404 */}
                 </Routes>
