@@ -11,5 +11,7 @@ const mensagensInteracao = {
     2925: "Ahoy, jovem aventureiro! Guardar o que é precioso é a lei dos bons navegantes. Lembre-se, só compartilhe segredos com quem merece confiança – como faria com o mapa de um tesouro!", //Digo
     2861: "A paciência é o maior dos tesouros, jovem. Quando tiver que decidir, pense duas vezes! Um bom marinheiro sabe quando é seguro navegar.", //Theo
     2862: "Ah, aventureiro! Algumas histórias são tão preciosas que a gente guarda bem fundo no coração. Só compartilhe as suas com quem faz parte da sua jornada!", //Heverton
+    3110: "Oi, pequeno aventureiro! Eu sempre digo aos meus alunos que confiança é um tesouro raro. Em suas viagens, escolha bem seus companheiros e nunca tenha medo de pedir ajuda quando precisar!", //Nivea
+    3046: "Ei, você também é um explorador como eu? Minha mãe sempre diz que devemos cuidar do que é importante! Então, vamos prometer cuidar dos nossos segredos e navegar juntos com sabedoria! ", //Luis-Filho
   }
   

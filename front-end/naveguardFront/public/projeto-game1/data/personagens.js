@@ -47,6 +47,8 @@ const tiposDeObjetos = {
     2925: [], // Digo
     2861: [], // Theo
     2862: [], // Heverton
+    3110: [], //Nivea
+    3046: [] //Luis-Filho-Nivea
   };
   
   colisoesPersonagem.forEach((linha, i) => {
@@ -75,6 +77,8 @@ const tiposDeObjetos = {
   const coordenadasPersonagemDigo = tiposDeObjetos[2925];
   const coordenadasPersonagemTheo = tiposDeObjetos[2861];
   const coordenadasPersonagemHeverton = tiposDeObjetos[2862];
+  const coordenadasPersonagemNivea = tiposDeObjetos[3110];
+  const coordenadasPersonagemLuisFilho = tiposDeObjetos[3046];
 
 //////////////////////////////////////////////////////////////////////
 
@@ -154,7 +158,22 @@ const tiposDeObjetos = {
       esquerda: "./img/Jamyle/playerEsquerda.png",
       direita: "./img/Jamyle/playerDireita.png",
       cima: "./img/Jamyle/playerCima.png"
+    },
+
+    spriteNivea: {
+      baixo: "./img/Nivea/playerBaixo.png",
+      esquerda: "./img/Nivea/playerEsquerda.png",
+      direita: "./img/Nivea/playerDireita.png",
+      cima: "./img/Nivea/playerCima.png"
+    },
+
+    spriteLuis: {
+      baixo: "./img/Luis-FilhoNivea/playerBaixo.png",
+      esquerda: "./img/Luis-FilhoNivea/playerEsquerda.png",
+      direita: "./img/Luis-FilhoNivea/playerDireita.png",
+      cima: "./img/Luis-FilhoNivea/playerCima.png"
     }
+
   }
 
   // Chame a função com suas coordenadas
@@ -166,6 +185,8 @@ const tiposDeObjetos = {
   criarPersonagens(coordenadasPersonagemDigo, imagensPersonagens.spriteDigo.baixo, "Digo");
   criarPersonagens(coordenadasPersonagemTheo, imagensPersonagens.spriteTheo.baixo, "Theo");
   criarPersonagens(coordenadasPersonagemHeverton, imagensPersonagens.spriteHeverton.baixo, "Heverton");
+  criarPersonagens(coordenadasPersonagemNivea, imagensPersonagens.spriteNivea.baixo, "Nivea");
+  criarPersonagens(coordenadasPersonagemLuisFilho, imagensPersonagens.spriteLuis.baixo, "LuisFilho");
 
 
 //////////////////////////////////////////////////////////////////////

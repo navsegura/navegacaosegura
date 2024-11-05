@@ -14,6 +14,8 @@ const moveis = [
   ...coordenadasPersonagemDigo,
   ...coordenadasPersonagemTheo,
   ...coordenadasPersonagemHeverton,
+  ...coordenadasPersonagemLuisFilho,
+  ...coordenadasPersonagemNivea
 ]; //Ver oque esse ... faz
 
 
@@ -75,7 +77,15 @@ function animate() {
     limite.draw();
   });
 
+  coordenadasPersonagemNivea.forEach((limite) => {
+    limite.draw();
+  });
 
+  coordenadasPersonagemLuisFilho.forEach((limite) => {
+    limite.draw();
+  });
+  
+  
   personagensAdicionais.forEach(personagem => {
     personagem.draw();
   });
@@ -146,19 +156,21 @@ function animate() {
     const colidiuComPersonagem3 = verificarColisao(player, coordenadasPersonagem3, 3116, sons.som3);
 
     const colidiuComPersonagemJonas = verificarColisao(player, coordenadasPersonagemJonas, 2860, sons.som1, imagensPersonagens.spriteJonas.baixo, "Jonas");
-const colidiuComPersonagemAntonio = verificarColisao(player, coordenadasPersonagemAntonio, 2924, sons.som2, imagensPersonagens.spriteAntonio.baixo, "Antonio");
-const colidiuComPersonagemGuilherme = verificarColisao(player, coordenadasPersonagemGuilherme, 2988, sons.som3, imagensPersonagens.spriteGuilherme.baixo, "Guilherme");
-const colidiuComPersonagemMayla = verificarColisao(player, coordenadasPersonagemMayla, 3052, sons.som1, imagensPersonagens.spriteMayla.baixo, "Mayla");
-const colidiuComPersonagemJamyle = verificarColisao(player, coordenadasPersonagemJamylle, 2989, sons.som2, imagensPersonagens.spriteJamyle.baixo, "Jamyle");
-const colidiuComPersonagemDigo = verificarColisao(player, coordenadasPersonagemDigo, 2925, sons.som3, imagensPersonagens.spriteDigo.baixo, "Digo");
-const colidiuComPersonagemTheo = verificarColisao(player, coordenadasPersonagemTheo, 2861, sons.som2, imagensPersonagens.spriteTheo.baixo, "Theo");
-const colidiuComPersonagemHeverton = verificarColisao(player, coordenadasPersonagemHeverton, 2862, sons.som3, imagensPersonagens.spriteHeverton.baixo, "Heverton");
+    const colidiuComPersonagemAntonio = verificarColisao(player, coordenadasPersonagemAntonio, 2924, sons.som2, imagensPersonagens.spriteAntonio.baixo, "Antonio");
+    const colidiuComPersonagemGuilherme = verificarColisao(player, coordenadasPersonagemGuilherme, 2988, sons.som3, imagensPersonagens.spriteGuilherme.baixo, "Guilherme");
+    const colidiuComPersonagemMayla = verificarColisao(player, coordenadasPersonagemMayla, 3052, sons.som1, imagensPersonagens.spriteMayla.baixo, "Mayla");
+    const colidiuComPersonagemJamyle = verificarColisao(player, coordenadasPersonagemJamylle, 2989, sons.som2, imagensPersonagens.spriteJamyle.baixo, "Jamyle");
+    const colidiuComPersonagemDigo = verificarColisao(player, coordenadasPersonagemDigo, 2925, sons.som3, imagensPersonagens.spriteDigo.baixo, "Digo");
+    const colidiuComPersonagemTheo = verificarColisao(player, coordenadasPersonagemTheo, 2861, sons.som2, imagensPersonagens.spriteTheo.baixo, "Theo");
+    const colidiuComPersonagemHeverton = verificarColisao(player, coordenadasPersonagemHeverton, 2862, sons.som3, imagensPersonagens.spriteHeverton.baixo, "Heverton");
+    const colidiuComPersonagemNivea = verificarColisao(player, coordenadasPersonagemNivea, 3110, sons.som2, imagensPersonagens.spriteNivea.baixo, "Nivea");
+    const colidiuComPersonagemLuisFilho = verificarColisao(player, coordenadasPersonagemLuisFilho, 3046, sons.som3, imagensPersonagens.spriteLuis.baixo, "LuisFilho");
 
         // Se não houve colisão
     if ( !colidiuComPersonagem3 && 
       !colidiuComPersonagemJonas && !colidiuComPersonagemAntonio && !colidiuComPersonagemGuilherme && 
       !colidiuComPersonagemMayla && !colidiuComPersonagemJamyle && !colidiuComPersonagemDigo && 
-      !colidiuComPersonagemTheo && !colidiuComPersonagemHeverton) {
+      !colidiuComPersonagemTheo && !colidiuComPersonagemHeverton && !colidiuComPersonagemNivea && !colidiuComPersonagemLuisFilho) {
       podeInteragir = false; // Se não está colidindo, não pode interagir
       alertaExibido = false; // Reseta a variável de alerta
 }
@@ -243,12 +255,14 @@ const colidiuComPersonagemJamyle = verificarColisao(player, coordenadasPersonage
 const colidiuComPersonagemDigo = verificarColisao(player, coordenadasPersonagemDigo, 2925, sons.som3, imagensPersonagens.spriteDigo.direita, "Digo");
 const colidiuComPersonagemTheo = verificarColisao(player, coordenadasPersonagemTheo, 2861, sons.som2, imagensPersonagens.spriteTheo.direita, "Theo");
 const colidiuComPersonagemHeverton = verificarColisao(player, coordenadasPersonagemHeverton, 2862, sons.som3, imagensPersonagens.spriteHeverton.direita, "Heverton");
+const colidiuComPersonagemNivea = verificarColisao(player, coordenadasPersonagemNivea, 3110, sons.som2, imagensPersonagens.spriteNivea.direita, "Nivea");
+const colidiuComPersonagemLuisFilho = verificarColisao(player, coordenadasPersonagemLuisFilho, 3046, sons.som3, imagensPersonagens.spriteLuis.direita, "LuisFilho");
 
     // Se não houve colisão
 if (!colidiuComPersonagem3 && 
   !colidiuComPersonagemJonas && !colidiuComPersonagemAntonio && !colidiuComPersonagemGuilherme && 
   !colidiuComPersonagemMayla && !colidiuComPersonagemJamyle && !colidiuComPersonagemDigo && 
-  !colidiuComPersonagemTheo && !colidiuComPersonagemHeverton) {
+  !colidiuComPersonagemTheo && !colidiuComPersonagemHeverton && !colidiuComPersonagemNivea && !colidiuComPersonagemLuisFilho) {
   podeInteragir = false; // Se não está colidindo, não pode interagir
   alertaExibido = false; // Reseta a variável de alerta
 }
@@ -332,12 +346,14 @@ const colidiuComPersonagemJamyle = verificarColisao(player, coordenadasPersonage
 const colidiuComPersonagemDigo = verificarColisao(player, coordenadasPersonagemDigo, 2925, sons.som3, imagensPersonagens.spriteDigo.cima, "Digo");
 const colidiuComPersonagemTheo = verificarColisao(player, coordenadasPersonagemTheo, 2861, sons.som2, imagensPersonagens.spriteTheo.cima, "Theo");
 const colidiuComPersonagemHeverton = verificarColisao(player, coordenadasPersonagemHeverton, 2862, sons.som3, imagensPersonagens.spriteHeverton.cima, "Heverton");
+const colidiuComPersonagemNivea = verificarColisao(player, coordenadasPersonagemNivea, 3110, sons.som2, imagensPersonagens.spriteNivea.cima, "Nivea");
+    const colidiuComPersonagemLuisFilho = verificarColisao(player, coordenadasPersonagemLuisFilho, 3046, sons.som3, imagensPersonagens.spriteLuis.cima, "LuisFilho");
 
         // Se não houve colisão
     if ( !colidiuComPersonagem3 && 
       !colidiuComPersonagemJonas && !colidiuComPersonagemAntonio && !colidiuComPersonagemGuilherme && 
       !colidiuComPersonagemMayla && !colidiuComPersonagemJamyle && !colidiuComPersonagemDigo && 
-      !colidiuComPersonagemTheo && !colidiuComPersonagemHeverton) {
+      !colidiuComPersonagemTheo && !colidiuComPersonagemHeverton && !colidiuComPersonagemNivea && !colidiuComPersonagemLuisFilho) {
       podeInteragir = false; // Se não está colidindo, não pode interagir
       alertaExibido = false; // Reseta a variável de alerta
 }
@@ -421,12 +437,14 @@ const colidiuComPersonagemJamyle = verificarColisao(player, coordenadasPersonage
 const colidiuComPersonagemDigo = verificarColisao(player, coordenadasPersonagemDigo, 2925, sons.som3, imagensPersonagens.spriteDigo.esquerda, "Digo");
 const colidiuComPersonagemTheo = verificarColisao(player, coordenadasPersonagemTheo, 2861, sons.som2, imagensPersonagens.spriteTheo.esquerda, "Theo");
 const colidiuComPersonagemHeverton = verificarColisao(player, coordenadasPersonagemHeverton, 2862, sons.som3, imagensPersonagens.spriteHeverton.esquerda, "Heverton");
+const colidiuComPersonagemNivea = verificarColisao(player, coordenadasPersonagemNivea, 3110, sons.som2, imagensPersonagens.spriteNivea.esquerda, "Nivea");
+const colidiuComPersonagemLuisFilho = verificarColisao(player, coordenadasPersonagemLuisFilho, 3046, sons.som3, imagensPersonagens.spriteLuis.esquerda, "LuisFilho");
 
     // Se não houve colisão
 if (!colidiuComPersonagem3 && 
   !colidiuComPersonagemJonas && !colidiuComPersonagemAntonio && !colidiuComPersonagemGuilherme && 
   !colidiuComPersonagemMayla && !colidiuComPersonagemJamyle && !colidiuComPersonagemDigo && 
-  !colidiuComPersonagemTheo && !colidiuComPersonagemHeverton) {
+  !colidiuComPersonagemTheo && !colidiuComPersonagemHeverton && !colidiuComPersonagemNivea && !colidiuComPersonagemLuisFilho) {
   podeInteragir = false; // Se não está colidindo, não pode interagir
   alertaExibido = false; // Reseta a variável de alerta
 }
