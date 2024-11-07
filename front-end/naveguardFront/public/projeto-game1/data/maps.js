@@ -39,3 +39,4 @@ const objetoPassavel = new Sprite({
   },
   image: imagemObjetoPassaveis,
 });
+

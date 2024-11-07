@@ -21,47 +21,11 @@ const player = new Sprite({
     right: imagemPersonagemDireita,
     down: imagemPersonagemBaixo,
   },
+  velocity:20
 });
 
 //canvas.width / 2 - imagemPersonagem.width / 4 / 2, // Centraliza o primeiro sprite do personagem no meio com base do comprimento
 //canvas.height / 2 - imagemPersonagem.height / 2, // Centraliza o primeiro sprite do personagem no meio com base na altura
-
-//////////////////////////////////////////
-
-////// PEGA AS COORDENADAS DE CADA PERSONAGEM PARA FAZER A BARREIRA //////
-const colisoesPersonagem = [];
-for (let i = 0; i < cordPersonagem.length; i += 100) {
-  colisoesPersonagem.push(cordPersonagem.slice(i, 100 + i));
-}
-
-const tiposDeObjetos = {
-  3116: [], // Carangueijo
-  2860: [], // Jonas
-  2924: [], // Antonio
-  2988: [], // Guilherme
-  3052: [], // Mayla
-  2989: [], // Jamylle
-  2925: [], // Digo
-  2861: [], // Theo
-  2862: [], // Heverton
-  3110: [], //Nivea
-  3046: [], //Luis-Filho-Nivea
-};
-
-colisoesPersonagem.forEach((linha, i) => {
-  linha.forEach((coluna, j) => {
-    if (tiposDeObjetos[coluna]) {
-      tiposDeObjetos[coluna].push(
-        new Limite({
-          position: {
-            x: j * Limite.width + offset.x,
-            y: i * Limite.height + offset.y,
-          },
-        })
-      );
-    }
-  });
-});
 
 // Acessa os objetos específicos usando o mapeamento `tiposDeObjetos`
 const coordenadasPersonagem3 = tiposDeObjetos[3116];
@@ -77,7 +41,6 @@ const coordenadasPersonagemHeverton = tiposDeObjetos[2862];
 const coordenadasPersonagemNivea = tiposDeObjetos[3110];
 const coordenadasPersonagemLuisFilho = tiposDeObjetos[3046];
 
-//////////////////////////////////////////////////////////////////////
 
 ////// POSICIONA O SPRITE DE CADA PLAYER NA COORDENADA QUE FOI PEGO ALI EM CIMA //////
 
@@ -99,77 +62,6 @@ function criarPersonagens(coordenadas, imagemSrc, id) {
   });
 }
 
-const imagensPersonagens = {
-  spriteJonas: {
-    baixo: "./img/Jonas/playerBaixo.png",
-    esquerda: "./img/Jonas/playerEsquerda.png",
-    direita: "./img/Jonas/playerDireita.png",
-    cima: "./img/Jonas/playerCima.png",
-  },
-
-  spriteTheo: {
-    baixo: "./img/Theo/playerBaixo.png",
-    esquerda: "./img/Theo/playerEsquerda.png",
-    direita: "./img/Theo/playerDireita.png",
-    cima: "./img/Theo/playerCima.png",
-  },
-
-  spriteAntonio: {
-    baixo: "./img/Antonio/playerBaixo.png",
-    esquerda: "./img/Antonio/playerEsquerda.png",
-    direita: "./img/Antonio/playerDireita.png",
-    cima: "./img/Antonio/playerCima.png",
-  },
-
-  spriteMayla: {
-    baixo: "./img/Mayla/playerBaixo.png",
-    esquerda: "./img/Mayla/playerEsquerda.png",
-    direita: "./img/Mayla/playerDireita.png",
-    cima: "./img/Mayla/playerCima.png",
-  },
-
-  spriteHeverton: {
-    baixo: "./img/Heverton/playerBaixo.png",
-    esquerda: "./img/Heverton/playerEsquerda.png",
-    direita: "./img/Heverton/playerDireita.png",
-    cima: "./img/Heverton/playerCima.png",
-  },
-
-  spriteGuilherme: {
-    baixo: "./img/Guilherme/playerBaixo.png",
-    esquerda: "./img/Guilherme/playerEsquerda.png",
-    direita: "./img/Guilherme/playerDireita.png",
-    cima: "./img/Guilherme/playerCima.png",
-  },
-
-  spriteDigo: {
-    baixo: "./img/Digo/playerBaixo.png",
-    esquerda: "./img/Digo/playerEsquerda.png",
-    direita: "./img/Digo/playerDireita.png",
-    cima: "./img/Digo/playerCima.png",
-  },
-
-  spriteJamyle: {
-    baixo: "./img/Jamyle/playerBaixo.png",
-    esquerda: "./img/Jamyle/playerEsquerda.png",
-    direita: "./img/Jamyle/playerDireita.png",
-    cima: "./img/Jamyle/playerCima.png",
-  },
-
-  spriteNivea: {
-    baixo: "./img/Nivea/playerBaixo.png",
-    esquerda: "./img/Nivea/playerEsquerda.png",
-    direita: "./img/Nivea/playerDireita.png",
-    cima: "./img/Nivea/playerCima.png",
-  },
-
-  spriteLuis: {
-    baixo: "./img/Luis-FilhoNivea/playerBaixo.png",
-    esquerda: "./img/Luis-FilhoNivea/playerEsquerda.png",
-    direita: "./img/Luis-FilhoNivea/playerDireita.png",
-    cima: "./img/Luis-FilhoNivea/playerCima.png",
-  },
-};
 
 // Chame a função com suas coordenadas
 criarPersonagens(
@@ -223,4 +115,3 @@ criarPersonagens(
   "LuisFilho"
 );
 
-//////////////////////////////////////////////////////////////////////

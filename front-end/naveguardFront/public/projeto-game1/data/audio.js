@@ -12,10 +12,10 @@ const audio = {
 };
 
 const sons = {
-  // som1: new Howl({
-  //   src: ['./audio/Jonas-Audioo.mp3'],
-  //   volume: 10 // caminho para o arquivo de áudio
-  // }),
+  somJonas: new Howl({
+    src: ['./audio/AudioJonas.mp3'],
+    volume: 1 // caminho para o arquivo de áudio
+  }),
   som1: new Howl({
     src: ["./audio/posso-te-ligar-agora.mp3"], // caminho para o arquivo de áudio
   }),

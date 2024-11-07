@@ -1,5 +1,4 @@
 console.log(personagensAdicionais);
-
 const moveis = [
   background,
   ...limites,
@@ -16,6 +15,7 @@ const moveis = [
   ...coordenadasPersonagemHeverton,
   ...coordenadasPersonagemLuisFilho,
   ...coordenadasPersonagemNivea,
+  ...imagensInterativas
 ]; //Ver oque esse ... faz
 
 let podeInteragir = false;
@@ -35,6 +35,7 @@ function animate() {
   if (movimentoTravado) return; // Se o movimento está travado, não atualiza a animação
   window.requestAnimationFrame(animate);
   background.draw();
+
   limites.forEach((limite) => {
     limite.draw();
   });
@@ -42,6 +43,8 @@ function animate() {
   coordenadasPersonagem3.forEach((limite) => {
     limite.draw();
   });
+
+  
 
   coordenadasPersonagemJonas.forEach((limite) => {
     limite.draw();
@@ -87,12 +90,16 @@ function animate() {
     personagem.draw();
   });
 
+
   player.draw();
   objetoPassavel.draw();
+  imagensInterativas.forEach((personagem) => {
+    personagem.draw();
+  });
   let movimento = true;
-  player.moving = false;
+  player.animate = false;
   if (keys.w.pressed) {
-    player.moving = true;
+    player.animate = true;
     player.image = player.sprites.up;
     for (let i = 0; i < limites.length; i++) {
       const limite = limites[i];
@@ -274,7 +281,7 @@ function animate() {
         movel.position.y += 3;
       });
   } else if (keys.a.pressed) {
-    player.moving = true;
+    player.animate = true;
     player.image = player.sprites.left;
     for (let i = 0; i < limites.length; i++) {
       const limite = limites[i];
@@ -456,7 +463,7 @@ function animate() {
         movel.position.x += 3;
       });
   } else if (keys.s.pressed) {
-    player.moving = true;
+    player.animate = true;
     player.image = player.sprites.down;
     for (let i = 0; i < limites.length; i++) {
       const limite = limites[i];
@@ -638,7 +645,7 @@ function animate() {
         movel.position.y -= 3;
       });
   } else if (keys.d.pressed) {
-    player.moving = true;
+    player.animate = true;
     player.image = player.sprites.right;
     for (let i = 0; i < limites.length; i++) {
       const limite = limites[i];
