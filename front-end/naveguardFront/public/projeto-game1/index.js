@@ -2,6 +2,7 @@ console.log(personagensAdicionais);
 const moveis = [
   background,
   ...limites,
+  ...limiteOceano,
   objetoPassavel,
   ...personagensAdicionais,
   ...coordenadasPersonagem3,
@@ -33,12 +34,18 @@ botaoProximo.addEventListener("click", () => {
 
 function animate() {
   if (movimentoTravado) return; // Se o movimento está travado, não atualiza a animação
+  const checker = new ColisionChecker(player, limites);
   window.requestAnimationFrame(animate);
   background.draw();
 
   limites.forEach((limite) => {
     limite.draw();
   });
+
+  limiteOceano.forEach((limite) => {
+    limite.draw();
+  });
+  
 
   coordenadasPersonagem3.forEach((limite) => {
     limite.draw();
@@ -101,23 +108,27 @@ function animate() {
   if (keys.w.pressed) {
     player.animate = true;
     player.image = player.sprites.up;
-    for (let i = 0; i < limites.length; i++) {
-      const limite = limites[i];
+
+    const movimento = checker.testarColisoes(0, 3);
+
+    for (let i = 0; i < limiteOceano.length; i++) {
+      const limite = limiteOceano[i];
       if (
         colisoesRetangulos({
           retangulo1: player,
           retangulo2: {
             ...limite,
             position: {
-              x: limite.position.x,
-              y: limite.position.y + 3,
+              x: limite.position.x - 3,
+              y: limite.position.y,
             },
           },
         })
       ) {
-        movimento = false;
+        player.image = player.sprites.boatUp;
       }
     }
+
 
     ///////////////////////////////////////////////////////////////////////////////
     function verificarColisao(
@@ -283,23 +294,28 @@ function animate() {
   } else if (keys.a.pressed) {
     player.animate = true;
     player.image = player.sprites.left;
-    for (let i = 0; i < limites.length; i++) {
-      const limite = limites[i];
+
+
+    const movimento = checker.testarColisoes(3, 0);
+
+    for (let i = 0; i < limiteOceano.length; i++) {
+      const limite = limiteOceano[i];
       if (
         colisoesRetangulos({
           retangulo1: player,
           retangulo2: {
             ...limite,
             position: {
-              x: limite.position.x + 3,
+              x: limite.position.x - 3,
               y: limite.position.y,
             },
           },
         })
       ) {
-        movimento = false;
+        player.image = player.sprites.boatLeft;
       }
     }
+
 
     ///////////////////////////////////////////////////////////////////////////////
     function verificarColisao(
@@ -465,23 +481,27 @@ function animate() {
   } else if (keys.s.pressed) {
     player.animate = true;
     player.image = player.sprites.down;
-    for (let i = 0; i < limites.length; i++) {
-      const limite = limites[i];
+   
+    const movimento = checker.testarColisoes(0, -3);
+
+    for (let i = 0; i < limiteOceano.length; i++) {
+      const limite = limiteOceano[i];
       if (
         colisoesRetangulos({
           retangulo1: player,
           retangulo2: {
             ...limite,
             position: {
-              x: limite.position.x,
-              y: limite.position.y - 3,
+              x: limite.position.x - 3,
+              y: limite.position.y,
             },
           },
         })
       ) {
-        movimento = false;
+        player.image = player.sprites.boatDown;
       }
     }
+
 
     ///////////////////////////////////////////////////////////////////////////////
     function verificarColisao(
@@ -647,8 +667,9 @@ function animate() {
   } else if (keys.d.pressed) {
     player.animate = true;
     player.image = player.sprites.right;
-    for (let i = 0; i < limites.length; i++) {
-      const limite = limites[i];
+
+    for (let i = 0; i < limiteOceano.length; i++) {
+      const limite = limiteOceano[i];
       if (
         colisoesRetangulos({
           retangulo1: player,
@@ -661,9 +682,12 @@ function animate() {
           },
         })
       ) {
-        movimento = false;
+        player.image = player.sprites.boatRight;
       }
     }
+
+
+    const movimento = checker.testarColisoes(-3 , 0);
 
     ///////////////////////////////////////////////////////////////////////////////
     function verificarColisao(

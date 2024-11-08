@@ -56,3 +56,41 @@ class Limite {
   }
 }
 
+class ColisionChecker {
+  constructor(player, limites) {
+    this.player = player;
+    this.limites = limites;
+  }
+
+  testarColisoes(offsetX = 0, offsetY = 3) { // Permite personalizar o deslocamento
+    for (let i = 0; i < this.limites.length; i++) {
+      const limite = this.limites[i];
+      const limitePosicionado = {
+        ...limite,
+        position: {
+          x: limite.position.x + offsetX,
+          y: limite.position.y + offsetY,
+        },
+      };
+      
+      if (this.colisoesRetangulos(this.player, limitePosicionado)) {
+        return false; // Se houver colisão, retorna false e interrompe a verificação
+      }
+    }
+    return true; // Se nenhuma colisão for detectada, retorna true
+  }
+
+  colisoesRetangulos(retangulo1, retangulo2) {
+    // Função que verifica a colisão entre dois retângulos
+    return (
+      retangulo1.position.x + retangulo1.width >= retangulo2.position.x &&
+      retangulo1.position.x <= retangulo2.position.x + retangulo2.width &&
+      retangulo1.position.y <= retangulo2.position.y + retangulo2.height &&
+      retangulo1.position.y + retangulo1.height >= retangulo2.position.y
+    );
+  }
+}
+
+
+
+

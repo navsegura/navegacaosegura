@@ -14,6 +14,19 @@ imagemPersonagemDireita.src = "./img/playerRight.png";
 const imagemPersonagemEsquerda = new Image();
 imagemPersonagemEsquerda.src = "./img/playerLeft.png";
 
+const imagemPersonagemBarcoDireita = new Image();
+imagemPersonagemBarcoDireita.src = "./img/playerBoatRight.png"
+
+const imagemPersonagemBarcoEsquerda = new Image();
+imagemPersonagemBarcoEsquerda.src = "./img/playerBoatLeft.png"
+
+const imagemPersonagemBarcoCima = new Image();
+imagemPersonagemBarcoCima.src = "./img/playerBoatUp.png"
+
+const imagemPersonagemBarcoBaixo = new Image();
+imagemPersonagemBarcoBaixo.src = "./img/playerBoatDown.png"
+
+
 // Imagens que ficam por cima do mapa
 const imagemObjetoPassaveis = new Image();
 imagemObjetoPassaveis.src = "./img/Objetos-Passaveis.png";

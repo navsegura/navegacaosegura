@@ -20,6 +20,10 @@ const player = new Sprite({
     left: imagemPersonagemEsquerda,
     right: imagemPersonagemDireita,
     down: imagemPersonagemBaixo,
+    boatRight: imagemPersonagemBarcoDireita,
+    boatLeft: imagemPersonagemBarcoEsquerda,
+    boatUp: imagemPersonagemBarcoCima,
+    boatDown: imagemPersonagemBarcoBaixo,
   },
   velocity:20
 });
