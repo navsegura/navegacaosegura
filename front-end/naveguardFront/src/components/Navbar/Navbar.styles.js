@@ -2,30 +2,35 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  height: 8vh;
+  height: 70px;
+  /* height: 8vh; */
   background-color: #f5f5f5;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  /* flex-direction: column; */
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   z-index: 1099;
   position: fixed;
+  /* border: red solid 1px; */
 `;
 
 export const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 30px;
+  padding: 0 150px;
+  /* border: red solid 1px; */
   max-width: 1800px;
   width: 100%;
   flex-direction: row;
+
 `;
 
 export const Navigation = styled.div`
     display: flex;
     flex-direction: row;
+    /* border: yellow 1px solid; */
 `
 
 export const UserNavigation = styled.div`
@@ -37,7 +42,7 @@ export const UserNavigation = styled.div`
 `
 
 export const Line = styled.div`
-    height: 8vh;
+    height: 70px;
     margin-right: 1rem;
     border: 1px solid #D9D9D9;
 `
@@ -49,6 +54,7 @@ export const UserPhoto = styled.img`
 
 export const NameProfile = styled.label`
   font-size: .8rem;
+  cursor: pointer;
 `
 
 export const DropDown = styled.nav`
@@ -115,8 +121,10 @@ export const Logo = styled.h1`
 export const MenuList = styled.ul`
   display: flex;
   gap: 2rem;
-  margin-left: auto;
-  padding-right: 7rem;
+  font-size: .8rem;
+  /* border: red solid 1px; */
+  /* margin-left: auto; */
+  /* padding-right: 7rem; */
   /* border: red solid 1px; */
 `;
 

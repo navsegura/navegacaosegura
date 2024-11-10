@@ -7,6 +7,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    /* border:  red solid 1px; */
 }
 
 .main_text_container {
@@ -125,8 +126,9 @@ button{
 }
 
 .btn:hover{
-    background: transparent;
-    border: #F46A00 solid 1px;
+    background: #ff8e37;
+    border: #ff8e37 solid 1px;
+    transition: ease-in-out .4s;
 }
 
 .todos_sobres {
