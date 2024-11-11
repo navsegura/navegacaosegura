@@ -1,13 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 
+@media screen and (max-width: 1200px) {
+/*Implementar*/
+
+}
+
 h1 {
     color: #f5f5f5;
     font-family: "Luckiest Guy", regular;
     text-align: center;
 }
 
-/* .perguntas-frequentes {
-    position: relative;
-    bottom: 200rem;
-} */
- 
+.perguntas-frequentes {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-top: 15rem;
+}
+
+.conteudo {
+    width: 70%;
+    gap: 15px;
+    flex-direction: column;
+    display: flex;
+    max-width: 100%;
+}
+
+details {
+    text-align: left;
+    background: linear-gradient(to right, #3EABEE 0%, #289BEB 50%, #118BE9 100%);
+    width: 100%;
+    border-radius: 1%;
+    padding: 1rem;
+}
+
+
+summary {
+    padding-right: 10px; 
+    cursor: pointer;
+    font-size: 1rem;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding-top: 10px;
+}
+
+
+summary::after {
+    content: '▼'; 
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: #f5f5f5;
+    transition: transform 0.3s ease; 
+}
+
+details[open] summary::after {
+    transform: translateY(-50%) rotate(180deg); 
+}
+
+details, summary {
+    text-align: left;
+    color: #f5f5f5;
+}
