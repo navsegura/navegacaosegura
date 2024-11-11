@@ -103,7 +103,7 @@ function animate() {
   imagensInterativas.forEach((personagem) => {
     personagem.draw();
   });
-  let movimento = true;
+  let movimentoPersonagem = true;
   player.animate = false;
   if (keys.w.pressed) {
     player.animate = true;
@@ -151,7 +151,7 @@ function animate() {
             },
           })
         ) {
-          movimento = false; // Bloqueia o movimento do personagem
+          movimentoPersonagem = false; // Bloqueia o movimento do personagem
           podeInteragir = true; // Permite interação
           colisaoDetectada = true; // Marca que está colidindo
 
@@ -287,7 +287,7 @@ function animate() {
       }
     }, 100); // Verifica a cada 100 ms
 
-    if (movimento)
+    if (movimento && movimentoPersonagem)
       moveis.forEach((movel) => {
         movel.position.y += 3;
       });
@@ -338,7 +338,7 @@ function animate() {
             },
           })
         ) {
-          movimento = false; // Bloqueia o movimento do personagem
+          movimentoPersonagem = false; // Bloqueia o movimento do personagem
           podeInteragir = true; // Permite interação
           colisaoDetectada = true; // Marca que está colidindo
 
@@ -474,7 +474,7 @@ function animate() {
       }
     }, 100); // Verifica a cada 100 ms
 
-    if (movimento)
+    if (movimento && movimentoPersonagem)
       moveis.forEach((movel) => {
         movel.position.x += 3;
       });
@@ -524,7 +524,7 @@ function animate() {
             },
           })
         ) {
-          movimento = false; // Bloqueia o movimento do personagem
+          movimentoPersonagem = false; // Bloqueia o movimento do personagem
           podeInteragir = true; // Permite interação
           colisaoDetectada = true; // Marca que está colidindo
 
@@ -660,7 +660,7 @@ function animate() {
       }
     }, 100); // Verifica a cada 100 ms
 
-    if (movimento)
+    if (movimento && movimentoPersonagem)
       moveis.forEach((movel) => {
         movel.position.y -= 3;
       });
@@ -710,7 +710,7 @@ function animate() {
             },
           })
         ) {
-          movimento = false; // Bloqueia o movimento do personagem
+          movimentoPersonagem = false; // Bloqueia o movimento do personagem
           podeInteragir = true; // Permite interação
           colisaoDetectada = true; // Marca que está colidindo
 
@@ -846,7 +846,7 @@ function animate() {
       }
     }, 100); // Verifica a cada 100 ms
 
-    if (movimento)
+    if (movimento && movimentoPersonagem)
       moveis.forEach((movel) => {
         movel.position.x -= 3;
       });
