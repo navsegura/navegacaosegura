@@ -1,8 +1,6 @@
 import styled from "styled-components";
 
 export const CardsContainer = styled.section`
-    top: 80rem;
-    position: relative;
     display: flex;
     gap: 5%;
     flex-direction: row;
@@ -22,16 +20,14 @@ export const CardsContainer = styled.section`
 export const Card = styled.div`
     color: #f5f5f5;
     height: 30rem;
-    width:20rem;
+    width: 20rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    text-align:left;
-    padding: 1rem;
+    padding: 1rem 2rem;
     background: linear-gradient(to bottom, #3EABEE 0%, #289BEB 50%, #118BE9 100%);
     border-radius: 2%;
-    white-space: nowrap;
     font-size: small;
     cursor: pointer;
     transition: .4s ease-in-out;
@@ -43,52 +39,32 @@ export const Card = styled.div`
     }
 `
 
-export const CardTitle = styled.div`
-    /* position: relative; */
-    top: -10%;
-    white-space: nowrap;
+export const CardTitle = styled.h3`
+    font-size: 1.2rem;
 `
 
-export const CardContent = styled.div`
+export const CardPlans = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    position: relative;
-    top: 8%;
+    gap: 5px;
 `
 
-export const CardIcons = styled.div`
+export const Plan = styled.div`
     display: flex;
-    flex-direction: column;
-    width: 10%;
-    left: -45%;
-    top: 10%;
-    position: relative;
+    gap: 4px;
+    flex-direction: row;
+    align-items: center;
+`
+
+export const Img = styled.img`
+    width: 35px;
 `
 
 export const CardButton = styled.button`
-    width: 80%;
-    height: 25%;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    justify-self: center;
-    align-self: center;
-    top: 45%;
-    left: 6%;
-    position: absolute;
     transition: 0.5s;
 
     &:hover {
         background-color: #E5560C;
         cursor: pointer;
     }
-`
-
-export const CardBenefits = styled.h3`
-    position: relative;
-    left: 4%;
-    bottom: 100%;
-    display: flex;
-    flex-direction: column;
 `

@@ -5,7 +5,9 @@ export const CardsContainer = styled.section`
     display: flex;
     justify-content: center;
     position: relative;
-    /* bottom: 1rem; */
+    /* Position: OK */
+    /* border: red solid 1px; */
+    bottom: 1rem;
     gap: 5rem;
     margin: 0;
     padding: 0;

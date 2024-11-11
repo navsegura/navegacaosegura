@@ -28,6 +28,11 @@ const ChoiceScreen = ({ initialUsers }) => {
     };
     setUsers((prevUsers) => [...prevUsers, newUser])
   };
+
+  const nameProfile = localStorage.getItem('name');
+  const imgTest = localStorage.getItem('profilePic')
+  // const isLogedIn = localStorage.getItem('isLogedIn')
+
   return (
     <>
       <Navbar />
@@ -36,14 +41,23 @@ const ChoiceScreen = ({ initialUsers }) => {
       {/* <ReturnButton className='bx bx-chevrons-left'></ReturnButton> */}
         <UserGrid>
         <ImageUser>
-            <Link to="/user-profile"><Img src={Images.UserMaster} alt="User master" /></Link>
-            <P>Responsável</P>
+            {imgTest === null ? (
+              <Link to="/user-profile"><Img src={Images.UserMaster} alt="User master" /></Link>
+            ) : (
+              <Img src={imgTest} alt={nameProfile} /> 
+            )}
+
+            {nameProfile === null ? (
+              <P>Responsável</P>
+            ) : (
+              <P>{nameProfile}</P>
+            )}
           </ImageUser>
           {users.map((user) => (
             <UserCard key={user.id}>
               
               <ImageUser>
-                <Img src={user.image} alt={user.name} />
+                <Img src={Images.UserChild} alt={user.name} />
               </ImageUser>
               <P>{user.name}</P>
             </UserCard>

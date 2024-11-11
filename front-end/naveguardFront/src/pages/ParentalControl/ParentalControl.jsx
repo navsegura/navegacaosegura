@@ -1,5 +1,5 @@
-import Navbar from "../NavBar/Navbar";
-import SideBar from "../SideBar/SideBar";
+import Navbar from "../../components/NavBar/Navbar";
+import SideBar from "../../components/SideBar/SideBar";
 import { Images } from "../../assets/images";
 import { MainContainer, ControlContent, TitleControl, Line, CardContainer, Card, Img, Description } from './ParentalControl.styles'
 
