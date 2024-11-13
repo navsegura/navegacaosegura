@@ -57,7 +57,7 @@ const UserProfile = () => {
 
   const nameTest = localStorage.getItem('name')
   const imgTest = localStorage.getItem('profilePic')
-  // const emailTest = localStorage.getItem('email')
+  const emailTest = localStorage.getItem('email')
   // const profilePicTest = localStorage.getItem('profilePic')
   return (
     <>
@@ -103,7 +103,7 @@ const UserProfile = () => {
                           />
                         ) : (
                         <Location><i className='bx bx-message' style={{color:'#A0A0A0'}} ></i>
-                        {email}</Location>
+                        {emailTest}</Location>
                         )}
                         <Location><i className='bx bx-check-circle' style={{color:'#A0A0A0'}} ></i>
                         Verify at 12/10/2021</Location> {/* DATA */}
