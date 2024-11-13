@@ -194,7 +194,7 @@ function animate() {
       player,
       coordenadasPersonagemAntonio,
       2924,
-      sons.som2,
+      sons.somMenino,
       imagensPersonagens.spriteAntonio.baixo,
       "Antonio"
     );
@@ -202,7 +202,7 @@ function animate() {
       player,
       coordenadasPersonagemGuilherme,
       2988,
-      sons.som3,
+      sons.somMenino,
       imagensPersonagens.spriteGuilherme.baixo,
       "Guilherme"
     );
@@ -210,7 +210,7 @@ function animate() {
       player,
       coordenadasPersonagemMayla,
       3052,
-      sons.som1,
+      sons.somMenina,
       imagensPersonagens.spriteMayla.baixo,
       "Mayla"
     );
@@ -218,7 +218,7 @@ function animate() {
       player,
       coordenadasPersonagemJamylle,
       2989,
-      sons.som2,
+      sons.somMenina,
       imagensPersonagens.spriteJamyle.baixo,
       "Jamyle"
     );
@@ -226,7 +226,7 @@ function animate() {
       player,
       coordenadasPersonagemDigo,
       2925,
-      sons.som3,
+      sons.somMenino,
       imagensPersonagens.spriteDigo.baixo,
       "Digo"
     );
@@ -234,7 +234,7 @@ function animate() {
       player,
       coordenadasPersonagemTheo,
       2861,
-      sons.som2,
+      sons.somMenino,
       imagensPersonagens.spriteTheo.baixo,
       "Theo"
     );
@@ -242,7 +242,7 @@ function animate() {
       player,
       coordenadasPersonagemHeverton,
       2862,
-      sons.som3,
+      sons.somMenino,
       imagensPersonagens.spriteHeverton.baixo,
       "Heverton"
     );
@@ -250,7 +250,7 @@ function animate() {
       player,
       coordenadasPersonagemNivea,
       3110,
-      sons.som2,
+      sons.somMenina,
       imagensPersonagens.spriteNivea.baixo,
       "Nivea"
     );
@@ -258,7 +258,7 @@ function animate() {
       player,
       coordenadasPersonagemLuisFilho,
       3046,
-      sons.som3,
+      sons.somMenino,
       imagensPersonagens.spriteLuis.baixo,
       "LuisFilho"
     );
@@ -373,7 +373,7 @@ function animate() {
       player,
       coordenadasPersonagemJonas,
       2860,
-      sons.som1,
+      sons.somMenino,
       imagensPersonagens.spriteJonas.direita,
       "Jonas"
     );
@@ -381,7 +381,7 @@ function animate() {
       player,
       coordenadasPersonagemAntonio,
       2924,
-      sons.som2,
+      sons.somMenino,
       imagensPersonagens.spriteAntonio.direita,
       "Antonio"
     );
@@ -389,7 +389,7 @@ function animate() {
       player,
       coordenadasPersonagemGuilherme,
       2988,
-      sons.som3,
+      sons.somMenino,
       imagensPersonagens.spriteGuilherme.direita,
       "Guilherme"
     );
@@ -397,7 +397,7 @@ function animate() {
       player,
       coordenadasPersonagemMayla,
       3052,
-      sons.som1,
+      sons.somMenina,
       imagensPersonagens.spriteMayla.direita,
       "Mayla"
     );
@@ -405,7 +405,7 @@ function animate() {
       player,
       coordenadasPersonagemJamylle,
       2989,
-      sons.som2,
+      sons.somMenina,
       imagensPersonagens.spriteJamyle.direita,
       "Jamyle"
     );
@@ -413,7 +413,7 @@ function animate() {
       player,
       coordenadasPersonagemDigo,
       2925,
-      sons.som3,
+      sons.somMenino,
       imagensPersonagens.spriteDigo.direita,
       "Digo"
     );
@@ -421,7 +421,7 @@ function animate() {
       player,
       coordenadasPersonagemTheo,
       2861,
-      sons.som2,
+      sons.somMenino,
       imagensPersonagens.spriteTheo.direita,
       "Theo"
     );
@@ -429,7 +429,7 @@ function animate() {
       player,
       coordenadasPersonagemHeverton,
       2862,
-      sons.som3,
+      sons.somMenino,
       imagensPersonagens.spriteHeverton.direita,
       "Heverton"
     );
@@ -437,7 +437,7 @@ function animate() {
       player,
       coordenadasPersonagemNivea,
       3110,
-      sons.som2,
+      sons.somMenina,
       imagensPersonagens.spriteNivea.direita,
       "Nivea"
     );
@@ -445,7 +445,7 @@ function animate() {
       player,
       coordenadasPersonagemLuisFilho,
       3046,
-      sons.som3,
+      sons.somMenino,
       imagensPersonagens.spriteLuis.direita,
       "LuisFilho"
     );

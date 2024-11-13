@@ -16,6 +16,10 @@ const sons = {
     src: ['./audio/AudioJonas.mp3'],
     volume: 1 // caminho para o arquivo de áudio
   }),
+  somMenina: new Howl({
+    src: ['./audio/voz-menina.mp3']}),
+  somMenino: new Howl({
+    src: ['./audio/voz-menino.mp3']}),
   som1: new Howl({
     src: ["./audio/posso-te-ligar-agora.mp3"], // caminho para o arquivo de áudio
   }),
