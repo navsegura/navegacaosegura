@@ -20,6 +20,21 @@ const tiposDeObjetos = {
   2096: [], // Fumaça Casa-Roxa
   2095: [], // Fumaça Casa-Vermelha
   2097: [], // Fumaça Casa-Verde
+  4150: [], //Porco Lado Jonas
+  4151: [], // Pato 1
+  4152: [], // Pato 2
+  4153: [], // Pato 3
+  4198: [], // Pato 4
+  4197: [], //Olhos
+  4199: [], //Olhos 2
+  4200: [], // Passaro1
+  4201: [], // Passaro2
+  4202: [], // Passaro3
+  4203: [], // Passaro4
+  4204: [], // Passaro5 
+  4205: [], // Passaro6
+  4207: [], //Ovelha1
+  4208: [], //Ovelha2
 };
 
 colisoesPersonagem.forEach((linha, i) => {

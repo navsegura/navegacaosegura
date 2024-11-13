@@ -118,4 +118,3 @@ criarPersonagens(
   imagensPersonagens.spriteLuis.baixo,
   "LuisFilho"
 );
-

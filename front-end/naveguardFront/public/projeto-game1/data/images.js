@@ -108,6 +108,19 @@ const imagensPersonagens = {
       imagem2: "./img/Fumaca/fumaca2.png",
       imagem3: "./img/Fumaca/fumaca3.png",
       imagem4: "./img/Fumaca/fumaca4.png"
+    },
+
+    Animais: {
+      porco: "./img/Animais/porco.png",
+      vaca: "./img/Animais/vaca.png",
+      galinha: "./img/Animais/galinha.png",
+      olhos: "./img/Animais/olhos.png",
+      ovelhaDireita: "./img/Animais/ovelha.png",
+      ovelhaEsquerda: "./img/Animais/ovelhaesquerda.png",
+      patoDireita: "./img/Animais/pato.png",
+      patoEsquerda: "./img/Animais/patoesquerda.png",
+      passaroDireita: "./img/Animais/passaro.png",
+      passaroEsquerda: "./img/Animais/passaroesquerda.png",
     }
   };
   
