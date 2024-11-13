@@ -36,6 +36,10 @@ import Artigos from './images/artigos.png'
 import KidLogger from './images/KidLogger-Control.png'
 import Seta_Voltar from './images/seta_voltar.svg'
 import LogoLoading from './images/naveguard-loading.svg'
+import Cloud_Footer from './images/CloudFooter.svg'
+import Game_section_background from './images/Game-section-background.svg'
+import Cadeado from './images/cadeado.svg'
+
 // aqui vcs criam as variaveis especificando o caminho delas
 
 const Images = {
@@ -76,7 +80,10 @@ const Images = {
     Artigos,
     KidLogger,
     Seta_Voltar,
-    LogoLoading
+    LogoLoading,
+    Cloud_Footer,
+    Game_section_background,
+    Cadeado
     // aqui fica as variaveis com o mesmo nome ali em cima
 }
 

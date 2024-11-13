@@ -11,6 +11,7 @@ import Login from '../pages/Login/Login.jsx'
 import PrivateRoute from './PrivateRoute.jsx'
 import {useState, useEffect} from 'react'
 import GameComponent from '../pages/GameScreen/GameComponent.jsx'
+import KidsPage from '../pages/KidsPage/KidsPage.jsx'
 
 
 const Router = () => {
@@ -37,6 +38,7 @@ const Router = () => {
                     <Route path='/parental-control' element={<ParentalControl/>} />
                     <Route path='/game' element={<GameComponent/>} /> {/* Nova rota */}
                     <Route path='*' element={<NotFound/>} />
+                    <Route path='/kids-page' element={<KidsPage/>}/>
                     {/* 404 */}
                 </Routes>
             </BrowserRouter>
