@@ -68,7 +68,7 @@ const UserProfile = () => {
           <UserProfileContent>
               <Profile>
                 <UserImage>
-                  <Photo src={imgTest} alt="Profile photo" />
+                  <Photo src={imgTest || Images.UserMaster} alt="Profile photo" />
                   </UserImage>
                   <About>
                       <Span>

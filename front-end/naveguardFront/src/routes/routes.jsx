@@ -4,12 +4,13 @@ import Header from '../components/Header/Header'
 import ChoiceScreen from '../pages/ChoiceScreen/ChoiceScreen'
 import NotFound from '../pages/NotFound/NotFound'
 import UserProfile from '../pages/User-Profile/UserProfile'
-import ParentalControl from '../components/ParentalControl/ParentalControl'
+import ParentalControl from '../pages/ParentalControl/ParentalControl'
 import Home from '../pages/Home.jsx'
 import Sobre from '../pages/Sobre.jsx'
 import Login from '../pages/Login/Login.jsx'
 import PrivateRoute from './PrivateRoute.jsx'
 import {useState, useEffect} from 'react'
+import GameComponent from '../pages/GameScreen/GameComponent.jsx'
 
 
 const Router = () => {
@@ -34,6 +35,7 @@ const Router = () => {
                     <Route path='/about' element={<Sobre />} />
                     <Route path='/login' element={<Login />} />
                     <Route path='/parental-control' element={<ParentalControl/>} />
+                    <Route path='/game' element={<GameComponent/>} /> {/* Nova rota */}
                     <Route path='*' element={<NotFound/>} />
                     {/* 404 */}
                 </Routes>

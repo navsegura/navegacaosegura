@@ -55,6 +55,7 @@ export const utilScrollRevealDelayBottom3 = (ref) => {
 export const utilScrollRevealLeft = (ref) => {
     if (ref &&ref.current) {
         ScrollReveal().reveal(ref.current, {
+            delay: 3000,
             duration: 1000,
             origin: 'left',
             distance: '50px',
@@ -68,6 +69,7 @@ export const utilScrollRevealLeft = (ref) => {
 export const utilScrollRevealRight = (ref) => {
     if (ref &&ref.current) {
         ScrollReveal().reveal(ref.current, {
+            delay: 3000,
             duration: 1000,
             origin: 'right',
             distance: '50px',

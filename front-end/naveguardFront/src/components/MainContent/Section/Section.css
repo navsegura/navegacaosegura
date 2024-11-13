@@ -7,6 +7,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    /* border:  red solid 1px; */
 }
 
 .main_text_container {
@@ -80,6 +81,7 @@ button{
     font-size: 4rem;
     width: 34rem;
     font-size: 3rem;
+    text-align: start;
     color: white;
     text-shadow: 
         1px 1px 0 rgba(0, 0, 0, 0.3),  
@@ -96,13 +98,16 @@ button{
 .titulo-e-btn{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
 }
 
 .buttons{
     display: flex;
     gap: 1rem;
-    margin-top: 1rem;   
+    margin-top: 1rem; 
+    align-items: start;  
+    justify-content: start;
+    /* border: red solid 1px; */
 }
 
 button{
@@ -121,8 +126,9 @@ button{
 }
 
 .btn:hover{
-    background: transparent;
-    border: #F46A00 solid 1px;
+    background: #ff8e37;
+    border: #ff8e37 solid 1px;
+    transition: ease-in-out .4s;
 }
 
 .todos_sobres {

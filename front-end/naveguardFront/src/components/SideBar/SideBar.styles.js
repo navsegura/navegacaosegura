@@ -2,10 +2,9 @@ import styled from "styled-components";
 
 export const SideBarMenu = styled.div`
     /* border: red solid 1px; */
-    margin-top: 8vh;
     z-index: 1;
-    padding-top: 1rem;
-    height: 92vh;
+    padding-top: 90px;
+    height: 100%;
     width: 80px;
     /* width: 4vw; */
     display: flex;
