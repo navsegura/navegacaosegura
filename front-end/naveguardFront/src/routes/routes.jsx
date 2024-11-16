@@ -6,24 +6,15 @@ import NotFound from '../pages/NotFound/NotFound'
 import UserProfile from '../pages/User-Profile/UserProfile'
 import ParentalControl from '../pages/ParentalControl/ParentalControl'
 import Home from '../pages/Home.jsx'
-import Sobre from '../pages/Sobre.jsx'
+import Sobre from '../pages/Sobre/Sobre.jsx'
 import Login from '../pages/Login/Login.jsx'
 import PrivateRoute from './PrivateRoute.jsx'
-import {useState, useEffect} from 'react'
-import GameComponent from '../pages/GameScreen/GameComponent.jsx'
 import KidsPage from '../pages/KidsPage/KidsPage.jsx'
 
 
 const Router = () => {
 
-    const [isLoggedIn, setIsLoggedIn] = useState(false)
-
-    useEffect(() => {
-        const storeLoginState = localStorage.getItem('isLoggedIn')
-        if(storeLoginState) {
-            setIsLoggedIn(storeLoginState === 'true')
-        }
-    }, [])
+    const isLoggedIn = false
 
     return (
         <>
@@ -36,9 +27,8 @@ const Router = () => {
                     <Route path='/about' element={<Sobre />} />
                     <Route path='/login' element={<Login />} />
                     <Route path='/parental-control' element={<ParentalControl/>} />
-                    <Route path='/game' element={<GameComponent/>} /> {/* Nova rota */}
                     <Route path='*' element={<NotFound/>} />
-                    <Route path='/kids-page' element={<KidsPage/>}/>
+                    <Route path='/kids-page' element={<PrivateRoute isLoggedIn={isLoggedIn}element={<KidsPage/>} />}/>
                     {/* 404 */}
                 </Routes>
             </BrowserRouter>

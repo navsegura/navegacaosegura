@@ -55,10 +55,11 @@ const ChoiceScreen = ({ initialUsers }) => {
           </ImageUser>
           {users.map((user) => (
             <UserCard key={user.id}>
-              
+              <Link to={'/kids-page'}>
               <ImageUser>
                 <Img src={Images.UserChild} alt={user.name} />
               </ImageUser>
+              </Link>
               <P>{user.name}</P>
             </UserCard>
           ))}

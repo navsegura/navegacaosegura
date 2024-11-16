@@ -1,18 +1,13 @@
-import { SectionDesafiosDoTesouro, SectionGrandeNavegacao, SectionHistoriasDoMar, SectionSuaAventura } from "../../components/MainContent/Section/Section";
-import { FooterKidsPage } from "../../components/MainContent/Section/Section"
 import Navbar from "../../components/Navbar/Navbar";
+import SectionGame from "../../components/MainContent/SectionGameScreen/SectionGame";
 import './KidsPage.css'
 
 function KidsPage() {
 
     return (
         <>
-            <Navbar/>
-            <SectionSuaAventura/>
-            <SectionGrandeNavegacao/>
-            <SectionDesafiosDoTesouro/>
-            <SectionHistoriasDoMar/>
-            <FooterKidsPage/>
+            <Navbar />
+            <SectionGame />
         </>
     )
 
