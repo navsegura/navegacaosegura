@@ -10,6 +10,7 @@ import Sobre from '../pages/Sobre/Sobre.jsx'
 import Login from '../pages/Login/Login.jsx'
 import PrivateRoute from './PrivateRoute.jsx'
 import KidsPage from '../pages/KidsPage/KidsPage.jsx'
+import PaymentSection from '../components/PaymentSection/PaymentSection.jsx'
 
 
 const Router = () => {
@@ -30,6 +31,7 @@ const Router = () => {
                     <Route path='*' element={<NotFound/>} />
                     <Route path='/kids-page' element={<PrivateRoute isLoggedIn={isLoggedIn}element={<KidsPage/>} />}/>
                     {/* 404 */}
+                    <Route path='/payment-page' element={<PrivateRoute isLoggedIn={isLoggedIn}element={<PaymentSection/>}/>}/>
                 </Routes>
             </BrowserRouter>
         </>

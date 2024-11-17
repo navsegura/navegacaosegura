@@ -53,6 +53,12 @@ import Botao2 from './images/botao2.svg'
 import Botao3 from './images/botao3.svg'
 import Botao4 from './images/botao4.svg'
 import NuvemFooter from './images/nuvem_footer.svg'
+import visaIcon from './images/visaSvg.svg'
+import masterCardIcon from './images/masterCardSvg.svg'
+import amCardIcon from './images/amSvg.svg'
+import eloCardIcon from './images/eloSvg.svg'
+import hiperCardIcon from './images/hiperSvg.svg'
+import btnBack from './images/btnBack.svg'
 
 // aqui vcs criam as variaveis especificando o caminho delas
 
@@ -111,7 +117,13 @@ const Images = {
     Botao2,
     Botao3,
     Botao4,
-    NuvemFooter
+    NuvemFooter,
+    visaIcon,
+    masterCardIcon,
+    eloCardIcon,
+    amCardIcon,
+    hiperCardIcon,
+    btnBack,
     // aqui fica as variaveis com o mesmo nome ali em cima
 }
 
