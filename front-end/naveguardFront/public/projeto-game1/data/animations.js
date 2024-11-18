@@ -20,6 +20,9 @@ const passaro5 = tiposDeObjetos[4204];
 const passaro6 = tiposDeObjetos[4205];
 const ovelha1 = tiposDeObjetos[4207];
 const ovelha2 = tiposDeObjetos[4208];
+const porco = tiposDeObjetos[4209];
+const porco2 = tiposDeObjetos[4210];
+const porco3 = tiposDeObjetos[4211];
 
 const imagensInterativas = [];
 
@@ -172,4 +175,25 @@ criarPropsInterativos(
     imagensPersonagens.Animais.ovelhaDireita,
     4, // frames
     150 // velocity
+  );
+
+  criarPropsInterativos(
+    porco,
+    imagensPersonagens.Animais.porcoEsquerda,
+    4, // frames
+    110 // velocity
+  );
+
+  criarPropsInterativos(
+    porco2,
+    imagensPersonagens.Animais.porcoDireita,
+    4, // frames
+    120 // velocity
+  );
+
+  criarPropsInterativos(
+    porco3,
+    imagensPersonagens.Animais.porcoEsquerda,
+    4, // frames
+    140 // velocity
   );

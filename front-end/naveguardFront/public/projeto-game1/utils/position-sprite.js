@@ -35,6 +35,9 @@ const tiposDeObjetos = {
   4205: [], // Passaro6
   4207: [], //Ovelha1
   4208: [], //Ovelha2
+  4209: [], // Porco1
+  4210: [], //Porco2
+  4211: [], // Porco3
 };
 
 colisoesPersonagem.forEach((linha, i) => {

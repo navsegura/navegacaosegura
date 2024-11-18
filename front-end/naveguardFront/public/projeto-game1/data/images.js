@@ -111,7 +111,8 @@ const imagensPersonagens = {
     },
 
     Animais: {
-      porco: "./img/Animais/porco.png",
+      porcoDireita: "./img/Animais/porco.png",
+      porcoEsquerda: "./img/Animais/porcoesquerda.png",
       vaca: "./img/Animais/vaca.png",
       galinha: "./img/Animais/galinha.png",
       olhos: "./img/Animais/olhos.png",
