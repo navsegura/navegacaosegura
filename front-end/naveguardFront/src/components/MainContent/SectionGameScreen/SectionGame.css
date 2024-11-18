@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
     height: 100vh;
 }
 
@@ -62,8 +61,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100vw;
-    height: 100vh;
     gap: 10rem;
 }
 .header_game_principal{
@@ -91,8 +88,7 @@
 }
 
 .game_screen_principal{
-    width: 100vw;
-    height: 50vh;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -107,8 +103,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100vw;
-    height: 200vh;
     gap: 10rem;
 }
 
@@ -172,8 +166,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100vw;
-    height: 100vh;
     gap: 10rem;
 }
 

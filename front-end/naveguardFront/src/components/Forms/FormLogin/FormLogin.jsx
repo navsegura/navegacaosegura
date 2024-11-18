@@ -10,7 +10,8 @@ function FormLogin() {
             <div className="main_card_login">
                 <div className="login_card">
                     <div className="header_login">
-                        <Link to='/'><img src={Images.Seta_Voltar} alt="seta de volta" className="seta_voltar" /></Link>
+                        <Link to='/'>
+                        <img src={Images.Seta_Voltar} alt="seta de volta" className="seta_voltar" /></Link>
                         <h1 className="text_login">LOGIN</h1>
                     </div>
                     <div className="main_content_login">
