@@ -27,7 +27,7 @@ canvas {
     color: #2991e1;
     padding: 10px 20px;
     border-radius: 5px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     width: 1000px;
     height: 100px;
     display: none;
@@ -35,7 +35,6 @@ canvas {
     text-align: center;
     gap: 50px;
 }
-
 
 #botaoProximo {
     padding: 10px 15px;

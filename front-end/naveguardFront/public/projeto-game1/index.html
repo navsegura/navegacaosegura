@@ -2,17 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+/>
     <link rel="shortcut icon" href="../logo.png" type="image/x-icon">
     <title>Document</title>
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-      <canvas></canvas>
-      <div id="mensagemInteracao">
-        <span></span>
-        <button id="botaoProximo">Próximo</button>
-      </div>
+    <canvas id="canvaszinho"></canvas>
+    <div id="mensagemInteracao">
+      <span id="caixaDeTexto"></span>
+      <button id="botaoProximo">Próximo</button>
+    </div>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js"
       integrity="sha512-xi/RZRIF/S0hJ+yJJYuZ5yk6/8pCiRlEXZzoguSMl+vk2i3m6UjUO/WcZ11blRL/O+rnj94JRGwt/CHbc9+6EA=="
@@ -21,6 +24,7 @@
     ></script>
     <script src="config/settings.js"></script>
     <script src="data/audio.js"></script>
+    <script src="data/cordJson/oceano.js"></script>
     <script src="data/cordJson/personagens.js"></script>
     <script src="data/cordJson/colisoes.js"></script>
     <script src="utils/keys.js"></script>
@@ -28,6 +32,9 @@
     <script src="data/images.js"></script>
     <script src="classes.js"></script>
     <script src="data/maps.js"></script>
+    <script src="data/ocean.js"></script>
+    <script src="utils/position-sprite.js"></script>
+    <script src="data/animations.js"></script>
     <script src="data/personagens.js"></script>
     <script src="data/interactions.js"></script>
     <script src="index.js"></script>
