@@ -6,6 +6,7 @@ import SideBar from '../../components/SideBar/SideBar';
 import Navbar from '../../components/Navbar/Navbar';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import NuvensContainer from '../../components/Nuvens/Nuvens';
 import { Container, UserGrid, UserCard, AddUserCard, ImageUser, Img, AddMore, MoreIcon, P } from './ChoiceScreen.styles';
 
 const ChoiceScreen = ({ initialUsers }) => {
@@ -39,6 +40,7 @@ const ChoiceScreen = ({ initialUsers }) => {
       <SideBar/>
       <Container>
       {/* <ReturnButton className='bx bx-chevrons-left'></ReturnButton> */}
+    <NuvensContainer/>
         <UserGrid>
         <ImageUser>
             {imgTest === null ? (

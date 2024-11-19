@@ -1,4 +1,5 @@
 import './Title.css'
+import NuvensContainer from '../../Nuvens/Nuvens'
 
 function Title () {
     return (
@@ -6,6 +7,7 @@ function Title () {
         <div className="titulo_principal">
             <h1>SOBRE NÓS</h1>
         </div>
+            <NuvensContainer/>
         </>
     )
 }

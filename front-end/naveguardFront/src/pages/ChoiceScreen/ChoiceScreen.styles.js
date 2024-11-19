@@ -2,13 +2,26 @@ import styled from 'styled-components'
 
 export const Container = styled.section`
     width: 100vw;
-    height: 92vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     /* border: red solid 1px; */
 `
+
+// const fadeIn = 
+//   0% {
+//     opacity: 0;
+//   }
+//   100% {
+//     opacity: 1;
+//   }
+// `;
+
+
+
+
 
 // export const ReturnButton = styled.i`
 //     /* border: red solid 1px; */

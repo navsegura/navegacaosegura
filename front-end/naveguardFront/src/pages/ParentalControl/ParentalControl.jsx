@@ -2,6 +2,7 @@ import Navbar from "../../components/NavBar/Navbar";
 import SideBar from "../../components/SideBar/SideBar";
 import { Images } from "../../assets/images";
 import { MainContainer, ControlContent, TitleControl, Line, CardContainer, Card, Img, Description } from './ParentalControl.styles'
+import NuvensContainer from "../../components/Nuvens/Nuvens";
 
 const ParentalControl = () => {
   return (
@@ -9,6 +10,7 @@ const ParentalControl = () => {
     <Navbar/>
     <SideBar/>
     <MainContainer>
+      <NuvensContainer/>
           <ControlContent>
             <TitleControl>Controle Parental</TitleControl>
               <Line></Line>

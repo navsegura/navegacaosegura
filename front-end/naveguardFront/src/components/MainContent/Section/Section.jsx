@@ -3,6 +3,7 @@ import { useState,useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { Images } from "../../../assets/images";
 import { LoadingComponentInitial } from "../../LoadingComponent/LoadingComponent";
+import NuvensContainer from "../../Nuvens/Nuvens";
 import { utilScrollRevealLeft, utilScrollRevealRight } from '../../../utils/ScrollReveal';
 
 function Section() {
@@ -23,10 +24,9 @@ function Section() {
 
   return (
     <section className="main_text" id="home">
+      <NuvensContainer/>
       <LoadingComponentInitial isLoading={isLoading} />
-      <img src={Images.Nuvem} alt="" className="nuvem1" />
       <main className="main_text_container">
-        <img src={Images.Nuvem} alt="" className="nuvem3" />
         <div ref={FirstSection} className="titulo-e-btn">
           <h1 className="text">SE AVENTURE NA WEB, <br /> NAVEGUE EM SEGURANÇA</h1>
           {isLoggedIn ? (
@@ -59,6 +59,7 @@ function Section() {
 function SectionSobre() {
   return (
     <section className="todos_sobres">
+      {/* <NuvensContainer/> */}
       <div className="sobre_first">
         <div className="header_sobre">
           <h2>Quem Somos?</h2>

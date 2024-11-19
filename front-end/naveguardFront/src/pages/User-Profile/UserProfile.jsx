@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import NavBar from "../../components/NavBar/Navbar";
 import SideBar from "../../components/SideBar/SideBar";
 import { Images } from "../../assets/images.jsx";
+import NuvensContainer from "../../components/Nuvens/Nuvens";
 import { Page, MainContainer, UserProfileContent, Profile, UserImage, Photo, Line, About, Span, NameProfile, Icon, Info, Bio, Location, Strong, Edit, Input, MainContent, UserProfileContainer, GroupSquare, Square, Graphics, P, DropdownMenu, DropdownItem } from './UserProfile.styles'
 
 const UserProfile = () => {
@@ -64,6 +65,7 @@ const UserProfile = () => {
       <NavBar/>
       <SideBar/>
       <Page>
+          <NuvensContainer/>
         <MainContainer>
           <UserProfileContent>
               <Profile>
