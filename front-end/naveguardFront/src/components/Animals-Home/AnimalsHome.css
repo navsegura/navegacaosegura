@@ -1,0 +1,17 @@
+.animais-cima, .animais-baixo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    width: 100%;
+    gap: 10px;
+  }
+  
+  .animais-cima img, .animais-baixo img {
+    width: 28%; 
+    height: auto; 
+  }
+
+  .peixe-direita, .peixe-esquerda {
+    width: 100%;
+  }
+  

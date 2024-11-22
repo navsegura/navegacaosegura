@@ -1,217 +1,50 @@
-@media (max-width: 600px) {
-    footer {
-        display: flex;
-        flex-direction: column;
-        overflow: hidden;
-    }
+  .Footer-image {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
 
-    .main-titulo {
-        color: #f5f5f5;
-        font-weight: 500;
-        font-size: 1.3rem ;
-        font-family: "Luckiest Guy", regular;
-        display: flex;
-        bottom: 3rem;
-        position: relative;
-        left: 0%;
-    }
-    
-    .primeira-coluna, .segunda-coluna, .terceira-coluna, .quarta-coluna {
-        display: flex;
-        white-space: nowrap;
-        font-family: Arial, Helvetica, sans-serif;
-        top:22rem;
-        z-index: 5;
-        color: #f5f5f5;
-        flex-direction: column;
-        gap: 0.1rem;
-        bottom: 0;
-        max-width: 100%;
-        position: relative;
-    }    
-
-    /*Campo de enviar email*/
-    input {
-        width: 15rem;
-        height: 2rem;
-        border-radius: 3%;
-        border-color: #f5f5f5;
-        background-color: transparent;
-    }
-
-    ::placeholder {
-        color: #f5f5f5;
-        padding-left: 5%;
-    }
-
-    ::placeholder::selection {
-        color: #f5f5f5;
-        padding: 5%;
-    }
-
-    .conteudo-geral-footer{
-        z-index: 1;
-        display: flex;
-        flex-direction: row;
-        gap: 13%;
-        text-align: left;
-        justify-content: center;
-        align-items: center;
-        font-size: small;
-        max-width: 100%;
-        max-height: 100%;
-        cursor:default;
-        bottom: 0;
-        margin: 0;
-    }
-}
-
-@media (max-width: 1200px) {
-    footer {
-        display: flex;
-        flex-direction: column;
-        overflow: hidden;
-    }
-
-    .main-titulo {
-        color: #f5f5f5;
-        font-weight: 500;
-        font-size: 1.3rem ;
-        font-family: "Luckiest Guy", regular;
-        display: flex;
-        bottom: 3rem;
-        position: relative;
-        left: 0%;
-    }
-    
-    .primeira-coluna, .segunda-coluna, .terceira-coluna, .quarta-coluna {
-        display: flex;
-        white-space: nowrap;
-        font-family: Arial, Helvetica, sans-serif;
-        top:22rem;
-        z-index: 5;
-        color: #f5f5f5;
-        flex-direction: column;
-        gap: 0.1rem;
-        bottom: 0;
-        max-width: 100%;
-        position: relative;
-    }    
-
-    /*Campo de enviar email*/
-    input {
-        width: 15rem;
-        height: 2rem;
-        border-radius: 3%;
-        border-color: #f5f5f5;
-        background-color: transparent;
-    }
-
-    ::placeholder {
-        color: #f5f5f5;
-        padding-left: 5%;
-    }
-
-    ::placeholder::selection {
-        color: #f5f5f5;
-        padding: 5%;
-    }
-
-    .conteudo-geral-footer{
-        z-index: 1;
-        display: flex;
-        flex-direction: row;
-        gap: 13%;
-        text-align: left;
-        justify-content: center;
-        align-items: center;
-        font-size: small;
-        max-width: 100%;
-        max-height: 100%;
-        cursor:default;
-        bottom: 0;
-        margin: 0;
-    }
-}
-
-/*CONTEÚDO DO FOOTER*/
-.main-titulo {
-    color: #f5f5f5;
-    font-weight: 500;
-    font-size: 1.3rem ;
-    font-family: "Luckiest Guy", regular;
-    display: flex;
-    bottom: 3rem;
+  .footer-content {
     position: relative;
-    left: 0%;
-}
-
-.primeira-coluna, .segunda-coluna, .terceira-coluna, .quarta-coluna {
-    display: flex;
-    white-space: nowrap;
-    font-family: Arial, Helvetica, sans-serif;
-    top:26rem;
-    z-index: 5;
-    color: #f5f5f5;
-    flex-direction: column;
-    gap: 0.4rem;
-    bottom: 0;
-    max-width: 100%;
-    position: relative;
-    /*Campo de enviar email*/
-    input {
-        width: 15rem;
-        height: 2rem;
-        border-radius: 3%;
-        border-color: #f5f5f5;
-        background-color: transparent;
-    }
-
-    ::placeholder {
-        color: #f5f5f5;
-        padding-left: 5%;
-    }
-
-    ::placeholder::selection {
-        color: #f5f5f5;
-        padding: 5%;
-    }
-
-}
-
-
-.conteudo-geral-footer {
-    z-index: 1;
-    display: flex;
-    flex-direction: row;
-    gap: 13%;
-    text-align: left;
-    justify-content: center;
-    align-items: center;
-    font-size: small;
-    max-width: 100%;
-    max-height: 100%;
-    cursor:default;
-    bottom: 0;
+    width: 100%;
+    height: auto;
     margin: 0;
-}
-
-.redes-sociais {
-    display: flex;
-    flex-direction: row;
-    gap: 27%;
-    width: 25%;
-    cursor: pointer;
-}
-
-.redes-sociais img {
-    width: 2rem;
-
-}
-
-.enviar-seta {
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+  }
+  
+  .content-overlay {
     position: absolute;
-    left: 88%;
-    top: 51%;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    gap: 10%;
+    flex-direction: row; /*alinhei as divs*/
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+  }
+  
+  .social-medias img {
+    margin: 0 5px;
+    width: 14%;
+  }
+  
+  .input-email {
+    padding: 10px;
+    margin-top: 10px;
+  }
+  
+  .enviar-seta {
     cursor: pointer;
-}
+  }
+  
