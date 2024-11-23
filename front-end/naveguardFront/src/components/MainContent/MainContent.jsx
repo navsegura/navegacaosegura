@@ -14,8 +14,8 @@ function MainContent(){
             <Island /> 
             <Carousel />
             <SignatureCard/>
-            <AnimalsHome/>
             <FrequentlyQuestions/>
+            <AnimalsHome/>
         </>
     )
 }

@@ -1,17 +1,23 @@
-.animais-cima, .animais-baixo {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; 
-    width: 100%;
-    gap: 10px;
-  }
-  
-  .animais-cima img, .animais-baixo img {
-    width: 28%; 
-    height: auto; 
-  }
+.images {
+  width: 80%;
+}
 
-  .peixe-direita, .peixe-esquerda {
-    width: 100%;
-  }
-  
+.peixe-esquerda, .peixe-direita {
+  width: 100%;
+}
+
+.peixe-direita {
+  position: relative;
+  left: 46%;
+}
+
+.peixe-esquerda {
+  position: relative;
+  top: 12rem;
+}
+
+.agua-viva {
+  position: relative;
+  top: 2rem;
+  left: 85%;
+}
