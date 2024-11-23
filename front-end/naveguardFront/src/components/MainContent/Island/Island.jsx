@@ -11,6 +11,7 @@ function Island() {
     },[])
     return (
         <>
+
             <IslandContainer>
                 <Beach>
                     <img ref={MainSection} src={Images.Praia} alt="beach" width={"100%"} />

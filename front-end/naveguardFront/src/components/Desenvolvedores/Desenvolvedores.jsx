@@ -15,13 +15,15 @@ function Desenvolvedores () {
                 <div className="first_column">
                 {/* Primeiro Card */}
                 <div className="card_dev_one">
-                    <div className="img_dev"> <img src="https://placehold.co/100" alt="img" /></div>
+                    <div className="img_dev"> <img src="https://placehold.co/150" alt="img" /></div>
                     <div className="dev">
-                        <h4 className='name'>Heverton Victor</h4>
-                        <ul>
-                            <li>Product Owner</li>
-                            <li>Full Stack & UI/UX</li>
-                        </ul>
+                        <div className="dev_content">
+                            <h4 className='name'>Heverton Victor</h4>
+                            <ul>
+                                <li>Product Owner</li>
+                                <li>Full Stack & UI/UX</li>
+                            </ul>
+                        </div>
                         <div className="social_icons">
                             <a href="https://github.com/wataredev" target="_blank" rel="noopener noreferrer">
                             <img src={Images.icon_github} alt="GitHub" />
@@ -35,18 +37,20 @@ function Desenvolvedores () {
 
                 {/* Segundo Card */}
                 <div className="card_dev_two">
-                <div className="img_dev"> <img src="https://placehold.co/100" alt="img" /></div>
+                <div className="img_dev"> <img src="https://placehold.co/150" alt="img" /></div>
                     <div className="dev">
-                        <h4 className='name'>Jonas Rafael</h4>
-                        <ul>
-                            <li>FullStack</li>
-                            <li>Financeiro</li>
-                        </ul>
+                        <div className="dev_content">
+                            <h4 className='name'>Jonas Rafael</h4>
+                            <ul>
+                                <li>FullStack</li>
+                                <li>Financeiro</li>
+                            </ul>
+                        </div>
                         <div className="social_icons">
-                            <a href="https://github.com/wataredev" target="_blank" rel="noopener noreferrer">
+                            <a href="https://github.com/jonasrmarques" target="_blank" rel="noopener noreferrer">
                             <img src={Images.icon_github} alt="GitHub" />
                             </a>
-                            <a href="https://www.linkedin.com/in/heverton-victor/" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.linkedin.com/in/jonas-marques-b80554239/" target="_blank" rel="noopener noreferrer">
                             <img src={Images.icon_linkedin} alt="LinkedIn" />
                             </a>
                         </div>
@@ -55,18 +59,20 @@ function Desenvolvedores () {
                 
                 {/* Terceiro Card */}
                 <div className="card_dev_three">
-                    <div className="img_dev"> <img src="https://placehold.co/100" alt="img" /></div>
+                    <div className="img_dev"> <img src="https://placehold.co/150" alt="img" /></div>
                         <div className="dev">
-                            <h4 className='name'>Antônio De Pádua</h4>
-                            <ul>
-                                <li>Desenvolvedor</li>
-                                <li>Full-Stack</li>
-                            </ul>
+                            <div className="dev_content">
+                                <h4 className='name'>Antônio De Pádua</h4>
+                                <ul>
+                                    <li>Desenvolvedor</li>
+                                    <li>Full-Stack</li>
+                                </ul>
+                            </div>
                             <div className="social_icons">
-                                <a href="https://github.com/wataredev" target="_blank" rel="noopener noreferrer">
+                                <a href="https://github.com/AntonioLopes21" target="_blank" rel="noopener noreferrer">
                                 <img src={Images.icon_github} alt="GitHub" />
                                 </a>
-                                <a href="https://www.linkedin.com/in/heverton-victor/" target="_blank" rel="noopener noreferrer">
+                                <a href="https://www.linkedin.com/in/antonio-de-padua-b-lopes-filho/" target="_blank" rel="noopener noreferrer">
                                 <img src={Images.icon_linkedin} alt="LinkedIn" />
                                 </a>
                             </div>
@@ -75,18 +81,20 @@ function Desenvolvedores () {
 
                 {/* Quarto Card */}
                 <div className="card_dev_four">
-                    <div className="img_dev"> <img src="https://placehold.co/100" alt="img" /></div>
+                    <div className="img_dev"> <img src="https://placehold.co/150" alt="img" /></div>
                         <div className="dev">
-                            <h4 className='name'>Guilherme Davino</h4>
-                            <ul>
-                                <li>Desenvolvedor</li>
-                                <li>Full-Stack</li>
-                            </ul>
+                            <div className="dev_content">
+                                <h4 className='name'>Guilherme Davino</h4>
+                                <ul>
+                                    <li>Desenvolvedor</li>
+                                    <li>Full-Stack</li>
+                                </ul>
+                            </div>
                             <div className="social_icons">
-                                <a href="https://github.com/wataredev" target="_blank" rel="noopener noreferrer">
+                                <a href="https://github.com/GuilhermeDavino" target="_blank" rel="noopener noreferrer">
                                 <img src={Images.icon_github} alt="GitHub" />
                                 </a>
-                                <a href="https://www.linkedin.com/in/heverton-victor/" target="_blank" rel="noopener noreferrer">
+                                <a href="https://www.linkedin.com/in/guilherme-albuquerque-davino/" target="_blank" rel="noopener noreferrer">
                                 <img src={Images.icon_linkedin} alt="LinkedIn" />
                                 </a>
                             </div>
@@ -97,18 +105,20 @@ function Desenvolvedores () {
                 <div className="second_column">
                 {/* Quinto Card */}
                 <div className="card_dev_five">
-                    <div className="img_dev"> <img src="https://placehold.co/100" alt="img" /></div>
+                    <div className="img_dev"> <img src="https://placehold.co/150" alt="img" /></div>
                         <div className="dev">
-                            <h4 className='name'>Jamyle Ellenn</h4>
-                            <ul>
-                                <li>Scrum Master</li>
-                                <li>Full Stack & UI/UX</li>
-                            </ul>
+                            <div className="dev_content">
+                                <h4 className='name'>Jamyle Ellenn</h4>
+                                <ul>
+                                    <li>Scrum Master</li>
+                                    <li>Full Stack & UI/UX</li>
+                                </ul>
+                            </div>
                             <div className="social_icons">
-                                <a href="https://github.com/wataredev" target="_blank" rel="noopener noreferrer">
+                                <a href="https://github.com/Jamyle-Elen" target="_blank" rel="noopener noreferrer">
                                 <img src={Images.icon_github} alt="GitHub" />
                                 </a>
-                                <a href="https://www.linkedin.com/in/heverton-victor/" target="_blank" rel="noopener noreferrer">
+                                <a href="https://www.linkedin.com/in/jamyle-elen/" target="_blank" rel="noopener noreferrer">
                                 <img src={Images.icon_linkedin} alt="LinkedIn" />
                                 </a>
                             </div>
@@ -117,18 +127,20 @@ function Desenvolvedores () {
 
                 {/* Sexto Card */}
                 <div className="card_dev_six">
-                    <div className="img_dev"> <img src="https://placehold.co/100" alt="img" /></div>
+                    <div className="img_dev"> <img src="https://placehold.co/150" alt="img" /></div>
                         <div className="dev">
-                            <h4 className='name'>Rodrigo Fagnerr</h4>
-                            <ul>
-                                <li>Desenvolvedor</li>
-                                <li>Back-End & UI/UX</li>
-                            </ul>
+                            <div className="dev_content">
+                                <h4 className='name'>Rodrigo Fagnerr</h4>
+                                <ul>
+                                    <li>Desenvolvedor</li>
+                                    <li>Back-End & UI/UX</li>
+                                </ul>
+                            </div>
                             <div className="social_icons">
-                                <a href="https://github.com/wataredev" target="_blank" rel="noopener noreferrer">
+                                <a href="https://github.com/Rodrigofms" target="_blank" rel="noopener noreferrer">
                                 <img src={Images.icon_github} alt="GitHub" />
                                 </a>
-                                <a href="https://www.linkedin.com/in/heverton-victor/" target="_blank" rel="noopener noreferrer">
+                                <a href="https://www.linkedin.com/in/rodrigo-fms/" target="_blank" rel="noopener noreferrer">
                                 <img src={Images.icon_linkedin} alt="LinkedIn" />
                                 </a>
                             </div>
@@ -137,18 +149,20 @@ function Desenvolvedores () {
 
                 {/* Sétimo Card */}
                 <div className="card_dev_seven">
-                    <div className="img_dev"> <img src="https://placehold.co/100" alt="img" /></div>
+                    <div className="img_dev"> <img src="https://placehold.co/150" alt="img" /></div>
                         <div className="dev">
-                            <h4 className='name'>Leandra Mayla</h4>
-                            <ul>
-                                <li>Front-End</li>
-                                <li>Social Media & UI/UX</li>
-                            </ul>
+                            <div className="dev_content">
+                                <h4 className='name'>Leandra Mayla</h4>
+                                <ul>
+                                    <li>Front-End</li>
+                                    <li>Social Media & UI/UX</li>
+                                </ul>
+                            </div>
                             <div className="social_icons">
-                                <a href="https://github.com/wataredev" target="_blank" rel="noopener noreferrer">
+                                <a href="https://www.linkedin.com/in/leandra-mayla/" target="_blank" rel="noopener noreferrer">
                                 <img src={Images.icon_github} alt="GitHub" />
                                 </a>
-                                <a href="https://www.linkedin.com/in/heverton-victor/" target="_blank" rel="noopener noreferrer">
+                                <a href="https://github.com/Leandramay" target="_blank" rel="noopener noreferrer">
                                 <img src={Images.icon_linkedin} alt="LinkedIn" />
                                 </a>
                             </div>
@@ -157,18 +171,20 @@ function Desenvolvedores () {
 
                 {/* Oitavo Card */}
                 <div className="card_dev_eight">
-                    <div className="img_dev"> <img src="https://placehold.co/100" alt="img" /></div>
+                    <div className="img_dev"> <img src="https://placehold.co/150" alt="img" /></div>
                         <div className="dev">
-                            <h4 className='name'>Theofilo Henrique</h4>
-                            <ul>
-                                <li>Back-End</li>
-                                <li>Sound Designer</li>
-                            </ul>
+                            <div className="dev_content">
+                                <h4 className='name'>Theofilo Henrique</h4>
+                                <ul>
+                                    <li>Back-End</li>
+                                    <li>Sound Designer</li>
+                                </ul>
+                            </div>
                             <div className="social_icons">
-                                <a href="https://github.com/wataredev" target="_blank" rel="noopener noreferrer">
+                                <a href="https://github.com/TheofiloHenrique" target="_blank" rel="noopener noreferrer">
                                 <img src={Images.icon_github} alt="GitHub" />
                                 </a>
-                                <a href="https://www.linkedin.com/in/heverton-victor/" target="_blank" rel="noopener noreferrer">
+                                <a href="https://www.linkedin.com/in/theofilo-henrique-375b692a8/" target="_blank" rel="noopener noreferrer">
                                 <img src={Images.icon_linkedin} alt="LinkedIn" />
                                 </a>
                             </div>

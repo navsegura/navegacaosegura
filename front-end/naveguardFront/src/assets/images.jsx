@@ -36,6 +36,24 @@ import Artigos from './images/artigos.png'
 import KidLogger from './images/KidLogger-Control.png'
 import Seta_Voltar from './images/seta_voltar.svg'
 import LogoLoading from './images/naveguard-loading.svg'
+import Cloud_Footer from './images/CloudFooter.svg'
+import Game_section_background from './images/Game-section-background.svg'
+import Cadeado from './images/cadeado.svg'
+import GamePrincipal from './images/game_principal.svg'
+import Bussola_Do_Codigo from './images/bussola_do_codigo.svg'
+import Chave_Do_Tesouro from './images/chave_do_tesouro.svg'
+import Porto_Seguro from './images/porto_seguro.svg'
+import Cuidado_Com_O_Kraken from './images/cuidado_com_o_kraken.svg'
+import Barquinho from './images/barquinho.svg'
+import Tesouro from './images/tesouro.svg'
+import Garrafa from './images/garrafa.svg'
+import ACarta from './images/a_carta.svg'
+import Botao1 from './images/botao1.svg'
+import Botao2 from './images/botao2.svg'
+import Botao3 from './images/botao3.svg'
+import Botao4 from './images/botao4.svg'
+import NuvemFooter from './images/nuvem_footer.svg'
+
 // aqui vcs criam as variaveis especificando o caminho delas
 
 const Images = {
@@ -76,7 +94,24 @@ const Images = {
     Artigos,
     KidLogger,
     Seta_Voltar,
-    LogoLoading
+    LogoLoading,
+    Cloud_Footer,
+    Game_section_background,
+    Cadeado,
+    GamePrincipal,
+    Bussola_Do_Codigo,
+    Chave_Do_Tesouro,
+    Porto_Seguro,
+    Cuidado_Com_O_Kraken,
+    Barquinho,
+    Tesouro,
+    Garrafa,
+    ACarta,
+    Botao1,
+    Botao2,
+    Botao3,
+    Botao4,
+    NuvemFooter
     // aqui fica as variaveis com o mesmo nome ali em cima
 }
 

@@ -1,0 +1,252 @@
+[33mcommit 395c02ff268722a811a1f9516f9bd4f53374eb94[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mJonas[m[33m)[m
+Merge: fe5eead 5f9ce0b
+Author: jonasrmarques <jonas.marques.ip@gmail.com>
+Date:   Wed Nov 13 16:48:33 2024 -0300
+
+    Merge remote-tracking branch 'origin/antonio' into Jonas
+
+[33mcommit fe5eead581da153f6d4b5a9dceda3a8bd5f603b0[m[33m ([m[1;31morigin/Jonas[m[33m)[m
+Merge: d355f27 f9b881e
+Author: jonasrmarques <jonas.marques.ip@gmail.com>
+Date:   Wed Nov 13 16:25:01 2024 -0300
+
+    Merge remote-tracking branch 'origin/feature/user-profile' into Jonas
+
+[33mcommit d355f270f98a443aaced4bda0fb5b897069fb321[m
+Author: jonasrmarques <jonas.marques.ip@gmail.com>
+Date:   Wed Nov 13 16:20:09 2024 -0300
+
+    feat: Route privatization implemented when logging in.
+
+[33mcommit f9b881e55f0b412bf6145f3bb557e879a527c957[m[33m ([m[1;31morigin/feature/user-profile[m[33m)[m
+Author: Jamyle Elen <Jamyle Elen>
+Date:   Mon Nov 11 08:29:57 2024 -0300
+
+    fix: frequently questions
+
+[33mcommit 3b17392957f1d07c5449148f2fcf58f54cb5e5a0[m
+Author: Jamyle Elen <Jamyle Elen>
+Date:   Sun Nov 10 18:24:32 2024 -0300
+
+    fix: position relative
+
+[33mcommit 198a8313e9f7994d91e355519d0f32c46fa1b6d0[m
+Merge: d1042fe c0368c9
+Author: Jamyle Elen <Jamyle Elen>
+Date:   Thu Oct 31 00:31:33 2024 -0300
+
+    Merge branch 'feature/user-profile' of https://github.com/navsegura/navegacaosegura into feature/user-profile
+
+[33mcommit d1042fe4a8b7ce75bced50e4adf87ced755b1cfd[m
+Author: Jamyle Elen <Jamyle Elen>
+Date:   Thu Oct 31 00:31:26 2024 -0300
+
+    feat: feature 'logout' + navbar dinamic + animation
+
+[33mcommit c0368c92daedc48b7e853b31b02060a2faf935dc[m
+Author: wataredev <158059889+wataredev@users.noreply.github.com>
+Date:   Wed Oct 30 14:57:28 2024 -0300
+
+    feat: game in react
+
+[33mcommit a99ed43673b8e54ea2644ff14cc6d2c31f7edebc[m
+Merge: 8a9e5aa ef3520a
+Author: jonasrmarques <jonas.marques.ip@gmail.com>
+Date:   Mon Oct 28 23:46:28 2024 -0300
+
+    Merge remote-tracking branch 'origin/feature/user-profile' into Jonas
+
+[33mcommit 8a9e5aa71c6184d556a3b95f5cc541df61f4641c[m
+Author: jonasrmarques <jonas.marques.ip@gmail.com>
+Date:   Mon Oct 28 23:37:05 2024 -0300
+
+    feat: replaced the css of the section
+    
+    In the previous merge, I accidentally deleted the css from the section, I replaced it
+
+[33mcommit ef3520ae38a5b2dc974c467d80994892ba457f5a[m
+Author: Jamyle Elen <Jamyle Elen>
+Date:   Mon Oct 28 22:17:19 2024 -0300
+
+    fix: commits
+
+[33mcommit d95364fc94760b3cb0b56bf08bd96c6f22cb08c4[m
+Merge: 7a0c5db 41c1f9b
+Author: jonasrmarques <jonas.marques.ip@gmail.com>
+Date:   Mon Oct 28 21:32:54 2024 -0300
+
+    Merge remote-tracking branch 'origin/feature/user-profile' into Jonas
+
+[33mcommit a6b589bfba7dc37a1fbce2da75fb49764373803c[m
+Author: Jamyle Elen <Jamyle Elen>
+Date:   Mon Oct 28 21:24:21 2024 -0300
+
+    feat: auto-save login
+
+[33mcommit 13c3ddf3f78916e15ffd0ef3d8668bf71fd345fd[m
+Merge: 41c1f9b 7a0c5db
+Author: Jamyle Elen <Jamyle Elen>
+Date:   Mon Oct 28 21:19:05 2024 -0300
+
+    Merge remote-tracking branch 'origin/jonas' into feature/user-profile
+
+[33mcommit 5f9ce0b797f4d12f0000a80caf13fb8e8cb13ede[m[33m ([m[1;31morigin/Antonio[m[33m, [m[1;32mAntonio[m[33m)[m
+Author: Antonio.lopes <antonyejoao@gmail.com>
+Date:   Mon Oct 28 02:19:04 2024 -0300
+
+    finalizando kids-page. até o momento sem responsividade
+
+[33mcommit 7a0c5dba9b281aa9ff7f5e90e5c51d3aca43a7b2[m
+Author: jonasrmarques <jonas.marques.ip@gmail.com>
+Date:   Sun Oct 27 16:13:08 2024 -0300
+
+    fix: removed import
+
+[33mcommit 41c1f9b15ddcd657b410651ffe9b6e762fda52de[m
+Author: Jamyle Elen <Jamyle Elen>
+Date:   Sun Oct 27 16:11:49 2024 -0300
+
+    fix: carousel position
+
+[33mcommit 5c237ecf6675869691e841c7b2c1d692d54c599e[m
+Author: Jamyle Elen <Jamyle Elen>
+Date:   Sun Oct 27 15:19:45 2024 -0300
+
+    feat: addeed animation scrollreveal and css to styled components
+
+[33mcommit 4ba390b11e9ef4dee66622948ffec258331e6d79[m
+Merge: c87ea67 cc15847
+Author: Jamyle Elen <Jamyle Elen>
+Date:   Sun Oct 27 12:51:19 2024 -0300
+
+    Merge branch 'jonas' into feature/user-profile
+
+[33mcommit 8c8a6b47eea43010f7afce87cf79bde168d7dd13[m
+Author: Antonio.lopes <antonyejoao@gmail.com>
+Date:   Sun Oct 27 12:22:09 2024 -0300
+
+    Resolvendo conflitos da branch Jonas
+
+[33mcommit 5133d78072019f2e2581410d038b2aae17cda09b[m
+Merge: fd6fb69 30999eb
+Author: Antonio.lopes <antonyejoao@gmail.com>
+Date:   Sun Oct 27 12:02:08 2024 -0300
+
+    commitando para fazer pull nas branches Jonas e jamyle
+
+[33mcommit 30999eb60da462129129c6933d5a4bc0e485f9df[m
+Author: jonasrmarques <jonas.marques.ip@gmail.com>
+Date:   Sun Oct 27 01:33:28 2024 -0300
+
+    feat: Implemented the login screen with the Google API
+
+[33mcommit fd6fb690fff09315e5fdc62674c3addb5d2b0221[m
+Merge: 49eda6c e3c44e3
+Author: Antonio.lopes <antonyejoao@gmail.com>
+Date:   Sat Oct 26 01:10:50 2024 -0300
+
+    ajustando conflitos de branches e criando KidsPage
+
+[33mcommit 49eda6cdd627b4175c17b62a9296b3c5f81377ea[m
+Author: Antonio.lopes <antonyejoao@gmail.com>
+Date:   Fri Oct 25 23:18:44 2024 -0300
+
+    dando pull na branch jamyle
+
+[33mcommit 60a0bf0fa5dd693da4683191291231d9686d00da[m
+Merge: 9394c60 3766fb8
+Author: Antonio.lopes <antonyejoao@gmail.com>
+Date:   Fri Oct 25 23:12:47 2024 -0300
+
+    Merge branch 'jamyle' of https://github.com/navsegura/navegacaosegura into Antonio
+
+[33mcommit c87ea67e32d8f1a21f79fccdd328534479661b72[m
+Author: Jamyle Elen <Jamyle Elen>
+Date:   Fri Oct 25 23:07:53 2024 -0300
+
+    feat: added animation scrollreveal and css to styled components
+
+[33mcommit e3c44e34d116d1ed73297fbd042e49049710edf1[m
+Author: jonasrmarques <jonas.marques.ip@gmail.com>
+Date:   Fri Oct 25 18:21:03 2024 -0300
+
+    feat: adjusted font size
+
+[33mcommit 3766fb8ffb2b28c9fe2d08ef99253fd52c1a130f[m
+Merge: 3f1d313 cc15847
+Author: Jamyle Elen <Jamyle Elen>
+Date:   Fri Oct 25 17:43:40 2024 -0300
+
+    Merge branch 'jonas' into jamyle
+
+[33mcommit 0f2051e46c43e5cc1efbda43d045942738264f63[m
+Author: jonasrmarques <jonas.marques.ip@gmail.com>
+Date:   Fri Oct 25 14:17:04 2024 -0300
+
+    fix: implemented the route about and fixed the zindex bug
+
+[33mcommit 863dcdbf2f7bed1c208e4cc803e244a37cac457a[m
+Merge: e8746db 0ebd835
+Author: jonasrmarques <jonas.marques.ip@gmail.com>
+Date:   Fri Oct 25 14:00:39 2024 -0300
+
+    Merge remote-tracking branch 'origin/feature/user-profile' into Jonas
+
+[33mcommit c601453672d167be163c6e7017640e438ca25d69[m
+Author: Jamyle Elen <Jamyle Elen>
+Date:   Fri Oct 25 13:23:09 2024 -0300
+
+    feat: page ParentalControl structure
+
+[33mcommit e8746db30ede04b895b593ad43adf3497bc7d93e[m
+Author: jonasrmarques <jonas.marques.ip@gmail.com>
+Date:   Fri Oct 25 13:22:04 2024 -0300
+
+    feat: The about screen has been implemented
+
+[33mcommit 0ebd835f0ab0ee0d05ab5a2b743d3a0a8dbafb4f[m
+Author: Jamyle Elen <Jamyle Elen>
+Date:   Fri Oct 25 04:22:38 2024 -0300
+
+    feat: create page choice screen
+
+[33mcommit 9394c60e8690c21fd97545574d50ff995c751d62[m
+Author: Antonio.lopes <antonyejoao@gmail.com>
+Date:   Thu Oct 24 22:27:16 2024 -0300
+
+    iniciando a responsividade
+
+[33mcommit 96c622c5beeb14210e20ab0e299085fd69af9678[m
+Author: Jamyle Elen <jamyleelen09@gmail.com>
+Date:   Thu Oct 24 21:54:44 2024 -0300
+
+    feat: created new component
+
+[33mcommit 59f9fc639e9e423afc8d5fac966fbdbd12e93150[m
+Author: Antonio.lopes <antonyejoao@gmail.com>
+Date:   Thu Oct 24 10:21:06 2024 -0300
+
+    adicionando uma seta ao input de email no footer
+
+[33mcommit 73cb4ade8cd28c61582390e6cc2a70e043e07190[m
+Author: Jamyle Elen <Jamyle Elen>
+Date:   Thu Oct 24 10:17:34 2024 -0300
+
+    feat: changed tag a to Link
+
+[33mcommit 0a39d832dbcc2ad81f100212a1daad7c968f69a7[m
+Merge: 3d1f1a6 cc15847
+Author: Antonio.lopes <antonyejoao@gmail.com>
+Date:   Thu Oct 24 10:00:02 2024 -0300
+
+    Merge branch 'Jonas' of https://github.com/navsegura/navegacaosegura into Antonio
+
+[33mcommit 3d1f1a6ebb0b08c18c89606a25173ed989ebe91d[m
+Author: Antonio.lopes <antonyejoao@gmail.com>
+Date:   Thu Oct 24 09:59:47 2024 -0300
+
+    finalizando menu de perguntas frequentes
+
+[33mcommit d0fde5b99375122f39cdd501c60edd980a194a8e[m
+Author: Jamyle Elen <Jamyle Elen>
+Date:   Thu Oct
