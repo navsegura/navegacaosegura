@@ -6,10 +6,10 @@ function AnimalsHome() {
   return (
     <>
       <div className="images">
-          <img src={Images.Arraia} alt="" className="arraia"/>
+          {/* <img src={Images.Arraia} alt="" className="arraia"/>
           <img src={Images.peixesDireita} alt="" className="peixe-direita"/>
           <img src={Images.peixesEsquerda} alt="" className="peixe-esquerda"/>
-          <img src={Images.AguaViva} alt="" className="agua-viva"/>
+          <img src={Images.AguaViva} alt="" className="agua-viva"/> */}
       </div>
     </>
   );

@@ -21,17 +21,23 @@
     top: 0;
     bottom: 0;
     width: 100%;
+    gap: 150px;
     height: 100%;
     color: white;
     display: flex;
-    gap: 10%;
     flex-direction: row; /*alinhei as divs*/
     justify-content: center;
     align-self: center;
     align-items: center;
     text-align: center;
-    padding: 20px;
+    padding-top: 140px;
     overflow: hidden;
+  }
+
+  .first-col, .second-col, .third-col, .fourth-col {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
   
   .social-medias img {
