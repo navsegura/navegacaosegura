@@ -1,6 +1,7 @@
 import "./SectionGame.css"
 import { Images } from "../../../assets/images"
 import Footer from "../../footer/Footer"
+import { Link } from "react-scroll";
 
 function SectionGame(){
     return(
@@ -14,17 +15,35 @@ function SectionGame(){
                     </div>
                     <div className="game_content">
                         <div className="game_one">
+                            <Link 
+                                to='game_screen_principal'
+                                smooth={true}
+                                duration={500}
+                            >
                             <img src={Images.Barquinho} alt="img" />
+                            </Link>
                             <h1 className="game_title_principal">A Grande Navegação</h1>
                             <p className="content_game_principal">Uma aventura épica pelos mares!</p>
                         </div>
                         <div className="game_one">
+                            <Link 
+                                to='third_game_section'
+                                smooth={true}
+                                duration={500}
+                            >
                             <img src={Images.Tesouro} alt="img" />
+                            </Link>
                             <h1 className="game_title_principal">Desafios do Tesouro</h1>
                             <p className="content_game_principal">Jogue minigames e colete tesouros</p>
                         </div>
                         <div className="game_one">
+                            <Link 
+                                to='video_section'
+                                smooth={true}
+                                duration={500}
+                            >
                             <img src={Images.Garrafa} alt="img" />
+                            </Link>
                             <h1 className="game_title_principal">Histórias do mar</h1>
                             <p className="content_game_principal">Assista vídeos divertidos e educativos</p>
                         </div>
@@ -32,7 +51,7 @@ function SectionGame(){
                 </div>
             </section>
 
-            <section className="second_game_section">
+            <section id="game_screen_principal" className="second_game_section">
                 <div className="header_game_principal">
                     <h1 className="title_game_principal">
                         A grande Navegação
