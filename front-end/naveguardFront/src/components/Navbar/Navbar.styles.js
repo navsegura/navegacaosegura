@@ -25,6 +25,10 @@ export const Nav = styled.nav`
   width: 100%;
   flex-direction: row;
 
+  @media (max-width: 1150px) {
+    padding: 0 40px;
+  }
+
 `;
 
 export const Navigation = styled.div`

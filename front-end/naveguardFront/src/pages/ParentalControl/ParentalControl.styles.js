@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const MainContainer = styled.div`
-    padding: 8vh 0 0 4vw;
+    padding: 8vh 0 0 0;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -16,6 +16,27 @@ export const MainContainer = styled.div`
     @media (max-width: 480px) {
         padding: 8vh 0 0 1vw;
     }
+`
+
+export const Back = styled.div`
+    /* position: absolute; */
+    color: #101E43;
+    font-size: 3rem;
+    cursor: pointer;
+    &:hover {
+        color: #FF6F00;
+        transition: all 0.3s ease-in-out;
+    }
+    /* width: 100%;
+    height: 100%; */
+    /* z-index: -1; */
+`
+
+export const Span = styled.span`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
 `
 
 export const ControlContent = styled.div`
@@ -127,6 +148,7 @@ export const Description = styled.p`
     font-family: 'Poppins', sans-serif;
     font-size: .8rem;
     color: #FFFFFF;
+    margin-bottom: 2rem;
 
     @media (max-width: 1440px) {
         font-size: .7rem;

@@ -1,6 +1,6 @@
 import "./SectionGame.css"
 import { Images } from "../../../assets/images"
-import Footer from "../../footer/Footer"
+// import Footer from "../../footer/Footer"
 
 function SectionGame(){
     return(

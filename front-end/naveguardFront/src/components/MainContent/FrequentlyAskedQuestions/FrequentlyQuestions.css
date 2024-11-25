@@ -21,25 +21,7 @@ h1 {
     justify-items: center; 
 }
 
-.conteudo {
-    width: 70%;
-    gap: 15px;
-    flex-direction: column;
-    display: flex;
-    max-width: 100%;
-}
-
-details {
-    position: relative; 
-    text-align: left;
-    background: linear-gradient(to right, #3EABEE 0%, #289BEB 50%, #118BE9 100%);
-    width: 100%;
-    border-radius: 1%;
-    padding: 1rem;
-}
-
-
-summary {
+/* summary {
     position: relative;
     padding-right: 10px; 
     cursor: pointer;
@@ -49,7 +31,7 @@ summary {
     align-items: center;
     justify-content: space-between; 
     padding-top: 10px;
-}
+} */
 
 
 summary::after {

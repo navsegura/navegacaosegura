@@ -53,6 +53,7 @@ import Botao2 from './images/botao2.svg'
 import Botao3 from './images/botao3.svg'
 import Botao4 from './images/botao4.svg'
 import NuvemFooter from './images/nuvem_footer.svg'
+import PeixePalhaco from './images/peixe_palhaco.svg'
 
 // aqui vcs criam as variaveis especificando o caminho delas
 
@@ -111,7 +112,8 @@ const Images = {
     Botao2,
     Botao3,
     Botao4,
-    NuvemFooter
+    NuvemFooter,
+    PeixePalhaco
     // aqui fica as variaveis com o mesmo nome ali em cima
 }
 
