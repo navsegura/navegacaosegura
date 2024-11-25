@@ -1,4 +1,6 @@
 # NaveGuard
+[![Readme in English](https://img.shields.io/badge/README-English-green)](./README_EN.md)
+
 ## 📋 Sobre o projeto
 Uma plataforma educacional que ensina as crianças sobre segurança na Internet, privacidade digital e comportamento online responsável. Inclui jogos interativos, questionários e simulações que mostram as consequências de diferentes comportamentos online.
 
