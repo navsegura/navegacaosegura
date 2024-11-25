@@ -1,7 +1,8 @@
 import { Images } from "../../assets/images.jsx";
 import { useRef, useEffect } from "react";
+import { Link } from "react-router-dom";
 import OceanDecorations from '../MainContent/OceanDecorations/OceanDecorations.jsx'
-import { CardsContainer, Card, CardTitle, CardContent, CardIcons, CardButton, CardBenefits } from './SignatureCards.styles.js'
+import { CardsContainer, Card, CardTitle, CardPlans, Plan, Img, CardButton } from './SignatureCards.styles.js'
 import { utilScrollRevealDelayBottom1, utilScrollRevealDelayBottom2, utilScrollRevealDelayBottom3 } from "../../utils/ScrollReveal.js";
 
 const SignatureCard = () => {
@@ -19,65 +20,93 @@ const SignatureCard = () => {
         <>
         <CardsContainer id="planos">
           <Card ref={planCard1}>
-            <CardTitle>
-              <h1>AVENTURA GRATUITA</h1>
-            </CardTitle>
-            <CardIcons>
-                <img src={Images.uncheck} alt="Icon accesso" />
-                <img src={Images.uncheck} alt="Icon accesso" />
-                <img src={Images.uncheck} alt="Icon accesso" />
-                <img src={Images.check} alt="Icon sem accesso" />
-                <img src={Images.check} alt="Icon sem accesso" />
-              </CardIcons>
-            <CardContent>
-                <CardBenefits>ACESSO LIMITADO AOS JOGOS</CardBenefits>
-                <CardBenefits>ACESSO BÁSICO ÁREA RESPONSÁVEL</CardBenefits>
-                <CardBenefits>ACESSO A TUTORIAIS</CardBenefits>
-                <CardBenefits>ACESSO AOS RESULTADOS</CardBenefits>
-                <CardBenefits>ACESSO AO CHATBOT</CardBenefits>
-              <CardButton>ACESSE</CardButton>
-            </CardContent>
+            <CardTitle>AVENTURA GRATUITA</CardTitle>
+            <CardPlans>
+                <Plan>
+                  <Img src={Images.uncheck} alt="Icon accesso" />
+                  <p>ACESSO LIMITADO AOS JOGOS</p>
+                </Plan>
+                <Plan>
+                  <Img src={Images.uncheck} alt="Icon accesso" />
+                  <p>ACESSO BÁSICO ÁREA RESPONSÁVEL</p>
+                </Plan>
+                <Plan>
+                  <Img src={Images.uncheck} alt="Icon accesso" />
+                  <p>ACESSO A TUTORIAIS</p>
+                </Plan>
+                <Plan>
+                  <Img src={Images.check} alt="Icon sem accesso" />
+                  <p>ACESSO AOS RESULTADOS</p>
+                </Plan>
+                <Plan>
+                  <Img src={Images.check} alt="Icon sem accesso" />
+                  <p>ACESSO AO CHATBOT</p>
+                </Plan>
+
+              </CardPlans>
+               <Link to='/rotadepagamento'>  {/* Criar a tela de pagamento */}
+                  <CardButton>ACESSE</CardButton>
+                </Link>
+            {/* ---------------------------------- */}
           </Card>
           <Card ref={planCard2}>
-            <CardTitle>
-              <h1>AVENTURA INTENSA</h1>
-            </CardTitle>
-            <CardIcons>
-              <img src={Images.uncheck} alt="Icon accesso" />
-              <img src={Images.uncheck} alt="Icon accesso" />
-              <img src={Images.uncheck} alt="Icon accesso" />
-              <img src={Images.check} alt="Icon sem accesso" />
-              <img src={Images.check} alt="Icon sem accesso" />
-            </CardIcons>
-            <CardContent>
-              <CardBenefits>ACESSO LIMITADO AOS JOGOS</CardBenefits>
-              <CardBenefits>ACESSO BÁSICO ÁREA RESPONSÁVEL</CardBenefits>
-              <CardBenefits>ACESSO A TUTORIAIS</CardBenefits>
-              <CardBenefits>ACESSO AOS RESULTADOS</CardBenefits>
-              <CardBenefits>ACESSO AO CHATBOT</CardBenefits>
-              <CardButton>ASSINAR</CardButton>
-            </CardContent>
-          </Card>
+            <CardTitle>AVENTURA INTENSA</CardTitle>
+            <CardPlans>
+                <Plan>
+                  <Img src={Images.uncheck} alt="Icon accesso" />
+                  <p>ACESSO LIMITADO AOS JOGOS</p>
+                </Plan>
+                <Plan>
+                  <Img src={Images.uncheck} alt="Icon accesso" />
+                  <p>ACESSO BÁSICO ÁREA RESPONSÁVEL</p>
+                </Plan>
+                <Plan>
+                  <Img src={Images.uncheck} alt="Icon accesso" />
+                  <p>ACESSO A TUTORIAIS</p>
+                </Plan>
+                <Plan>
+                  <Img src={Images.check} alt="Icon sem accesso" />
+                  <p>ACESSO AOS RESULTADOS</p>
+                </Plan>
+                <Plan>
+                  <Img src={Images.check} alt="Icon sem accesso" />
+                  <p>ACESSO AO CHATBOT</p>
+                </Plan>
+
+              </CardPlans>
+              <Link to='/rotadepagamento'>  {/* Criar a tela de pagamento */}
+                  <CardButton>ASSINAR</CardButton>
+                </Link>
+            </Card>
           <Card ref={planCard3}>
-            <CardTitle>
-              <h1>AVENTURA IMERSIVA</h1>
-            </CardTitle>
-            <CardIcons>
-              <img src={Images.uncheck} alt="Icon accesso" />
-              <img src={Images.uncheck} alt="Icon accesso" />
-              <img src={Images.uncheck} alt="Icon accesso" />
-              <img src={Images.check} alt="Icon sem accesso" />
-              <img src={Images.check} alt="Icon sem accesso" />
-            </CardIcons>
-            <CardContent>
-              <CardBenefits>ACESSO LIMITADO AOS JOGOS</CardBenefits>
-              <CardBenefits>ACESSO BÁSICO ÁREA RESPONSÁVEL</CardBenefits>
-              <CardBenefits>ACESSO A TUTORIAIS</CardBenefits>
-              <CardBenefits>ACESSO AOS RESULTADOS</CardBenefits>
-              <CardBenefits>ACESSO AO CHATBOT</CardBenefits>
-              <CardButton>ASSINAR</CardButton>
-            </CardContent>
-          </Card>
+            <CardTitle>AVENTURA IMERSIVA</CardTitle>
+            <CardPlans>
+                <Plan>
+                  <Img src={Images.uncheck} alt="Icon accesso" />
+                  <p>ACESSO LIMITADO AOS JOGOS</p>
+                </Plan>
+                <Plan>
+                  <Img src={Images.uncheck} alt="Icon accesso" />
+                  <p>ACESSO BÁSICO ÁREA RESPONSÁVEL</p>
+                </Plan>
+                <Plan>
+                  <Img src={Images.uncheck} alt="Icon accesso" />
+                  <p>ACESSO A TUTORIAIS</p>
+                </Plan>
+                <Plan>
+                  <Img src={Images.check} alt="Icon sem accesso" />
+                  <p>ACESSO AOS RESULTADOS</p>
+                </Plan>
+                <Plan>
+                  <Img src={Images.check} alt="Icon sem accesso" />
+                  <p>ACESSO AO CHATBOT</p>
+                </Plan>
+
+              </CardPlans>
+              <Link to='/rotadepagamento'>  {/* Criar a tela de pagamento */}
+                  <CardButton>ASSINAR</CardButton>
+                </Link>
+            </Card>
         </CardsContainer>
         <OceanDecorations/>
     </>

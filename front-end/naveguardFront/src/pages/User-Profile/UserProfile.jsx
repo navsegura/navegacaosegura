@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import NavBar from "../../components/NavBar/Navbar";
 import SideBar from "../../components/SideBar/SideBar";
 import { Images } from "../../assets/images.jsx";
+import NuvensContainer from "../../components/Nuvens/Nuvens";
 import { Page, MainContainer, UserProfileContent, Profile, UserImage, Photo, Line, About, Span, NameProfile, Icon, Info, Bio, Location, Strong, Edit, Input, MainContent, UserProfileContainer, GroupSquare, Square, Graphics, P, DropdownMenu, DropdownItem } from './UserProfile.styles'
 
 const UserProfile = () => {
@@ -57,18 +58,19 @@ const UserProfile = () => {
 
   const nameTest = localStorage.getItem('name')
   const imgTest = localStorage.getItem('profilePic')
-  // const emailTest = localStorage.getItem('email')
+  const emailTest = localStorage.getItem('email')
   // const profilePicTest = localStorage.getItem('profilePic')
   return (
     <>
       <NavBar/>
       <SideBar/>
       <Page>
+          <NuvensContainer/>
         <MainContainer>
           <UserProfileContent>
               <Profile>
                 <UserImage>
-                  <Photo src={imgTest} alt="Profile photo" />
+                  <Photo src={imgTest || Images.UserMaster} alt="Profile photo" />
                   </UserImage>
                   <About>
                       <Span>
@@ -103,7 +105,7 @@ const UserProfile = () => {
                           />
                         ) : (
                         <Location><i className='bx bx-message' style={{color:'#A0A0A0'}} ></i>
-                        {email}</Location>
+                        {emailTest}</Location>
                         )}
                         <Location><i className='bx bx-check-circle' style={{color:'#A0A0A0'}} ></i>
                         Verify at 12/10/2021</Location> {/* DATA */}
@@ -137,11 +139,13 @@ const UserProfile = () => {
                 <img src={Images.Tutoriais} alt="Tutoriais" width={50} />
                 <P>Guias simples para proteger sua família online</P>
               </Square>
-              <Square>
-                <Graphics>Artigos</Graphics>
-                <img src={Images.Artigos} alt="Tutoriais" width={50} />
-                <P>Dicas e informações sobre segurança digital</P>
-              </Square>
+              <Link to="/articles">
+                <Square>
+                  <Graphics>Artigos</Graphics>
+                  <img src={Images.Artigos} alt="Tutoriais" width={50} />
+                  <P>Dicas e informações sobre segurança digital</P>
+                </Square>
+              </Link>
               <Link to="/parental-control">
                 <Square>
                   <Graphics>Controle Parental</Graphics>

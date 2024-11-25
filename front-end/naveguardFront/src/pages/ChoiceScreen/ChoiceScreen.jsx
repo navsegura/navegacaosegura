@@ -6,6 +6,7 @@ import SideBar from '../../components/SideBar/SideBar';
 import Navbar from '../../components/Navbar/Navbar';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import NuvensContainer from '../../components/Nuvens/Nuvens';
 import { Container, UserGrid, UserCard, AddUserCard, ImageUser, Img, AddMore, MoreIcon, P } from './ChoiceScreen.styles';
 
 const ChoiceScreen = ({ initialUsers }) => {
@@ -28,23 +29,39 @@ const ChoiceScreen = ({ initialUsers }) => {
     };
     setUsers((prevUsers) => [...prevUsers, newUser])
   };
+
+  const nameProfile = localStorage.getItem('name');
+  const imgTest = localStorage.getItem('profilePic')
+  // const isLogedIn = localStorage.getItem('isLogedIn')
+
   return (
     <>
       <Navbar />
       <SideBar/>
       <Container>
       {/* <ReturnButton className='bx bx-chevrons-left'></ReturnButton> */}
+    <NuvensContainer/>
         <UserGrid>
         <ImageUser>
-            <Link to="/user-profile"><Img src={Images.UserMaster} alt="User master" /></Link>
-            <P>Responsável</P>
+            {imgTest === null ? (
+              <Link to="/user-profile"><Img src={Images.UserMaster} alt="User master" /></Link>
+            ) : (
+              <Img src={imgTest} alt={nameProfile} /> 
+            )}
+
+            {nameProfile === null ? (
+              <P>Responsável</P>
+            ) : (
+              <P>{nameProfile}</P>
+            )}
           </ImageUser>
           {users.map((user) => (
             <UserCard key={user.id}>
-              
+              <Link to={'/kids-page'}>
               <ImageUser>
-                <Img src={user.image} alt={user.name} />
+                <Img src={Images.UserChild} alt={user.name} />
               </ImageUser>
+              </Link>
               <P>{user.name}</P>
             </UserCard>
           ))}
