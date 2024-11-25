@@ -1,5 +1,5 @@
 # **NaveGuard - Back End**
-[![Readme in Portuguese](https://img.shields.io/badge/README-Portuguese-blue)](./README_PT.md)
+[![Readme in Portuguese](https://img.shields.io/badge/README-Portuguese-blue)](./README.md)
 
 ## ⚙ **Features**
 The NaveGuard API is divided into four main sections, each responsible for a specific area of the application. All APIs follow the **CRUD** (Create, Read, Update, Delete) standard, ensuring complete data management.
