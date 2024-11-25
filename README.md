@@ -12,6 +12,12 @@ Quando pensamos na solução, pensamos em diversas formas mas no fim decidimos f
 
 ![Amazon Forest (4)](https://github.com/user-attachments/assets/1199baf1-7be2-4a2f-bd43-d198a6d377eb)
 
+<div align="end">
+
+[![](https://github.com/user-attachments/assets/36112c66-7d4e-4b53-a390-891e9adb67cd)](https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Aorganization%3A105400839&keywords=naveguard&origin=RICH_QUERY_TYPEAHEAD_HISTORY&position=0&searchId=8bc26013-42de-4d7c-bf8e-c8dcdec124f2&sid=oVK&spellCorrectionEnabled=true)
+[![](https://github.com/user-attachments/assets/8b37cf0f-c9f9-4ba4-9a10-9510a338d37e)](https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Aorganization%3A105400839&keywords=naveguard&origin=RICH_QUERY_TYPEAHEAD_HISTORY&position=0&searchId=8bc26013-42de-4d7c-bf8e-c8dcdec124f2&sid=oVK&spellCorrectionEnabled=true)
+</div>
+
 ## 🚀 Tecnologias Utilizadas
 - **React**: Utilizado para construção da interface de usuário, garantindo uma experiência dinâmica e responsiva.
 - **Spring Boot**: Framework back-end utilizado para construir a API REST.
