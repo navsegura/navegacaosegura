@@ -1,54 +1,51 @@
-# **NaveGuard - Back End**
-[![Readme in Portuguese](https://img.shields.io/badge/README-Portuguese-blue)](./README.md)
+# NaveGuard - Back End
+[![Readme in English](https://img.shields.io/badge/README-English-green)](./README_EN.md)
 
-## ⚙ **Features**
-The NaveGuard API is divided into four main sections, each responsible for a specific area of the application. All APIs follow the **CRUD** (Create, Read, Update, Delete) standard, ensuring complete data management.
+## ⚙ Funcionalidades
+O desenvolvimento da API NaveGuard foi dividido em quatro APIs principais, cada uma responsável por uma área específica da aplicação. Todas as APIs seguem o padrão de operações CRUD (Create, Read, Update, Delete), permitindo o gerenciamento completo dos dados relacionados.
 
-### **1. User API**
-Manages user profiles, including registration, updates, deletion, and information retrieval.
+### 1. API de Usuário
+Esta API será responsável pelo gerenciamento dos dados de perfil. 
 
-#### **Main Features**:
-- Register new users.
-- Retrieve user information by ID.
-- List all registered users.
-- Update personal data.
-- Delete accounts.
+- **Cadastrar Usuários**: Permite a criação de novos usuários.
+- **Buscar usuário**: Permite a busca dos usuários para melhor gestão.
+- **Atualizar perfil**: Edição de informações dos dados pessoais.
+- **Excluir Conta**: Remoção de usuários da plataforma.
 
-| Method | Route                | Description                     |
-|--------|----------------------|---------------------------------|
-| POST   | `/api/user`          | Register a new user             |
-| GET    | `/api/user/{id}`     | Retrieve user by ID             |
-| GET    | `/api/user`          | List all users                  |
-| PUT    | `/api/user/{id}`     | Update user information         |
-| DELETE | `/api/user/{id}`     | Delete user                     |
+#### Rotas sobre usuário
+| Método | Rota                                | Função                               |
+| ------ | ----------------------------------- | ------------------------------------ |
+| POST   | /api/user                           | Cadastro de usuário                  |
+| GET    | /api/user/{id}                      | Busca de usuário por id              |
+| GET    | /api/user/                          | Busca todos os usuários registrados  |
+| PUT    | /api/user/{id}                      | Atualiza os dados por id             |
+| DELETE | /api/user/{id}                      | Deleta usuário via id                |
 
+### 2. API de Tutoriais
+O site terá uma página dedicada a fornecer informações sobre Tutoriais, Guias de Segurança e Recursos Educativos. Isso ajudará a consciêntizar sobre o tema, desmistificando conceitos e incentivando a prevenção. 
 
-### **2. Tutorials API**
-Provides educational resources and guides on safety, aiding in awareness and prevention.
+- **Listar os Tutoriais** - Lista os Tutoriais cadastrado no sistema.
+- **Adicionar novos tutoriais** - O usuário adm poderá adicionar novos tutoriasis.
+- **Buscar por id do tutorial** - Facilita a busca do usuário ao querer um determinado tutorial.
+- **Editar tudoriais** - Editar informações de tutoriais criados.
+- **Excluir tutoriais** -  Excluir por meio da busca do id do tutorial.
 
-#### **Main Features**:
-- Add new tutorials (admin).
-- List all available tutorials.
-- Retrieve a tutorial by ID.
-- Update tutorial information.
-- Delete tutorials.
+#### Rotas sobre tutorial
+| Método | Rota                                | Função                                                 |
+| ------ | ----------------------------------- | ------------------------------------------------------ |
+| POST   | /api/tutorial                       | Cadastro novo tutorialtutorial                         |
+| GET    | /api/tutorial                       | Busca todos os tutoriais                               |
+| GET    | /api/tutorial/{id}                  | Busca de tutorial por id                               |
+| PUT    | /api/tutorial/{id}                  | Atualiza tutoriais por id                              |
+| DELETE | /api/tutorial/{id}                  | Deleta tutoriais via id                                |
 
-| Method | Route                  | Description                     |
-|--------|------------------------|---------------------------------|
-| POST   | `/api/tutorial`        | Register a new tutorial         |
-| GET    | `/api/tutorial`        | List all tutorials              |
-| GET    | `/api/tutorial/{id}`   | Retrieve a tutorial by ID       |
-| PUT    | `/api/tutorial/{id}`   | Update a tutorial by ID         |
-| DELETE | `/api/tutorial/{id}`   | Delete a tutorial by ID         |
+## 🚫 Deploy
+No momento ainda foi realizado o deploy da aplicação nesta versão. Portanto, para rodar o projeto localmente, é necessário baixar e executar **tanto o repositório do front-end quanto o do back-end**.
 
+### ▶ Como rodar o projeto (front-end e back-end)
+Para clonar e rodar este projeto, siga os passos abaixo:
 
-## 🚫 **Deployment**
-Currently, the application has not been deployed. To run the project locally, you need to download and execute **both the front-end and back-end repositories**.
-
-### ▶ **How to Run the Project (Front-End and Back-End)**
-To clone and run this project, follow these steps:
-
-1. **Clone the repositories (front-end and back-end)**:
+1. **Clone os repositórios (front e back-end)**:
    - Front-end:
      ```bash
      git clone https://github.com/navsegura/navegacaosegura
@@ -58,8 +55,8 @@ To clone and run this project, follow these steps:
      git clone https://github.com/navsegura/navegacaosegura-backend
      ```
 
-2. **Install the dependencies**:
-   - Navigate to the project folders and install the dependencies for both the front-end and back-end:
+2. **Instale as dependências**:
+   - Acesse as pastas do projeto e instale as dependências tanto no front-end quanto no back-end:
      ```bash
      cd front-end/naveguardFront/src
      npm install
@@ -69,51 +66,49 @@ To clone and run this project, follow these steps:
      npm install
      ```
 
-3. **Run the front-end**:
-   - After installing the dependencies, use the command below to run the front-end:
+3. **Execute o front-end**:
+   - Após instalar as dependências, execute o comando abaixo para rodar o front-end:
      ```bash
      npm run dev
      ```
 
-4. **Run the back-end**:
-   - In another terminal tab, navigate to the back-end folder and start the server:
+4. **Execute o back-end**:
+   - Em outra aba do terminal, acesse a pasta do back-end e rode o servidor:
      ```bash
      npm run dev
      ```
-     
-## 🧪 **Testing**
-You can test the application in two ways:
-- **Manually**: Use tools like [Postman](https://www.postman.com/downloads/) or [Insomnia](https://insomnia.rest/download) to test the routes listed above.
-- **Automated**: Once the deployment is complete.
 
-Below are examples of test scenarios:
+## 🧪 Testes
+Os testes podem ser feitos de duas formas:
+- Manualmente utilizando ferramentas como o [Postman](https://www.postman.com/downloads/) ou [Insomnia](https://insomnia.rest/download), para testar as funcionalidades das rotas listadas anteriormente.
+- Via deploy
 
-<div align="center"> 
-  <h3>List all tutorials (GET)</h3>
-  <img src="" width="600px">
+Segue abaixo imagem de alguns testes:
+<div align = "center"> 
+  <h3>Listar todos os tutoriais (get)</h3>
+  <img src = ""  width = "600px">
  
-  <h3>Retrieve tutorial by ID (GET)</h3>
-  <img src="" width="600px">
+  <h3>Busca de tutorial por id (get)</h3>
+  <img src = "" width = "600px">
 
-  <h3>Update tutorial by ID (PUT)</h3>
-  <img src="" width="600px">
+<h3>Atualizar tutoriais por id (put)</h3>
+  <img src = "" width = "600px">
   
-  <h3>Create tutorial (POST)</h3>
-  <img src="" width="600px">
+<h3>Cadastro de tutorial (post)</h3>
+  <img src = "" width = "600px">
 </div>
 
+## 📅 Conclusão
+O "Naveguard" combina entretenimento e educação com um forte foco em jogos interativos. Essa abordagem gamificada, aliada a recursos que envolvem tanto pais quanto crianças, cria uma experiência única que é difícil de ser replicada por concorrentes. A plataforma não apenas educa, mas também entretém, garantindo maior adesão ao conteúdo.
+ 
+Uma melhoria significativa para o futuro desenvolvimento do projeto seria a implementação de um banco de dados real para armazenar as informações, substituindo os dados atualmente mocados. Isso permitiria maior escalabilidade, segurança e flexibilidade na gestão dos dados, além de proporcionar uma experiência mais robusta para os usuários da plataforma.
 
-## 📅 **Conclusion**
-"NaveGuard" combines entertainment and education with a strong focus on interactive games. This gamified approach, combined with features involving both parents and children, creates a unique experience that is hard for competitors to replicate. The platform not only educates but also entertains, ensuring greater adherence to the content.
-
-A significant improvement for future development would be implementing a real database to store information, replacing the current mocked data. This would allow for greater scalability, security, and flexibility in data management, as well as a more robust experience for platform users.
-
-## 💻 **Founders**
+## 💻 Fundadores
 
 | ![Heverton Vitor][img1] | ![Jamyle Elen][img2] | ![Antônio de Pádua][img3] | ![Guilherme Davino][img4] | ![Jonas Rafael][img5] | ![Rodrigo Silva][img6] | ![Theofilo Henrique][img7] | ![Leandra Mayla][img8] |
 |:-----------------------:|:--------------------:|:-------------------------:|:-------------------------:|:---------------------:|:----------------------:|:--------------------------:|:----------------------:|
-| **Heverton Victor**      | **Jamyle Elen**      | **Antônio de Pádua**      | **Guilherme Davino**      | **Jonas Rafael**      | **Rodrigo Silva**      | **Theofilo Henrique**      | **Leandra Mayla**     |
-| **PO**                   | **Scrum Master**     | **Role**                  | **Role**                  | **Role**              | **Role**               | **Role**                   | **Social Media**      |
+| **Heverton Victor**     | **Jamyle Elen**      | **Antônio de Pádua**      | **Guilherme Davino**      | **Jonas Rafael**      | **Rodrigo Silva**      | **Theofilo Henrique**      | **Leandra Mayla**      |
+| **PO**                  | **Scrum Master**     | **Função**                | **Função**                | **Função**            | **Função**             | **Função**                 | **Social Media**       |
 
 [img1]: https://github.com/user-attachments/assets/4f7785c6-6bf1-4df3-bffe-952bd125e7b0
 [img2]: https://github.com/user-attachments/assets/4b3637cc-e1a0-45e4-af1b-6b37f3626ecb
