@@ -23,7 +23,7 @@ export const CardsContainer = styled.section`
 
 export const Card = styled.div`
     display: flex;
-    border: red solid 1px;
+    /* border: red solid 1px; */
     justify-content: center;
     align-items: center;
     flex-direction: column;

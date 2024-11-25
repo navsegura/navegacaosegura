@@ -1,20 +1,58 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const movimentoNuvens = keyframes`
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(1000px);
+    }
+`;
+
+const movimentoNuvensII = keyframes`
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-1000px);
+    }
+`;
+
+const movimentoNuvensIII = keyframes`
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(800px);
+    }
+`;
+
+const movimentoNuvensIV = keyframes`
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-800px);
+    }
+`;
 
 export const MainContainer = styled.div`
-    padding: 8vh 0 0 0;
+    /* padding: 8vh 0 0 0; */
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-
-    @media (max-width: 768px) {
-        padding: 10vh 0 0 2vw;
-    }
+    padding: 10vh 2vh 0vh 3vw;
+    /* border: red solid; */
+    /* justify-content: center; */
 
     @media (max-width: 480px) {
-        padding: 8vh 0 0 1vw;
+        padding: 6vh 0 0 0vw;
+    }
+
+    @media (max-width: 370px) {
+        display: none;
     }
 `
 
@@ -41,10 +79,12 @@ export const Span = styled.span`
 
 export const ControlContent = styled.div`
     padding: 5vh;
-    max-width: 1440px;
-    height: 70vh;
+    max-width: 1240px;
+    height: auto;
     /* border: red solid 1px; */
+    margin: auto;
     background-color: #f5f5f5;
+    /* border: red solid; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -58,6 +98,7 @@ export const ControlContent = styled.div`
     @media (max-width: 768px) {
         padding: 2vh;
     }
+    
 `
 
 export const TitleControl = styled.h1`
@@ -67,9 +108,9 @@ export const TitleControl = styled.h1`
     }
 `
 
-export const Line = styled.div`
-    width: 100%;
-    border: 1px solid #D9D9D9;
+export const Line = styled.hr`
+    margin: 40px 0;
+    border-top: 1px solid #D9D9D9;
     /* margin-top: 3rem; */
 
     @media (max-width: 675px) {
@@ -79,23 +120,40 @@ export const Line = styled.div`
 `
 
 export const CardContainer = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
+    /* min-width: 500px; */
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-rows: repeat(2, 1fr); */
+    gap: 20px;
+    /* flex-wrap: wrap; */
+    /* align-items: center; */
+    justify-items: center;
     /* border: green solid 1px; */
-    @media (max-width: 1440px) {
-        gap: 1rem;
+
+    @media (max-width: 1500px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 675px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    & button {
+        border: none;
+        background: none;
+        cursor: pointer;
+        margin: 20px 0;
     }
 `
 
 export const Card = styled.div`
-    /* max-width: 230px; */
-    min-width: 300px;
-    max-width: 9vw;
-    /* width: 100%; */
+    max-width: 270px;
+    /* min-width: 300px;
+    max-width: 9vw; */
+    width: 100%;
     /* min-height: 400px; */
-    height: 35vh;
+    height: auto;
     /* height: 100%; */
     display: flex;
     flex-direction: column;
@@ -108,28 +166,48 @@ export const Card = styled.div`
     transition: all 0.3s ease-in-out;
     cursor: pointer;
     padding: 0 2rem;
+    /* border: red solid 1px; */
 
     &:hover {
-        transform: scale(1.04);
+        background-color: #1B2B54;
     }
 
     @media (max-width: 1440px) {
-        width: 30vw;
+        /* width: 30vw;
         height: 25vh;
-        gap: 0.5rem;
+        gap: 0.5rem; */
     }
 
     @media (max-width: 675px) {
-        height: 25vw;
+        /* height: 25vw; */
     }
 
     @media (max-width: 656px) {
-        min-width: 250px;
-        height: 20vw;
+
     } 
 `
 
+export const MolduraImgFamily = styled.div`
+    width: 100px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: red solid; */
+`
+
+export const MolduraImg = styled.div`
+    width: 140px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: red solid; */
+`
+
 export const Img = styled.img`
+    width: 100%;
+
     @media (max-width: 1440px) {
     width: 100px;
     margin-bottom: 1rem;
@@ -139,26 +217,101 @@ export const Img = styled.img`
         width: 80px;
     }
 
-    @media (max-width: 555px) {
+    /* @media (max-width: 555px) {
         width: 60px;
-    }
+    } */
 `
 
 export const Description = styled.p`
     font-family: 'Poppins', sans-serif;
     font-size: .8rem;
     color: #FFFFFF;
-    margin-bottom: 2rem;
+    margin-bottom: 15px;
 
     @media (max-width: 1440px) {
         font-size: .7rem;
     }
 
-    @media (max-width: 656px) {
+    /* @media (max-width: 656px) {
         font-size: .5rem;
     }
 
     @media (max-width: 555px) {
         font-size: .4rem;
+    } */
+`
+
+export const Overlay = styled.div`
+    position: absolute;
+    /* border: red solid 1px; */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2000;
+
+    & div {
+        /* border: green solid; */
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: row-reverse;
+        /* border: none; */
     }
 `
+
+export const NuvemOverlay = styled.img`
+    /* border: red solid; */
+    position: relative;
+    animation: ${movimentoNuvens} forwards 2s;
+    opacity: 1;
+    width: 10000px;
+    height: 2000px;
+    z-index: -2;
+
+    & div {
+        border: red solid;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+        & video {
+            z-index: 10000000;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+    }
+`
+
+export const NuvemOverlayII = styled.img`
+    /* border: red solid; */
+    position: relative;
+    animation: ${movimentoNuvensII} forwards 2s;
+    opacity: 1;
+    width: 10000px;
+    height: 2000px;
+    z-index: -2;
+`
+
+export const NuvemOverlayIII = styled.img`
+    /* border: red solid; */
+    position: absolute;
+    animation: ${movimentoNuvensIII} forwards 4s;
+
+    width: 2000px;
+    height: 2000px;
+    z-index: -1;
+`
+
+export const NuvemOverlayIV = styled.img`
+    /* border: red solid; */
+    position: absolute;
+    animation: ${movimentoNuvensIV} forwards 4s;
+    width: 2000px;
+    height: 2000px;
+    bottom: 0;
+    z-index: -1;
+`
+

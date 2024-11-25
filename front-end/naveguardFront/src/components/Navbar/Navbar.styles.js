@@ -13,6 +13,10 @@ export const Container = styled.div`
   z-index: 1099;
   position: fixed;
   /* border: red solid 1px; */
+
+  @media (max-width: 370px) {
+        display: none;
+    }
 `;
 
 export const Nav = styled.nav`
@@ -59,6 +63,10 @@ export const UserPhoto = styled.img`
 export const NameProfile = styled.label`
   font-size: .8rem;
   cursor: pointer;
+
+  @media (max-width: 470px) {
+        display: none;
+    };
 `
 
 export const DropDown = styled.nav`
