@@ -162,6 +162,12 @@ function animate() {
           spanMensagem.innerText = mensagensInteracao[tipo];
           somGuardado = som;
 
+          const nomePersonagem = document.querySelector(
+            "#mensagemInteracao p"
+          );
+          
+          nomePersonagem.innerText = id
+
           // Encontra o personagem pelo id e atualiza a imagem de interação
           const personagem = personagensAdicionais.find((p) => p.id === id);
           if (personagem) {
@@ -260,7 +266,7 @@ function animate() {
       3046,
       sons.somMenino,
       imagensPersonagens.spriteLuis.baixo,
-      "LuisFilho"
+      "Luis"
     );
 
     // Se não houve colisão
@@ -346,8 +352,15 @@ function animate() {
           const spanMensagem = document.querySelector(
             "#mensagemInteracao span"
           );
+
           spanMensagem.innerText = mensagensInteracao[tipo];
           somGuardado = som;
+
+          const nomePersonagem = document.querySelector(
+            "#mensagemInteracao p"
+          );
+          
+          nomePersonagem.innerText = id
 
           // Encontra o personagem pelo id e atualiza a imagem de interação
           const personagem = personagensAdicionais.find((p) => p.id === id);
@@ -447,7 +460,7 @@ function animate() {
       3046,
       sons.somMenino,
       imagensPersonagens.spriteLuis.direita,
-      "LuisFilho"
+      "Luis"
     );
 
     // Se não houve colisão
@@ -534,6 +547,12 @@ function animate() {
           );
           spanMensagem.innerText = mensagensInteracao[tipo];
           somGuardado = som;
+
+          const nomePersonagem = document.querySelector(
+            "#mensagemInteracao p"
+          );
+          
+          nomePersonagem.innerText = id
 
           // Encontra o personagem pelo id e atualiza a imagem de interação
           const personagem = personagensAdicionais.find((p) => p.id === id);
@@ -633,7 +652,7 @@ function animate() {
       3046,
       sons.som3,
       imagensPersonagens.spriteLuis.cima,
-      "LuisFilho"
+      "Luis"
     );
 
     // Se não houve colisão
@@ -720,6 +739,12 @@ function animate() {
           );
           spanMensagem.innerText = mensagensInteracao[tipo];
           somGuardado = som;
+
+          const nomePersonagem = document.querySelector(
+            "#mensagemInteracao p"
+          );
+          
+          nomePersonagem.innerText = id
 
           // Encontra o personagem pelo id e atualiza a imagem de interação
           const personagem = personagensAdicionais.find((p) => p.id === id);
@@ -819,7 +844,7 @@ function animate() {
       3046,
       sons.som3,
       imagensPersonagens.spriteLuis.esquerda,
-      "LuisFilho"
+      "Luis"
     );
 
     // Se não houve colisão

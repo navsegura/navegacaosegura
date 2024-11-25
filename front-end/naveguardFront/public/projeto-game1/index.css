@@ -8,7 +8,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    gap: 35px;
+    overflow: hidden;
 }
 
 canvas {
@@ -22,24 +23,40 @@ canvas {
     align-items: center;
     position: absolute;
     bottom: 150px;
-    background-color: #e7cd9a;
+    background-color: #D9C4A4;
     font-family: "Luckiest Guy", sans-serif;
-    color: #2991e1;
+    color: #5D4037;
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 1.5rem;
     width: 1000px;
-    height: 100px;
+    min-height: 100px;
     display: none;
     z-index: 1000;
     text-align: center;
     gap: 50px;
+    border: white 5px solid;
+}
+
+#nomePersonagem {
+    color: white;
+    min-width: 150px;
+    background-color: #8D6E63;
+    padding: 2% 2% 2% 0;
+    border-radius: 20px;
+    clip-path: polygon(
+        0% 0%, /* Topo esquerdo */
+        100% 0%, /* Topo direito */
+        85% 50%, /* Meio direito */
+        100% 100%, /* Corte inclinado */
+        0% 100% /* Base esquerda */
+      );
 }
 
 #botaoProximo {
     padding: 10px 15px;
     font-size: 1.5rem;
-    background-color: #2991e1;
+    background-color: #42A5F5;
     color: white;
     border: none;
     border-radius: 5px;
