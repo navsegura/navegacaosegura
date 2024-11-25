@@ -7,25 +7,31 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
     <link rel="shortcut icon" href="../logo.png" type="image/x-icon" />
-    <title>Document</title>
+    <title>A Grande Navegação</title>
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <div class="controles">
-      <img src="./img/controles-awsd.png" alt="controles" />
-    </div>
-    <canvas id="canvaszinho"></canvas>
-
-    <div id="mensagemInteracao">
-      <div id="nomePersonagem">
-        <p></p>
+    <header>
+      <p>NAVEGUARD</p>
+      <img src="./img/setavoltar.svg" alt="seta-voltar" width="35px" onclick="history.back()">
+    </header>
+    <main>
+      <div class="controles">
+        <img src="./img/controles-awsd.png" alt="controles"/>
       </div>
-      <span id="caixaDeTexto"></span>
-      <button id="botaoProximo">Próximo</button>
-    </div>
-    <div class="controles">
-      <img src="./img/interagir-enter.png" alt="controles" />
-    </div>
+      <canvas id="canvaszinho"></canvas>
+
+      <div id="mensagemInteracao">
+        <div id="nomePersonagem">
+          <p></p>
+        </div>
+        <span id="caixaDeTexto"></span>
+        <button id="botaoProximo">Próximo</button>
+      </div>
+      <div class="controles">
+        <img src="./img/interagir-enter.png" alt="controles" />
+      </div>
+    </main>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js"

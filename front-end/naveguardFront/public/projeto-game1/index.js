@@ -1,4 +1,3 @@
-console.log(personagensAdicionais);
 const moveis = [
   background,
   ...limites,
@@ -16,7 +15,8 @@ const moveis = [
   ...coordenadasPersonagemHeverton,
   ...coordenadasPersonagemLuisFilho,
   ...coordenadasPersonagemNivea,
-  ...imagensInterativas
+  ...imagensInterativas,
+  ...porcoLadoJonas,
 ]; //Ver oque esse ... faz
 
 let podeInteragir = false;
@@ -51,6 +51,9 @@ function animate() {
     limite.draw();
   });
 
+  porcoLadoJonas.forEach((limite) => {
+    limite.draw();
+  });
   
 
   coordenadasPersonagemJonas.forEach((limite) => {
@@ -268,6 +271,8 @@ function animate() {
       imagensPersonagens.spriteLuis.baixo,
       "Luis"
     );
+    
+
 
     // Se não houve colisão
     if (
