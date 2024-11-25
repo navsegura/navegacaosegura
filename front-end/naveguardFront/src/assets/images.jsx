@@ -1,14 +1,10 @@
 import Footer from './images/footer.svg';
 import FooterDefault from './images/footerdefault.svg';
 import Mountain from "./images/mountain.svg";
-import AguaViva from "./images/aguaviva.svg";
-import Arraia from "./images/arraia.svg";
 import Coqueiro from "./images/coqueiro.svg";
 import Nuvem from "./images/nuvem.svg";
 import Praia from "./images/praia.svg"
 import Sol from "./images/sol.svg"
-import peixesEsquerda from './images/peixesEsquerda.svg'
-import peixesDireita from './images/peixesDireita.svg'
 import papagaio from './images/papagaio.svg'
 import check from './images/check.svg'
 import uncheck from './images/uncheck.svg'
@@ -59,21 +55,18 @@ import amCardIcon from './images/amSvg.svg'
 import eloCardIcon from './images/eloSvg.svg'
 import hiperCardIcon from './images/hiperSvg.svg'
 import btnBack from './images/btnBack.svg'
+import backgroundMainContent from './images/backgroundMainContent.png'
 
 // aqui vcs criam as variaveis especificando o caminho delas
 
 const Images = {
     Footer,
     FooterDefault,
-    AguaViva,
-    Arraia,
     Coqueiro,
     Nuvem,
     Praia,
     Sol,
     Mountain,
-    peixesDireita,
-    peixesEsquerda,
     papagaio,
     check,
     uncheck,
@@ -124,6 +117,7 @@ const Images = {
     amCardIcon,
     hiperCardIcon,
     btnBack,
+    backgroundMainContent,
     // aqui fica as variaveis com o mesmo nome ali em cima
 }
 

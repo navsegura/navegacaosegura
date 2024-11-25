@@ -1,56 +1,43 @@
-  .Footer-image {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-  }
+/*É como eu disse: Só papai do ceu sabe o quanto eu apanhei aqui. 
+se eu colocar a imagem na div ela ganha corpo e atrapalha na hora de alinhar
+com o conteúdo. Por isso usei position da ultima vez. Estava inviável mas consegui alinhar aqui
+vou ajustar e espero o feedback de vocês para melhorias*/
+.footer-content {
+  width: 100%;
+  background-image: url("../../../assets/images/footer.svg"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  max-width: 100%;
+  padding-top: 299px;
+  justify-content: space-between;
+}
 
-  .footer-content {
-    position: relative;
-    width: 100%;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    align-self: center;
-  }
-  
-  .content-overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    gap: 150px;
-    height: 100%;
-    color: white;
-    display: flex;
-    flex-direction: row; /*alinhei as divs*/
-    justify-content: center;
-    align-self: center;
-    align-items: center;
-    text-align: center;
-    padding-top: 140px;
-    overflow: hidden;
-  }
 
-  .first-col, .second-col, .third-col, .fourth-col {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-  
-  .social-medias img {
-    margin: 0 6px;
-    width: 14%;
-  }
-  
-  .input-email {
-    padding: 10px;
-    margin-top: 10px;
-  }
-  
-  .enviar-seta {
-    cursor: pointer;
-  }
-  
+.content-overlay {
+  color: #f5f5f5;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 250px;
+  justify-content: center;
+  align-self: center;
+  flex-wrap: nowrap;
+  padding: 10px 100px 130px 100px;
+  justify-content: space-between;
+
+}
+
+
+.first-col ol, .second-col ol, .third-col ol, .fourth-col ol{
+  display: flex;
+  gap: 13px;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+.fourth-col input {
+  width: 300px;
+  height: 50px;
+}
