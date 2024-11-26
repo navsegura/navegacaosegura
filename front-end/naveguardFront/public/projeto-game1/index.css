@@ -36,6 +36,8 @@ header p {
 header img {
     cursor: pointer;
     padding-right: 100px;
+    outline: none;
+    user-select: none;
 }
 
 
@@ -96,6 +98,6 @@ main {
 }
 
 .controles img {
-    outline: none; /* Remove a borda ao focar */
-    user-select: none; /* Evita que a imagem seja selecionada */
+    outline: none;
+    user-select: none;
 }
