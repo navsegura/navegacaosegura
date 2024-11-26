@@ -14,28 +14,32 @@ export const CardsContainer = styled.section`
     z-index: 1;
     cursor: pointer;
 
-    @media (max-width: 650px) {
-    .cards {
-        align-items: center;
+    @media (max-width: 1150px) {
+        display: flex;
         flex-direction: column;
+        align-items: center;
     }
-}
 `
 
 export const Card = styled.div`
     display: flex;
+    /* border: red solid 1px; */
     justify-content: center;
     align-items: center;
     flex-direction: column;
     transition: .4s ease-in-out;
-    width: 13rem;
-    height: 10rem;
     background: linear-gradient(to right, #3EABEE 0%, #289BEB 50%, #118BE9 100%);
     border-radius: 15px 15px 15px 15px;
     width: 25rem;
     height: 20rem;
     background: linear-gradient(to right, #3EABEE 0%, #289BEB 50%, #118BE9 100%);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+    @media (max-width: 1400px) {
+        width: 20rem;
+        height: 20rem;
+    }
+
 `
 
 export const HeaderCard = styled.div`
@@ -43,13 +47,16 @@ export const HeaderCard = styled.div`
     justify-content: center;
     background-color: #FFFFFF;
     border-radius: 15px 15px 0 0;
-    width: 13rem;
     align-items: center;
     background-color: #FFFFFF;
     width: 25rem;
     height: 5rem;
     font-size: 1.5rem;
     color: #FF6F00;
+
+    @media (max-width: 1400px) {
+        width: 20rem;
+    }
 `
 
 export const ContentCard = styled.div`

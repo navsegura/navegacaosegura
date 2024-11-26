@@ -139,11 +139,13 @@ const UserProfile = () => {
                 <img src={Images.Tutoriais} alt="Tutoriais" width={50} />
                 <P>Guias simples para proteger sua família online</P>
               </Square>
-              <Square>
-                <Graphics>Artigos</Graphics>
-                <img src={Images.Artigos} alt="Tutoriais" width={50} />
-                <P>Dicas e informações sobre segurança digital</P>
-              </Square>
+              <Link to="/articles">
+                <Square>
+                  <Graphics>Artigos</Graphics>
+                  <img src={Images.Artigos} alt="Tutoriais" width={50} />
+                  <P>Dicas e informações sobre segurança digital</P>
+                </Square>
+              </Link>
               <Link to="/parental-control">
                 <Square>
                   <Graphics>Controle Parental</Graphics>
