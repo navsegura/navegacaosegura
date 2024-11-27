@@ -195,7 +195,7 @@ function animate() {
       player,
       coordenadasPersonagemJonas,
       2860,
-      sons.som1,
+      sons.somJonas,
       imagensPersonagens.spriteJonas.baixo,
       "Jonas"
     );
@@ -203,7 +203,7 @@ function animate() {
       player,
       coordenadasPersonagemAntonio,
       2924,
-      sons.somMenino,
+      sons.somAntonio,
       imagensPersonagens.spriteAntonio.baixo,
       "Antonio"
     );
@@ -211,7 +211,7 @@ function animate() {
       player,
       coordenadasPersonagemGuilherme,
       2988,
-      sons.somMenino,
+      sons.somGuilherme,
       imagensPersonagens.spriteGuilherme.baixo,
       "Guilherme"
     );
@@ -219,7 +219,7 @@ function animate() {
       player,
       coordenadasPersonagemMayla,
       3052,
-      sons.somMenina,
+      sons.somMayla,
       imagensPersonagens.spriteMayla.baixo,
       "Mayla"
     );
@@ -227,7 +227,7 @@ function animate() {
       player,
       coordenadasPersonagemJamylle,
       2989,
-      sons.somMenina,
+      sons.somMyle,
       imagensPersonagens.spriteJamyle.baixo,
       "Jamyle"
     );
@@ -243,7 +243,7 @@ function animate() {
       player,
       coordenadasPersonagemTheo,
       2861,
-      sons.somMenino,
+      sons.somTheo,
       imagensPersonagens.spriteTheo.baixo,
       "Theo"
     );
@@ -251,7 +251,7 @@ function animate() {
       player,
       coordenadasPersonagemHeverton,
       2862,
-      sons.somMenino,
+      sons.somHeverton,
       imagensPersonagens.spriteHeverton.baixo,
       "Heverton"
     );
@@ -259,7 +259,7 @@ function animate() {
       player,
       coordenadasPersonagemNivea,
       3110,
-      sons.somMenina,
+      sons.somNivea,
       imagensPersonagens.spriteNivea.baixo,
       "Nivea"
     );
@@ -267,7 +267,7 @@ function animate() {
       player,
       coordenadasPersonagemLuisFilho,
       3046,
-      sons.somMenino,
+      sons.somLuis,
       imagensPersonagens.spriteLuis.baixo,
       "Luis"
     );
@@ -391,7 +391,7 @@ function animate() {
       player,
       coordenadasPersonagemJonas,
       2860,
-      sons.somMenino,
+      sons.somJonas,
       imagensPersonagens.spriteJonas.direita,
       "Jonas"
     );
@@ -399,7 +399,7 @@ function animate() {
       player,
       coordenadasPersonagemAntonio,
       2924,
-      sons.somMenino,
+      sons.somAntonio,
       imagensPersonagens.spriteAntonio.direita,
       "Antonio"
     );
@@ -407,7 +407,7 @@ function animate() {
       player,
       coordenadasPersonagemGuilherme,
       2988,
-      sons.somMenino,
+      sons.somGuilherme,
       imagensPersonagens.spriteGuilherme.direita,
       "Guilherme"
     );
@@ -415,7 +415,7 @@ function animate() {
       player,
       coordenadasPersonagemMayla,
       3052,
-      sons.somMenina,
+      sons.somMayla,
       imagensPersonagens.spriteMayla.direita,
       "Mayla"
     );
@@ -423,7 +423,7 @@ function animate() {
       player,
       coordenadasPersonagemJamylle,
       2989,
-      sons.somMenina,
+      sons.somMyle,
       imagensPersonagens.spriteJamyle.direita,
       "Jamyle"
     );
@@ -439,7 +439,7 @@ function animate() {
       player,
       coordenadasPersonagemTheo,
       2861,
-      sons.somMenino,
+      sons.somTheo,
       imagensPersonagens.spriteTheo.direita,
       "Theo"
     );
@@ -447,7 +447,7 @@ function animate() {
       player,
       coordenadasPersonagemHeverton,
       2862,
-      sons.somMenino,
+      sons.somHeverton,
       imagensPersonagens.spriteHeverton.direita,
       "Heverton"
     );
@@ -455,7 +455,7 @@ function animate() {
       player,
       coordenadasPersonagemNivea,
       3110,
-      sons.somMenina,
+      sons.somNivea,
       imagensPersonagens.spriteNivea.direita,
       "Nivea"
     );
@@ -463,7 +463,7 @@ function animate() {
       player,
       coordenadasPersonagemLuisFilho,
       3046,
-      sons.somMenino,
+      sons.somLuis,
       imagensPersonagens.spriteLuis.direita,
       "Luis"
     );
@@ -583,7 +583,7 @@ function animate() {
       player,
       coordenadasPersonagemJonas,
       2860,
-      sons.som1,
+      sons.somJonas,
       imagensPersonagens.spriteJonas.cima,
       "Jonas"
     );
@@ -591,7 +591,7 @@ function animate() {
       player,
       coordenadasPersonagemAntonio,
       2924,
-      sons.som2,
+      sons.somAntonio,
       imagensPersonagens.spriteAntonio.cima,
       "Antonio"
     );
@@ -599,7 +599,7 @@ function animate() {
       player,
       coordenadasPersonagemGuilherme,
       2988,
-      sons.som3,
+      sons.somGuilherme,
       imagensPersonagens.spriteGuilherme.cima,
       "Guilherme"
     );
@@ -607,7 +607,7 @@ function animate() {
       player,
       coordenadasPersonagemMayla,
       3052,
-      sons.som1,
+      sons.somMayla,
       imagensPersonagens.spriteMayla.cima,
       "Mayla"
     );
@@ -615,7 +615,7 @@ function animate() {
       player,
       coordenadasPersonagemJamylle,
       2989,
-      sons.som2,
+      sons.somMyle,
       imagensPersonagens.spriteJamyle.cima,
       "Jamyle"
     );
@@ -631,7 +631,7 @@ function animate() {
       player,
       coordenadasPersonagemTheo,
       2861,
-      sons.som2,
+      sons.somTheo,
       imagensPersonagens.spriteTheo.cima,
       "Theo"
     );
@@ -639,7 +639,7 @@ function animate() {
       player,
       coordenadasPersonagemHeverton,
       2862,
-      sons.som3,
+      sons.somHeverton,
       imagensPersonagens.spriteHeverton.cima,
       "Heverton"
     );
@@ -647,7 +647,7 @@ function animate() {
       player,
       coordenadasPersonagemNivea,
       3110,
-      sons.som2,
+      sons.somNivea,
       imagensPersonagens.spriteNivea.cima,
       "Nivea"
     );
@@ -655,7 +655,7 @@ function animate() {
       player,
       coordenadasPersonagemLuisFilho,
       3046,
-      sons.som3,
+      sons.somLuis,
       imagensPersonagens.spriteLuis.cima,
       "Luis"
     );
@@ -775,7 +775,7 @@ function animate() {
       player,
       coordenadasPersonagemJonas,
       2860,
-      sons.som1,
+      sons.somJonas,
       imagensPersonagens.spriteJonas.esquerda,
       "Jonas"
     );
@@ -783,7 +783,7 @@ function animate() {
       player,
       coordenadasPersonagemAntonio,
       2924,
-      sons.som2,
+      sons.somAntonio,
       imagensPersonagens.spriteAntonio.esquerda,
       "Antonio"
     );
@@ -791,7 +791,7 @@ function animate() {
       player,
       coordenadasPersonagemGuilherme,
       2988,
-      sons.som3,
+      sons.somGuilherme,
       imagensPersonagens.spriteGuilherme.esquerda,
       "Guilherme"
     );
@@ -799,7 +799,7 @@ function animate() {
       player,
       coordenadasPersonagemMayla,
       3052,
-      sons.som1,
+      sons.somMayla,
       imagensPersonagens.spriteMayla.esquerda,
       "Mayla"
     );
@@ -807,7 +807,7 @@ function animate() {
       player,
       coordenadasPersonagemJamylle,
       2989,
-      sons.som2,
+      sons.somMyle,
       imagensPersonagens.spriteJamyle.esquerda,
       "Jamyle"
     );
@@ -823,7 +823,7 @@ function animate() {
       player,
       coordenadasPersonagemTheo,
       2861,
-      sons.som2,
+      sons.somTheo,
       imagensPersonagens.spriteTheo.esquerda,
       "Theo"
     );
@@ -831,7 +831,7 @@ function animate() {
       player,
       coordenadasPersonagemHeverton,
       2862,
-      sons.som3,
+      sons.somHeverton,
       imagensPersonagens.spriteHeverton.esquerda,
       "Heverton"
     );
@@ -839,7 +839,7 @@ function animate() {
       player,
       coordenadasPersonagemNivea,
       3110,
-      sons.som2,
+      sons.somNivea,
       imagensPersonagens.spriteNivea.esquerda,
       "Nivea"
     );
@@ -847,7 +847,7 @@ function animate() {
       player,
       coordenadasPersonagemLuisFilho,
       3046,
-      sons.som3,
+      sons.somLuis,
       imagensPersonagens.spriteLuis.esquerda,
       "Luis"
     );

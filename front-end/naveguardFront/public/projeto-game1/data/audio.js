@@ -3,7 +3,7 @@ const audio = {
     src: "./audio/musica-navegaurd.mp3",
     loop: true,
     html5: true,
-    volume: 0.5,
+    volume: 0.2,
     onend: function () {
       this.seek(0);
       this.play();
@@ -13,21 +13,33 @@ const audio = {
 
 const sons = {
   somJonas: new Howl({
-    src: ['./audio/AudioJonas.mp3'],
+    src: ['./audio/Jonas.wav'],
     volume: 1 // caminho para o arquivo de áudio
   }),
-  somMenina: new Howl({
-    src: ['./audio/voz-menina.mp3']}),
-  somMenino: new Howl({
-    src: ['./audio/voz-menino.mp3']}),
-  som1: new Howl({
-    src: ["./audio/posso-te-ligar-agora.mp3"], // caminho para o arquivo de áudio
+  somMayla: new Howl({
+    src: ['./audio/Mayla.wav']}),
+  somAntonio: new Howl({
+    src: ['./audio/Antonio.wav']}),
+  somGuilherme: new Howl({
+    src: ["./audio/Guilherme.wav"],
   }),
-  som2: new Howl({
-    src: ["./audio/tot.mp3"], // caminho para o arquivo de áudio
+  somLuis: new Howl({
+    src: ["./audio/Luis.wav"],
   }),
-  som3: new Howl({
-    src: ["./audio/Carlos-Gritandoo.mp3"],
-    volume: 5, // caminho para o arquivo de áudio
+  somMyle: new Howl({
+    src: ["./audio/Myle.wav"],
+    volume: 1,
+  }),
+  somHeverton: new Howl({
+    src: ["./audio/Heverton.wav"],
+    volume: 1,
+  }),
+  somNivea: new Howl({
+    src: ["./audio/Nivea.wav"],
+    volume: 1,
+  }),
+  somTheo: new Howl({
+    src: ["./audio/Theo.wav"],
+    volume: 1,
   }),
 };
