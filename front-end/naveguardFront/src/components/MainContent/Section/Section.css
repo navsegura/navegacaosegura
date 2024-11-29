@@ -10,6 +10,15 @@
     /* border:  red solid 1px; */
 }
 
+/* .arrowUp {
+    position: fixed;
+    z-index: 10;
+    top: 80%;
+    left: 90%;
+    font-size: 100px;
+    color: #ad5512;
+} */
+
 .main_text_container {
     max-width: 1700px;
     width: 100%;

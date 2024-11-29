@@ -1,7 +1,8 @@
-import "./SectionGame.css";
 import { Images } from "../../../assets/images";
-import { Link as ScrollLink } from "react-scroll";
 import { Link as RouterLink } from "react-router-dom";
+import "./SectionGame.css"
+import { Images } from "../../../assets/images"// import Footer from "../../footer/Footer"
+
 
 function SectionGame() {
   return (
