@@ -13,6 +13,7 @@ import KidsPage from '../pages/KidsPage/KidsPage.jsx'
 import Quiz from '../pages/Quiz Game/Quiz.jsx'
 
 
+
 const Router = () => {
 
     const isLoggedIn = false
@@ -28,6 +29,7 @@ const Router = () => {
                     <Route path='/about' element={<Sobre />} />
                     <Route path='/login' element={<Login />} />
                     <Route path='/parental-control' element={<ParentalControl/>} />
+                    <Route path='/articles' element={<Articles/>} />
                     <Route path='*' element={<NotFound/>} />
                     <Route path='/quiz' element={<Quiz/>} />
                     <Route path='/kids-page' element={<PrivateRoute isLoggedIn={isLoggedIn}element={<KidsPage/>} />}/>

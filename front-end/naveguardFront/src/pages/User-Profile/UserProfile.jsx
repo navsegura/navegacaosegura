@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import NavBar from "../../components/NavBar/Navbar";
 import SideBar from "../../components/SideBar/SideBar";
 import { Images } from "../../assets/images.jsx";
+import NuvensContainer from "../../components/Nuvens/Nuvens";
 import { Page, MainContainer, UserProfileContent, Profile, UserImage, Photo, Line, About, Span, NameProfile, Icon, Info, Bio, Location, Strong, Edit, Input, MainContent, UserProfileContainer, GroupSquare, Square, Graphics, P, DropdownMenu, DropdownItem } from './UserProfile.styles'
 
 const UserProfile = () => {
@@ -64,6 +65,7 @@ const UserProfile = () => {
       <NavBar/>
       <SideBar/>
       <Page>
+          <NuvensContainer/>
         <MainContainer>
           <UserProfileContent>
               <Profile>
@@ -137,11 +139,13 @@ const UserProfile = () => {
                 <img src={Images.Tutoriais} alt="Tutoriais" width={50} />
                 <P>Guias simples para proteger sua família online</P>
               </Square>
-              <Square>
-                <Graphics>Artigos</Graphics>
-                <img src={Images.Artigos} alt="Tutoriais" width={50} />
-                <P>Dicas e informações sobre segurança digital</P>
-              </Square>
+              <Link to="/articles">
+                <Square>
+                  <Graphics>Artigos</Graphics>
+                  <img src={Images.Artigos} alt="Tutoriais" width={50} />
+                  <P>Dicas e informações sobre segurança digital</P>
+                </Square>
+              </Link>
               <Link to="/parental-control">
                 <Square>
                   <Graphics>Controle Parental</Graphics>

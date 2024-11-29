@@ -42,6 +42,8 @@ function Navbar() {
   };
 
   return (
+  <>
+    
     <Container>
       <LoadingComponent isLoading={isLoading} />
       <Nav>
@@ -90,6 +92,7 @@ function Navbar() {
         )}
       </Nav>
     </Container>
+    </>
   );
 }
 

@@ -1,3 +1,4 @@
+
 import "./SectionGame.css";
 import { Images } from "../../../assets/images";
 import { Link as ScrollLink } from "react-scroll";
@@ -61,6 +62,7 @@ function SectionGame() {
           </button>
         </div>
       </section>
+
 
       <section className="third_game_section">
         <div className="header_game_second">
