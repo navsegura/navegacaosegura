@@ -11,6 +11,7 @@ import Login from '../pages/Login/Login.jsx'
 import PrivateRoute from './PrivateRoute.jsx'
 import KidsPage from '../pages/KidsPage/KidsPage.jsx'
 import Quiz from '../pages/Quiz Game/Quiz.jsx'
+import Articles from '../pages/Articles/Articles.jsx'
 
 
 
