@@ -10,7 +10,9 @@ import Sobre from '../pages/Sobre/Sobre.jsx'
 import Login from '../pages/Login/Login.jsx'
 import PrivateRoute from './PrivateRoute.jsx'
 import KidsPage from '../pages/KidsPage/KidsPage.jsx'
-import Articles from '../pages/Articles/Articles.jsx'
+import Quiz from '../pages/Quiz Game/Quiz.jsx'
+
+
 
 const Router = () => {
 
@@ -29,6 +31,7 @@ const Router = () => {
                     <Route path='/parental-control' element={<ParentalControl/>} />
                     <Route path='/articles' element={<Articles/>} />
                     <Route path='*' element={<NotFound/>} />
+                    <Route path='/quiz' element={<Quiz/>} />
                     <Route path='/kids-page' element={<PrivateRoute isLoggedIn={isLoggedIn}element={<KidsPage/>} />}/>
                     {/* 404 */}
                 </Routes>
