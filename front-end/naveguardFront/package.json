@@ -20,6 +20,7 @@
     "react-dom": "^18.3.1",
     "react-loading-indicators": "^1.0.0",
     "react-router-dom": "^6.27.0",
+    "react-scroll": "^1.9.0",
     "scrollreveal": "^4.0.9",
     "styled-components": "^6.1.13",
     "swiper": "^11.1.14"

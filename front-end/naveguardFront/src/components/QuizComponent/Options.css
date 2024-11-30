@@ -1,0 +1,27 @@
+.option{
+    height: 5rem;
+    width: 30rem;
+    font-family: var(--secondary-font);
+    background: linear-gradient(to right, #3EABEE 0%, #289BEB 50%, #118BE9 100%);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: 0.4s;
+}
+
+.option:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.correct {
+    background: green;
+    font-weight: bold;
+}
+
+.wrong {
+    background: red;
+    opacity: .4;
+}

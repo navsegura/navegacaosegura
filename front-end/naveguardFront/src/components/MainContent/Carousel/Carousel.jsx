@@ -18,7 +18,7 @@ function Carousel() {
         <ContainerSlide className="container_slide">
             <Swiper
                 slidesPerView={1}
-                navigation={true}
+                // navigation={true}
                 pagination={{clickable: true}}
                 loop={true}
                 autoplay={{delay: 4000}}

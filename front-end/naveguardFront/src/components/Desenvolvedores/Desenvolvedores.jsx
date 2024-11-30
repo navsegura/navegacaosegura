@@ -1,9 +1,11 @@
 import './desenvolvedores.css'
 import { Images } from '../../assets/images'
+import NuvensContainer from '../Nuvens/Nuvens'
 
 function Desenvolvedores () {
     return (
         <>
+        <NuvensContainer/>
         <section className='main_dev_section'>
             <div className="header_dev_section">
                 <h3 className='title_desenvolvedores'>Desenvolvedores</h3>

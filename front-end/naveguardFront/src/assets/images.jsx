@@ -3,6 +3,7 @@ import FooterDefault from './images/footerdefault.svg';
 import Mountain from "./images/mountain.svg";
 import Coqueiro from "./images/coqueiro.svg";
 import Nuvem from "./images/nuvem.svg";
+import NuvemOpacity from "./images/nuvemOpacity.svg";
 import Praia from "./images/praia.svg"
 import Sol from "./images/sol.svg"
 import papagaio from './images/papagaio.svg'
@@ -29,7 +30,6 @@ import ControleParental from './images/controle-parental.png'
 import AmeacasOnline from './images/ameacas-online.png'
 import ChatBot from './images/chatbot.png'
 import Artigos from './images/artigos.png'
-import KidLogger from './images/KidLogger-Control.png'
 import Seta_Voltar from './images/seta_voltar.svg'
 import LogoLoading from './images/naveguard-loading.svg'
 import Cloud_Footer from './images/CloudFooter.svg'
@@ -57,7 +57,18 @@ import hiperCardIcon from './images/hiperSvg.svg'
 import btnBack from './images/btnBack.svg'
 import backgroundMainContent from './images/backgroundMainContent.png'
 
+import PeixePalhaco from './images/peixe_palhaco.svg'
+import KidLogger from './images/kidlogger.svg'
+import FamilyLink from './images/google-family-link.svg'
+import Qustodio from './images/qustodio.svg'
+import FamilyShield from './images/family-shield.svg'
 // aqui vcs criam as variaveis especificando o caminho delas
+
+// Videos
+import FamilyLinkVideo from './videos/familyLinkVideo.mp4';
+import FamilyShieldVideo from './videos/familyShieldVideo.mp4';
+import QustodioVideo from './videos/qustodioVideo.mp4';
+import KidLoggerVideo from './videos/qustodioVideo.mp4';
 
 const Images = {
     Footer,
@@ -91,7 +102,6 @@ const Images = {
     AmeacasOnline,
     ChatBot,
     Artigos,
-    KidLogger,
     Seta_Voltar,
     LogoLoading,
     Cloud_Footer,
@@ -118,7 +128,20 @@ const Images = {
     hiperCardIcon,
     btnBack,
     backgroundMainContent,
+    PeixePalhaco,
+    KidLogger,
+    FamilyLink,
+    Qustodio,
+    FamilyShield,
+    NuvemOpacity
     // aqui fica as variaveis com o mesmo nome ali em cima
 }
 
-export { Images };
+const Videos = {
+    FamilyLinkVideo,
+    FamilyShieldVideo,
+    QustodioVideo,
+    KidLoggerVideo
+}
+
+export { Images, Videos };

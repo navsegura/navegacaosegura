@@ -20,15 +20,6 @@ function FooterContent() {
           </div>
         </div>
 
-        <div className="second-col">
-          <ol>
-            <li>Home</li>
-            <li>Sobre</li>
-            <li>Apoie o Naveguard</li>
-            <li>Fale Conosco</li>
-          </ol>
-        </div>
-
         <div className="third-col">
           <ol>
             <li>Política de Privacidade</li>
@@ -39,12 +30,12 @@ function FooterContent() {
         <div className="fourth-col">
           <ol>
             <li>Receba Novidades</li>
+            <li>Seja apoiador</li>
             <input
               className="input-email"
               type="email"
               placeholder="Insira seu e-mail"
             />
-            <span className="enviar-seta">➤</span>
           </ol>
         </div>
       </div>

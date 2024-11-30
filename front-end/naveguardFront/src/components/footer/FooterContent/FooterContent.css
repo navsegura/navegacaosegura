@@ -24,13 +24,11 @@ vou ajustar e espero o feedback de vocês para melhorias*/
   position: relative;
   display: flex;
   flex-direction: row;
-  gap: 250px;
   justify-content: center;
   align-self: center;
   flex-wrap: nowrap;
   padding: 10px 100px 130px 100px;
   justify-content: space-between;
-
 }
 
 
@@ -46,6 +44,47 @@ vou ajustar e espero o feedback de vocês para melhorias*/
   height: 50px;
 }
 
-.enviar-seta{
-  padding-left: 260px;
+
+
+@media (max-width:700px) {
+  .footer-content {
+    width: 100%;
+    max-width: 100%;
+    
+  }
+
+  .content-overlay {
+    gap: 13px;
+    display: flex;
+  }
+
+  .social-medias {
+    align-self: center;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .fourth-col input{
+    width: 12rem;
+  }
+}
+
+@media(max-width:590px) {
+  .content-overlay {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .social-medias {
+    justify-content: center;
+    text-align: center;
+
+  }
+
+  .fourth-col input{
+    justify-content: center;
+    align-self: center;
+  }
 }

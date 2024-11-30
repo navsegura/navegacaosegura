@@ -2,8 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
+    max-height: auto;
 }
 
 .main_content_first_game{
@@ -11,7 +10,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 6rem;
+    height: 50rem;
+    gap: 2rem
 }
 
 .title_game{
@@ -32,9 +32,9 @@
 @media screen and (max-width: 1100px) {
     .game_content{
         flex-direction: column;
+        height: 20rem;
     }
 }
-
 
 .game_one{
     display: flex;
@@ -62,10 +62,15 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100vw;
-    height: 100vh;
     gap: 10rem;
 }
+
+@media screen and (max-width: 1100px) {
+    .second_game_section{
+        min-height: 110rem;
+    }
+}
+
 .header_game_principal{
     display: flex;
     width: 100%;
@@ -90,9 +95,14 @@
     width: 70%;
 }
 
+@media screen and (max-width: 1100px) {
+    .image_gameprincipal{
+        width: 100%;
+    }
+}
+
 .game_screen_principal{
-    width: 100vw;
-    height: 50vh;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -107,10 +117,15 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100vw;
-    height: 200vh;
     gap: 10rem;
 }
+
+@media screen and (max-width: 1100px) {
+    .third_game_section{
+        height: 70rem;
+    }
+}
+
 
 .header_game_second{
     display: flex;
@@ -139,6 +154,17 @@
     .games_secondary{
         flex-direction: column;
         gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .games_secondary img{
+        width: 35rem;
+    }
+}
+@media screen and (max-width: 800px) {
+    .games_secondary img{
+        width: 30rem;
     }
 }
 
@@ -172,9 +198,13 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100vw;
-    height: 100vh;
     gap: 10rem;
+}
+
+@media screen and (max-width: 1100px) {
+    .video_section{
+        height: 110rem;
+    }
 }
 
 .header_video_second{
