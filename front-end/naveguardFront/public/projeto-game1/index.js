@@ -29,6 +29,7 @@ botaoProximo.addEventListener("click", () => {
   mensagemInteracao.style.display = "none";
   movimentoTravado = false;
   alertaExibido = false; // Reseta o estado do alerta
+  somGuardado.stop();
   animate();
 });
 
@@ -883,8 +884,9 @@ function animate() {
   }
 }
 
+
 document.addEventListener("keydown", (event) => {
-  if (event.key === "Enter" && podeInteragir && !alertaExibido) {
+  if (event.key === "Enter" && podeInteragir && !alertaExibido && !somGuardado.playing()) {
     alertaExibido = true;
     podeInteragir = false;
 
