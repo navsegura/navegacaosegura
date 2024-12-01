@@ -108,7 +108,7 @@ Uma melhoria significativa para o futuro desenvolvimento do projeto seria a impl
 | ![Heverton Vitor][img1] | ![Jamyle Elen][img2] | ![Antônio de Pádua][img3] | ![Guilherme Davino][img4] | ![Jonas Rafael][img5] | ![Rodrigo Silva][img6] | ![Theofilo Henrique][img7] | ![Leandra Mayla][img8] |
 |:-----------------------:|:--------------------:|:-------------------------:|:-------------------------:|:---------------------:|:----------------------:|:--------------------------:|:----------------------:|
 | **Heverton Victor**     | **Jamyle Elen**      | **Antônio de Pádua**      | **Guilherme Davino**      | **Jonas Rafael**      | **Rodrigo Silva**      | **Theofilo Henrique**      | **Leandra Mayla**      |
-| **PO**                  | **Scrum Master**     | **Função**                | **Função**                | **Função**            | **Função**             | **Função**                 | **Social Media**       |
+| **PO**                  | **Scrum Master**     | **Função**                | **Função**                | **Financeiro**            | **Função**             | **Função**                 | **Social Media**       |
 
 [img1]: https://github.com/user-attachments/assets/4f7785c6-6bf1-4df3-bffe-952bd125e7b0
 [img2]: https://github.com/user-attachments/assets/4b3637cc-e1a0-45e4-af1b-6b37f3626ecb
