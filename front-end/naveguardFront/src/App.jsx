@@ -1,15 +1,12 @@
-// import { useState } from 'react'
-import Footer from './components/footer/Footer'
-import SignatureCard from './components/SignatureCards/SignatureCard'
+import Router from './routes/routes'
 import './App.css'
 
 
 function App() {
-
   return (
     <>
-      <Footer/>
-      <SignatureCard/>
+      <Router/>
+
     </>
   )
 }

@@ -1,0 +1,68 @@
+.main_dev_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10rem;
+    color: white;
+    position: relative;
+    top: 30rem;
+    height: 100vw;
+}
+
+@media (max-width: 650px){
+    .cards_dev_section{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.title_desenvolvedores{
+    font-size: 3rem;
+}
+
+
+.cards_dev_section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.card_dev_one, .card_dev_two, .card_dev_three, .card_dev_four, .card_dev_five, .card_dev_six, .card_dev_seven, .card_dev_eight{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.first_column, .second_column{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 1.3rem;
+}
+
+li {
+    list-style: none;
+}
+
+.social_icons img{
+    width: 1.5rem;
+}
+
+.social_icons{
+    display: flex;
+    gap: 0.3rem;
+}
+
+
+.dev{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.dev_content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}

@@ -1,0 +1,30 @@
+.arraia {
+    width: 30%;
+    top: 80rem;
+    position: relative;
+    color: #399DDA;
+    left: 1%;
+}
+
+.peixes-direita {
+    width: 90%;
+    top: 25rem;
+    left: 30%;
+    position: relative;
+    max-width: 100%;
+}
+
+.peixes-esquerda {
+    width: 100%;
+    top: 25rem;
+    right: 30%;
+    position: relative;
+}
+
+.agua-viva {
+    width: 25%;
+    bottom: 35rem;
+    left: 70%;
+    position: relative;
+}
+

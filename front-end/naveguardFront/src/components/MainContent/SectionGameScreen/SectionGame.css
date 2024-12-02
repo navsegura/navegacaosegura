@@ -1,0 +1,280 @@
+.first_game_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: auto;
+}
+
+.main_content_first_game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50rem;
+    gap: 2rem
+}
+
+.title_game{
+    font-size: 3rem;
+}
+
+.game_content{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.game_content img{
+    width: 25rem;
+    height: 15rem;
+}
+
+@media screen and (max-width: 1100px) {
+    .game_content{
+        flex-direction: column;
+        height: 20rem;
+    }
+}
+
+.game_one{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game_one:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.content_game_principal{
+    font-family: var(--secondary-font);
+    color: white;
+    width: 12rem;
+    text-align: center;
+}
+
+/* */
+
+.second_game_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10rem;
+}
+
+@media screen and (max-width: 1100px) {
+    .second_game_section{
+        min-height: 110rem;
+    }
+}
+
+.header_game_principal{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header_game_principal .title_game_principal{
+    display: flex;
+    align-self: self-start;
+    margin-left: 7rem;
+    font-size: 3rem;
+}
+
+.line{
+    width: 90%;
+    height: 3px;
+    background-color: white;
+}
+
+.image_gameprincipal{
+    width: 70%;
+}
+
+@media screen and (max-width: 1100px) {
+    .image_gameprincipal{
+        width: 100%;
+    }
+}
+
+.game_screen_principal{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* */
+
+.third_game_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10rem;
+}
+
+@media screen and (max-width: 1100px) {
+    .third_game_section{
+        height: 70rem;
+    }
+}
+
+
+.header_game_second{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header_game_second .title_game_principal{
+    display: flex;
+    align-self: self-start;
+    margin-left: 7rem;
+    font-size: 3rem;
+}
+
+.games_secondary{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 1100px) {
+    .games_secondary{
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .games_secondary img{
+        width: 35rem;
+    }
+}
+@media screen and (max-width: 800px) {
+    .games_secondary img{
+        width: 30rem;
+    }
+}
+
+.first_column_game{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.second_column_game{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.game_image{
+    width: 35rem;
+}
+
+.game{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* */
+
+.video_section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10rem;
+}
+
+@media screen and (max-width: 1100px) {
+    .video_section{
+        height: 110rem;
+    }
+}
+
+.header_video_second{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header_video_second  .title_video_principal{
+    display: flex;
+    align-self: self-start;
+    margin-left: 7rem;
+    font-size: 3rem;
+}
+
+.btn_video{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+@media screen and (max-width: 1450px) {
+    .btn_video img{
+        width: 4rem;
+    }
+    
+}
+@media screen and (max-width: 800px) {
+    .btn_video img{
+        width: 3rem;
+    }
+    
+}
+
+.video_content_principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.video_content_principal img{
+    width: 90rem;
+}
+
+@media screen and (max-width: 1450px) {
+    .video_content_principal img{
+        width: 50rem;
+    }
+}
+@media screen and (max-width: 800px) {
+    .video_content_principal img{
+        width: 30rem;
+    }
+}
+
+.footer_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    top: 10rem;
+    width: 100%;
+}
