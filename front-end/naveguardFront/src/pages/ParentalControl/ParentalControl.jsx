@@ -1,4 +1,4 @@
-import Navbar from "../../components/NavBar/Navbar";
+import NavBar from "../../components/Navbar/Navbar"
 // import SideBar from "../../components/SideBar/SideBar";
 import { Images, Videos } from "../../assets/images";
 import { useState } from "react";
@@ -33,7 +33,7 @@ const ParentalControl = () => {
   return (
     <>
     <ResolutionNotAvailable/>
-    <Navbar/>
+    <NavBar/>
     {/* <SideBar/> */}
     <MainContainer>
       <NuvensContainer/>
