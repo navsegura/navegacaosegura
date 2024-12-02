@@ -59,7 +59,7 @@ const ParentalControl = () => {
                     <Img src={Images.KidLogger} alt="" />
                     </MolduraImg>
                 <Description>Ferramenta simples que permite monitorar a atividade das crianças em dispositivos móveis e computadores.</Description>
-                <button onClick={() => handleVideoClick("https://youtu.be/6UIvMi5xYXU?si=DVUwcvjP_SHFN-PJ")}>Assistir</button>
+                <button onClick={() => handleVideoClick(videos.kidLogger)}>Assistir</button>
                 </Card>
                 <Card>
                   <MolduraImg>
