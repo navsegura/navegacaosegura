@@ -13,8 +13,6 @@ import Articles from '../pages/Articles/Articles.jsx'
 
 const Router = () => {
 
-    const isLoggedIn = false
-
     return (
         <>
             <BrowserRouter>
