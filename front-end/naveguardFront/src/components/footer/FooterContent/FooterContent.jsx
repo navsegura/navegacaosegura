@@ -3,45 +3,48 @@ import { Images } from "../../../assets/images.jsx";
 
 function FooterContent() {
   return (
-    <>
-        <div className="conteudo-geral-footer">
-          <div className="primeira-coluna">
-            <div className="main-titulo">
-              <h1 className="h1-footer">NAVEGUARD</h1>
-            </div>
-            <p>Naveguard &copy; 2024</p>
-            <p>Todos os direitos reservados</p>
-            <div className="redes-sociais">
-              <img src={Images.logoInsta} alt="" />
-              <img src={Images.logoDribbble} alt="" />
-              <img src={Images.logoTwitter} alt="" />
-              <img src={Images.logoYoutube} alt="" />
-            </div>
+    <div className="footer-content">
+      
+      <div className="content-overlay">
+        <div className="first-col">
+          <ol>
+          <li>NAVEGUARD</li>
+          <li>Naveguard &copy; 2024</li>
+          <li>Todos os direitos reservados</li>
+          </ol>
+          <div className="social-medias">
+            <img src={Images.logoInsta} alt="Instagram" className="logo"/>
+            <img src={Images.logoDribbble} alt="Dribbble" className="logo"/>
+            <img src={Images.logoTwitter} alt="Twitter" className="logo"/>
+            <img src={Images.logoYoutube} alt="YouTube" className="logo"/>
           </div>
+        </div>
 
-          <div className="segunda-coluna">
-            <p>Home</p>
-            <p>Sobre</p>
-            <p>Apoie o Naveguard</p>
-            <p>Fale conosco</p>
-          </div>
+        <div className="third-col">
+          <ol>
+            <li>Política de Privacidade</li>
+            <li>Termos de Uso</li>
+          </ol>
+        </div>
 
-          <div className="terceira-coluna">
-            <p>Política de privacidade</p>
-            <p>Termos de uso</p>
-          </div>
-
-          <div className="quarta-coluna">
-            <p>Receba Novidades</p>
+        <div className="fourth-col">
+          <ol>
+            <li>Receba Novidades</li>
+            <li>Seja apoiador</li>
             <input
               className="input-email"
               type="email"
               placeholder="Insira seu e-mail"
             />
-            <span className="enviar-seta">➤</span>
-          </div>
+          </ol>
         </div>
-    </>
+      </div>
+      {/* <img
+        src={Images.Footer}
+        alt="Imagem do Footer"
+        className="Footer-image"
+      /> */}
+    </div>
   );
 }
 
