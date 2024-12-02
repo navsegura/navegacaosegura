@@ -37,7 +37,7 @@ import Artigos from "./images/artigos.png";
 import Seta_Voltar from "./images/seta_voltar.svg";
 import LogoLoading from "./images/naveguard-loading.svg";
 import Cloud_Footer from "./images/CloudFooter.svg";
-import Game_section_background from "./images/Game-section-background.svg";
+import Game_section_background from "./images/Game-section-Background.svg";
 import Cadeado from "./images/cadeado.svg";
 import GamePrincipal from "./images/game_principal.svg";
 import Bussola_Do_Codigo from "./images/bussola_do_codigo.svg";
