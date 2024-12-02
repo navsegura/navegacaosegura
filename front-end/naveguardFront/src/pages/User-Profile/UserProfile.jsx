@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 // import axios from 'axios'
-import NavBar from "../../components/NavBar/Navbar";
+import NavBar from "../../components/Navbar/Navbar"
 import SideBar from "../../components/SideBar/SideBar";
 import { Images } from "../../assets/images.jsx";
 import NuvensContainer from "../../components/Nuvens/Nuvens";
