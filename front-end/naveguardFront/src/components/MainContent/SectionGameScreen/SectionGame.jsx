@@ -1,4 +1,3 @@
-
 import "./SectionGame.css";
 import { Images } from "../../../assets/images";
 import { Link as ScrollLink } from "react-scroll";
@@ -63,7 +62,6 @@ function SectionGame() {
         </div>
       </section>
 
-
       <section className="third_game_section">
         <div className="header_game_second">
           <h1 className="title_game_principal">Desafios do Tesouro</h1>
@@ -78,7 +76,13 @@ function SectionGame() {
                 src={Images.Bussola_Do_Codigo}
                 alt=""
               />
-              <button>Jogar</button>
+              <button
+                onClick={() =>
+                  (window.location.href = "/Jogo-da-memoria/pages/index.html")
+                }
+              >
+                Jogar
+              </button>
             </div>
             <div className="game">
               <img className="game_image" src={Images.Porto_Seguro} alt="" />

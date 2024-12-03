@@ -15,7 +15,6 @@ import Quiz from '../pages/Quiz Game/Quiz.jsx'
 import Articles from '../pages/Articles/Articles.jsx'
 
 
-
 const Router = () => {
 
     const isLoggedIn = false
@@ -37,6 +36,7 @@ const Router = () => {
                     <Route path='/kids-page' element={<PrivateRoute isLoggedIn={isLoggedIn}element={<KidsPage/>} />}/>
                     {/* 404 */}
                     <Route path='/payment-page' element={<PrivateRoute isLoggedIn={isLoggedIn}element={<PaymentSection/>}/>}/>
+                    
                 </Routes>
             </BrowserRouter>
         </>
