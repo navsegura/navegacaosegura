@@ -1,17 +1,16 @@
 # NaveGuard
-[![Readme in Portuguese](https://img.shields.io/badge/README-Português-blue)](./README.md)  
+[![Leia o README em Português](https://img.shields.io/badge/README-Português-blue)](./README.md)  
 
-## 📋 About the Project
-NaveGuard is an educational platform designed to teach children about online safety, digital privacy, and responsible online behavior. It features interactive games, quizzes, and simulations to demonstrate the consequences of different online behaviors.
-This repository contains the front-end for the *NaveGuard* platform, responsible for intuitive and dynamic screens where users can register, log in, and access graphs, cards, and dynamic maps. The back-end of the project, developed concurrently, can be accessed here: [NaveGuard - Back-end](https://github.com/navsegura/navegacaosegura-backend).
+## 📋 Sobre o Projeto
+NaveGuard é uma plataforma educacional projetada para ensinar crianças sobre segurança online, privacidade digital e comportamento responsável na internet. A plataforma inclui jogos interativos, quizzes e simulações para demonstrar as consequências de diferentes comportamentos online. Este repositório contém o front-end da plataforma *NaveGuard*, responsável pelas telas intuitivas e dinâmicas, onde os usuários podem se registrar, fazer login e acessar gráficos, cards e mapas interativos. O back-end do projeto, desenvolvido de forma paralela, pode ser acessado aqui: [NaveGuard - Back-end](https://github.com/navsegura/navegacaosegura-backend).
 
-## 🚫 Problem Statement
-We live in an era where children and teenagers spend increasing amounts of time connected to the internet—on social media, gaming platforms, or apps. While this digital environment offers countless learning and entertainment opportunities, it also exposes young users to risks such as cyberbullying, inappropriate content, and dangerous interactions with strangers.
+## 🚫 Problema
+Vivemos em uma era em que crianças e adolescentes passam cada vez mais tempo conectados à internet — seja em redes sociais, plataformas de jogos ou aplicativos. Embora esse ambiente digital ofereça inúmeras oportunidades de aprendizado e entretenimento, ele também expõe os jovens a riscos como cyberbullying, conteúdo inadequado e interações perigosas com estranhos.
 
-## 💡 Solution
-Our solution is a platform featuring a 2D game that teaches children safe online practices. Additionally, it provides guides for parents and guardians to help them educate children and tutorials on using parental control tools to monitor internet access.
+## 💡 Solução
+Nossa solução é uma plataforma que inclui um jogo 2D que ensina práticas seguras online. Além disso, a plataforma oferece guias para pais e responsáveis ajudarem na educação das crianças, bem como tutoriais sobre como usar ferramentas de controle parental para monitorar o acesso à internet.
 
-![NaveGuard Banner](https://github.com/user-attachments/assets/1199baf1-7be2-4a2f-bd43-d198a6d377eb)
+![Banner do NaveGuard](https://github.com/user-attachments/assets/1199baf1-7be2-4a2f-bd43-d198a6d377eb)
 
 <div align="end">
 
@@ -20,15 +19,15 @@ Our solution is a platform featuring a 2D game that teaches children safe online
 
 </div>
 
-## 🚀 Technologies Used
-- **React**: Used to build the user interface, ensuring a dynamic and responsive experience.
-- **Spring Boot**: Back-end framework used to build the REST API.
-- **Axios**: HTTP request library for communication between front-end and back-end.
-- **Styled Components**: Used for styling components with CSS-in-JS, enabling a customizable and modern interface.
+## 🚀 Tecnologias Usadas
+- **React**: Utilizado para construir a interface do usuário, garantindo uma experiência dinâmica e responsiva.
+- **Spring Boot**: Framework de back-end utilizado para desenvolver a API REST.
+- **Axios**: Biblioteca de requisições HTTP para comunicação entre front-end e back-end.
+- **Styled Components**: Utilizado para estilizar componentes com CSS-in-JS, possibilitando uma interface moderna e personalizável.
 
-### ▶ How to Run the Project (Front-End and Back-End)
-To clone and run this project, follow the steps below:
-1. **Clone the repositories (front-end and back-end)**:
+### ▶ Como Executar o Projeto (Front-End e Back-End)
+Para clonar e executar este projeto, siga os passos abaixo:
+1. **Clone os repositórios (front-end e back-end)**:
    - Front-end:
      ```bash
      git clone https://github.com/navsegura/navegacaosegura
@@ -38,8 +37,8 @@ To clone and run this project, follow the steps below:
      git clone https://github.com/navsegura/navegacaosegura-backend
      ```
 
-3. **Install dependencies**:
-   - Access the project folders and install dependencies for both front-end and back-end:
+2. **Instale as dependências**:
+   - Acesse as pastas do projeto e instale as dependências para o front-end e back-end:
      ```bash
      cd front-end/naveguardFront/src
      npm install
@@ -49,23 +48,23 @@ To clone and run this project, follow the steps below:
      npm install
      ```
 
-4. **Run the front-end**:
-   - After installing the dependencies, run the following command to start the front-end:
+3. **Execute o front-end**:
+   - Após instalar as dependências, execute o seguinte comando para iniciar o front-end:
      ```bash
      npm run dev
      ```
 
-5. **Run the back-end**:
-   - In another terminal tab, access the back-end folder and start the server:
+4. **Execute o back-end**:
+   - Em outra aba do terminal, acesse a pasta do back-end e inicie o servidor:
      ```bash
      npm run dev
      ```
 
-## 📅 Conclusion
-The *NaveGuard* platform combines entertainment and education with a strong focus on interactive games. This gamified approach, along with resources for both parents and children, creates a unique experience that is difficult for competitors to replicate. The platform not only educates but also entertains, ensuring greater engagement with the content.
-A significant improvement for future development would be implementing a real database to store information, replacing the currently mocked data. This would allow for greater scalability, security, and flexibility in managing data, as well as providing a more robust experience for platform users.
+## 📅 Conclusão
+A plataforma *NaveGuard* combina entretenimento e educação com um forte foco em jogos interativos. Essa abordagem gamificada, junto com recursos para pais e crianças, cria uma experiência única que é difícil de replicar por concorrentes. A plataforma não só educa, mas também diverte, garantindo maior engajamento com o conteúdo.
+Uma melhoria significativa para o futuro seria a implementação de um banco de dados real para armazenar as informações, substituindo os dados simulados atualmente. Isso permitiria maior escalabilidade, segurança e flexibilidade no gerenciamento de dados, além de proporcionar uma experiência mais robusta para os usuários da plataforma.
 
-## 💻 Founders
+## 💻 Fundadores
 
 | ![Heverton Vitor][img1] | ![Jamyle Elen][img2] | ![Antônio de Pádua][img3] | ![Guilherme Davino][img4] | ![Jonas Rafael][img5] | ![Rodrigo Silva][img6] | ![Theofilo Henrique][img7] | ![Leandra Mayla][img8] |
 |:-----------------------:|:--------------------:|:-------------------------:|:-------------------------:|:---------------------:|:----------------------:|:--------------------------:|:----------------------:|
