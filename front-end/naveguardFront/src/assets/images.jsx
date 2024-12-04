@@ -62,6 +62,8 @@ import hiperCardIcon from './images/hiperSvg.svg'
 import btnBack from './images/btnBack.svg'
 import backgroundMainContent from './images/backgroundMainContent.png'
 import Papiro from './images/papiro.png'
+import TrailerNaveguard from './images/trailer.png'
+import Island from './images/island2.png'
 // aqui vcs criam as variaveis especificando o caminho delas
 
 // Videos
@@ -134,7 +136,9 @@ const Images = {
     hiperCardIcon,
     btnBack,
     backgroundMainContent,
-    Papiro
+    Papiro,
+    TrailerNaveguard,
+    Island
     // aqui fica as variaveis com o mesmo nome ali em cima
 }
 
