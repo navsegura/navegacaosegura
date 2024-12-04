@@ -1,5 +1,5 @@
 # NaveGuard
-[![Leia o README em Português](https://img.shields.io/badge/README-Português-blue)](./README.md)  
+[![Leia o README em Português](https://img.shields.io/badge/README-Inglês-yellow)](./README_EN.md)  
 
 ## 📋 Sobre o Projeto
 NaveGuard é uma plataforma educacional projetada para ensinar crianças sobre segurança online, privacidade digital e comportamento responsável na internet. A plataforma inclui jogos interativos, quizzes e simulações para demonstrar as consequências de diferentes comportamentos online. Este repositório contém o front-end da plataforma *NaveGuard*, responsável pelas telas intuitivas e dinâmicas, onde os usuários podem se registrar, fazer login e acessar gráficos, cards e mapas interativos. O back-end do projeto, desenvolvido de forma paralela, pode ser acessado aqui: [NaveGuard - Back-end](https://github.com/navsegura/navegacaosegura-backend).
