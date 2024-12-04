@@ -35,13 +35,11 @@ const AmeacasOnline = () => {
             </Span>
               <Line></Line>
               <CardContainer>
-
-
                 <Card>
                   <MolduraImgFamily>
                     <Img src={Images.phishing} style={{ width: "80px" }} alt="" />
                     </MolduraImgFamily>
-                    
+
                     <Description style={{ fontSize: "25px" }}>Phishing</Description>
                 <Description>Usa mensagens falsas para enganar e roubar dados pessoais, como senhas ou números de cartão.</Description>
                 <button onClick={() => setOpenModal(true)}> Ler </button>
@@ -65,11 +63,10 @@ const AmeacasOnline = () => {
                         </p>
                       </div>
                     </div>
-                      
                   </div>
-                  
+
                 </Modal>
-                
+
 
                 <Card>
                   <MolduraImg>
@@ -129,7 +126,7 @@ const AmeacasOnline = () => {
                   <br/>
                   Ameaças e chantagens: Enviar mensagens de ameaças para forçar a vítima a fazer algo contra sua vontade.
                   </p>
-                </div>  
+                </div>
 
                 </Modal>
 
