@@ -12,6 +12,7 @@ import PrivateRoute from './PrivateRoute.jsx'
 import KidsPage from '../pages/KidsPage/KidsPage.jsx'
 import Quiz from '../pages/Quiz Game/Quiz.jsx'
 import Articles from '../pages/Articles/Articles.jsx'
+import AmeacasOnline from '../pages/AmeacasOnline/AmeacasOnline.jsx'
 
 const Router = () => {
 
@@ -32,6 +33,7 @@ const Router = () => {
                     <Route path='*' element={<NotFound/>} />
                     <Route path='/quiz' element={<Quiz/>} />
                     <Route path='/kids-page' element={<PrivateRoute isLoggedIn={isLoggedIn}element={<KidsPage/>} />}/>
+                    <Route path='/ameacas-online' element={<AmeacasOnline />} />
                     {/* 404 */}
                 </Routes>
             </BrowserRouter>

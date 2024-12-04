@@ -58,6 +58,10 @@ import KidLogger from './images/kidlogger.svg'
 import FamilyLink from './images/google-family-link.svg'
 import Qustodio from './images/qustodio.svg'
 import FamilyShield from './images/family-shield.svg'
+import phishing from './images/phishing.svg'
+import malware from './images/malware.svg'
+import linksperigosos from './images/linksperigosos.svg'
+import cyberbullying from './images/cyberbullying.svg'
 // aqui vcs criam as variaveis especificando o caminho delas
 
 // Videos
@@ -126,7 +130,11 @@ const Images = {
     FamilyLink,
     Qustodio,
     FamilyShield,
-    NuvemOpacity
+    NuvemOpacity,
+    phishing,
+    malware,
+    linksperigosos,
+    cyberbullying
     // aqui fica as variaveis com o mesmo nome ali em cima
 }
 

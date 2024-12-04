@@ -153,11 +153,13 @@ const UserProfile = () => {
                   <P>Ferramentas para proteger e monitorar suas crianças online</P>
                 </Square>
               </Link>
+              <Link to="/ameacas-online">
               <Square>
                 <Graphics>Ameaças Online</Graphics>
                 <img src={Images.AmeacasOnline} alt="Tutoriais" width={50} />
                 <P>Conheça os perigos e como se defender</P>
               </Square>
+              </Link>
               <Square>
                 <Graphics>ChatBot</Graphics>
                 <img src={Images.ChatBot} alt="Tutoriais" width={50} />
