@@ -1,51 +1,34 @@
-# NaveGuard - Back End
-[![Readme in English](https://img.shields.io/badge/README-English-green)](./README_EN.md)
+# NaveGuard
+[![Readme in Portuguese](https://img.shields.io/badge/README-Português-blue)](./README.md)  
 
-## ⚙ Funcionalidades
-O desenvolvimento da API NaveGuard foi dividido em quatro APIs principais, cada uma responsável por uma área específica da aplicação. Todas as APIs seguem o padrão de operações CRUD (Create, Read, Update, Delete), permitindo o gerenciamento completo dos dados relacionados.
+## 📋 About the Project
+NaveGuard is an educational platform designed to teach children about online safety, digital privacy, and responsible online behavior. It features interactive games, quizzes, and simulations to demonstrate the consequences of different online behaviors.
+This repository contains the front-end for the *NaveGuard* platform, responsible for intuitive and dynamic screens where users can register, log in, and access graphs, cards, and dynamic maps. The back-end of the project, developed concurrently, can be accessed here: [NaveGuard - Back-end](https://github.com/navsegura/navegacaosegura-backend).
 
-### 1. API de Usuário
-Esta API será responsável pelo gerenciamento dos dados de perfil. 
+## 🚫 Problem Statement
+We live in an era where children and teenagers spend increasing amounts of time connected to the internet—on social media, gaming platforms, or apps. While this digital environment offers countless learning and entertainment opportunities, it also exposes young users to risks such as cyberbullying, inappropriate content, and dangerous interactions with strangers.
 
-- **Cadastrar Usuários**: Permite a criação de novos usuários.
-- **Buscar usuário**: Permite a busca dos usuários para melhor gestão.
-- **Atualizar perfil**: Edição de informações dos dados pessoais.
-- **Excluir Conta**: Remoção de usuários da plataforma.
+## 💡 Solution
+Our solution is a platform featuring a 2D game that teaches children safe online practices. Additionally, it provides guides for parents and guardians to help them educate children and tutorials on using parental control tools to monitor internet access.
 
-#### Rotas sobre usuário
-| Método | Rota                                | Função                               |
-| ------ | ----------------------------------- | ------------------------------------ |
-| POST   | /api/user                           | Cadastro de usuário                  |
-| GET    | /api/user/{id}                      | Busca de usuário por id              |
-| GET    | /api/user/                          | Busca todos os usuários registrados  |
-| PUT    | /api/user/{id}                      | Atualiza os dados por id             |
-| DELETE | /api/user/{id}                      | Deleta usuário via id                |
+![NaveGuard Banner](https://github.com/user-attachments/assets/1199baf1-7be2-4a2f-bd43-d198a6d377eb)
 
-### 2. API de Tutoriais
-O site terá uma página dedicada a fornecer informações sobre Tutoriais, Guias de Segurança e Recursos Educativos. Isso ajudará a consciêntizar sobre o tema, desmistificando conceitos e incentivando a prevenção. 
+<div align="end">
 
-- **Listar os Tutoriais** - Lista os Tutoriais cadastrado no sistema.
-- **Adicionar novos tutoriais** - O usuário adm poderá adicionar novos tutoriasis.
-- **Buscar por id do tutorial** - Facilita a busca do usuário ao querer um determinado tutorial.
-- **Editar tudoriais** - Editar informações de tutoriais criados.
-- **Excluir tutoriais** -  Excluir por meio da busca do id do tutorial.
+[![v](https://github.com/user-attachments/assets/36112c66-7d4e-4b53-a390-891e9adb67cd)](https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Aorganization%3A105400839&keywords=naveguard&origin=RICH_QUERY_TYPEAHEAD_HISTORY&position=0&searchId=8bc26013-42de-4d7c-bf8e-c8dcdec124f2&sid=oVK&spellCorrectionEnabled=true)
+[![v](https://github.com/user-attachments/assets/8b37cf0f-c9f9-4ba4-9a10-9510a338d37e)](https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Aorganization%3A105400839&keywords=naveguard&origin=RICH_QUERY_TYPEAHEAD_HISTORY&position=0&searchId=8bc26013-42de-4d7c-bf8e-c8dcdec124f2&sid=oVK&spellCorrectionEnabled=true)
 
-#### Rotas sobre tutorial
-| Método | Rota                                | Função                                                 |
-| ------ | ----------------------------------- | ------------------------------------------------------ |
-| POST   | /api/tutorial                       | Cadastro novo tutorialtutorial                         |
-| GET    | /api/tutorial                       | Busca todos os tutoriais                               |
-| GET    | /api/tutorial/{id}                  | Busca de tutorial por id                               |
-| PUT    | /api/tutorial/{id}                  | Atualiza tutoriais por id                              |
-| DELETE | /api/tutorial/{id}                  | Deleta tutoriais via id                                |
+</div>
 
-## 🚫 Deploy
-No momento ainda foi realizado o deploy da aplicação nesta versão. Portanto, para rodar o projeto localmente, é necessário baixar e executar **tanto o repositório do front-end quanto o do back-end**.
+## 🚀 Technologies Used
+- **React**: Used to build the user interface, ensuring a dynamic and responsive experience.
+- **Spring Boot**: Back-end framework used to build the REST API.
+- **Axios**: HTTP request library for communication between front-end and back-end.
+- **Styled Components**: Used for styling components with CSS-in-JS, enabling a customizable and modern interface.
 
-### ▶ Como rodar o projeto (front-end e back-end)
-Para clonar e rodar este projeto, siga os passos abaixo:
-
-1. **Clone os repositórios (front e back-end)**:
+### ▶ How to Run the Project (Front-End and Back-End)
+To clone and run this project, follow the steps below:
+1. **Clone the repositories (front-end and back-end)**:
    - Front-end:
      ```bash
      git clone https://github.com/navsegura/navegacaosegura
@@ -55,8 +38,8 @@ Para clonar e rodar este projeto, siga os passos abaixo:
      git clone https://github.com/navsegura/navegacaosegura-backend
      ```
 
-2. **Instale as dependências**:
-   - Acesse as pastas do projeto e instale as dependências tanto no front-end quanto no back-end:
+3. **Install dependencies**:
+   - Access the project folders and install dependencies for both front-end and back-end:
      ```bash
      cd front-end/naveguardFront/src
      npm install
@@ -66,49 +49,28 @@ Para clonar e rodar este projeto, siga os passos abaixo:
      npm install
      ```
 
-3. **Execute o front-end**:
-   - Após instalar as dependências, execute o comando abaixo para rodar o front-end:
+4. **Run the front-end**:
+   - After installing the dependencies, run the following command to start the front-end:
      ```bash
      npm run dev
      ```
 
-4. **Execute o back-end**:
-   - Em outra aba do terminal, acesse a pasta do back-end e rode o servidor:
+5. **Run the back-end**:
+   - In another terminal tab, access the back-end folder and start the server:
      ```bash
      npm run dev
      ```
 
-## 🧪 Testes
-Os testes podem ser feitos de duas formas:
-- Manualmente utilizando ferramentas como o [Postman](https://www.postman.com/downloads/) ou [Insomnia](https://insomnia.rest/download), para testar as funcionalidades das rotas listadas anteriormente.
-- Via deploy
+## 📅 Conclusion
+The *NaveGuard* platform combines entertainment and education with a strong focus on interactive games. This gamified approach, along with resources for both parents and children, creates a unique experience that is difficult for competitors to replicate. The platform not only educates but also entertains, ensuring greater engagement with the content.
+A significant improvement for future development would be implementing a real database to store information, replacing the currently mocked data. This would allow for greater scalability, security, and flexibility in managing data, as well as providing a more robust experience for platform users.
 
-Segue abaixo imagem de alguns testes:
-<div align = "center"> 
-  <h3>Listar todos os tutoriais (get)</h3>
-  <img src = ""  width = "600px">
- 
-  <h3>Busca de tutorial por id (get)</h3>
-  <img src = "" width = "600px">
-
-<h3>Atualizar tutoriais por id (put)</h3>
-  <img src = "" width = "600px">
-  
-<h3>Cadastro de tutorial (post)</h3>
-  <img src = "" width = "600px">
-</div>
-
-## 📅 Conclusão
-O "Naveguard" combina entretenimento e educação com um forte foco em jogos interativos. Essa abordagem gamificada, aliada a recursos que envolvem tanto pais quanto crianças, cria uma experiência única que é difícil de ser replicada por concorrentes. A plataforma não apenas educa, mas também entretém, garantindo maior adesão ao conteúdo.
- 
-Uma melhoria significativa para o futuro desenvolvimento do projeto seria a implementação de um banco de dados real para armazenar as informações, substituindo os dados atualmente mocados. Isso permitiria maior escalabilidade, segurança e flexibilidade na gestão dos dados, além de proporcionar uma experiência mais robusta para os usuários da plataforma.
-
-## 💻 Fundadores
+## 💻 Founders
 
 | ![Heverton Vitor][img1] | ![Jamyle Elen][img2] | ![Antônio de Pádua][img3] | ![Guilherme Davino][img4] | ![Jonas Rafael][img5] | ![Rodrigo Silva][img6] | ![Theofilo Henrique][img7] | ![Leandra Mayla][img8] |
 |:-----------------------:|:--------------------:|:-------------------------:|:-------------------------:|:---------------------:|:----------------------:|:--------------------------:|:----------------------:|
 | **Heverton Victor**     | **Jamyle Elen**      | **Antônio de Pádua**      | **Guilherme Davino**      | **Jonas Rafael**      | **Rodrigo Silva**      | **Theofilo Henrique**      | **Leandra Mayla**      |
-| **PO**                  | **Scrum Master**     | **Função**                | **Função**                | **Financeiro**            | **Função**             | **Função**                 | **Social Media**       |
+| **PO, Desenvolvedor Front-End e UI/UX**                  | **Scrum Master, Desenvolvedora Front-End e UI/UX**     | **Desenvolvedor Full-Stack**                | **Desenvolvedor Back-End**                | **Desenvolvedor Front-End e Financeiro**            | **Desenvolvedor Back-End e UI/UX**             | **Desenvolvedor Back-End e Sound Designer**                 | **Social Media, Desenvolvedora Front-End e UI/UX**       |
 
 [img1]: https://github.com/user-attachments/assets/4f7785c6-6bf1-4df3-bffe-952bd125e7b0
 [img2]: https://github.com/user-attachments/assets/4b3637cc-e1a0-45e4-af1b-6b37f3626ecb
