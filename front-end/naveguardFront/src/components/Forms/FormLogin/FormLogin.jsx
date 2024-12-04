@@ -6,7 +6,6 @@ import GoogleConnection from "../../GoogleConnection/GoogleConnection";
 import { useContext, useState } from "react";
 import { ContextToken } from "../../../utils/context-token";
 import * as authService from "../../../services/auth-service";
-import { findMe } from "../../../services/user-service.js";
 
 function FormLogin() {
     const navigate = useNavigate();
@@ -25,21 +24,12 @@ function FormLogin() {
           .loginRequest(formData)
           .then((response) => {
             authService.saveAccessToken(response.data.access_token);
-            console.log(authService.getAccessTokenPayload());
             setContextTokenPayload(authService.getAccessTokenPayload());
-            console.log("Autenticade? ", authService.isAuthenticated());
-            console.log("teste: ", authService.hasAnyRoles(['ROLE_CLIENT']));
             navigate("/user-profile");
           })
           .catch(() => {
             console.log("Login ou senha errado!");
-            console.log(formData);
           });
-
-          findMe()
-          .then((response) => {
-            console.log(response.data);
-          })
       }
 
       function handleInputChange(event) {

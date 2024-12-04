@@ -13,7 +13,6 @@ const UserProfile = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [isEditing, setIsEditing] = useState(false);
   const [name, setName] = useState('');
-  const [email, setEmail] = useState('userexample@gmail');
   const [location, setLocation] = useState('Recife');
   // deixem vazio, isso é so p testar a edição
 
@@ -72,7 +71,6 @@ const UserProfile = () => {
       findMe()
       .then((response) => {
         setUserLogged(response.data);
-        console.log(userLogged.name);
       })
       .catch((error) => {
         console.log(error);
@@ -92,7 +90,6 @@ const UserProfile = () => {
 
   const nameTest = localStorage.getItem('name')
   const imgTest = localStorage.getItem('profilePic')
-  const emailTest = localStorage.getItem('email')
   // const profilePicTest = localStorage.getItem('profilePic')
   return (
     <>
