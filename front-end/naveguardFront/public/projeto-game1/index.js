@@ -1,3 +1,15 @@
+const video = document.getElementById("video-tutorial");
+
+
+pularVideo.addEventListener("click", () => {
+  tutorial.style.display = "none";
+  video.pause();
+});
+
+video.addEventListener("ended", () => {
+  tutorial.style.display = "none"; // Oculta o vídeo
+});
+
 const moveis = [
   background,
   ...limites,
@@ -23,6 +35,7 @@ let podeInteragir = false;
 let alertaExibido = false;
 let movimentoTravado = false; // Variável para controlar o movimento
 let colidindoComAlgum = false;
+
 
 botaoProximo.addEventListener("click", () => {
   // Oculta a mensagem e destrava o movimento
@@ -882,7 +895,9 @@ function animate() {
         movel.position.x -= 3;
       });
   }
+  
 }
+
 
 
 document.addEventListener("keydown", (event) => {
