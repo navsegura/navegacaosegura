@@ -1,15 +1,11 @@
 import Footer from './images/footer.svg';
 import FooterDefault from './images/footerdefault.svg';
 import Mountain from "./images/mountain.svg";
-import AguaViva from "./images/aguaviva.svg";
-import Arraia from "./images/arraia.svg";
 import Coqueiro from "./images/coqueiro.svg";
 import Nuvem from "./images/nuvem.svg";
 import NuvemOpacity from "./images/nuvemOpacity.svg";
 import Praia from "./images/praia.svg"
 import Sol from "./images/sol.svg"
-import peixesEsquerda from './images/peixesEsquerda.svg'
-import peixesDireita from './images/peixesDireita.svg'
 import papagaio from './images/papagaio.svg'
 import check from './images/check.svg'
 import uncheck from './images/uncheck.svg'
@@ -58,6 +54,14 @@ import KidLogger from './images/kidlogger.svg'
 import FamilyLink from './images/google-family-link.svg'
 import Qustodio from './images/qustodio.svg'
 import FamilyShield from './images/family-shield.svg'
+import visaIcon from './images/visaSvg.svg'
+import masterCardIcon from './images/masterCardSvg.svg'
+import amCardIcon from './images/amSvg.svg'
+import eloCardIcon from './images/eloSvg.svg'
+import hiperCardIcon from './images/hiperSvg.svg'
+import btnBack from './images/btnBack.svg'
+import backgroundMainContent from './images/backgroundMainContent.png'
+import Papiro from './images/papiro.png'
 // aqui vcs criam as variaveis especificando o caminho delas
 
 // Videos
@@ -69,15 +73,11 @@ import KidLoggerVideo from './videos/qustodioVideo.mp4';
 const Images = {
     Footer,
     FooterDefault,
-    AguaViva,
-    Arraia,
     Coqueiro,
     Nuvem,
     Praia,
     Sol,
     Mountain,
-    peixesDireita,
-    peixesEsquerda,
     papagaio,
     check,
     uncheck,
@@ -126,7 +126,15 @@ const Images = {
     FamilyLink,
     Qustodio,
     FamilyShield,
-    NuvemOpacity
+    NuvemOpacity,
+    visaIcon,
+    masterCardIcon,
+    eloCardIcon,
+    amCardIcon,
+    hiperCardIcon,
+    btnBack,
+    backgroundMainContent,
+    Papiro
     // aqui fica as variaveis com o mesmo nome ali em cima
 }
 
