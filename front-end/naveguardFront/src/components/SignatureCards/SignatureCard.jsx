@@ -48,7 +48,7 @@ const SignatureCard = () => {
 
               </CardPlans>
               {isLoggedin ? (
-                <Link to='/payment-page'>  {/* Criar a tela de pagamento */}
+                <Link to='/payment-page'>
                   <CardButton>ACESSE</CardButton>
                 </Link>
               ) : (
@@ -58,9 +58,6 @@ const SignatureCard = () => {
                 </Link>
               )
               )}
-               <Link to='/payment-page'>  {/* Criar a tela de pagamento */}
-                  <CardButton>ACESSE</CardButton>
-                </Link>
             {/* ---------------------------------- */}
           </Card>
           <Card ref={planCard2}>
@@ -88,7 +85,7 @@ const SignatureCard = () => {
                 </Plan>
 
               </CardPlans>
-              <Link to='/payment-page'>  {/* Criar a tela de pagamento */}
+              <Link to='/payment-page'>
                   <CardButton>ASSINAR</CardButton>
                 </Link>
             </Card>
@@ -117,7 +114,7 @@ const SignatureCard = () => {
                 </Plan>
 
               </CardPlans>
-              <Link to='/payment-page'>  {/* Criar a tela de pagamento */}
+              <Link to='/payment-page'>
                   <CardButton>ASSINAR</CardButton>
                 </Link>
             </Card>
