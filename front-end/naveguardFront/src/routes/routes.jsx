@@ -14,8 +14,6 @@ import PaymentSection from '../components/PaymentSection/PaymentSection.jsx'
 import Quiz from '../pages/Quiz Game/Quiz.jsx'
 import Articles from '../pages/Articles/Articles.jsx'
 
-
-
 const Router = () => {
 
     const isLoggedIn = false
