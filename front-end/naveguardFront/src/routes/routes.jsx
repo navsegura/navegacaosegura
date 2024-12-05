@@ -11,6 +11,7 @@ import Login from '../pages/Login/Login.jsx'
 import PrivateRoute from './PrivateRoute.jsx'
 import KidsPage from '../pages/KidsPage/KidsPage.jsx'
 import Cadastro from '../components/Cadastro/Cadastro.jsx'
+import FaleConosco from '../pages/FaleConosco/FaleConosco.jsx'
 
 
 const Router = () => {
@@ -31,6 +32,7 @@ const Router = () => {
                     <Route path='*' element={<NotFound/>} />
                     <Route path='/kids-page' element={<PrivateRoute isLoggedIn={isLoggedIn}element={<KidsPage/>} />}/>
                     <Route path='/register' element={<Cadastro/>}/>
+                    <Route path='/faleconosco' element={<FaleConosco/>}/>
                     {/* 404 */}
                 </Routes>
             </BrowserRouter>
