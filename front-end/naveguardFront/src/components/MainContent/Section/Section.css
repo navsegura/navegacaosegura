@@ -151,6 +151,10 @@ button{
     top: 20rem;
 }
 
+.todos_sobres p {
+    font-family: var(--secondary-font);
+}
+
 .sobre_first, .sobre_second, .sobre_third, .sobre_fourth {
     width: 20rem;
     color: white;
@@ -175,8 +179,38 @@ button{
 }
 
 
+.main_content_sobre_one, .main_content_sobre_two, .main_content_sobre_three, .main_content_sobre_four{
+    text-align: center; 
+}
+
+.sobre_first, .sobre_second, .sobre_third, .sobre_fourth{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_sobre_one, .content_sobre_two, .content_sobre_three, .content_sobre_four {
+    width: 33%;
+}
 
 
-.main_content_sobre{
-    text-align: center;
+.main_content_sobre_one{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_content_sobre_two{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_content_sobre_three{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_content_sobre_four{
+    display: flex;
+    justify-content: space-between;
 }

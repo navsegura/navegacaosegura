@@ -62,6 +62,18 @@ import phishing from './images/phishing.svg'
 import malware from './images/malware.svg'
 import linksperigosos from './images/linksperigosos.svg'
 import cyberbullying from './images/cyberbullying.svg'
+import pessoas from './images/pessoas.svg'
+import alvo from './images/alvo.svg'
+import opiniao from './images/opiniao.svg'
+import barco from './images/barco.svg'
+import antonio from './images/antonio.jpg'
+import guilherme from './images/guilherme.jpg'
+import heverton from './images/heverton.jpg'
+import jamyle from './images/jamyle.jpg'
+import jonas from './images/jonas.jpg'
+import mayla from './images/mayla.jpg'
+import rodrigo from './images/rodrigo.jpg'
+import theofilo from './images/theofilo.jpg'
 // aqui vcs criam as variaveis especificando o caminho delas
 
 // Videos
@@ -134,7 +146,19 @@ const Images = {
     phishing,
     malware,
     linksperigosos,
-    cyberbullying
+    cyberbullying,
+    pessoas,
+    alvo,
+    opiniao,
+    barco,
+    antonio,
+    guilherme,
+    heverton,
+    jamyle,
+    jonas,
+    mayla,
+    rodrigo,
+    theofilo
     // aqui fica as variaveis com o mesmo nome ali em cima
 }
 
