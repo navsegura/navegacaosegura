@@ -76,7 +76,7 @@ export const UserImage = styled.div`
 
 export const Photo = styled.img`
 border-radius: 100%;
-    width: 100%;
+    width: 50%;
 `
 
 export const Line = styled.div`

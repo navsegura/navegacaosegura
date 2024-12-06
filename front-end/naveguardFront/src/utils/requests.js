@@ -12,3 +12,7 @@ export function requestBackend(config) {
 
     return axios({ ...config, baseURL: BASE_URL, headers })
 }
+
+export function noOauthRequest(config) {
+    return axios({ ...config, baseURL: BASE_URL });
+}

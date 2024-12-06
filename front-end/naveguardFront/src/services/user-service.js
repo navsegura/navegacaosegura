@@ -1,4 +1,4 @@
-import { requestBackend } from "../utils/requests"
+import { noOauthRequest, requestBackend } from "../utils/requests"
 
 export function findMe() {
     const config = {
@@ -7,4 +7,20 @@ export function findMe() {
     }
 
     return requestBackend(config);
+}
+
+export function register(requestBody) {
+    const headers = {
+        "Content-Type": "application/json"
+    }
+
+
+    const config = {
+        method: "POST",
+        url: "/api/user",
+        data: requestBody,
+        headers
+    }
+
+    return noOauthRequest(config);
 }
