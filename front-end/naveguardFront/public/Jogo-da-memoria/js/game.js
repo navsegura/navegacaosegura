@@ -11,16 +11,13 @@ let firstCard = '';
 let secondCard = '';
 
 const charaters = [
-    "charizard", 
-    "blastoise",
-    "charizardPremium",
-    "corphish",
-    "machamp",
-    "meowtwo",
-    "mew",
-    "ninetales",
-    "Pikachu",
-    "max",
+    "arraia", 
+    "macaco",
+    "nemo",
+    "papagaio",
+    "tubarao",
+    "tartaruga",
+    
 ];
 
 
@@ -33,11 +30,15 @@ const createElement = (tag, className) => {
 
 const checkEndGame = () => {
     const disableCards = document.querySelectorAll('.disable-card')
+    const playerName = localStorage.getItem('player')
 
-    if(disableCards.length === 20)  {
-        clearInterval(this.loop)
-        alert(`Parabéns ${spanPlayer.value}!\nSeu tempo foi: ${timer.innerHTML} segundos!`)
-    }
+    setTimeout(() => {
+        if(disableCards.length === 12)  {
+            clearInterval(this.loop)
+            alert(`Parabéns ${playerName}!\nSeu tempo foi: ${timer.innerHTML} segundos!`)
+        }
+    }, 1000);
+    
 }
 
 const checkCards = () => {

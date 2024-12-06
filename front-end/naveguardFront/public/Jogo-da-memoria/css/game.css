@@ -31,7 +31,7 @@ header {
 .grid {
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 2fr);
     max-width: 800px;
     gap: 15px;
     margin: 0 auto;
@@ -79,3 +79,4 @@ header {
     backface-visibility: hidden;
 }
 
+/*tela parabenização*/
