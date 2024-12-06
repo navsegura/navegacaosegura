@@ -14,6 +14,10 @@ vou ajustar e espero o feedback de vocês para melhorias*/
   justify-content: space-between;
 }
 
+.content-overlay {
+  align-items: center;
+}
+
 .social-medias {
   display: flex;
   gap: 10px;
@@ -29,8 +33,13 @@ vou ajustar e espero o feedback de vocês para melhorias*/
   flex-wrap: nowrap;
   padding: 10px 100px 130px 100px;
   justify-content: space-between;
+  width: 80%;
 }
 
+/*titulo do footer*/
+.titulo-nave {
+  font-size: 2.5rem;
+}
 
 .first-col ol, .second-col ol, .third-col ol, .fourth-col ol{
   display: flex;
@@ -53,10 +62,6 @@ vou ajustar e espero o feedback de vocês para melhorias*/
     
   }
 
-  .content-overlay {
-    gap: 13px;
-    display: flex;
-  }
 
   .social-medias {
     align-self: center;
