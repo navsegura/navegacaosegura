@@ -49,6 +49,11 @@ import Botao2 from './images/botao2.svg'
 import Botao3 from './images/botao3.svg'
 import Botao4 from './images/botao4.svg'
 import NuvemFooter from './images/nuvem_footer.svg'
+import PeixePalhaco from './images/peixe_palhaco.svg'
+import KidLogger from './images/kidlogger.svg'
+import FamilyLink from './images/google-family-link.svg'
+import Qustodio from './images/qustodio.svg'
+import FamilyShield from './images/family-shield.svg'
 import visaIcon from './images/visaSvg.svg'
 import masterCardIcon from './images/masterCardSvg.svg'
 import amCardIcon from './images/amSvg.svg'
@@ -56,13 +61,7 @@ import eloCardIcon from './images/eloSvg.svg'
 import hiperCardIcon from './images/hiperSvg.svg'
 import btnBack from './images/btnBack.svg'
 import backgroundMainContent from './images/backgroundMainContent.png'
-
-import PeixePalhaco from './images/peixe_palhaco.svg'
-import KidLogger from './images/kidlogger.svg'
-import FamilyLink from './images/google-family-link.svg'
-import Qustodio from './images/qustodio.svg'
-import FamilyShield from './images/family-shield.svg'
-// aqui vcs criam as variaveis especificando o caminho delas
+import Papiro from './images/papiro.png'
 
 // Videos
 import FamilyLinkVideo from './videos/familyLinkVideo.mp4';
@@ -121,6 +120,12 @@ const Images = {
     Botao3,
     Botao4,
     NuvemFooter,
+    PeixePalhaco,
+    KidLogger,
+    FamilyLink,
+    Qustodio,
+    FamilyShield,
+    NuvemOpacity,
     visaIcon,
     masterCardIcon,
     eloCardIcon,
@@ -128,13 +133,7 @@ const Images = {
     hiperCardIcon,
     btnBack,
     backgroundMainContent,
-    PeixePalhaco,
-    KidLogger,
-    FamilyLink,
-    Qustodio,
-    FamilyShield,
-    NuvemOpacity
-    // aqui fica as variaveis com o mesmo nome ali em cima
+    Papiro
 }
 
 const Videos = {

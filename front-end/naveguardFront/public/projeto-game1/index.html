@@ -13,17 +13,32 @@
   <body>
     <header>
       <p>NAVEGUARD</p>
-      <img src="./img/setavoltar.svg" alt="seta-voltar" width="35px" onclick="history.back()">
+      <img
+        src="./img/setavoltar.svg"
+        alt="seta-voltar"
+        width="35px"
+        onclick="history.back()"
+      />
     </header>
     <main>
       <div class="controles">
-        <img src="./img/controles-awsd.png" alt="controles"/>
+        <img src="./img/controles-awsd.png" alt="controles" />
+      </div>
+      <div id="tutorial">
+        <div>
+          <video
+            src="./img/video-tutorial.mp4"
+            id="video-tutorial"
+            autoplay
+          ></video>
+        </div>
+        <button id="pularVideo">Pular Tutorial</button>
       </div>
       <canvas id="canvaszinho"></canvas>
 
       <div id="mensagemInteracao">
         <div id="nomePersonagem">
-          <p></p>
+          <p>Tutorial</p>
         </div>
         <span id="caixaDeTexto"></span>
         <button id="botaoProximo">Próximo</button>

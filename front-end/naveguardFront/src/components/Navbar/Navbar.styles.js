@@ -14,7 +14,7 @@ export const Container = styled.div`
   position: fixed;
   /* border: red solid 1px; */
 
-  @media (max-width: 370px) {
+  @media (max-width: 374px) {
         display: none;
     }
 `;

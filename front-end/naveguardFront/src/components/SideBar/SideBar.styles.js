@@ -13,6 +13,10 @@ export const SideBarMenu = styled.div`
     /* background-color: #F5F5F5; */
     background-color: #101E43;
     position: fixed;
+
+    @media (max-width: 374px) {
+        display: none;
+    }
 `
 
 export const LogOut = styled.div`
