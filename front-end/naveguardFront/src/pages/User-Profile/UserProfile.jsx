@@ -7,7 +7,7 @@ import { Images } from "../../assets/images.jsx";
 import NuvensContainer from "../../components/Nuvens/Nuvens";
 import { Page, MainContainer, UserProfileContent, Profile, UserImage, Photo, Line, About, Span, NameProfile, Icon, Info, Bio, Location, Strong, Edit, Input, MainContent, UserProfileContainer, GroupSquare, Square, Graphics, P, DropdownMenu, DropdownItem } from './UserProfile.styles'
 import { findMe } from "../../services/user-service.js";
-import { func } from "prop-types";
+
 
 const UserProfile = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -58,14 +58,14 @@ const UserProfile = () => {
 //   }
 
     const [userLogged, setUserLogged] = useState({
-      name: "Example",
-      email: "example@example.com",
-      birthDay: "2000-01-01",
-      city: "recife",
-      bio: "Hello world",
-      gender: "FEMALE",
-      state: "pernambuco",
-      urlPhoto: ""
+      name: " ",
+      email: " ",
+      birthDay: " ",
+      city: " ",
+      bio: " ",
+      gender: " ",
+      state: " ",
+      urlPhoto: " "
     });
     useEffect(() => {
       findMe()
@@ -86,6 +86,19 @@ const UserProfile = () => {
       const dataFormatada = `${dia}/${mes}/${ano}`;
 
       return dataFormatada;
+    }
+
+    function genderTranslate(gender) {
+      if(gender.toUpperCase() == "MALE") {
+        gender = "Masculino";
+        return gender
+      } else if(gender.toUpperCase() == "FEMALE") {
+        gender = "Feminino";
+        return gender
+      } else {
+        gender = "Outros";
+        return gender;
+      }
     }
 
   const nameTest = localStorage.getItem('name')
@@ -126,7 +139,7 @@ const UserProfile = () => {
                           />
                         ) : (
                         <Location><i className='bx bx-current-location' style={{color:'#A0A0A0'}} ></i>
-                        {userLogged.city[0].toLocaleUpperCase() + userLogged.city.substring(1) || location}</Location>
+                        {userLogged.city[0].toUpperCase() + userLogged.city.substring(1) || location}</Location>
                         )}
                         <Location><i className='bx bx-check-circle' style={{color:'#A0A0A0'}} ></i>
                         {"Data de Nascimento: " + formatDate(userLogged.birthDay)}</Location> {/* DATA */}
@@ -137,7 +150,7 @@ const UserProfile = () => {
                       ﾠ<i className='bx bxs-quote-right' style={{color:'#A0A0A0'}} ></i>
                       </Bio>
                       <Location>
-                        <p>Sexual Orientation: <Strong>{userLogged.gender || "None"}</Strong></p> {/* DATA */}
+                        <p>Gênero: <Strong>{genderTranslate(userLogged.gender) || "None"}</Strong></p> {/* DATA */}
                       </Location>
                   </About>
                   {/* aqui vai ficar o editar */}
