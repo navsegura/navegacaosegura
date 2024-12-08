@@ -1,0 +1,34 @@
+body {
+    color: white;
+}
+
+.partners {
+    max-width: 100%;
+    width: 100%;
+    height: 660px;
+    color: white;
+    background-image: url('../../assets/images/bannerTeVejo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    opacity: 0.5; 
+    transition: opacity .5s ease-in-out;
+}
+
+.partners:hover {
+    opacity: 1; 
+    cursor: pointer;
+}
+
+.content-col {
+    padding-left: 35%;
+    padding-top: 10%;
+}
+
+.saiba-mais-btn {
+    color: #2991E1;
+    border-radius: 5px;
+    background-color: white;
+}
