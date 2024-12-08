@@ -96,7 +96,7 @@ export const CardContainer = styled.div`
 
 export const Card = styled.div`
     max-width: 270px;
-    max-width: 9vw;
+    /* max-width: 9vw; */
     width: 100%;
     height: auto;
     display: flex;

@@ -8,7 +8,11 @@ vou ajustar e espero o feedback de vocês para melhorias*/
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-image: url("../../../assets/images/footer.svg"); 
+  background-image: url("../../../assets/images/footer.svg");
+
+  @media (max-width: 374px) {
+    display: none;
+  }
 }
 
 .footer-content {
@@ -88,12 +92,10 @@ vou ajustar e espero o feedback de vocês para melhorias*/
   border: 1px solid #f5f5f5;
   color: #f5f5f5;
 
-  /* @media (max-width: 1190px) {
+  @media (max-width: 1190px) {
     display: none;
-  } */
+  }
 }
-
-
 
 @media (max-width:700px) {
   .footer-content {
@@ -140,5 +142,9 @@ vou ajustar e espero o feedback de vocês para melhorias*/
 .copyright {
   font-family: 'Poppins', sans-serif;
   color: #f5f5f5;
+
+  @media (max-width: 425px) {
+    font-size: .8rem;
+  }
 }
 
