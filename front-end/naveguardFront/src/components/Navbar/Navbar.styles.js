@@ -126,6 +126,12 @@ export const List = styled.li`
   }
 `;
 
+export const ListTwo = styled.li`
+  a:visited{
+    color: #FF6F00;
+  }
+`
+
 export const A = styled.a`
   color: #FF6F00;
 `
