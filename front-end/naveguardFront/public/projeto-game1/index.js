@@ -1,3 +1,38 @@
+const video = document.getElementById("video-tutorial");
+
+
+pularVideo.addEventListener("click", () => {
+  tutorial.style.display = "none";
+  video.pause();
+});
+
+video.addEventListener("ended", () => {
+  tutorial.style.display = "none"; // Oculta o vídeo
+});
+
+function checkOrientation() {
+  if (window.innerWidth < window.innerHeight) {
+
+    document.getElementById("container-main").style.display = "none";
+    document.getElementById("gif-celular").style.display = "flex";
+
+  } else {
+    document.getElementById("gif-celular").style.display = "none";
+    document.getElementById("container-main").style.display = "flex";
+  }
+}
+
+window.addEventListener("resize", checkOrientation);
+window.addEventListener("orientationchange", checkOrientation);
+
+checkOrientation();
+
+
+
+
+
+
+
 const moveis = [
   background,
   ...limites,
@@ -24,11 +59,13 @@ let alertaExibido = false;
 let movimentoTravado = false; // Variável para controlar o movimento
 let colidindoComAlgum = false;
 
+
 botaoProximo.addEventListener("click", () => {
   // Oculta a mensagem e destrava o movimento
   mensagemInteracao.style.display = "none";
   movimentoTravado = false;
   alertaExibido = false; // Reseta o estado do alerta
+  somGuardado.stop();
   animate();
 });
 
@@ -881,10 +918,13 @@ function animate() {
         movel.position.x -= 3;
       });
   }
+  
 }
 
+
+
 document.addEventListener("keydown", (event) => {
-  if (event.key === "Enter" && podeInteragir && !alertaExibido) {
+  if (event.key === "Enter" && podeInteragir && !alertaExibido && !somGuardado.playing()) {
     alertaExibido = true;
     podeInteragir = false;
 

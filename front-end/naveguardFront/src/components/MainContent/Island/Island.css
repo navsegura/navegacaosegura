@@ -1,0 +1,26 @@
+.island_container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    top: 30rem;
+}
+
+@media (max-width: 650px) {
+    .island_container{
+        top: 13rem;
+    }
+}
+
+.island_container .Beach{
+    position: relative;
+    z-index: -1;
+    right: 3px;
+    height: 5%;
+}
+
+.nuvens{
+    display: flex;
+    justify-content: space-between;
+}
