@@ -7,9 +7,6 @@ body {
     height: 100vh;
     background-color: #2991e1;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 canvas {
@@ -229,11 +226,13 @@ button:active {
     
     main {
         font-size: 0.5rem;
+        align-items: start;
     }
 
     #mensagemInteracao {
         width: 700px;
         font-size: 1rem;
     }
+
 }
 
