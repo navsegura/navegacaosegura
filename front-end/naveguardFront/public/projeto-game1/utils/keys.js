@@ -70,3 +70,33 @@ window.addEventListener("keyup", (e) => {
       break;
   }
 });
+
+const upButton = document.getElementById("upButton");
+const downButton = document.getElementById("downButton");
+const leftButton = document.getElementById("leftButton");
+const rightButton = document.getElementById("rightButton");
+
+// Lógica de movimentação com os botões
+upButton.addEventListener("mousedown", () => keys.w.pressed = true);
+upButton.addEventListener("mouseup", () => keys.w.pressed = false);
+
+downButton.addEventListener("mousedown", () => keys.s.pressed = true);
+downButton.addEventListener("mouseup", () => keys.s.pressed = false);
+
+leftButton.addEventListener("mousedown", () => keys.a.pressed = true);
+leftButton.addEventListener("mouseup", () => keys.a.pressed = false);
+
+rightButton.addEventListener("mousedown", () => keys.d.pressed = true);
+rightButton.addEventListener("mouseup", () => keys.d.pressed = false);
+
+upButton.addEventListener("touchstart", () => keys.w.pressed = true);
+upButton.addEventListener("touchend", () => keys.w.pressed = false);
+
+downButton.addEventListener("touchstart", () => keys.s.pressed = true);
+downButton.addEventListener("touchend", () => keys.s.pressed = false);
+
+leftButton.addEventListener("touchstart", () => keys.a.pressed = true);
+leftButton.addEventListener("touchend", () => keys.a.pressed = false);
+
+rightButton.addEventListener("touchstart", () => keys.d.pressed = true);
+rightButton.addEventListener("touchend", () => keys.d.pressed = false);
