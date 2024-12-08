@@ -161,6 +161,7 @@ const UserProfile = () => {
                 <img src={Images.AmeacasOnline} alt="Tutoriais" width={50} />
                 <P>Conheça os perigos e como se defender</P>
               </Square>
+             </Link>
             </GroupSquare>
             </UserProfileContainer>
             </MainContent>

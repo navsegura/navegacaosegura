@@ -160,7 +160,7 @@ const Images = {
     jonas,
     mayla,
     rodrigo,
-    theofilo
+    theofilo,
     visaIcon,
     masterCardIcon,
     eloCardIcon,
