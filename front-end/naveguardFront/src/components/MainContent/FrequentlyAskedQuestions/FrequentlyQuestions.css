@@ -21,6 +21,7 @@ h1 {
     }
 }
 
+
 summary::after {
     content: '▼'; 
     transform: translateY(-50%);
