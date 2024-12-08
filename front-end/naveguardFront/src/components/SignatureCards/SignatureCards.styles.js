@@ -45,6 +45,7 @@ export const Card = styled.div`
 
 export const CardTitle = styled.h3`
     font-size: 1.2rem;
+    font-family: 'Luckiest Guy', cursive;
 `
 
 export const CardPlans = styled.div`
@@ -58,6 +59,7 @@ export const Plan = styled.div`
     gap: 4px;
     flex-direction: row;
     align-items: center;
+    font-family: 'Poppins', sans-serif;
 `
 
 export const Img = styled.img`

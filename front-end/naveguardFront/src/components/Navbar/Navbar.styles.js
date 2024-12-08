@@ -40,6 +40,7 @@ export const UserNavigation = styled.div`
     justify-content: center;
     align-items: center;
     gap: .5rem;
+    font-family: 'Luckiest Guy', cursive;
 `
 
 export const Line = styled.div`

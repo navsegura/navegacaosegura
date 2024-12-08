@@ -26,6 +26,7 @@ export const UserGrid = styled.div`
     padding: 90px 0 20px 0;
     gap: 2rem;
     margin-left: 80px;
+    font-family: 'Luckiest Guy', cursive;
 
     @media (max-width: 374px) {
         display: none;

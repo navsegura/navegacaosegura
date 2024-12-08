@@ -52,6 +52,7 @@ export const HeaderCard = styled.div`
     height: 5rem;
     font-size: 1.5rem;
     color: #FF6F00;
+    font-family: 'Luckiest Guy', cursive;
 
     @media (max-width: 1400px) {
         width: 20rem;
