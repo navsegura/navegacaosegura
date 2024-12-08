@@ -63,6 +63,8 @@ import btnBack from './images/btnBack.svg'
 import backgroundMainContent from './images/backgroundMainContent.png'
 import Papiro from './images/papiro.png'
 import TeVejoBanner from './images/bannerTeVejo.png'
+import TeVejoBannerResponse from './images/bannerTeVejoResponse.png'
+
 
 // Videos
 import FamilyLinkVideo from './videos/familyLinkVideo.mp4';
@@ -135,7 +137,8 @@ const Images = {
     btnBack,
     backgroundMainContent,
     Papiro,
-    TeVejoBanner
+    TeVejoBanner,
+    TeVejoBannerResponse
 }
 
 const Videos = {
