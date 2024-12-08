@@ -4,6 +4,7 @@ import { Link as ScrollLink } from "react-scroll";
 import { Link as RouterLink } from "react-router-dom";
 import NuvensContainer from "../../Nuvens/Nuvens";
 
+
 function SectionGame() {
   return (
     <>

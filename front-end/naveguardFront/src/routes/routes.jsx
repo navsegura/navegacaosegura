@@ -14,9 +14,9 @@ import Quiz from '../pages/Quiz Game/Quiz.jsx'
 import Articles from '../pages/Articles/Articles.jsx'
 import AmeacasOnline from '../pages/AmeacasOnline/AmeacasOnline.jsx'
 
+
 const Router = () => {
 
-    const isLoggedIn = false
 
     return (
         <>
@@ -24,15 +24,15 @@ const Router = () => {
                 <Routes>
                     <Route path='/' element={<Home/>} />
                     <Route path='/header' element={<Header/>} />
-                    <Route path='/choice-screen' element={<PrivateRoute isLoggedIn={isLoggedIn} element={<ChoiceScreen />} />} />
-                    <Route path='/user-profile' element={<PrivateRoute isLoggedIn={isLoggedIn} element={<UserProfile />} />} />
+                    <Route path='/choice-screen' element={<ChoiceScreen />} />
+                    <Route path='/user-profile' element={<UserProfile />} />
                     <Route path='/about' element={<Sobre />} />
                     <Route path='/login' element={<Login />} />
                     <Route path='/parental-control' element={<ParentalControl/>} />
                     <Route path='/articles' element={<Articles/>} />
                     <Route path='*' element={<NotFound/>} />
                     <Route path='/quiz' element={<Quiz/>} />
-                    <Route path='/kids-page' element={<PrivateRoute isLoggedIn={isLoggedIn}element={<KidsPage/>} />}/>
+                    <Route path='/kids-page' element={<KidsPage />}/>
                     <Route path='/ameacas-online' element={<AmeacasOnline />} />
                     {/* 404 */}
                 </Routes>
