@@ -8,16 +8,18 @@ import ParentalControl from '../pages/ParentalControl/ParentalControl'
 import Home from '../pages/Home.jsx'
 import Sobre from '../pages/Sobre/Sobre.jsx'
 import Login from '../pages/Login/Login.jsx'
-import PrivateRoute from './PrivateRoute.jsx'
 import KidsPage from '../pages/KidsPage/KidsPage.jsx'
+import Cadastro from '../components/Cadastro/Cadastro.jsx'
+import FaleConosco from '../pages/FaleConosco/FaleConosco.jsx'
 import PaymentSection from '../components/PaymentSection/PaymentSection.jsx'
 import Quiz from '../pages/Quiz Game/Quiz.jsx'
 import Articles from '../pages/Articles/Articles.jsx'
+import AmeacasOnline from '../pages/AmeacasOnline/AmeacasOnline.jsx'
+
 
 
 const Router = () => {
 
-    const isLoggedIn = false
 
     return (
         <>
@@ -25,17 +27,20 @@ const Router = () => {
                 <Routes>
                     <Route path='/' element={<Home/>} />
                     <Route path='/header' element={<Header/>} />
-                    <Route path='/choice-screen' element={<PrivateRoute isLoggedIn={isLoggedIn} element={<ChoiceScreen />} />} />
-                    <Route path='/user-profile' element={<PrivateRoute isLoggedIn={isLoggedIn} element={<UserProfile />} />} />
+                    <Route path='/choice-screen' element={<ChoiceScreen />} />
+                    <Route path='/user-profile' element={<UserProfile />} />
                     <Route path='/about' element={<Sobre />} />
                     <Route path='/login' element={<Login />} />
                     <Route path='/parental-control' element={<ParentalControl/>} />
+                    <Route path='/register' element={<Cadastro/>}/>
+                    <Route path='/faleconosco' element={<FaleConosco/>}/>
                     <Route path='/articles' element={<Articles/>} />
                     <Route path='*' element={<NotFound/>} />
                     <Route path='/quiz' element={<Quiz/>} />
-                    <Route path='/kids-page' element={<PrivateRoute isLoggedIn={isLoggedIn}element={<KidsPage/>} />}/>
+                    <Route path='/kids-page' element={<KidsPage />}/>
+                    <Route path='/ameacas-online' element={<AmeacasOnline />} />
                     {/* 404 */}
-                    <Route path='/payment-page' element={<PrivateRoute isLoggedIn={isLoggedIn}element={<PaymentSection/>}/>}/>
+                    <Route path='/payment-page' element={<PaymentSection/>}/>
                     
                 </Routes>
             </BrowserRouter>

@@ -155,11 +155,13 @@ const UserProfile = () => {
                   <P>Monitore suas crianças online</P>
                 </Square>
               </Link>
+              <Link to="/ameacas-online">
               <Square>
                 <Graphics>Ameaças Online</Graphics>
                 <img src={Images.AmeacasOnline} alt="Tutoriais" width={50} />
                 <P>Conheça os perigos e como se defender</P>
               </Square>
+             </Link>
             </GroupSquare>
             </UserProfileContainer>
             </MainContent>

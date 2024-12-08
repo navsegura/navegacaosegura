@@ -54,6 +54,22 @@ import KidLogger from './images/kidlogger.svg'
 import FamilyLink from './images/google-family-link.svg'
 import Qustodio from './images/qustodio.svg'
 import FamilyShield from './images/family-shield.svg'
+import phishing from './images/phishing.svg'
+import malware from './images/malware.svg'
+import linksperigosos from './images/linksperigosos.svg'
+import cyberbullying from './images/cyberbullying.svg'
+import pessoas from './images/pessoas.svg'
+import alvo from './images/alvo.svg'
+import opiniao from './images/opiniao.svg'
+import barco from './images/barco.svg'
+import antonio from './images/antonio.jpg'
+import guilherme from './images/guilherme.jpg'
+import heverton from './images/heverton.jpg'
+import jamyle from './images/jamyle.jpg'
+import jonas from './images/jonas.jpg'
+import mayla from './images/mayla.jpg'
+import rodrigo from './images/rodrigo.jpg'
+import theofilo from './images/theofilo.jpg'
 import visaIcon from './images/visaSvg.svg'
 import masterCardIcon from './images/masterCardSvg.svg'
 import amCardIcon from './images/amSvg.svg'
@@ -129,6 +145,22 @@ const Images = {
     Qustodio,
     FamilyShield,
     NuvemOpacity,
+    phishing,
+    malware,
+    linksperigosos,
+    cyberbullying,
+    pessoas,
+    alvo,
+    opiniao,
+    barco,
+    antonio,
+    guilherme,
+    heverton,
+    jamyle,
+    jonas,
+    mayla,
+    rodrigo,
+    theofilo,
     visaIcon,
     masterCardIcon,
     eloCardIcon,
