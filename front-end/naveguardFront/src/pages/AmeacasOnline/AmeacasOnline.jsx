@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { MainContainer, Back, Span, ControlContent, TitleControl, Line, CardContainer, Card, MolduraImgFamily, MolduraImg, Img, Description } from './AmeacasOnline.js'
 import ResolutionNotAvailable from '../../components/ResolutionNotAvailable/ResolutionNotAvailable'
 import NuvensContainer from "../../components/Nuvens/Nuvens";
-import Modal from "../../components/Modal/modal.jsx";
+import Modal from "../../components/Modal/Modal.jsx";
 import { useState } from "react";
 import './Ameacas.css'
 
