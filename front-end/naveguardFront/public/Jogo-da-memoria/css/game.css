@@ -80,29 +80,3 @@ header {
 }
 
 /*tela parabenização*/
-
-
-.buttons {
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-    gap: 20%;
-    
-}
-
-.btn-endGame {
-    background-color: #ff6f00;
-    width: 300px;
-    height: 100px;
-    text-align: center;
-    justify-content: center;
-    align-self: center;
-    align-items: center;
-    color: white;
-    transition: 1s;
-    font-size: 25px;
-}
-
-.btn-endGame:hover {
-    background-color: hsl(26, 63%, 39%);
-}

@@ -16,6 +16,9 @@ const SignatureCard = () => {
     utilScrollRevealDelayBottom3(planCard3);
   }, []);
 
+  const isLoggedin = localStorage.getItem('isLoggedIn') === 'true'
+  console.log(isLoggedin)
+  
   return (
         <>
         <CardsContainer id="planos">
@@ -44,9 +47,17 @@ const SignatureCard = () => {
                 </Plan>
 
               </CardPlans>
-               <Link to='/rotadepagamento'>  {/* Criar a tela de pagamento */}
+              {isLoggedin ? (
+                <Link to='/user-profile'>
                   <CardButton>ACESSE</CardButton>
                 </Link>
+              ) : (
+                (
+                <Link to='/login'>
+                  <CardButton>ACESSE</CardButton>
+                </Link>
+              )
+              )}
             {/* ---------------------------------- */}
           </Card>
           <Card ref={planCard2}>
@@ -74,7 +85,7 @@ const SignatureCard = () => {
                 </Plan>
 
               </CardPlans>
-              <Link to='/rotadepagamento'>  {/* Criar a tela de pagamento */}
+              <Link to='/payment-page'>
                   <CardButton>ASSINAR</CardButton>
                 </Link>
             </Card>
@@ -103,7 +114,7 @@ const SignatureCard = () => {
                 </Plan>
 
               </CardPlans>
-              <Link to='/rotadepagamento'>  {/* Criar a tela de pagamento */}
+              <Link to='/payment-page'>
                   <CardButton>ASSINAR</CardButton>
                 </Link>
             </Card>

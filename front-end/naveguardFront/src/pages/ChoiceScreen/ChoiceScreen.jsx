@@ -7,6 +7,7 @@ import NavBar from "../../components/Navbar/Navbar"
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import NuvensContainer from '../../components/Nuvens/Nuvens';
+import ResolutionNotAvailable from '../../components/ResolutionNotAvailable/ResolutionNotAvailable';
 import { Container, UserGrid, UserCard, AddUserCard, ImageUser, Img, AddMore, MoreIcon, P } from './ChoiceScreen.styles';
 
 const ChoiceScreen = ({ initialUsers }) => {
@@ -36,14 +37,15 @@ const ChoiceScreen = ({ initialUsers }) => {
 
   return (
     <>
+    <NuvensContainer/>
+      <ResolutionNotAvailable />
       <NavBar />
       <SideBar/>
       <Container>
       {/* <ReturnButton className='bx bx-chevrons-left'></ReturnButton> */}
-    <NuvensContainer/>
         <UserGrid>
         <ImageUser>
-            {imgTest === null ? (
+            {imgTest === '' ? (
               <Link to="/user-profile"><Img src={Images.UserMaster} alt="User master" /></Link>
             ) : (
               <Img src={imgTest} alt={nameProfile} /> 
@@ -55,21 +57,24 @@ const ChoiceScreen = ({ initialUsers }) => {
               <P>{nameProfile}</P>
             )}
           </ImageUser>
-          {users.map((user) => (
+          {users.slice(0, 3).map((user) => (
             <UserCard key={user.id}>
               <Link to={'/kids-page'}>
-              <ImageUser>
-                <Img src={Images.UserChild} alt={user.name} />
-              </ImageUser>
+                <ImageUser>
+                  <Img src={Images.UserChild} alt={user.name} />
+                </ImageUser>
               </Link>
               <P>{user.name}</P>
             </UserCard>
           ))}
-          <AddUserCard onClick={handleOpenModal} aria-label="Add a new user">
-            <AddMore>
-              <MoreIcon className='bx bx-plus-medical' aria-hidden="true"></MoreIcon>
-            </AddMore>
-          </AddUserCard>
+            {users.length === 3 ? null : (
+              <AddUserCard onClick={handleOpenModal} aria-label="Add a new user">
+                <AddMore>
+                  <MoreIcon className='bx bx-plus-medical' aria-hidden="true"></MoreIcon>
+                </AddMore>
+              </AddUserCard>
+            )}
+
         </UserGrid>
         {isModalOpen && (
           <SignUpModal onClose={handleCloseModal} onAddUser={onAddUser} />

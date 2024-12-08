@@ -13,17 +13,46 @@
   <body>
     <header>
       <p>NAVEGUARD</p>
-      <img src="./img/setavoltar.svg" alt="seta-voltar" width="35px" onclick="history.back()">
+      <img
+        src="./img/setavoltar.svg"
+        alt="seta-voltar"
+        width="35px"
+        onclick="history.back()"
+      />
     </header>
-    <main>
+    <main id="container-main">
       <div class="controles">
-        <img src="./img/controles-awsd.png" alt="controles"/>
+        <img src="./img/controles-awsd.png" alt="controles" />
+      </div>
+      <div id="tutorial">
+        <div>
+          <video
+            src="./img/video-tutorial.mp4"
+            id="video-tutorial"
+            autoplay
+          ></video>
+        </div>
+        <button id="pularVideo">Pular Tutorial</button>
       </div>
       <canvas id="canvaszinho"></canvas>
 
+      <div id="gameControls">
+        <div>
+          <button id="upButton">⬆️</button>
+          <div class="horizontal-buttons">
+            <button id="leftButton">⬅️</button>
+            <button id="downButton">⬇️</button>
+            <button id="rightButton">➡️</button>
+          </div>
+        </div>
+        <button id="interactionButton">
+          <img src="./img/icone-mao.png" alt="" id="icone-mao" />
+        </button>
+      </div>
+
       <div id="mensagemInteracao">
         <div id="nomePersonagem">
-          <p></p>
+          <p>Tutorial</p>
         </div>
         <span id="caixaDeTexto"></span>
         <button id="botaoProximo">Próximo</button>
@@ -32,6 +61,11 @@
         <img src="./img/interagir-enter.png" alt="controles" />
       </div>
     </main>
+    <img
+      src="./img/gif-celular.gif"
+      alt="Gire o celular para o jogo funcionar!"
+      id="gif-celular"
+    />
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js"

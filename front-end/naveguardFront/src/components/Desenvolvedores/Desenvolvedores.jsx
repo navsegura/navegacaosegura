@@ -15,7 +15,7 @@ function Desenvolvedores () {
                 <div className="first_column">
                 {/* Primeiro Card */}
                 <div className="card_dev_one">
-                    <div className="img_dev"> <img src="https://placehold.co/150" alt="img" /></div>
+                    <div className="img_dev"> <img src={Images.heverton} width={"150rem"} alt="img" /></div>
                     <div className="dev">
                         <div className="dev_content">
                             <h4 className='name'>Heverton Victor</h4>
@@ -37,13 +37,13 @@ function Desenvolvedores () {
 
                 {/* Segundo Card */}
                 <div className="card_dev_two">
-                <div className="img_dev"> <img src="https://placehold.co/150" alt="img" /></div>
+                <div className="img_dev"> <img src={Images.jonas} width={'150rem'} alt="img" /></div>
                     <div className="dev">
                         <div className="dev_content">
                             <h4 className='name'>Jonas Rafael</h4>
                             <ul>
-                                <li>FullStack</li>
                                 <li>Financeiro</li>
+                                <li>Front-End</li>
                             </ul>
                         </div>
                         <div className="social_icons">
@@ -59,7 +59,7 @@ function Desenvolvedores () {
                 
                 {/* Terceiro Card */}
                 <div className="card_dev_three">
-                    <div className="img_dev"> <img src="https://placehold.co/150" alt="img" /></div>
+                    <div className="img_dev"> <img src={Images.antonio} width={'150rem'} alt="img" /></div>
                         <div className="dev">
                             <div className="dev_content">
                                 <h4 className='name'>Antônio De Pádua</h4>
@@ -81,13 +81,13 @@ function Desenvolvedores () {
 
                 {/* Quarto Card */}
                 <div className="card_dev_four">
-                    <div className="img_dev"> <img src="https://placehold.co/150" alt="img" /></div>
+                    <div className="img_dev"> <img src={Images.guilherme} width={"150rem"} alt="img" /></div>
                         <div className="dev">
                             <div className="dev_content">
                                 <h4 className='name'>Guilherme Davino</h4>
                                 <ul>
                                     <li>Desenvolvedor</li>
-                                    <li>Full-Stack</li>
+                                    <li>Back-End</li>
                                 </ul>
                             </div>
                             <div className="social_icons">
@@ -105,10 +105,10 @@ function Desenvolvedores () {
                 <div className="second_column">
                 {/* Quinto Card */}
                 <div className="card_dev_five">
-                    <div className="img_dev"> <img src="https://placehold.co/150" alt="img" /></div>
+                    <div className="img_dev"> <img src={Images.jamyle} width={'150rem'} alt="img" /></div>
                         <div className="dev">
                             <div className="dev_content">
-                                <h4 className='name'>Jamyle Ellenn</h4>
+                                <h4 className='name'>Jamyle Elen</h4>
                                 <ul>
                                     <li>Scrum Master</li>
                                     <li>Full Stack & UI/UX</li>
@@ -127,7 +127,7 @@ function Desenvolvedores () {
 
                 {/* Sexto Card */}
                 <div className="card_dev_six">
-                    <div className="img_dev"> <img src="https://placehold.co/150" alt="img" /></div>
+                    <div className="img_dev"> <img src={Images.rodrigo} width={'150rem'} alt="img" /></div>
                         <div className="dev">
                             <div className="dev_content">
                                 <h4 className='name'>Rodrigo Fagnerr</h4>
@@ -149,7 +149,7 @@ function Desenvolvedores () {
 
                 {/* Sétimo Card */}
                 <div className="card_dev_seven">
-                    <div className="img_dev"> <img src="https://placehold.co/150" alt="img" /></div>
+                    <div className="img_dev"> <img src={Images.mayla} width={'150rem'} alt="img" /></div>
                         <div className="dev">
                             <div className="dev_content">
                                 <h4 className='name'>Leandra Mayla</h4>
@@ -171,7 +171,7 @@ function Desenvolvedores () {
 
                 {/* Oitavo Card */}
                 <div className="card_dev_eight">
-                    <div className="img_dev"> <img src="https://placehold.co/150" alt="img" /></div>
+                    <div className="img_dev"> <img src={Images.theofilo} width={'150rem'} alt="img" /></div>
                         <div className="dev">
                             <div className="dev_content">
                                 <h4 className='name'>Theofilo Henrique</h4>
