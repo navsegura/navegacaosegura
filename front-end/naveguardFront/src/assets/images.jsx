@@ -71,6 +71,8 @@ import FamilyLink from "./images/google-family-link.svg";
 import Qustodio from "./images/qustodio.svg";
 import FamilyShield from "./images/family-shield.svg";
 import Papiro from './images/papiro.png'
+import TeVejoBanner from './images/bannerTeVejo.png'
+import TeVejoBannerResponse from './images/bannerTeVejoResponse.png'
 import TrailerNaveguard from './images/trailer.png'
 import Island from './images/island2.png'
 import Siri from './images/siri.png'
@@ -171,6 +173,8 @@ const Images = {
     btnBack,
     backgroundMainContent,
     Papiro,
+    TeVejoBanner,
+    TeVejoBannerResponse
     TrailerNaveguard,
     Island,
     Siri,
