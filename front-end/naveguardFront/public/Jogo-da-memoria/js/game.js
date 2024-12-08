@@ -74,6 +74,7 @@ const checkCards = () => {
         if(contador == 6) {
             
             checkEndGame(); // Verifica o fim do jogo após o par ser encontrado
+            timer.pause()
         } 
     } else {
         setTimeout(() => {
@@ -151,3 +152,21 @@ window.onload = () => {
     startTimer()
     loadGame()
 }
+
+const playAgain = () => {
+    const playAgain = document.querySelector("#play-again")
+    if(playAgain) {
+        playAgain.addEventListener('click', () => {
+            location.reload()
+        })
+    }
+}
+
+const stopGame = () => {
+    const stop = document.querySelector("#back-beck")
+    if(stop) {
+        stop.addEventListener('click', ()=> {
+            window.location.href = "/kids-page"
+        })
+    }
+} 
