@@ -15,6 +15,10 @@ export const CardsContainer = styled.section`
     @media (max-width: 1130px) {
         flex-direction: column;
     }
+
+    @media (max-width: 374px) {
+        display: none;
+    }
 `
 
 export const Card = styled.div`

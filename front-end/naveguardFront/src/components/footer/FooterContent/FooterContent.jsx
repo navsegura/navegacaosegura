@@ -1,8 +1,11 @@
 import "./FooterContent.css";
 import { Images } from "../../../assets/images.jsx";
+import ResolutionNotAvailable from "../../ResolutionNotAvailable/ResolutionNotAvailable.jsx";
 
 function FooterContent() {
   return (
+    <>
+    <ResolutionNotAvailable/>
     <div className="footer-content">
       
       <div className="content-overlay">
@@ -45,6 +48,7 @@ function FooterContent() {
         className="Footer-image"
       /> */}
     </div>
+    </>
   );
 }
 

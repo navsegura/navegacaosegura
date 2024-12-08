@@ -12,6 +12,11 @@ vou ajustar e espero o feedback de vocês para melhorias*/
   max-width: 100%;
   padding-top: 299px;
   justify-content: space-between;
+
+
+      @media (max-width: 374px) {
+        display: none;
+    }
 }
 
 .content-overlay {

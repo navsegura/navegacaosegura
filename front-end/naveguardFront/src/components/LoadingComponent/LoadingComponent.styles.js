@@ -49,8 +49,6 @@ export const LoadingInitial = styled.div`
   left: 0;
   width: 100vw;
   height: 100vh;
-  /* background-color: rgb(16, 30, 67); */
-  /* background-color: rgb(16, 30, 67); */
   background: rgb(17, 139, 233);
   display: flex;
   align-items: center;
@@ -70,8 +68,6 @@ export const Logo = styled.h1`
   font-size: 1rem;
   letter-spacing: .5rem;
   text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
-  /* font-family: 'Poppins', sans-serif; */
   color: white;
-  /* border: red solid 1px; */
   animation: ${revealVertical} 3s ease forwards;
 `;

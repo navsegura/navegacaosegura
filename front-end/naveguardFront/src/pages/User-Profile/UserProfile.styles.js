@@ -15,7 +15,6 @@ export const Page = styled.div`
 `
 
 export const MainContainer = styled.div`
-    /* border: green solid; */
     padding: 8vh 0 0 4vw;
     width: 100%;
     height: 100%;
@@ -35,14 +34,6 @@ export const MainContainer = styled.div`
     @media (max-width: 374px) {
         display: none;
     }
-
-    /* @media (max-width: 768px) {
-        padding: 10vh 0 0 2vw;
-    }
-
-    @media (max-width: 480px) {
-        padding: 8vh 0 0 1vw;
-    } */
 `
 
 export const Strong = styled.strong`
@@ -53,13 +44,11 @@ export const Strong = styled.strong`
 export const UserProfileContent = styled.div`
     padding: 5vh;
     max-width: 1400px;
-    /* border: red solid 1px; */
     background-color: #f5f5f5;
 
     width: 100%;
 
     @media (max-width: 1440px) {
-        /* padding: 30px; */
 
     }
 
@@ -80,7 +69,6 @@ export const Profile = styled.div`
     color: #2c2c2c;
 
     @media (max-width: 1024px) {
-        /* flex-direction: column; */
         gap: 2rem;
     }
 
@@ -120,7 +108,6 @@ export const Line = styled.div`
 `
 
 export const About = styled.div`
-/* border: red solid 1px; */
 `
 
 export const Span = styled.div`
@@ -237,7 +224,6 @@ export const DropdownItem = styled.div`
 `;
 
 export const MainContent = styled.div`
-    /* border: red solid; */
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -252,23 +238,17 @@ export const MainContent = styled.div`
     @media (max-width: 620px) {
         padding: 0px 0px 0 80px;
     }
-
-    /* @media (max-width: 768px) {
-        padding: 4vh 0 0 2vw;
-    } */
 `
 
 export const UserProfileContainer = styled.div`
     font-family: 'Poppins', sans-serif;
     padding: 5vh;
     max-width: 1400px;
-    /* border: purple solid; */
     background-color: #f5f5f5;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     margin-bottom: 30px;
-    /* border: red solid 1px; */
     background-color: #F5F5F5;
     width: 100%;
 
@@ -279,9 +259,6 @@ export const UserProfileContainer = styled.div`
     @media (max-width: 374px) {
         display: none;
     }
-    /* @media (max-width: 1440px) {
-        padding: 100px 0 0 100px;
-    } */
 `
 
 export const FindOutMore = styled.h2`
@@ -296,7 +273,6 @@ export const FindOutMore = styled.h2`
 export const GroupSquare = styled.div`
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* flex-wrap: wrap; */
     gap: 4rem;
     align-items: center;
     justify-content: center;
@@ -316,7 +292,6 @@ export const GroupSquare = styled.div`
 `
 
 export const Square = styled.div`
-    /* border: red solid 1px; */
     max-width: 250px;
     width: 100%;
     height: 100%;
