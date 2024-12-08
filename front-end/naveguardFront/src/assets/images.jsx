@@ -70,13 +70,6 @@ import KidLogger from "./images/kidlogger.svg";
 import FamilyLink from "./images/google-family-link.svg";
 import Qustodio from "./images/qustodio.svg";
 import FamilyShield from "./images/family-shield.svg";
-import visaIcon from './images/visaSvg.svg'
-import masterCardIcon from './images/masterCardSvg.svg'
-import amCardIcon from './images/amSvg.svg'
-import eloCardIcon from './images/eloSvg.svg'
-import hiperCardIcon from './images/hiperSvg.svg'
-import btnBack from './images/btnBack.svg'
-import backgroundMainContent from './images/backgroundMainContent.png'
 import Papiro from './images/papiro.png'
 import TrailerNaveguard from './images/trailer.png'
 import Island from './images/island2.png'

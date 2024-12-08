@@ -7,6 +7,7 @@ import { Images } from "../../assets/images.jsx";
 import NuvensContainer from "../../components/Nuvens/Nuvens";
 import { Page, MainContainer, UserProfileContent, Profile, UserImage, Photo, Line, About, Span, NameProfile, Icon, Info, Bio, Location, Strong, Edit, Input, MainContent, UserProfileContainer, GroupSquare, Square, Graphics, P, DropdownMenu, DropdownItem } from './UserProfile.styles'
 import ResolutionNotAvailable from "../../components/ResolutionNotAvailable/ResolutionNotAvailable.jsx";
+import {findMe} from "../../services/user-service.js";
 
 const UserProfile = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -64,7 +65,7 @@ const UserProfile = () => {
       bio: " ",
       gender: " ",
       state: " ",
-      urlPhoto: " "
+      urlPhoto: undefined
     });
     useEffect(() => {
       findMe()
@@ -114,7 +115,7 @@ const UserProfile = () => {
           <UserProfileContent>
               <Profile>
                 <UserImage>
-                  <Photo src={imgTest || Images.UserMaster || userLogged.urlPhoto} alt="Profile photo" />
+                  <Photo src={imgTest || userLogged.urlPhoto || Images.UserMaster} alt="Profile photo" />
                   </UserImage>
                   <About>
                       <Span>
