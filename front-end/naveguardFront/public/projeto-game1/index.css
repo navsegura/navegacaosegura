@@ -7,6 +7,9 @@ body {
     height: 100vh;
     background-color: #2991e1;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 canvas {
@@ -130,4 +133,36 @@ main {
     border-radius: 10px;
     font-weight: bold;
     cursor: pointer;
+}
+
+#gif-celular {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+@media (max-width: 915px) {
+    .controles {
+        display: none;
+    }
+
+    #tutorial {
+        display: none;
+    }
+    canvas {
+        width: 500px;
+    }
+
+    header {
+        height: 40px;
+    }
+
+    header img {
+        width: 1rem;
+    }
+    
+    header p {
+        font-size: 1rem;
+    }
 }

@@ -10,6 +10,29 @@ video.addEventListener("ended", () => {
   tutorial.style.display = "none"; // Oculta o vídeo
 });
 
+function checkOrientation() {
+  if (window.innerWidth < window.innerHeight) {
+
+    document.getElementById("container-main").style.display = "none";
+    document.getElementById("gif-celular").style.display = "flex";
+
+  } else {
+    document.getElementById("gif-celular").style.display = "none";
+    document.getElementById("container-main").style.display = "flex";
+  }
+}
+
+window.addEventListener("resize", checkOrientation);
+window.addEventListener("orientationchange", checkOrientation);
+
+checkOrientation();
+
+
+
+
+
+
+
 const moveis = [
   background,
   ...limites,
