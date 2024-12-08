@@ -939,6 +939,7 @@ document.addEventListener("keydown", (event) => {
 const botaoInteragir = document.getElementById("interactionButton");
 
 botaoInteragir.addEventListener("touchstart", () => {
+  e.preventDefault();
   executarInteracao();
 });
 
