@@ -186,6 +186,8 @@ main {
 
 #icone-mao {
     width: 50px;
+    outline: none;
+    user-select: none;
 }
 
 /* Botão comum */
