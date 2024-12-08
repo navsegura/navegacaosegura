@@ -46,8 +46,8 @@ function Cadastro () {
     return(
         <div className="main_content_cadastro">
         <div className='form-container'>
-            <div className='seta' onClick={() => navigate("/")}>
-                <img src={Images.Seta_Voltar} alt="voltar" />
+            <div className='seta'>
+                <img src={Images.Seta_Voltar} alt="voltar" onClick={() => navigate("/")}/>
                 <h1>CADASTRO</h1>
             </div>
             <form className="cadastro" onSubmit={handleSubmit}>
