@@ -6,8 +6,6 @@ import Nuvem from "./images/nuvem.svg";
 import NuvemOpacity from "./images/nuvemOpacity.svg";
 import Praia from "./images/praia.svg";
 import Sol from "./images/sol.svg";
-import peixesEsquerda from "./images/peixesEsquerda.svg";
-import peixesDireita from "./images/peixesDireita.svg";
 import papagaio from "./images/Papagaio.svg";
 import check from "./images/check.svg";
 import uncheck from "./images/uncheck.svg";
@@ -57,6 +55,13 @@ import FamilyLink from "./images/google-family-link.svg";
 import Qustodio from "./images/qustodio.svg";
 import FamilyShield from "./images/family-shield.svg";
 // aqui vcs criam as variaveis especificando o caminho delas
+import visaIcon from "./images/visaSvg.svg";
+import masterCardIcon from "./images/masterCardSvg.svg";
+import eloCardIcon from "./images/eloSvg.svg";
+import amCardIcon from "./images/amSvg.svg";
+import hiperCardIcon from "./images/hiperSvg.svg";
+import btnBack from "./images/btnBack.svg";
+import backgroundMainContent from "./images/backgroundMainContent.png";
 
 // Videos
 import FamilyLinkVideo from "./videos/familyLinkVideo.mp4";
