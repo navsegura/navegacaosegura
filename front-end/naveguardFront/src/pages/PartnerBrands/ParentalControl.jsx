@@ -1,4 +1,4 @@
-import Navbar from "../../components/NavBar/Navbar";
+import NavBar from "../../components/Navbar/Navbar"
 import SideBar from "../../components/SideBar/SideBar";
 import { Images } from "../../assets/images";
 import { MainContainer, ControlContent, TitleControl, Line, CardContainer, Card, Img, Description } from './ParentalControl.styles'
@@ -6,7 +6,7 @@ import { MainContainer, ControlContent, TitleControl, Line, CardContainer, Card,
 const ParentalControl = () => {
   return (
     <>
-    <Navbar/>
+    <NavBar/>
     <SideBar/>
     <MainContainer>
           <ControlContent>
