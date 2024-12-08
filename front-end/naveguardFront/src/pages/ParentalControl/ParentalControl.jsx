@@ -3,7 +3,7 @@ import NavBar from "../../components/Navbar/Navbar"
 import { Images, Videos } from "../../assets/images";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { MainContainer, Back, Span, ControlContent, TitleControl, Line, CardContainer, Card, MolduraImgFamily, MolduraImg, Img, Description, Overlay, NuvemOverlay, NuvemOverlayII, NuvemOverlayIII, NuvemOverlayIV } from './ParentalControl.styles'
+import { MainContainer, Back, Span, ControlContent, TitleControl, Line, CardContainer, Card, MolduraImgFamily, MolduraImg, Img, Description, Overlay } from './ParentalControl.styles'
 import ResolutionNotAvailable from '../../components/ResolutionNotAvailable/ResolutionNotAvailable'
 import NuvensContainer from "../../components/Nuvens/Nuvens";
 
@@ -34,8 +34,8 @@ const ParentalControl = () => {
     <>
     <ResolutionNotAvailable/>
     <NavBar/>
-    {/* <SideBar/> */}
     <MainContainer>
+    {/* <SideBar/> */}
       <NuvensContainer/>
           <ControlContent>
             <Span>

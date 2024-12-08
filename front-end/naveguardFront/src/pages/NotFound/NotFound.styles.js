@@ -2,7 +2,6 @@ import styled, { keyframes } from 'styled-components'
 
 export const ErrorContainer = styled.div`
     padding-top: 6vh;;
-    /* border: red 1px solid; */
     position: relative;
     width: 100%;
     display: flex;
@@ -11,7 +10,6 @@ export const ErrorContainer = styled.div`
 `
 
 export const ErrorContent = styled.div`
-    /* border: red 1px solid; */
     position: relative;
     width: 100%;
     display: flex;
@@ -27,7 +25,6 @@ export const Img = styled.img`
 `
 
 export const Sea = styled.div`
-    /* border: green 1px solid; */
     position: absolute;
     top: 77%;
     z-index: 200;
@@ -54,42 +51,6 @@ export const Return = styled.button`
         background-color: #D47E3B;
     }
 `
-
-// const fadeInDiagonal = keyframes
-//   0% { 
-//     opacity: 0; 
-//     transform: translate(-20px, 20px); 
-//   }
-//   100% { 
-//     opacity: 1; 
-//     transform: translate(0, 0); 
-//   }
-// `;
-
-// const fadeInOut = 
-//   0%, 100% { 
-//     opacity: 0; 
-//     rotate: 360deg;
-//   }
-//   25% { 
-//     opacity: 1; 
-//     transform: translate(-40px, -40px); esse nao
-
-//   }
-//   50% { 
-//     opacity: 1; 
-//     transform: translate(0, 0);
-//   }
-//   75% { 
-//     opacity: 1; 
-//     transform: translate(0, 0); 
-
-//   }
-//   100% { 
-//     opacity: 1; 
-//     transform: translate(0, 0); 
-//   }
-//   `
 
 const revealDiagonal = keyframes`
   0% {

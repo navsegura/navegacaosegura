@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const ModalOverlay = styled.button`
-  /* border: red solid 1px; */
   position: fixed;
   top: 0;
   left: 0;
@@ -14,7 +13,6 @@ export const ModalOverlay = styled.button`
 `;
 
 export const ModalContent = styled.div`
-  /* border: red solid 1px; */
   background-color: rgb(217, 217, 217, 50%);
   padding: 20px;
   border-radius: 10px;
@@ -23,7 +21,6 @@ export const ModalContent = styled.div`
 `;
 
 export const Input = styled.input`
-  /* border: red solid 1px; */
   padding: 10px;
   margin: 10px;
   border: 1px solid #d9d9d9;

@@ -7,48 +7,39 @@ export const Container = styled.section`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* border: red solid 1px; */
-`
 
-// const fadeIn = 
-//   0% {
-//     opacity: 0;
-//   }
-//   100% {
-//     opacity: 1;
-//   }
-// `;
+    @media (max-width: 511px) {
+        min-height: 100vh;
+        height: 100%;
+        align-items: normal;
+        justify-content: normal;
+    }
 
-
-
-
-
-// export const ReturnButton = styled.i`
-//     /* border: red solid 1px; */
-//     font-size: 1.5rem;
-//     position: relative;
-//     bottom: 4rem;
-// `
+    `
 
 export const UserGrid = styled.div`
-    /* border: green solid 10px; */
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 1000px;
+    flex-wrap: wrap;
+    padding: 90px 0 20px 0;
     gap: 2rem;
-`
+    margin-left: 80px;
+
+    @media (max-width: 374px) {
+        display: none;
+    }
+    `
 
 export const UserCard = styled.div`
-    /* border: blue solid 1px; */
 `
 
 export const AddUserCard = styled.div`
-    /* border: blue solid 1px; */
 `
 
 export const ImageUser = styled.div`
     width: 200px;
-    /* border: blue solid 1px; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -58,23 +49,18 @@ export const ImageUser = styled.div`
 export const Img = styled.img`
     width: 100%;
     border-radius: 200px;
-    /* border: blue solid 1px; */
     opacity: .7;
     cursor: pointer;
-    /* margin-bottom: .5rem; */
     transition: all .4s ease-in-out;
     &:hover {
         opacity: 1;
-        /* transform: scale(1.02); */
     }
 `
 
 export const AddMore = styled.div`
-    /* border: orange solid 1px; */
 `
 
 export const P = styled.p`
-    /* border: orange solid 1px; */
     text-align: center;
     font-size: 1.2rem;
     color: #fff;

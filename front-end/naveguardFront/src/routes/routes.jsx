@@ -9,7 +9,10 @@ import Home from '../pages/Home.jsx'
 import Sobre from '../pages/Sobre/Sobre.jsx'
 import Login from '../pages/Login/Login.jsx'
 import KidsPage from '../pages/KidsPage/KidsPage.jsx'
+import PaymentSection from '../components/PaymentSection/PaymentSection.jsx'
+import Quiz from '../pages/Quiz Game/Quiz.jsx'
 import Articles from '../pages/Articles/Articles.jsx'
+
 
 const Router = () => {
 
@@ -27,7 +30,10 @@ const Router = () => {
                     <Route path='/articles' element={<Articles/>} />
                     <Route path='*' element={<NotFound/>} />
                     <Route path='/kids-page' element={<KidsPage/>}/>
+                    <Route path='/quiz' element={<Quiz/>} />
                     {/* 404 */}
+                    <Route path='/payment-page' element={<PrivateRoute isLoggedIn={isLoggedIn}element={<PaymentSection/>}/>}/>
+                    
                 </Routes>
             </BrowserRouter>
         </>

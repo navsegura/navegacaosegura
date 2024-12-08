@@ -6,6 +6,7 @@ import SideBar from "../../components/SideBar/SideBar";
 import { Images } from "../../assets/images.jsx";
 import NuvensContainer from "../../components/Nuvens/Nuvens";
 import { Page, MainContainer, UserProfileContent, Profile, UserImage, Photo, Line, About, Span, NameProfile, Icon, Info, Bio, Location, Strong, Edit, Input, MainContent, UserProfileContainer, GroupSquare, Square, Graphics, P, DropdownMenu, DropdownItem } from './UserProfile.styles'
+import ResolutionNotAvailable from "../../components/ResolutionNotAvailable/ResolutionNotAvailable.jsx";
 
 const UserProfile = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -65,6 +66,7 @@ const UserProfile = () => {
       <NavBar/>
       <SideBar/>
       <Page>
+    <ResolutionNotAvailable/>
           <NuvensContainer/>
         <MainContainer>
           <UserProfileContent>
@@ -147,18 +149,13 @@ const UserProfile = () => {
                 <Square>
                   <Graphics>Controle Parental</Graphics>
                   <img src={Images.ControleParental} alt="Tutoriais" width={50} />
-                  <P>Ferramentas para proteger e monitorar suas crianças online</P>
+                  <P>Monitore suas crianças online</P>
                 </Square>
               </Link>
               <Square>
                 <Graphics>Ameaças Online</Graphics>
                 <img src={Images.AmeacasOnline} alt="Tutoriais" width={50} />
                 <P>Conheça os perigos e como se defender</P>
-              </Square>
-              <Square>
-                <Graphics>ChatBot</Graphics>
-                <img src={Images.ChatBot} alt="Tutoriais" width={50} />
-                <P>Obtenha ajuda rápida sobre segurança online</P>
               </Square>
             </GroupSquare>
             </UserProfileContainer>
