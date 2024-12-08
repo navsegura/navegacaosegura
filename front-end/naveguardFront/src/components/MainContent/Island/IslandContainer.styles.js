@@ -13,6 +13,10 @@ export const IslandContainer = styled.div`
     @media (max-width: 650px) {
         top: 13rem;
     }
+
+    @media (max-width: 374px) {
+        display: none;
+    }
 `
 
 export const Beach = styled.div`
