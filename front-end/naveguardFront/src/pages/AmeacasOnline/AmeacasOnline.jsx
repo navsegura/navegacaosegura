@@ -1,4 +1,4 @@
-import Navbar from "../../components/NavBar/Navbar";
+import Navbar from "../../components/Navbar/Navbar";
 // import SideBar from "../../components/SideBar/SideBar";
 import { Images } from "../../assets/images";
 // import { useState } from "react";
