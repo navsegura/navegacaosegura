@@ -32,7 +32,7 @@ const Router = () => {
                     <Route path='/kids-page' element={<KidsPage/>}/>
                     <Route path='/quiz' element={<Quiz/>} />
                     {/* 404 */}
-                    <Route path='/payment-page' element={<PrivateRoute isLoggedIn={isLoggedIn}element={<PaymentSection/>}/>}/>
+                    <Route path='/payment-page' element={<PaymentSection/>}/>
                     
                 </Routes>
             </BrowserRouter>
