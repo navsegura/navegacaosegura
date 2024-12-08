@@ -19,21 +19,32 @@ vou ajustar e espero o feedback de vocês para melhorias*/
     }
 }
 
+.content-overlay {
+  align-items: center;
+}
+
+.social-medias {
+  display: flex;
+  gap: 10px;
+}
 
 .content-overlay {
   color: #f5f5f5;
   position: relative;
   display: flex;
   flex-direction: row;
-  gap: 250px;
   justify-content: center;
   align-self: center;
   flex-wrap: nowrap;
   padding: 10px 100px 130px 100px;
   justify-content: space-between;
-
+  width: 80%;
 }
 
+/*titulo do footer*/
+.titulo-nave {
+  font-size: 2.5rem;
+}
 
 .first-col ol, .second-col ol, .third-col ol, .fourth-col ol{
   display: flex;
@@ -45,4 +56,45 @@ vou ajustar e espero o feedback de vocês para melhorias*/
 .fourth-col input {
   width: 300px;
   height: 50px;
+}
+
+
+
+@media (max-width:700px) {
+  .footer-content {
+    width: 100%;
+    max-width: 100%;
+    
+  }
+
+
+  .social-medias {
+    align-self: center;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .fourth-col input{
+    width: 12rem;
+  }
+}
+
+@media(max-width:590px) {
+  .content-overlay {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .social-medias {
+    justify-content: center;
+    text-align: center;
+
+  }
+
+  .fourth-col input{
+    justify-content: center;
+    align-self: center;
+  }
 }

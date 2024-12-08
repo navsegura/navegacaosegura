@@ -12,4 +12,11 @@ export const ContainerMain = styled.div`
 
 export const ContainerSlide = styled.div`
     width: 55%;
+    
+    .swiper-pagination-bullet {
+    border: 2px solid white;
+    background-color: transparent;
+    width: 0.7rem;
+    height: 0.7rem;
+  }
 `

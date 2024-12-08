@@ -5,7 +5,11 @@ import "./AnimalsHome.css";
 function AnimalsHome() {
   return (
     <>
-      <img src={Images.backgroundMainContent} alt="" className="background sea"/>
+      <img
+        src={Images.backgroundMainContent}
+        alt=""
+        className="background sea"
+      />
     </>
   );
 }

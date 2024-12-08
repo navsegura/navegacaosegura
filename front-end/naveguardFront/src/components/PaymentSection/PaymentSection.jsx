@@ -105,22 +105,24 @@ function PaymentSection() {
               </label>
             </div>
             <div className="debit">
-              <label>
-                <input type="radio" name="payment-method" value="debito" />
-                <h5>Débito</h5>
-              </label>
-            </div>
+            <label>
+              <input type="radio" name="payment-method" value="debito" />
+              <h5>Débito</h5>
+            </label>
           </div>
-          <div className="plan-option">
-            <select className="custom-select">
-              <option value="padrao">Padrão - R$ 19,99/mês</option>
-              <option value="premium">Premium - R$ 199,99/mês</option>
-            </select>
-            <span className="custom-text">Trocar</span>
-          </div>
-          <div className="btn-confirm">
-            <button>&gt;&gt;</button>
-          </div>
+        </div>
+
+        <div className="plan-option">
+          <select className="custom-select">
+            <option value="padrao">Mensal - R$ 19,99/mês</option>
+            <option value="premium">Anual - R$ 199,99/mês</option>
+          </select>
+          <span className="custom-text">Trocar</span>
+        </div>
+
+        <div className="btn-confirm">
+          <button>&gt;&gt;</button>
+        </div>
         </form>
       </div>
     </section>

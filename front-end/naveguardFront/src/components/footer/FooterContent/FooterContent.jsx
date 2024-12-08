@@ -11,7 +11,7 @@ function FooterContent() {
       <div className="content-overlay">
         <div className="first-col">
           <ol>
-          <li>NAVEGUARD</li>
+          <li className="titulo-nave">NAVEGUARD</li>
           <li>Naveguard &copy; 2024</li>
           <li>Todos os direitos reservados</li>
           </ol>
@@ -21,15 +21,6 @@ function FooterContent() {
             <img src={Images.logoTwitter} alt="Twitter" className="logo"/>
             <img src={Images.logoYoutube} alt="YouTube" className="logo"/>
           </div>
-        </div>
-
-        <div className="second-col">
-          <ol>
-            <li>Home</li>
-            <li>Sobre</li>
-            <li>Apoie o Naveguard</li>
-            <li>Fale Conosco</li>
-          </ol>
         </div>
 
         <div className="third-col">
@@ -42,12 +33,12 @@ function FooterContent() {
         <div className="fourth-col">
           <ol>
             <li>Receba Novidades</li>
+            <li>Seja apoiador</li>
             <input
               className="input-email"
               type="email"
               placeholder="Insira seu e-mail"
             />
-            <span className="enviar-seta">➤</span>
           </ol>
         </div>
       </div>
