@@ -40,6 +40,7 @@ export const UserNavigation = styled.div`
     justify-content: center;
     align-items: center;
     gap: .5rem;
+    font-family: 'Luckiest Guy', cursive;
 `
 
 export const Line = styled.div`
@@ -124,6 +125,12 @@ export const List = styled.li`
     border-bottom: #004b8d dashed 2px;
   }
 `;
+
+export const ListTwo = styled.li`
+  a:visited{
+    color: #FF6F00;
+  }
+`
 
 export const A = styled.a`
   color: #FF6F00;

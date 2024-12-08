@@ -1,0 +1,9 @@
+.container_phishing{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.content_ameacas_content p{
+    font-family: var(--secondary-font);
+}

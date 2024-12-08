@@ -10,6 +10,7 @@ function KidsPage() {
             <NavBar />
             <NuvemContainer />
             <SectionGame />
+
         </>
     )
 

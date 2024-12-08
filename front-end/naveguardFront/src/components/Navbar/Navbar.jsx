@@ -3,7 +3,7 @@ import { Images } from "../../assets/images";
 import { useState } from "react";
 import { 
   Container, Nav, Navigation, UserNavigation, UserPhoto, NameProfile, DropDown, 
-  DropdownMenu, DropdownItem, UserHover, Line, I, Logo, MenuList, List, A 
+  DropdownMenu, DropdownItem, UserHover, Line, I, Logo, MenuList, List, A, ListTwo
 } from "./Navbar.styles";
 import LoadingComponent from '../LoadingComponent/LoadingComponent';
 
@@ -82,12 +82,12 @@ function Navbar() {
             <List>
               <A href="#planos">Planos</A>
             </List>
-            <List>
+            <ListTwo>
               <Link to="/about">Sobre</Link>
-            </List>
-            <List>
+            </ListTwo>
+            <ListTwo>
               <Link to="/faleconosco">Fale Conosco</Link>
-            </List>
+            </ListTwo>
           </MenuList>
         )}
       </Nav>

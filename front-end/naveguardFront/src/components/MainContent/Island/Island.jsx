@@ -25,6 +25,7 @@ function Island() {
     },[])
     return (
         <>
+
             <IslandContainer>
                 <Beach onClick={() => handleVideoClick()}>
                     {/* <img src={Images.TrailerNaveguard} alt="" /> */}
