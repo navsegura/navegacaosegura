@@ -1,23 +1,21 @@
 import styled from "styled-components";
 
 export const PapiroContainer = styled.div`
-    /* border: red solid; */
-    position: relative;
+  position: relative;
   display: inline-block;
 
   & img {
     display: block;
-  max-width: 100%;
-  height: auto;
+    width: 40px;
+    height: auto;
   }
 `
 
 export const PapiroContent = styled.div`
-      position: absolute;
+  position: absolute;
   top: 50%;
   left: 100%;
   transform: translateY(-50%);
-  /* display: ${(props) => (props.show ? "block" : "none")}; */
   background: #f4f4f4;
   padding: 10px;
   border-radius: 5px;

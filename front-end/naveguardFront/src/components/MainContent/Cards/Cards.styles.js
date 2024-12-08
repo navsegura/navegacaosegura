@@ -1,12 +1,9 @@
 import styled from "styled-components";
 
 export const CardsContainer = styled.section`
-    /* margin-top: 10rem; sem efeito aplicado */
     display: flex;
     justify-content: center;
     position: relative;
-    /* Position: OK */
-    /* border: red solid 1px; */
     bottom: 1rem;
     gap: 5rem;
     margin: 0;
@@ -19,11 +16,14 @@ export const CardsContainer = styled.section`
         flex-direction: column;
         align-items: center;
     }
+
+    @media (max-width: 374px) {
+        display: none;
+    }
 `
 
 export const Card = styled.div`
     display: flex;
-    /* border: red solid 1px; */
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -39,7 +39,6 @@ export const Card = styled.div`
         width: 20rem;
         height: 20rem;
     }
-
 `
 
 export const HeaderCard = styled.div`
@@ -53,6 +52,7 @@ export const HeaderCard = styled.div`
     height: 5rem;
     font-size: 1.5rem;
     color: #FF6F00;
+    font-family: 'Luckiest Guy', cursive;
 
     @media (max-width: 1400px) {
         width: 20rem;

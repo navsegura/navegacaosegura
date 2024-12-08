@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import { useState } from 'react'; 
 import { SideBarMenu, LogOut, Option, I } from "./SideBar.styles.js";
 import LoadingComponent from '../LoadingComponent/LoadingComponent.jsx';
+import { logout } from '../../services/auth-service.js';
 
 const SideBar = () => {
   const navigate = useNavigate();
@@ -15,6 +16,7 @@ const SideBar = () => {
       localStorage.removeItem('profilePic');
       localStorage.removeItem('email');
       localStorage.removeItem('name');
+      logout();
       
         setTimeout(() => {
           setIsLoading(false);
@@ -31,17 +33,17 @@ const SideBar = () => {
     <SideBarMenu>
       <LoadingComponent isLoading={isLoading}/>
       <Option>
-        <abbr title="Home">
+        <abbr title="Início">
           <I onClick={() => handleNavigation('/')} className='bx bx-home-alt-2' style={{ color: '#a0a0a0' }}></I>
         </abbr>
-        <abbr title="Profile">
+        <abbr title="Perfil">
           <I onClick={() => handleNavigation('/user-profile')} className='bx bx-user' style={{ color: '#a0a0a0' }}></I>
         </abbr>
-        <abbr title="Choice Screen">
+        <abbr title="Sessão">
           <I onClick={() => handleNavigation('/choice-screen')} className='bx bx-plus-medical' style={{ color: '#a0a0a0' }}></I>
         </abbr>
-        <abbr title="Dashboard">
-          <I onClick={() => handleNavigation('/dashboard')} className='bx bxs-dashboard' style={{ color: '#a0a0a0' }}></I>
+        <abbr title="Artigos">
+          <I onClick={() => handleNavigation('/articles')} className='bx bx-library' style={{ color: '#a0a0a0' }}></I>
         </abbr>
         {/* <abbr title="Dashboard">
           <I onClick={() => handleNavigation('/dashboard')} className='bx bxs-dashboard' style={{ color: '#a0a0a0' }}></I>

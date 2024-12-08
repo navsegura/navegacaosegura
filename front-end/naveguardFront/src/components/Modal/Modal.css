@@ -1,0 +1,22 @@
+.content_principal_modal{
+    position: fixed;
+    top: 7%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0, 0.7);
+    z-index: 1000;
+}
+
+.content_inner_modal{
+    position: fixed;
+    top: 50%;
+    bottom: '0';
+    left: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    color: black;
+}

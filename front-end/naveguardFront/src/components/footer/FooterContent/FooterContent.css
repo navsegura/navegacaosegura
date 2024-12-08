@@ -2,16 +2,38 @@
 se eu colocar a imagem na div ela ganha corpo e atrapalha na hora de alinhar
 com o conteúdo. Por isso usei position da ultima vez. Estava inviável mas consegui alinhar aqui
 vou ajustar e espero o feedback de vocês para melhorias*/
+.main-footer {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../../assets/images/footer.svg");
+
+  @media (max-width: 374px) {
+    display: none;
+  }
+}
+
 .footer-content {
+  max-width: 1700px;
   width: 100%;
-  background-image: url("../../../assets/images/footer.svg"); 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
-  max-width: 100%;
-  padding-top: 299px;
-  justify-content: space-between;
+  padding-top: 330px;
+  display: flex;
+  justify-content: space-evenly;
+  /* border: red solid; */
+
+  @media (max-width: 1190px) {
+    text-align: center;
+  }
+
+  @media (max-width: 374px) {
+      display: none;
+  }
 }
 
 .content-overlay {
@@ -21,6 +43,12 @@ vou ajustar e espero o feedback de vocês para melhorias*/
 .social-medias {
   display: flex;
   gap: 10px;
+
+  @media (max-width: 1190px) {
+    margin: 10px 0;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .content-overlay {
@@ -29,11 +57,19 @@ vou ajustar e espero o feedback de vocês para melhorias*/
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-self: center;
+  align-items: center;
   flex-wrap: nowrap;
-  padding: 10px 100px 130px 100px;
+  padding: 10px 0 40px 0;
   justify-content: space-between;
   width: 80%;
+  border-bottom: #f5f5f5 solid 1px;
+
+  @media (max-width: 1190px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
 }
 
 /*titulo do footer*/
@@ -46,14 +82,20 @@ vou ajustar e espero o feedback de vocês para melhorias*/
   gap: 13px;
   flex-wrap: nowrap;
   flex-direction: column;
+  
 }
 
 .fourth-col input {
   width: 300px;
   height: 50px;
+  background-color: transparent;
+  border: 1px solid #f5f5f5;
+  color: #f5f5f5;
+
+  @media (max-width: 1190px) {
+    display: none;
+  }
 }
-
-
 
 @media (max-width:700px) {
   .footer-content {
@@ -85,7 +127,6 @@ vou ajustar e espero o feedback de vocês para melhorias*/
   .social-medias {
     justify-content: center;
     text-align: center;
-
   }
 
   .fourth-col input{
@@ -93,3 +134,17 @@ vou ajustar e espero o feedback de vocês para melhorias*/
     align-self: center;
   }
 }
+
+.bottom-footer {
+  margin: 15px 0;
+}
+
+.copyright {
+  font-family: 'Poppins', sans-serif;
+  color: #f5f5f5;
+
+  @media (max-width: 425px) {
+    font-size: .8rem;
+  }
+}
+

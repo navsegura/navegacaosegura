@@ -1,4 +1,4 @@
-import Navbar from "../../components/NavBar/Navbar";
+import NavBar from "../../components/Navbar/Navbar"
 // import SideBar from "../../components/SideBar/SideBar";
 import { Link } from "react-router-dom";
 import { MainContainer, Back, Span, ControlContent, TitleControl, Line } from '../ParentalControl/ParentalControl.styles'
@@ -8,7 +8,7 @@ import NuvensContainer from "../../components/Nuvens/Nuvens";
 const Articles = () => {
   return (
     <>
-    <Navbar/>
+    <NavBar/>
     {/* <SideBar/> */}
     <MainContainer>
       <NuvensContainer/>

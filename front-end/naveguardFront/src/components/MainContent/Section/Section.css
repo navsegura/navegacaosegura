@@ -7,17 +7,10 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    /* border:  red solid 1px; */
+    @media (max-width: 374px) {
+        display: none;
+    }
 }
-
-/* .arrowUp {
-    position: fixed;
-    z-index: 10;
-    top: 80%;
-    left: 90%;
-    font-size: 100px;
-    color: #ad5512;
-} */
 
 .main_text_container {
     max-width: 1700px;
@@ -25,6 +18,7 @@
     display: flex;
     justify-content: space-around;
     z-index: 10;
+    padding: 10px;
 }
 
 .nuvem1 {
@@ -56,9 +50,8 @@
     justify-content: space-evenly;
 }
 
-
 button{
-    background-color: #F46A00; /* background: #df4e10; */ /* esse hover tava pegando global entao tirei daqui */
+    background-color: #F46A00;
     border: none;
     border-radius: 2px;
     width: 15rem;
@@ -69,7 +62,6 @@ button{
     cursor: pointer;
     transition: 1s;
 }
-
 
 .papagaio-imagem {
     width: 30rem;
@@ -116,7 +108,6 @@ button{
     margin-top: 1rem; 
     align-items: start;  
     justify-content: start;
-    /* border: red solid 1px; */
 }
 
 button{
@@ -151,6 +142,10 @@ button{
     top: 20rem;
 }
 
+.todos_sobres p {
+    font-family: var(--secondary-font);
+}
+
 .sobre_first, .sobre_second, .sobre_third, .sobre_fourth {
     width: 20rem;
     color: white;
@@ -161,11 +156,11 @@ button{
     gap: 1rem;
     font-size: 1.5rem;
 }
+
 .sobre_first, .sobre_third {
     display: flex;
     align-self: flex-start;
     margin-left: 10rem;
-    
 }
 
 .sobre_second, .sobre_fourth {
@@ -175,8 +170,38 @@ button{
 }
 
 
+.main_content_sobre_one, .main_content_sobre_two, .main_content_sobre_three, .main_content_sobre_four{
+    text-align: center; 
+}
+
+.sobre_first, .sobre_second, .sobre_third, .sobre_fourth{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_sobre_one, .content_sobre_two, .content_sobre_three, .content_sobre_four {
+    width: 33%;
+}
 
 
-.main_content_sobre{
-    text-align: center;
+.main_content_sobre_one{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_content_sobre_two{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_content_sobre_three{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_content_sobre_four{
+    display: flex;
+    justify-content: space-between;
 }

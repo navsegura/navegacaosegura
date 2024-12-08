@@ -63,51 +63,64 @@ function Section() {
 function SectionSobre() {
   return (
     <section className="todos_sobres">
+      
         <div className="sobre_first">
-          <div className="header_sobre">
-            <h2>Quem Somos?</h2>
-          </div>
-          <div className="main_content_sobre">
-            <p>
-              Somos desenvolvedores apaixonados por criar tudo com dedicação e
-              carinho. Oferecemos jogos e ferramentas educativas que protegem as
-              crianças e trazem tranquilidade aos responsáveis.
-            </p>
+            <div className="main_content_sobre_one">
+              <div className="content_sobre_one">
+              <h2>Quem Somos?</h2>
+                <p>
+                  Somos desenvolvedores apaixonados por criar tudo com dedicação e
+                  carinho. Oferecemos jogos e ferramentas educativas que protegem as
+                  crianças e trazem tranquilidade aos responsáveis.
+                </p>
+              </div>
+                <div className="img_content_sobre">
+                  <img src={Images.pessoas} alt="" className="pessoas" width={'250rem'}/>
+                </div>
           </div>
         </div>
 
         <div className="sobre_second">
-          <div className="header_sobre">
-            <h2>Nossa missão</h2>
-          </div>
-          <div className="main_content_sobre">
-            <p>
-              Nosso objetivo é garantir que as crianças naveguem pela internet de
-              forma segura, enquanto aprendem e se divertem. Tudo isso com a ajuda
-              dos responsáveis, que têm acesso a dicas e ferramentas valiosas.
-            </p>
-          </div>
+            <div className="main_content_sobre_two">
+                <div className="img_content_sobre">
+                      <img src={Images.alvo} alt="" className="alvo" width={'250rem'}/>
+                </div>
+              <div className="content_sobre_two">
+              <h2>Nossa missão</h2>
+                <p>
+                  Nosso objetivo é garantir que as crianças naveguem pela internet de
+                  forma segura, enquanto aprendem e se divertem. Tudo isso com a ajuda
+                  dos responsáveis, que têm acesso a dicas e ferramentas valiosas.
+                </p>
+              </div>
+            </div>
         </div>
 
         <div className="sobre_third">
-          <div className="header_sobre">
-            <h3>Por Que Naveguard?</h3>
-          </div>
-          <div className="main_content_sobre">
-            <p>O nome Naveguard reflete nosso compromisso de navegar com proteção. Buscamos tornar cada exploração na internet uma experiência segura e educativa, tanto para as crianças quanto para seus responsáveis.</p>
+          <div className="main_content_sobre_three">
+            <div className="content_sobre_three">
+              <h3>Por Que Naveguard?</h3>
+              <p>O nome Naveguard reflete nosso compromisso de navegar com proteção. Buscamos tornar cada exploração na internet uma experiência segura e educativa, tanto para as crianças quanto para seus responsáveis.</p>
+            </div>
+                <div className="img_content_sobre">
+                      <img src={Images.opiniao} alt="" className="opiniao" width={'250rem'}/>
+                </div>
           </div>
         </div>
 
         <div className="sobre_fourth">
-          <div className="header_sobre">
+          <div className="main_content_sobre_four">
+                <div className="img_content_sobre">
+                      <img src={Images.barco} alt="" className="barco" width={'250rem'}/>
+                </div>
+            <div className="content_sobre_four">
             <h3>Navegando Além</h3>
-          </div>
-          <div className="main_content_sobre">
             <p>
               Continuaremos a nossa missão de expandir a plataforma, trazendo
               novos jogos e ferramentas que garantam uma navegação segura e
               divertida para todas as famílias.
             </p>
+            </div>
           </div>
         </div>
     </section>

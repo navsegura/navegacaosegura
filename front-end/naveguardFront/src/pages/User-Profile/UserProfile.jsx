@@ -1,18 +1,18 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 // import axios from 'axios'
-import NavBar from "../../components/NavBar/Navbar";
+import NavBar from "../../components/Navbar/Navbar"
 import SideBar from "../../components/SideBar/SideBar";
 import { Images } from "../../assets/images.jsx";
 import NuvensContainer from "../../components/Nuvens/Nuvens";
 import { Page, MainContainer, UserProfileContent, Profile, UserImage, Photo, Line, About, Span, NameProfile, Icon, Info, Bio, Location, Strong, Edit, Input, MainContent, UserProfileContainer, GroupSquare, Square, Graphics, P, DropdownMenu, DropdownItem } from './UserProfile.styles'
 import ResolutionNotAvailable from "../../components/ResolutionNotAvailable/ResolutionNotAvailable.jsx";
+import {findMe} from "../../services/user-service.js";
 
 const UserProfile = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [isEditing, setIsEditing] = useState(false);
   const [name, setName] = useState('');
-  const [email, setEmail] = useState('userexample@gmail');
   const [location, setLocation] = useState('Recife');
   // deixem vazio, isso é so p testar a edição
 
@@ -57,9 +57,52 @@ const UserProfile = () => {
 //     }
 //   }
 
+    const [userLogged, setUserLogged] = useState({
+      name: " ",
+      email: " ",
+      birthDay: " ",
+      city: " ",
+      bio: " ",
+      gender: " ",
+      state: " ",
+      urlPhoto: undefined
+    });
+    useEffect(() => {
+      findMe()
+      .then((response) => {
+        setUserLogged(response.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      })
+    }, []);
+
+    function formatDate(date) {
+      const data = new Date(date)
+      const dia = String(data.getDate()).padStart(2, '0'); // Garantir dois dígitos
+      const mes = String(data.getMonth() + 1).padStart(2, '0'); // Mês é zero-indexado
+      const ano = data.getFullYear(); // Obtém o ano completo
+
+      const dataFormatada = `${dia}/${mes}/${ano}`;
+
+      return dataFormatada;
+    }
+
+    function genderTranslate(gender) {
+      if(gender.toUpperCase() == "MALE") {
+        gender = "Masculino";
+        return gender
+      } else if(gender.toUpperCase() == "FEMALE") {
+        gender = "Feminino";
+        return gender
+      } else {
+        gender = "Outros";
+        return gender;
+      }
+    }
+
   const nameTest = localStorage.getItem('name')
   const imgTest = localStorage.getItem('profilePic')
-  const emailTest = localStorage.getItem('email')
   // const profilePicTest = localStorage.getItem('profilePic')
   return (
     <>
@@ -72,7 +115,7 @@ const UserProfile = () => {
           <UserProfileContent>
               <Profile>
                 <UserImage>
-                  <Photo src={imgTest || Images.UserMaster} alt="Profile photo" />
+                  <Photo src={imgTest || userLogged.urlPhoto || Images.UserMaster} alt="Profile photo" />
                   </UserImage>
                   <About>
                       <Span>
@@ -83,7 +126,7 @@ const UserProfile = () => {
                             onChange={(e) => setName(e.target.value)}
                           />
                         ) : (
-                          <NameProfile>{nameTest}</NameProfile>
+                          <NameProfile>{nameTest || userLogged.name}</NameProfile>
                         )}
                         <Icon className='bx bxs-check-circle' style={{color:'#73a66f'}}  ></Icon>
                       </Span>
@@ -97,28 +140,18 @@ const UserProfile = () => {
                           />
                         ) : (
                         <Location><i className='bx bx-current-location' style={{color:'#A0A0A0'}} ></i>
-                        {location}</Location>
-                        )}
-                        {isEditing ? (
-                          <Input
-                            type="text"
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
-                          />
-                        ) : (
-                        <Location><i className='bx bx-message' style={{color:'#A0A0A0'}} ></i>
-                        {emailTest}</Location>
+                        {userLogged.city[0].toUpperCase() + userLogged.city.substring(1) || location}</Location>
                         )}
                         <Location><i className='bx bx-check-circle' style={{color:'#A0A0A0'}} ></i>
-                        Verify at 12/10/2021</Location> {/* DATA */}
+                        {"Data de Nascimento: " + formatDate(userLogged.birthDay)}</Location> {/* DATA */}
                       </Info>
                       <Bio>
                       <i className='bx bxs-quote-left' style={{color:'#A0A0A0'}}></i>ﾠ
-                      A saúde deve ser uma prioridade em nossas vidas. Quando nos conscientizamos sobre doenças, não apenas cuidamos de nós mesmos, mas também contribuímos para um mundo onde todos têm a chance de viver uma vida plena e saudável, livre de estigmas e preconceitos.
+                      {userLogged.bio || "A saúde deve ser uma prioridade em nossas vidas. Quando nos conscientizamos sobre doenças, não apenas cuidamos de nós mesmos, mas também contribuímos para um mundo onde todos têm a chance de viver uma vida plena e saudável, livre de estigmas e preconceitos."}
                       ﾠ<i className='bx bxs-quote-right' style={{color:'#A0A0A0'}} ></i>
                       </Bio>
                       <Location>
-                        <p>Sexual Orientation: <Strong>Heterosexual</Strong></p> {/* DATA */}
+                        <p>Gênero: <Strong>{genderTranslate(userLogged.gender) || "None"}</Strong></p> {/* DATA */}
                       </Location>
                   </About>
                   {/* aqui vai ficar o editar */}
@@ -155,11 +188,13 @@ const UserProfile = () => {
                   <P>Monitore suas crianças online</P>
                 </Square>
               </Link>
+              <Link to="/ameacas-online">
               <Square>
                 <Graphics>Ameaças Online</Graphics>
                 <img src={Images.AmeacasOnline} alt="Tutoriais" width={50} />
                 <P>Conheça os perigos e como se defender</P>
               </Square>
+             </Link>
             </GroupSquare>
             </UserProfileContainer>
             </MainContent>

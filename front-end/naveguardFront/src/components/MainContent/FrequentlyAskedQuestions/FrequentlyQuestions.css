@@ -13,9 +13,14 @@ h1 {
     align-items: center;
     margin-top: 15rem;
     position: relative;
-    justify-items: center; 
     padding-bottom: 100px;
+    justify-items: center;
+    
+    @media (max-width: 374px) {
+        display: none;
+    }
 }
+
 
 summary::after {
     content: '▼'; 

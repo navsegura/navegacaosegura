@@ -7,6 +7,9 @@ body {
     height: 100vh;
     background-color: #2991e1;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 canvas {
@@ -95,6 +98,8 @@ main {
     border-radius: 5px;
     cursor: pointer;
     font-family: "Luckiest Guy", sans-serif;
+    width: 200px;
+    height: 50px;
 }
 
 .controles img {
@@ -131,3 +136,104 @@ main {
     font-weight: bold;
     cursor: pointer;
 }
+
+#gif-celular {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+#gameControls {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    width: 250px; /* Ajuste conforme necessário */
+    left: 180px;
+    bottom: 25px;
+}
+
+#upButton {
+    margin-bottom: 10px;
+    margin-left: 60px;
+}
+
+.horizontal-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#leftButton {
+    margin-right: 10px;
+}
+
+#downButton {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#rightButton {
+    margin-left: 10px;
+}
+
+#interactionButton {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 230px;
+    bottom: 25px;
+}
+
+#icone-mao {
+    width: 50px;
+}
+
+/* Botão comum */
+button {
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #FFC107; /* Cor dourada, ajuste conforme necessário */
+    cursor: pointer;
+}
+
+/* Estilo ao clicar */
+button:active {
+    background-color: #FF8F00; /* Tom mais escuro para feedback */
+}
+
+@media (max-width: 915px) {
+    .controles {
+        display: none;
+    }
+
+    #gameControls {
+        display: flex;
+    }
+
+    #tutorial {
+        display: none;
+    }
+    canvas {
+        width: 500px;
+    }
+
+    header {
+        display: none;
+    }
+    
+    main {
+        font-size: 0.5rem;
+    }
+
+    #mensagemInteracao {
+        width: 700px;
+        font-size: 1rem;
+    }
+}
+
