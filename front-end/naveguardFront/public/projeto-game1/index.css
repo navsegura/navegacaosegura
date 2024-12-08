@@ -224,17 +224,9 @@ button:active {
     }
 
     header {
-        height: 40px;
-    }
-
-    header img {
-        width: 1rem;
+        display: none;
     }
     
-    header p {
-        font-size: 1rem;
-    }
-
     main {
         font-size: 0.5rem;
     }
