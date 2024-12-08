@@ -15,7 +15,7 @@ import PaymentSection from '../components/PaymentSection/PaymentSection.jsx'
 import Quiz from '../pages/Quiz Game/Quiz.jsx'
 import Articles from '../pages/Articles/Articles.jsx'
 import AmeacasOnline from '../pages/AmeacasOnline/AmeacasOnline.jsx'
-
+import Papyrus from '../pages/Papyrus/Papyrus.jsx'
 
 
 const Router = () => {
@@ -39,6 +39,7 @@ const Router = () => {
                     <Route path='/quiz' element={<Quiz/>} />
                     <Route path='/kids-page' element={<KidsPage />}/>
                     <Route path='/ameacas-online' element={<AmeacasOnline />} />
+                    <Route path='/papyrus' element={<Papyrus />} />
                     {/* 404 */}
                     <Route path='/payment-page' element={<PaymentSection/>}/>
                     

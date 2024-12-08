@@ -80,6 +80,8 @@ import backgroundMainContent from './images/backgroundMainContent.png'
 import Papiro from './images/papiro.png'
 import TrailerNaveguard from './images/trailer.png'
 import Island from './images/island2.png'
+import Siri from './images/siri.png'
+import SiriRight from './images/siri-right.png'
 // aqui vcs criam as variaveis especificando o caminho delas
 
 // Videos
@@ -170,7 +172,9 @@ const Images = {
     backgroundMainContent,
     Papiro,
     TrailerNaveguard,
-    Island
+    Island,
+    Siri,
+    SiriRight
     // aqui fica as variaveis com o mesmo nome ali em cima
 }
 

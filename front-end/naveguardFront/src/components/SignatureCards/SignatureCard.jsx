@@ -48,7 +48,7 @@ const SignatureCard = () => {
 
               </CardPlans>
               {isLoggedin ? (
-                <Link to='/payment-page'>
+                <Link to='/user-profile'>
                   <CardButton>ACESSE</CardButton>
                 </Link>
               ) : (

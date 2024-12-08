@@ -6,8 +6,8 @@ export const PapiroContainer = styled.div`
 
   & img {
     display: block;
-  max-width: 100%;
-  height: auto;
+    width: 40px;
+    height: auto;
   }
 `
 
