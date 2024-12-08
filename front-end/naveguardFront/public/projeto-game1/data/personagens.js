@@ -116,5 +116,5 @@ criarPersonagens(
 criarPersonagens(
   coordenadasPersonagemLuisFilho,
   imagensPersonagens.spriteLuis.baixo,
-  "LuisFilho"
+  "Luis"
 );

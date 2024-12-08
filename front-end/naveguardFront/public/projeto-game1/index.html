@@ -2,20 +2,53 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-<meta
-name="viewport"
-content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-/>
-    <link rel="shortcut icon" href="../logo.png" type="image/x-icon">
-    <title>Document</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="shortcut icon" href="../logo.png" type="image/x-icon" />
+    <title>A Grande Navegação</title>
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <canvas id="canvaszinho"></canvas>
-    <div id="mensagemInteracao">
-      <span id="caixaDeTexto"></span>
-      <button id="botaoProximo">Próximo</button>
-    </div>
+    <header>
+      <p>NAVEGUARD</p>
+      <img
+        src="./img/setavoltar.svg"
+        alt="seta-voltar"
+        width="35px"
+        onclick="history.back()"
+      />
+    </header>
+    <main id="container-main">
+      <div class="controles">
+        <img src="./img/controles-awsd.png" alt="controles" />
+      </div>
+      <div id="tutorial">
+        <div>
+          <video
+            src="./img/video-tutorial.mp4"
+            id="video-tutorial"
+            autoplay
+          ></video>
+        </div>
+        <button id="pularVideo">Pular Tutorial</button>
+      </div>
+      <canvas id="canvaszinho"></canvas>
+
+      <div id="mensagemInteracao">
+        <div id="nomePersonagem">
+          <p>Tutorial</p>
+        </div>
+        <span id="caixaDeTexto"></span>
+        <button id="botaoProximo">Próximo</button>
+      </div>
+      <div class="controles">
+        <img src="./img/interagir-enter.png" alt="controles" />
+      </div>
+    </main>
+    <img src="./img/gif-celular.gif" alt="Gire o celular para o jogo funcionar!" id="gif-celular">
+
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js"
       integrity="sha512-xi/RZRIF/S0hJ+yJJYuZ5yk6/8pCiRlEXZzoguSMl+vk2i3m6UjUO/WcZ11blRL/O+rnj94JRGwt/CHbc9+6EA=="

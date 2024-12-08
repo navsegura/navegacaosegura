@@ -20,7 +20,7 @@ const tiposDeObjetos = {
   2096: [], // Fumaça Casa-Roxa
   2095: [], // Fumaça Casa-Vermelha
   2097: [], // Fumaça Casa-Verde
-  4150: [], //Porco Lado Jonas
+  4950: [], //Porco Lado Jonas
   4151: [], // Pato 1
   4152: [], // Pato 2
   4153: [], // Pato 3

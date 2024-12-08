@@ -1,0 +1,22 @@
+.container_principal_quiz{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_quiz_welcome{
+    background: linear-gradient(to bottom, #3EABEE, #118BE9);
+    height: 50%;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.title_quiz, .pharagraf_quiz{
+    color: white;
+}

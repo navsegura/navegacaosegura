@@ -3,17 +3,54 @@
 
 
 body {
-    height: 90vh;
+    width: 100%;
+    height: 100vh;
     background-color: #2991e1;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
 
 canvas {
     border: 5px white solid;
     border-radius: 6px;
+}
+
+header {
+    display: flex;
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 70px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    justify-content: space-between;
+}
+
+header p {
+    font-family: "Luckiest Guy", sans-serif;
+    font-size: 20px;
+    color: #004b8d;
+    padding-left: 100px;
+}
+
+header img {
+    cursor: pointer;
+    padding-right: 100px;
+    outline: none;
+    user-select: none;
+}
+
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
 }
 
 #mensagemInteracao {
@@ -22,27 +59,110 @@ canvas {
     align-items: center;
     position: absolute;
     bottom: 150px;
-    background-color: #e7cd9a;
+    background-color: #D9C4A4;
     font-family: "Luckiest Guy", sans-serif;
-    color: #2991e1;
+    color: #5D4037;
     padding: 10px 20px;
     border-radius: 5px;
     font-size: 1.5rem;
     width: 1000px;
-    height: 100px;
+    min-height: 100px;
     display: none;
     z-index: 1000;
     text-align: center;
     gap: 50px;
+    border: white 5px solid;
+}
+
+#nomePersonagem {
+    color: white;
+    min-width: 150px;
+    background-color: #8D6E63;
+    padding: 2% 2% 2% 0;
+    border-radius: 20px;
+    clip-path: polygon(
+        0% 0%, /* Topo esquerdo */
+        100% 0%, /* Topo direito */
+        85% 50%, /* Meio direito */
+        100% 100%, /* Corte inclinado */
+        0% 100% /* Base esquerda */
+      );
 }
 
 #botaoProximo {
     padding: 10px 15px;
     font-size: 1.5rem;
-    background-color: #2991e1;
+    background-color: #42A5F5;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-family: "Luckiest Guy", sans-serif;
+}
+
+.controles img {
+    outline: none;
+    user-select: none;
+}
+
+#tutorial {
+    position: fixed;
+    width: 1250px;
+    height: 100vh;
+    display: flex;
+    padding-top: 80px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+#video-tutorial {
+    width: 1250px;
+    height: 600px;
+    background-color: white;
+}
+
+#pularVideo {
+    background-color: #ff6f00;
+    color: white;
+    width: 250px;
+    height: 50px;
+    font-family: "Poppins", sans-serif;
+    border-color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#gif-celular {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+@media (max-width: 915px) {
+    .controles {
+        display: none;
+    }
+
+    #tutorial {
+        display: none;
+    }
+    canvas {
+        width: 500px;
+    }
+
+    header {
+        height: 40px;
+    }
+
+    header img {
+        width: 1rem;
+    }
+    
+    header p {
+        font-size: 1rem;
+    }
 }

@@ -12,6 +12,9 @@ import PrivateRoute from './PrivateRoute.jsx'
 import KidsPage from '../pages/KidsPage/KidsPage.jsx'
 import Cadastro from '../components/Cadastro/Cadastro.jsx'
 import FaleConosco from '../pages/FaleConosco/FaleConosco.jsx'
+import PaymentSection from '../components/PaymentSection/PaymentSection.jsx'
+import Quiz from '../pages/Quiz Game/Quiz.jsx'
+import Articles from '../pages/Articles/Articles.jsx'
 
 
 const Router = () => {
@@ -29,11 +32,15 @@ const Router = () => {
                     <Route path='/about' element={<Sobre />} />
                     <Route path='/login' element={<Login />} />
                     <Route path='/parental-control' element={<ParentalControl/>} />
-                    <Route path='*' element={<NotFound/>} />
-                    <Route path='/kids-page' element={<PrivateRoute isLoggedIn={isLoggedIn}element={<KidsPage/>} />}/>
                     <Route path='/register' element={<Cadastro/>}/>
                     <Route path='/faleconosco' element={<FaleConosco/>}/>
+                    <Route path='/articles' element={<Articles/>} />
+                    <Route path='*' element={<NotFound/>} />
+                    <Route path='/quiz' element={<Quiz/>} />
+                    <Route path='/kids-page' element={<PrivateRoute isLoggedIn={isLoggedIn}element={<KidsPage/>} />}/>
                     {/* 404 */}
+                    <Route path='/payment-page' element={<PrivateRoute isLoggedIn={isLoggedIn}element={<PaymentSection/>}/>}/>
+                    
                 </Routes>
             </BrowserRouter>
         </>
