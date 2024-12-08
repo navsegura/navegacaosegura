@@ -31,6 +31,9 @@ const Router = () => {
                     <Route path='/articles' element={<Articles/>} />
                     <Route path='*' element={<NotFound/>} />
                     <Route path='/kids-page' element={<KidsPage/>}/>
+                    <Route path='/register' element={<Cadastro/>}/>
+                    <Route path='/quiz' element={<Quiz/>}/>
+                    <Route path='/rotadepagamento' element={<PaymentSection/>}/>
                     {/* 404 */}
                 </Routes>
             </BrowserRouter>
