@@ -89,14 +89,26 @@ leftButton.addEventListener("mouseup", () => keys.a.pressed = false);
 rightButton.addEventListener("mousedown", () => keys.d.pressed = true);
 rightButton.addEventListener("mouseup", () => keys.d.pressed = false);
 
-upButton.addEventListener("touchstart", () => keys.w.pressed = true);
+upButton.addEventListener("touchstart", (e) => {
+  e.preventDefault();
+  keys.w.pressed = true;
+});
 upButton.addEventListener("touchend", () => keys.w.pressed = false);
 
-downButton.addEventListener("touchstart", () => keys.s.pressed = true);
+downButton.addEventListener("touchstart", (e) => {
+  e.preventDefault();
+  keys.s.pressed = true;
+});
 downButton.addEventListener("touchend", () => keys.s.pressed = false);
 
-leftButton.addEventListener("touchstart", () => keys.a.pressed = true);
+leftButton.addEventListener("touchstart", (e) => {
+  e.preventDefault();
+  keys.a.pressed = true;
+});
 leftButton.addEventListener("touchend", () => keys.a.pressed = false);
 
-rightButton.addEventListener("touchstart", () => keys.d.pressed = true);
+rightButton.addEventListener("touchstart", (e) => {
+  e.preventDefault();
+  keys.d.pressed = true;
+});
 rightButton.addEventListener("touchend", () => keys.d.pressed = false);
