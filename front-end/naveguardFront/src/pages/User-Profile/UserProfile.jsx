@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 // import axios from 'axios'
-import NavBar from "../../components/NavBar/Navbar";
+import NavBar from "../../components/Navbar/Navbar"
 import SideBar from "../../components/SideBar/SideBar";
 import { Images } from "../../assets/images.jsx";
 import NuvensContainer from "../../components/Nuvens/Nuvens";
@@ -117,9 +117,6 @@ const UserProfile = () => {
                       A saúde deve ser uma prioridade em nossas vidas. Quando nos conscientizamos sobre doenças, não apenas cuidamos de nós mesmos, mas também contribuímos para um mundo onde todos têm a chance de viver uma vida plena e saudável, livre de estigmas e preconceitos.
                       ﾠ<i className='bx bxs-quote-right' style={{color:'#A0A0A0'}} ></i>
                       </Bio>
-                      <Location>
-                        <p>Sexual Orientation: <Strong>Heterosexual</Strong></p> {/* DATA */}
-                      </Location>
                   </About>
                   {/* aqui vai ficar o editar */}
                   <Edit onClick={toggleDropdown} isOpen={isEditing} className={isEditing ? 'bx bx-x' : 'bx bx-dots-vertical-rounded'} style={{color:'#D9D9D9'}}></Edit>

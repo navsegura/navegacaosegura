@@ -3,7 +3,7 @@ import 'boxicons/css/boxicons.min.css';
 import { Images } from '../../assets/images';
 import SignUpModal from '../../components/SignUpModal/SignUpModal';
 import SideBar from '../../components/SideBar/SideBar';
-import Navbar from '../../components/Navbar/Navbar';
+import NavBar from "../../components/Navbar/Navbar"
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import NuvensContainer from '../../components/Nuvens/Nuvens';
@@ -39,7 +39,7 @@ const ChoiceScreen = ({ initialUsers }) => {
     <>
     <NuvensContainer/>
       <ResolutionNotAvailable />
-      <Navbar />
+      <NavBar />
       <SideBar/>
       <Container>
       {/* <ReturnButton className='bx bx-chevrons-left'></ReturnButton> */}

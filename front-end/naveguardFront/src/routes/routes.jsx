@@ -20,15 +20,14 @@ import AmeacasOnline from '../pages/AmeacasOnline/AmeacasOnline.jsx'
 
 const Router = () => {
 
-
     return (
         <>
             <BrowserRouter>
                 <Routes>
                     <Route path='/' element={<Home/>} />
                     <Route path='/header' element={<Header/>} />
-                    <Route path='/choice-screen' element={<ChoiceScreen />} />
-                    <Route path='/user-profile' element={<UserProfile />} />
+                    <Route path='/choice-screen' element={<ChoiceScreen/>} />
+                    <Route path='/user-profile' element={<UserProfile/>}/>
                     <Route path='/about' element={<Sobre />} />
                     <Route path='/login' element={<Login />} />
                     <Route path='/parental-control' element={<ParentalControl/>} />
@@ -36,9 +35,10 @@ const Router = () => {
                     <Route path='/faleconosco' element={<FaleConosco/>}/>
                     <Route path='/articles' element={<Articles/>} />
                     <Route path='*' element={<NotFound/>} />
+                    <Route path='/kids-page' element={<KidsPage/>}/>
                     <Route path='/quiz' element={<Quiz/>} />
-                    <Route path='/kids-page' element={<KidsPage />}/>
                     <Route path='/ameacas-online' element={<AmeacasOnline />} />
+
                     {/* 404 */}
                     <Route path='/payment-page' element={<PaymentSection/>}/>
                     
