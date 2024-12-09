@@ -45,7 +45,7 @@ const SignatureCard = () => {
                 </Plan>
                 <Plan>
                   <Img src={Images.check} alt="Icon sem accesso" />
-                  <p>ACESSO AO CHATBOT</p>
+                  <p>ACESSO A ARTIGOS</p>
                 </Plan>
 
               </CardPlans>
@@ -67,11 +67,11 @@ const SignatureCard = () => {
             <CardPlans>
                 <Plan>
                   <Img src={Images.uncheck} alt="Icon accesso" />
-                  <p>ACESSO LIMITADO AOS JOGOS</p>
+                  <p>ACESSO ILIMITADO AOS JOGOS</p>
                 </Plan>
                 <Plan>
                   <Img src={Images.uncheck} alt="Icon accesso" />
-                  <p>ACESSO BÁSICO ÁREA RESPONSÁVEL</p>
+                  <p>ACESSO TOTAL A ÁREA RESPONSÁVEL</p>
                 </Plan>
                 <Plan>
                   <Img src={Images.uncheck} alt="Icon accesso" />
@@ -83,7 +83,7 @@ const SignatureCard = () => {
                 </Plan>
                 <Plan>
                 <Img src={Images.uncheck} alt="Icon accesso" />
-                  <p>ACESSO AO CHATBOT</p>
+                  <p>ACESSO A ARTIGOS</p>
                 </Plan>
 
               </CardPlans>
@@ -104,11 +104,11 @@ const SignatureCard = () => {
             <CardPlans>
                 <Plan>
                   <Img src={Images.uncheck} alt="Icon accesso" />
-                  <p>ACESSO LIMITADO AOS JOGOS</p>
+                  <p>ACESSO ILIMITADO AOS JOGOS</p>
                 </Plan>
                 <Plan>
                   <Img src={Images.uncheck} alt="Icon accesso" />
-                  <p>ACESSO BÁSICO ÁREA RESPONSÁVEL</p>
+                  <p>ACESSO TOTAL A ÁREA RESPONSÁVEL</p>
                 </Plan>
                 <Plan>
                   <Img src={Images.uncheck} alt="Icon accesso" />
@@ -120,7 +120,7 @@ const SignatureCard = () => {
                 </Plan>
                 <Plan>
                 <Img src={Images.uncheck} alt="Icon accesso" />
-                  <p>ACESSO AO CHATBOT</p>
+                  <p>ACESSO A ARTIGOS</p>
                 </Plan>
 
               </CardPlans>
