@@ -46,12 +46,9 @@ const SideBar = () => {
         <abbr title="Artigos">
           <I onClick={() => handleNavigation('/articles')} className='bx bx-library' style={{ color: '#a0a0a0' }}></I>
         </abbr>
-        {/* <abbr title="Dashboard">
-          <I onClick={() => handleNavigation('/dashboard')} className='bx bxs-dashboard' style={{ color: '#a0a0a0' }}></I>
+        <abbr title="Artigos">
+          <I onClick={() => handleNavigation('/about')} className='bx bxs-group' style={{ color: '#a0a0a0' }}></I>
         </abbr>
-        <abbr title="Dashboard">
-          <I onClick={() => handleNavigation('/dashboard')} className='bx bxs-dashboard' style={{ color: '#a0a0a0' }}></I>
-        </abbr> */}
       </Option>
       <LogOut>
         <Option>
