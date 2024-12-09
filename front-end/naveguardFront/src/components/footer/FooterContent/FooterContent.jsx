@@ -41,11 +41,6 @@ function FooterContent() {
             </ol>
           </div>
         </div>
-        {/* <img
-          src={Images.Footer}
-          alt="Imagem do Footer"
-          className="Footer-image"
-          /> */}
       </div>
           <div className="bottom-footer">
             <p className="copyright">Copyright© 2024 NAVEGUARD | PROA PROPROFISSÃO</p>

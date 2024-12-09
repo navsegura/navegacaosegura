@@ -78,11 +78,11 @@ const SignatureCard = () => {
                   <p>ACESSO A TUTORIAIS</p>
                 </Plan>
                 <Plan>
-                  <Img src={Images.check} alt="Icon sem accesso" />
+                <Img src={Images.uncheck} alt="Icon accesso" />
                   <p>ACESSO AOS RESULTADOS</p>
                 </Plan>
                 <Plan>
-                  <Img src={Images.check} alt="Icon sem accesso" />
+                <Img src={Images.uncheck} alt="Icon accesso" />
                   <p>ACESSO AO CHATBOT</p>
                 </Plan>
 
@@ -115,11 +115,11 @@ const SignatureCard = () => {
                   <p>ACESSO A TUTORIAIS</p>
                 </Plan>
                 <Plan>
-                  <Img src={Images.check} alt="Icon sem accesso" />
+                <Img src={Images.uncheck} alt="Icon accesso" />
                   <p>ACESSO AOS RESULTADOS</p>
                 </Plan>
                 <Plan>
-                  <Img src={Images.check} alt="Icon sem accesso" />
+                <Img src={Images.uncheck} alt="Icon accesso" />
                   <p>ACESSO AO CHATBOT</p>
                 </Plan>
 

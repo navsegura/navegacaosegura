@@ -73,6 +73,9 @@
 /*titulo do footer*/
 .titulo-nave {
   font-size: 2.5rem;
+  font-family: 'Luckiest Guy', cursive;
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
+  letter-spacing: 3px;
 }
 
 .first-col ol, .second-col ol, .third-col ol, .fourth-col ol{
@@ -80,10 +83,9 @@
   gap: 13px;
   flex-wrap: nowrap;
   flex-direction: column;
-  
 }
 
-.fourth-col input ::placeholder {
+input::placeholder {
   color: #ffffff;
 }
 

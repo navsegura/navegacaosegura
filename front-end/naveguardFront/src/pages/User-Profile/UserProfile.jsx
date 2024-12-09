@@ -170,11 +170,13 @@ const UserProfile = () => {
         <MainContent>
           <UserProfileContainer>
             <GroupSquare>
-              <Square>
-                <Graphics>Tutoriais</Graphics>
-                <img src={Images.Tutoriais} alt="Tutoriais" width={50} />
-                <P>Guias simples para proteger sua família online</P>
-              </Square>
+              <abbr title="INDISPONIVEL">
+                <Square>
+                  <Graphics>Tutoriais</Graphics>
+                  <img src={Images.Tutoriais} alt="Tutoriais" width={50} />
+                  <P>Guias simples para proteger sua família online</P>
+                </Square>
+              </abbr>
               <Link to="/articles">
                 <Square>
                   <Graphics>Artigos</Graphics>
