@@ -1,22 +1,29 @@
-.main_content_cadastro{
+.main_content_cadastro {
     width: 100vw;
     height: 100vh;
     color: white;
     padding-top: 10px;
-    
-}
-
-.cadastro{
-    width: 100%;
-    height: 650px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    flex-direction: column;
-    margin-bottom: 10px;
-   
 }
 
+.form-container {
+    background: linear-gradient(to bottom, #3EABEE, #118BE9);
+    width: 100%;
+    max-width: 30rem;
+    height: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.cadastro {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 
 .cadastro label {
     color: #FF6C00;
@@ -24,11 +31,13 @@
     font-size: 1rem;
     display: flex;
     flex-direction: column;
+    font-family: 'Luckiest Guy', cursive;
 }
 
-.cadastro input {
-    width: 16rem;
-    height: 2.5rem;
+.cadastro input,
+.cadastro select {
+    width: 100%;
+    height: 3rem;
     padding: 0.5rem;
     border: 2px solid #FF9B2F;
     border-radius: 5px;
@@ -37,38 +46,35 @@
     font-size: 1rem;
 }
 
-.cadastro input:focus {
+.cadastro input:focus,
+.cadastro select:focus {
     outline: none;
     border-color: #FF6C00;
 }
 
-.seta{
-    height: 39px;
-    position: relative;
-    bottom: 45px;
-    margin-bottom: 15px;
-}
-
-.seta img{
-    width: 3rem;
-    position: relative;
-    right: 0.1rem;
-    top: 2.938rem;
+.cadastro button {
+    width: 100%;
+    border-radius: 4px;
+    margin-top: 10px;
+    padding: 0.5rem;
+    background-color: #FF6C00;
+    color: white;
+    border: none;
     cursor: pointer;
 }
 
-.cadastro button{
-    width: 10rem;
-    border-radius: 4px;
-    margin-top: 10px;
+.cadastro button:hover {
+    background-color: #FF9B2F;
 }
 
-.form-container {
-    background: linear-gradient(to bottom, #3EABEE, #118BE9);
-    width: 100%;
-    max-width: 25rem;
-    height: 45rem;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    margin: 0 auto;
+.seta {
+    height: 39px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.seta img {
+    width: 3rem;
+    cursor: pointer;
 }
