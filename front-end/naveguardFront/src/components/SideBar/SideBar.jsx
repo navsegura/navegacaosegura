@@ -16,6 +16,7 @@ const SideBar = () => {
       localStorage.removeItem('profilePic');
       localStorage.removeItem('email');
       localStorage.removeItem('name');
+      localStorage.removeItem('papyrus');
       logout();
       
         setTimeout(() => {
