@@ -127,6 +127,7 @@ export const List = styled.li`
 `;
 
 export const ListTwo = styled.li`
+  color: #F46A00;
   a:visited{
     color: #FF6F00;
   }
