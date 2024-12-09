@@ -72,7 +72,7 @@ function Desenvolvedores () {
                                 <a href="https://github.com/AntonioLopes21" target="_blank" rel="noopener noreferrer">
                                 <img src={Images.icon_github} alt="GitHub" />
                                 </a>
-                                <a href="https://www.linkedin.com/in/antonio-de-padua-b-lopes-filho/" target="_blank" rel="noopener noreferrer">
+                                <a href="https://www.linkedin.com/in/antonio-lopes-dev/" target="_blank" rel="noopener noreferrer">
                                 <img src={Images.icon_linkedin} alt="LinkedIn" />
                                 </a>
                             </div>
@@ -159,10 +159,10 @@ function Desenvolvedores () {
                                 </ul>
                             </div>
                             <div className="social_icons">
-                                <a href="https://www.linkedin.com/in/leandra-mayla/" target="_blank" rel="noopener noreferrer">
+                                <a href="https://github.com/Leandramay" target="_blank" rel="noopener noreferrer">
                                 <img src={Images.icon_github} alt="GitHub" />
                                 </a>
-                                <a href="https://github.com/Leandramay" target="_blank" rel="noopener noreferrer">
+                                <a href="https://www.linkedin.com/in/leandra-mayla/" target="_blank" rel="noopener noreferrer">
                                 <img src={Images.icon_linkedin} alt="LinkedIn" />
                                 </a>
                             </div>

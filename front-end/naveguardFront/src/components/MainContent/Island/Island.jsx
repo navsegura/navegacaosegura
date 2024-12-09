@@ -29,13 +29,13 @@ function Island() {
             <IslandContainer>
                 <Beach onClick={() => handleVideoClick()}>
                     {/* <img src={Images.TrailerNaveguard} alt="" /> */}
-                    <img ref={MainSection} src={Images.Island} alt="beach" width={"100%"} />
+                    <img ref={MainSection} src={Images.Island} alt="beach" width={"100%"}/>
                 </Beach>
                 {showVideo && (
   <Overlay onClick={handleCloseVideo}>
     <div>
-        <video width="600" height="355" autoPlay controls>
-          <source src={Videos.KidLoggerVideo} type="video/mp4" />
+        <video width="1200" height="710" autoPlay controls style={{borderRadius:"15px"}}>
+          <source src={Videos.VideoTrailer} type="video/mp4" />
           Seu navegador não suporta o elemento de vídeo.
         </video>
     </div>
