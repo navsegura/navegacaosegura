@@ -75,9 +75,6 @@ const UserProfile = () => {
       .then((response) => {
         setUserLogged(response.data);
       })
-      .catch((error) => {
-        console.log(error);
-      })
     }, []);
 
     function formatDate(date) {
@@ -147,7 +144,7 @@ const UserProfile = () => {
                         {location || userLogged.city[0].toUpperCase() + userLogged.city.substring(1)}</Location>
                         )}
                         <Location><i className='bx bx-check-circle' style={{color:'#A0A0A0'}} ></i>
-                        {userLogged.birthDay ? "Data de Nascimento: " + formatDate(userLogged.birthDay) : email}</Location> {/* DATA */}
+                        {userLogged.birthDay ? "Data de Nascimento: " + formatDate(userLogged.birthDay) : email || userLogged.email }</Location> {/* DATA */}
                       </Info>
                       <Bio>
                       <i className='bx bxs-quote-left' style={{color:'#A0A0A0'}}></i>ﾠ

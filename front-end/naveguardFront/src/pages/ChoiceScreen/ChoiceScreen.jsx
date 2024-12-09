@@ -46,7 +46,6 @@ const ChoiceScreen = ({ initialUsers }) => {
 
   const nameProfile = localStorage.getItem('name');
   const imgTest = localStorage.getItem('profilePic')
-  console.log(imgTest)
   // const isLogedIn = localStorage.getItem('isLogedIn')
 
   return (
