@@ -19,7 +19,8 @@ export const Nuvens = styled.div`
 
 export const ImgNuvens = styled.img`
   position: absolute;
-  width: 400px;
+  width: 460px;
+  height: 220px;
   opacity: 0.8;
   animation: ${movimentoNuvens} 220s linear infinite;
 

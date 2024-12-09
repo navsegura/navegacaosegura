@@ -1,9 +1,7 @@
 import { useState } from 'react';
 import {
   PapyrusContainer,
-  ImgSiri,
-  ImgSiriII,
-  ImgSiriIII,
+  Back,
   PapyrusContent,
   PapyrusTitle,
   TicketPromotional,
@@ -14,7 +12,8 @@ import {
 } from './Papyrus.styles';
 import InputMask from 'react-input-mask';
 import { useNavigate } from 'react-router-dom';
-import { Images } from '../../assets/images';
+import ResolutionNotAvailable from '../../components/ResolutionNotAvailable/ResolutionNotAvailable';
+import 'boxicons/css/boxicons.min.css';
 
 const Papyrus = () => {
   const [inputValue, setInputValue] = useState('');
@@ -27,42 +26,39 @@ const Papyrus = () => {
     const value = event.target.value.toUpperCase();
     setInputValue(value);
 
-    if (value.length === 9) {
+    // Valida quando o código possui exatamente 8 caracteres
+    if (value.length === 8 && !loading) {
       validateCode(value);
     }
   };
 
-  const validateCode = (value) => {
-    if (loading) return;
+  const validateCode = async (value) => {
+    setLoading(true); // Define estado de carregamento
 
-    setLoading(true);
+    try {
+      // Simula validação de código
+      await new Promise((resolve) => setTimeout(resolve, 1500));
 
-    if (value === 'NAVEGUARD') {
-      setTimeout(() => {
-        localStorage.setItem('papyrus', value);
-        setLoading(false);
-        setShowModal(true);
-      }, 1500);
-    } else {
-      setTimeout(() => {
-        localStorage.removeItem('papyrus');
-        setLoading(false);
-      }, 1500);
+      if (value === 'HJAJLGTR') {
+        localStorage.setItem('papyrus', value); // Salva no localStorage
+        setShowModal(true); // Mostra o modal
+      } else {
+        localStorage.removeItem('papyrus'); // Remove do localStorage se inválido
+      }
+    } finally {
+      setLoading(false); // Sempre encerra o carregamento
     }
   };
 
   const handleCloseModal = () => {
     setShowModal(false);
-    navigate('/user-profile');
+    navigate('/user-profile'); // Navega após o modal fechar
   };
 
   return (
     <PapyrusContainer>
-      <div>
-        <ImgSiri src={Images.Siri} alt="Siri" />
-        <ImgSiriII src={Images.SiriRight} alt="Siri" />
-        <ImgSiriIII src={Images.Siri} alt="Siri" />
-      </div>
+      <ResolutionNotAvailable />
+      <Back><i className='bx bx-chevrons-left' ></i></Back>
       <PapyrusContent>
         <PapyrusTitle>Que legal que você encontrou um papiro!</PapyrusTitle>
         <p>Aqui é possível liberar todos nossos jogos e funcionalidades de forma <span>GRATUITA</span></p>
@@ -70,7 +66,7 @@ const Papyrus = () => {
         <TicketPromotional>
           <label htmlFor="Cupom">Insira seu código: </label>
           <InputMask
-            mask="aaaaaaaaa"
+            mask="aaaaaaaa"
             type="text"
             value={inputValue}
             onChange={handleChange}
