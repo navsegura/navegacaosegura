@@ -1,15 +1,11 @@
 import Footer from './images/footer.svg';
 import FooterDefault from './images/footerdefault.svg';
 import Mountain from "./images/mountain.svg";
-import AguaViva from "./images/aguaviva.svg";
-import Arraia from "./images/arraia.svg";
 import Coqueiro from "./images/coqueiro.svg";
 import Nuvem from "./images/nuvem.svg";
 import NuvemOpacity from "./images/nuvemOpacity.svg";
 import Praia from "./images/praia.svg"
 import Sol from "./images/sol.svg"
-import peixesEsquerda from './images/peixesEsquerda.svg'
-import peixesDireita from './images/peixesDireita.svg'
 import papagaio from './images/papagaio.svg'
 import check from './images/check.svg'
 import uncheck from './images/uncheck.svg'
@@ -74,6 +70,16 @@ import jonas from './images/jonas.jpg'
 import mayla from './images/mayla.jpg'
 import rodrigo from './images/rodrigo.jpg'
 import theofilo from './images/theofilo.jpg'
+import visaIcon from './images/visaSvg.svg'
+import masterCardIcon from './images/masterCardSvg.svg'
+import amCardIcon from './images/amSvg.svg'
+import eloCardIcon from './images/eloSvg.svg'
+import hiperCardIcon from './images/hiperSvg.svg'
+import btnBack from './images/btnBack.svg'
+import backgroundMainContent from './images/backgroundMainContent.png'
+import Papiro from './images/papiro.png'
+import TrailerNaveguard from './images/trailer.png'
+import Island from './images/island2.png'
 // aqui vcs criam as variaveis especificando o caminho delas
 
 // Videos
@@ -85,15 +91,11 @@ import KidLoggerVideo from './videos/qustodioVideo.mp4';
 const Images = {
     Footer,
     FooterDefault,
-    AguaViva,
-    Arraia,
     Coqueiro,
     Nuvem,
     Praia,
     Sol,
     Mountain,
-    peixesDireita,
-    peixesEsquerda,
     papagaio,
     check,
     uncheck,
@@ -159,6 +161,16 @@ const Images = {
     mayla,
     rodrigo,
     theofilo
+    visaIcon,
+    masterCardIcon,
+    eloCardIcon,
+    amCardIcon,
+    hiperCardIcon,
+    btnBack,
+    backgroundMainContent,
+    Papiro,
+    TrailerNaveguard,
+    Island
     // aqui fica as variaveis com o mesmo nome ali em cima
 }
 

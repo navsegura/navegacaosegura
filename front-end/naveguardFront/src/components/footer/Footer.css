@@ -1,32 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 
+/*O que eu mexi nessa imagem no componente para deixar tudo
+alinhado só papai do céu sabe... vejam aí se está bom ou se 
+precisa colocar lá no componente mesmo.
+Por favor me chamem se forem alterar para eu saber o jeito certo
+caso esse esteja ruim
+sei que precisa de reajuste então pedirei ajuda pela manhã*/
+
 footer {
     width: 100%;
-    z-index: 2;
-    margin: 0;
-    overflow: hidden;
+    height: auto;
+    display: flex;
+
 }
 
-@media (max-width: 650px) {
-    .footer-container{
-        top: 13rem;
-    }
 
-    .Footer-image {
-        width: 100%;
-        position: relative;
-        bottom: 0;
-    }
-
-    
-}
-
-.footer-container {
-    margin-top: 10rem;
-    background-image: url('../../assets/images/footerdefault.svg');
-    height: 500px;
-    position: relative;
-    width: 100%;
-    z-index: 300;
-    background-size: cover;
-}

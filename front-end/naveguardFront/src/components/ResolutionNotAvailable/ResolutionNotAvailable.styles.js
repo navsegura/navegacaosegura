@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const NotAvailable = styled.div`
 display: none;
 
-    @media (max-width: 375px) {
+    @media (max-width: 374px) {
         display: block;
         width: 100vw;
         height: 100vh;

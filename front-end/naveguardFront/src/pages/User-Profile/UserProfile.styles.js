@@ -7,10 +7,14 @@ export const Page = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 960px) {
+        height: auto;
+    }
+
 `
 
 export const MainContainer = styled.div`
-    /* border: red solid 1px; */
     padding: 8vh 0 0 4vw;
     width: 100%;
     height: 100%;
@@ -19,12 +23,16 @@ export const MainContainer = styled.div`
     align-items: center;
     justify-content: center;
 
-    @media (max-width: 768px) {
-        padding: 10vh 0 0 2vw;
+    @media (max-width: 1440px) {
+        padding: 100px 20px 0 100px;
     }
 
-    @media (max-width: 480px) {
-        padding: 8vh 0 0 1vw;
+    @media (max-width: 620px) {
+        padding: 70px 0px 0 80px;
+    }
+
+    @media (max-width: 374px) {
+        display: none;
     }
 `
 
@@ -35,18 +43,21 @@ export const Strong = styled.strong`
 
 export const UserProfileContent = styled.div`
     padding: 5vh;
-    max-width: 1700px;
-    /* border: red solid 1px; */
+    max-width: 1400px;
     background-color: #f5f5f5;
 
     width: 100%;
 
-    @media (max-width: 1024px) {
-        padding: 3vh;
+    @media (max-width: 1440px) {
+
     }
 
     @media (max-width: 768px) {
         padding: 2vh;
+    }
+
+    @media (max-width: 374px) {
+        display: none;
     }
 `
 
@@ -58,7 +69,6 @@ export const Profile = styled.div`
     color: #2c2c2c;
 
     @media (max-width: 1024px) {
-        flex-direction: column;
         gap: 2rem;
     }
 
@@ -68,21 +78,29 @@ export const Profile = styled.div`
 `
 
 export const UserImage = styled.div`
-    width: 450px;
-    height: 200px;
+    max-width: 150px;
+    width: 100%;
+    height: 150px;
     border-radius: 50%;
 
+    @media (max-width: 920px) {
+        display: none;
+    }
 `
 
 export const Photo = styled.img`
-border-radius: 100%;
+    border-radius: 100%;
     width: 100%;
+
+    @media (max-width: 920px) {
+        display: none;
+    }
 `
 
 export const Line = styled.div`
     width: 100%;
     border: 1px solid #D9D9D9;
-    margin-top: 3rem;
+    margin-top: 2rem;
 
     @media (max-width: 768px) {
         margin-top: 2rem;
@@ -90,7 +108,6 @@ export const Line = styled.div`
 `
 
 export const About = styled.div`
-/* border: red solid 1px; */
 `
 
 export const Span = styled.div`
@@ -157,6 +174,10 @@ export const Edit = styled.i`
     transform: ${({ isOpen }) => (isOpen ? 'rotate(360deg)' : 'rotate(0deg)')};
     opacity: ${({ isOpen }) => (isOpen ? '1' : '0.5')};
 
+    @media (max-width: 1080px) {
+        display: none;
+    };
+
     @media (max-width: 768px) {
         font-size: 1.2rem;
         width: 3rem;
@@ -203,29 +224,40 @@ export const DropdownItem = styled.div`
 `;
 
 export const MainContent = styled.div`
-    
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 3vh 0 0 4vw;
 
-    @media (max-width: 768px) {
-        padding: 4vh 0 0 2vw;
+    @media (max-width: 1440px) {
+        padding: 100px 20px 0 100px;
+    }
+
+    @media (max-width: 620px) {
+        padding: 0px 0px 0 80px;
     }
 `
 
 export const UserProfileContainer = styled.div`
     font-family: 'Poppins', sans-serif;
     padding: 5vh;
-    margin: 0 0 5rem 4vw;
-    max-width: 1700px;
-    /* border: red solid 1px; */
+    max-width: 1400px;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
     background-color: #F5F5F5;
     width: 100%;
 
-    @media (max-width: 768px) {
-        padding: 3vh 3vw;
+    @media (max-width: 620px) {
+        margin-bottom: 0;
+    }
+
+    @media (max-width: 374px) {
+        display: none;
     }
 `
 
@@ -239,21 +271,31 @@ export const FindOutMore = styled.h2`
 `
 
 export const GroupSquare = styled.div`
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 4rem;
     align-items: center;
     justify-content: center;
     @media (max-width: 768px) {
         gap: 1rem;
     }
+
+    @media (max-width: 960px) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 620px) {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
 `
 
 export const Square = styled.div`
-    max-width: 230px;
-    width: 13vw;
-    max-height: 280px;
-    height: 12vw;
+    max-width: 250px;
+    width: 100%;
+    height: 100%;
+    height: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -270,10 +312,9 @@ export const Square = styled.div`
         transform: scale(1.04);
     }
 
-    @media (max-width: 768px) {
-        width: 30vw;
-        height: 30vw;
-        gap: 0.5rem;
+    @media (max-width: 1500px) {
+        max-width: 200px;
+        height: 200px;
     }
 `
 

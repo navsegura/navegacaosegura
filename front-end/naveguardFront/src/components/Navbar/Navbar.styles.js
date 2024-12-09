@@ -3,18 +3,15 @@ import styled from "styled-components";
 export const Container = styled.div`
   width: 100%;
   height: 70px;
-  /* height: 8vh; */
   background-color: #f5f5f5;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* flex-direction: column; */
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   z-index: 1099;
   position: fixed;
-  /* border: red solid 1px; */
 
-  @media (max-width: 370px) {
+  @media (max-width: 374px) {
         display: none;
     }
 `;
@@ -23,22 +20,18 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 150px;
-  /* border: red solid 1px; */
-  max-width: 1800px;
+  max-width: 1280px;
   width: 100%;
   flex-direction: row;
 
-  @media (max-width: 1150px) {
+  @media (max-width: 1350px) {
     padding: 0 40px;
   }
-
 `;
 
 export const Navigation = styled.div`
     display: flex;
     flex-direction: row;
-    /* border: yellow 1px solid; */
 `
 
 export const UserNavigation = styled.div`
@@ -47,6 +40,7 @@ export const UserNavigation = styled.div`
     justify-content: center;
     align-items: center;
     gap: .5rem;
+    font-family: 'Luckiest Guy', cursive;
 `
 
 export const Line = styled.div`
@@ -70,7 +64,6 @@ export const NameProfile = styled.label`
 `
 
 export const DropDown = styled.nav`
-    /* border: red solid 1px; */
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -82,12 +75,6 @@ export const I = styled.i`
     transition: transform 0.4s ease, opacity 0.4s ease;
     transform: ${({ isOpen }) => (isOpen ? 'rotate(360deg)' : 'rotate(0deg)')};
     opacity: ${({ isOpen }) => (isOpen ? '1' : '0.5')};
-
-    @media (max-width: 768px) {
-        font-size: 1.2rem;
-        width: 3rem;
-        height: 2rem;
-    };
 `
 
 export const DropdownMenu = styled.div`
@@ -97,20 +84,12 @@ export const DropdownMenu = styled.div`
   border-radius: 10px 5px 10px 10px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   z-index: 100;
-
-  @media (max-width: 768px) {
-    right: 16rem;
-  }
 `;
 
 export const DropdownItem = styled.div`
   font-size: .8rem;
   padding: 10px 20px;
   cursor: pointer;
-
-  @media (max-width: 768px) {
-    padding: 8px 16px;
-  }
 `;
 
 export const UserHover = styled.div`
@@ -134,10 +113,6 @@ export const MenuList = styled.ul`
   display: flex;
   gap: 2rem;
   font-size: .8rem;
-  /* border: red solid 1px; */
-  /* margin-left: auto; */
-  /* padding-right: 7rem; */
-  /* border: red solid 1px; */
 `;
 
 export const List = styled.li`
