@@ -17,6 +17,10 @@
     justify-content: center;
     opacity: 0.5; 
     transition: opacity .5s ease-in-out;
+
+    @media (max-width: 375px) {
+        display: none;
+    }
 }
 
 .partners:hover {
@@ -35,12 +39,6 @@
 }
 /*1366*/
 @media (max-width: 1404px) {
-    img {
-        object-fit: cover; 
-        width: 100%;
-        height: 100%;
-    }
-
     .partners {
         background-image: url('../../assets/images/bannerTeVejoResponse.png');
         position: relative;
@@ -73,12 +71,18 @@
 
     .main-title {
         text-align: left;
-        padding-left: 5%;        
+        padding-left: 5%;
+        @media (max-width: 375px) {
+            display: none;
+        }     
     }
 
     .seja-nosso-parceiro {
         text-align: right;
         padding-right: 5%;
+        @media (max-width: 375px) {
+            display: none;
+        }
     }
     
     .content-principal {
