@@ -14,6 +14,8 @@ const ChoiceScreen = ({ initialUsers }) => {
   const [users, setUsers] = useState(initialUsers);
   const [isModalOpen, setModalOpen] = useState(false);
 
+  const papyrus = localStorage.getItem('papyrus');
+
   const handleOpenModal = () => {
     setModalOpen(true);
   };
@@ -33,7 +35,6 @@ const ChoiceScreen = ({ initialUsers }) => {
 
   const nameProfile = localStorage.getItem('name');
   const imgTest = localStorage.getItem('profilePic')
-  // const isLogedIn = localStorage.getItem('isLogedIn')
 
   return (
     <>
@@ -42,7 +43,6 @@ const ChoiceScreen = ({ initialUsers }) => {
       <NavBar />
       <SideBar/>
       <Container>
-      {/* <ReturnButton className='bx bx-chevrons-left'></ReturnButton> */}
         <UserGrid>
         <ImageUser>
             {imgTest === '' ? (
@@ -57,23 +57,48 @@ const ChoiceScreen = ({ initialUsers }) => {
               <P>{nameProfile}</P>
             )}
           </ImageUser>
-          {users.slice(0, 3).map((user) => (
-            <UserCard key={user.id}>
-              <Link to={'/kids-page'}>
-                <ImageUser>
-                  <Img src={Images.UserChild} alt={user.name} />
-                </ImageUser>
-              </Link>
-              <P>{user.name}</P>
-            </UserCard>
-          ))}
-            {users.length === 3 ? null : (
-              <AddUserCard onClick={handleOpenModal} aria-label="Add a new user">
-                <AddMore>
-                  <MoreIcon className='bx bx-plus-medical' aria-hidden="true"></MoreIcon>
-                </AddMore>
-              </AddUserCard>
-            )}
+          {papyrus ? (
+            <>
+            {users.slice(0, 3).map((user) => (
+              <UserCard key={user.id}>
+                <Link to={'/kids-page'}>
+                  <ImageUser>
+                    <Img src={Images.UserChild} alt={user.name} />
+                  </ImageUser>
+                </Link>
+                <P>{user.name}</P>
+              </UserCard>
+            ))}
+              {users.length === 3 ? null : (
+                <AddUserCard onClick={handleOpenModal} aria-label="Add a new user">
+                  <AddMore>
+                    <MoreIcon className='bx bx-plus-medical' aria-hidden="true"></MoreIcon>
+                  </AddMore>
+                </AddUserCard>
+              )}
+              </>
+          ) : (
+          <>
+            {users.slice(0, 1).map((user) => (
+              <UserCard key={user.id}>
+                <Link to={'/kids-page'}>
+                  <ImageUser>
+                    <Img src={Images.UserChild} alt={user.name} />
+                  </ImageUser>
+                </Link>
+                <P>{user.name}</P>
+              </UserCard>
+            ))}
+              {users.length === 1 ? null : (
+                <AddUserCard onClick={handleOpenModal} aria-label="Add a new user">
+                  <AddMore>
+                    <MoreIcon className='bx bx-plus-medical' aria-hidden="true"></MoreIcon>
+                  </AddMore>
+                </AddUserCard>
+              )}
+              </>
+          )}
+          
 
         </UserGrid>
         {isModalOpen && (
