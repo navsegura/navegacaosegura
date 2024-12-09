@@ -3,7 +3,7 @@ import { BASE_URL } from "./system";
 import * as authService from "../services/auth-service";
 
 export function requestBackend(config) {
-    const headers = config.withCredentials 
+        const headers = config.withCredentials 
     ? {
         ...config.headers,
         Authorization: "Bearer " + authService.getAccessToken(),
@@ -14,5 +14,6 @@ export function requestBackend(config) {
 }
 
 export function noOauthRequest(config) {
-    return axios({ ...config, baseURL: BASE_URL });
+        return axios({ ...config, baseURL: BASE_URL });
+    
 }

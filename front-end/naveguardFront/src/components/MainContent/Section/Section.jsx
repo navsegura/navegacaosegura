@@ -5,6 +5,7 @@ import { Images } from "../../../assets/images";
 import { LoadingComponentInitial } from "../../LoadingComponent/LoadingComponent";
 import NuvensContainer from "../../Nuvens/Nuvens";
 import { utilScrollRevealLeft, utilScrollRevealRight } from '../../../utils/ScrollReveal';
+import { isAuthenticated } from "../../../services/auth-service";
 
 function Section() {
   const FirstSection = useRef(null);
@@ -19,7 +20,10 @@ function Section() {
     utilScrollRevealRight(SecondSection);
   }, []);
 
-  const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true'
+
+  
+  const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true' || isAuthenticated() === true;
+
   console.log(isLoggedIn)
 
   return (

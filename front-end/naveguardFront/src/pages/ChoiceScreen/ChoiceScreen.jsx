@@ -9,6 +9,8 @@ import PropTypes from 'prop-types';
 import NuvensContainer from '../../components/Nuvens/Nuvens';
 import ResolutionNotAvailable from '../../components/ResolutionNotAvailable/ResolutionNotAvailable';
 import { Container, UserGrid, UserCard, AddUserCard, ImageUser, Img, AddMore, MoreIcon, P } from './ChoiceScreen.styles';
+import { useEffect } from 'react';
+import { findMe } from '../../services/user-service';
 
 const ChoiceScreen = ({ initialUsers }) => {
   const [users, setUsers] = useState(initialUsers);
@@ -22,6 +24,17 @@ const ChoiceScreen = ({ initialUsers }) => {
     setModalOpen(false);
   };
 
+  const [urlPhoto, setUrlPhoto] = useState();
+  const [name, setName] = useState();
+
+  useEffect(() => {
+    findMe()
+    .then((response) => {
+      setUrlPhoto(response.data.urlPhoto);
+      setName(response.data.name);
+    })
+  }, []);
+
   const onAddUser = (name) => {
     const newUser = {
       id: Date.now().toString(),
@@ -33,6 +46,7 @@ const ChoiceScreen = ({ initialUsers }) => {
 
   const nameProfile = localStorage.getItem('name');
   const imgTest = localStorage.getItem('profilePic')
+  console.log(imgTest)
   // const isLogedIn = localStorage.getItem('isLogedIn')
 
   return (
@@ -45,16 +59,16 @@ const ChoiceScreen = ({ initialUsers }) => {
       {/* <ReturnButton className='bx bx-chevrons-left'></ReturnButton> */}
         <UserGrid>
         <ImageUser>
-            {imgTest === '' ? (
+            {imgTest === null ? (
               <Link to="/user-profile"><Img src={Images.UserMaster} alt="User master" /></Link>
             ) : (
-              <Img src={imgTest} alt={nameProfile} /> 
+              <Img src={urlPhoto || imgTest} alt={nameProfile} /> 
             )}
 
-            {nameProfile === null ? (
+            {nameProfile === null && name === null ? (
               <P>Responsável</P>
             ) : (
-              <P>{nameProfile}</P>
+              <P>{nameProfile || name}</P>
             )}
           </ImageUser>
           {users.slice(0, 3).map((user) => (

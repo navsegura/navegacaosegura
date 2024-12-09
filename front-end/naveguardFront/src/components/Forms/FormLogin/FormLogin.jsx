@@ -28,7 +28,7 @@ function FormLogin() {
             navigate("/user-profile");
           })
           .catch(() => {
-            console.log("Login ou senha errado!");
+            window.alert("Login ou senha errado!");
           });
       }
 
