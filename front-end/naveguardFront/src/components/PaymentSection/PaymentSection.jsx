@@ -3,6 +3,7 @@ import { Images } from "../../assets/images";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { PapiroContainer } from "./PaymentSection.styles";
+import ResolutionNotAvailable from "../../components/ResolutionNotAvailable/ResolutionNotAvailable";
 
 function PaymentSection() {
   const meses = [
@@ -22,15 +23,14 @@ function PaymentSection() {
   ];
 
   const [mesEscolhido, setMesEscolhido] = useState("");
-  // const [showPapiro, setShowPapiro] = useState(false);
-
-  // const navigate = useNavigate();
 
   const escolha = (e) => {
     setMesEscolhido(e.target.value);
   };
 
   return (
+    <>
+    <ResolutionNotAvailable />
     <section className="payment-section">
       <div className="div-pai">
 
@@ -83,7 +83,7 @@ function PaymentSection() {
               max="2070"
               step="1"
               placeholder="Ano"
-            />
+              />
             <input type="number" placeholder="CVV" />
           </div>
           <div className="nameOwner-card">
@@ -121,6 +121,7 @@ function PaymentSection() {
         </form>
       </div>
     </section>
+              </>
   );
 }
 

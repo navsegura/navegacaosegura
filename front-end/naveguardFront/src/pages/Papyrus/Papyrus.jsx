@@ -11,6 +11,7 @@ import {
   ModalButton,
 } from './Papyrus.styles';
 import InputMask from 'react-input-mask';
+import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import ResolutionNotAvailable from '../../components/ResolutionNotAvailable/ResolutionNotAvailable';
 import 'boxicons/css/boxicons.min.css';
@@ -22,43 +23,39 @@ const Papyrus = () => {
 
   const navigate = useNavigate();
 
-  const handleChange = (event) => {
-    const value = event.target.value.toUpperCase();
-    setInputValue(value);
+  const handleValidate = async () => {
+    if (!inputValue || inputValue.length !== 8 || loading) return;
 
-    // Valida quando o código possui exatamente 8 caracteres
-    if (value.length === 8 && !loading) {
-      validateCode(value);
-    }
-  };
-
-  const validateCode = async (value) => {
-    setLoading(true); // Define estado de carregamento
+    setLoading(true);
 
     try {
-      // Simula validação de código
       await new Promise((resolve) => setTimeout(resolve, 1500));
 
-      if (value === 'HJAJLGTR') {
-        localStorage.setItem('papyrus', value); // Salva no localStorage
-        setShowModal(true); // Mostra o modal
+      if (inputValue === 'HJAJLGTR') {
+        localStorage.setItem('papyrus', inputValue);
+        setShowModal(true);
       } else {
-        localStorage.removeItem('papyrus'); // Remove do localStorage se inválido
+        localStorage.removeItem('papyrus');
+        alert('Código inválido!');
       }
     } finally {
-      setLoading(false); // Sempre encerra o carregamento
+      setLoading(false);
     }
   };
 
   const handleCloseModal = () => {
     setShowModal(false);
-    navigate('/user-profile'); // Navega após o modal fechar
+    navigate('/user-profile');
   };
 
   return (
     <PapyrusContainer>
       <ResolutionNotAvailable />
-      <Back><i className='bx bx-chevrons-left' ></i></Back>
+      <Back>
+        <Link to="/payment-page">
+        <i className='bx bx-chevrons-left' ></i>
+        </Link>
+        </Back>
       <PapyrusContent>
         <PapyrusTitle>Que legal que você encontrou um papiro!</PapyrusTitle>
         <p>Aqui é possível liberar todos nossos jogos e funcionalidades de forma <span>GRATUITA</span></p>
@@ -69,9 +66,12 @@ const Papyrus = () => {
             mask="aaaaaaaa"
             type="text"
             value={inputValue}
-            onChange={handleChange}
+            onChange={(e) => setInputValue(e.target.value.toUpperCase())}
           />
         </TicketPromotional>
+        <button onClick={handleValidate} disabled={loading}>
+          {loading ? 'Validando...' : 'Enviar'}
+        </button>
         {loading && <Spinner />}
       </PapyrusContent>
 
