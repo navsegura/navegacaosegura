@@ -22,8 +22,6 @@ export function loginRequest(loginData) {
         headers,
     };
 
-    console.log(headers, requestBody, config)
-
     return requestBackend(config);
 }
 

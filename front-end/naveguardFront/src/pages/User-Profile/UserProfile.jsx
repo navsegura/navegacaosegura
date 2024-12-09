@@ -13,7 +13,7 @@ const UserProfile = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [isEditing, setIsEditing] = useState(false);
   const [name, setName] = useState('');
-  const [location, setLocation] = useState('Recife');
+  const [location, setLocation] = useState();
   // deixem vazio, isso é so p testar a edição
 
   const toggleDropdown = () => {
@@ -60,20 +60,20 @@ const UserProfile = () => {
     const [userLogged, setUserLogged] = useState({
       name: " ",
       email: " ",
-      birthDay: " ",
+      birthDay: null,
       city: " ",
-      bio: " ",
+      bio: null,
       gender: " ",
       state: " ",
       urlPhoto: undefined
     });
     useEffect(() => {
+      if(!location) {
+          setLocation("Recife");
+      }
       findMe()
       .then((response) => {
         setUserLogged(response.data);
-      })
-      .catch((error) => {
-        console.log(error);
       })
     }, []);
 
@@ -102,7 +102,8 @@ const UserProfile = () => {
     }
 
   const nameTest = localStorage.getItem('name')
-  const imgTest = localStorage.getItem('profilePic')
+  const imgTest = localStorage.getItem('profilePic');
+  const email =  localStorage.getItem('email')
   // const profilePicTest = localStorage.getItem('profilePic')
   return (
     <>
@@ -140,10 +141,10 @@ const UserProfile = () => {
                           />
                         ) : (
                         <Location><i className='bx bx-current-location' style={{color:'#A0A0A0'}} ></i>
-                        {userLogged.city[0].toUpperCase() + userLogged.city.substring(1) || location}</Location>
+                        {location || userLogged.city[0].toUpperCase() + userLogged.city.substring(1)}</Location>
                         )}
                         <Location><i className='bx bx-check-circle' style={{color:'#A0A0A0'}} ></i>
-                        {"Data de Nascimento: " + formatDate(userLogged.birthDay)}</Location> {/* DATA */}
+                        {userLogged.birthDay ? "Data de Nascimento: " + formatDate(userLogged.birthDay) : email || userLogged.email }</Location> {/* DATA */}
                       </Info>
                       <Bio>
                       <i className='bx bxs-quote-left' style={{color:'#A0A0A0'}}></i>ﾠ

@@ -4,8 +4,9 @@ import { Link as ScrollLink } from "react-scroll";
 import { Link as RouterLink } from "react-router-dom";
 import NuvensContainer from "../../Nuvens/Nuvens";
 
-
 function SectionGame() {
+
+  const papyrus = localStorage.getItem("papyrus");
   return (
     <>
       <section className="first_game_section">
@@ -74,6 +75,8 @@ function SectionGame() {
         <div className="games_secondary">
           <div className="first_column_game">
             <div className="game">
+              {papyrus ? (
+                <>
               <img
                 className="game_image"
                 src={Images.Bussola_Do_Codigo}
@@ -83,17 +86,30 @@ function SectionGame() {
                 onClick={() =>
                   (window.location.href = "/Jogo-da-memoria/pages/index.html")
                 }
-              >
+                >
                 Jogar
               </button>
+                </>
+              ) : (
+                <>
+                <img style={{ filter: "grayscale(100%)" }}
+                className="game_image"
+                src={Images.Bussola_Do_Codigo}
+                alt=""
+                />
+              <button style={{ backgroundColor: "#D9D9D9" }}>Bloqueado</button>
+                </>
+              )}
             </div>
             <div className="game">
               <img className="game_image" src={Images.Porto_Seguro} alt="" />
-              <button>Jogar</button>
+              <button style={{ backgroundColor: "#D9D9D9" }}>Em breve</button>
             </div>
           </div>
           <div className="second_column_game">
             <div className="game">
+              {papyrus ? (
+                <>
               <img
                 className="game_image"
                 src={Images.Chave_Do_Tesouro}
@@ -102,6 +118,17 @@ function SectionGame() {
               <RouterLink to="/quiz">
                 <button>Jogar</button>
               </RouterLink>
+                </>
+              ) : (
+                <>
+                <img style={{ filter: "grayscale(100%)" }}
+                className="game_image"
+                src={Images.Chave_Do_Tesouro}
+                alt=""
+                />
+              <button style={{ backgroundColor: "#D9D9D9" }}>Bloqueado</button>
+                </>
+              )}
             </div>
             <div className="game">
               <img
@@ -109,7 +136,7 @@ function SectionGame() {
                 src={Images.Cuidado_Com_O_Kraken}
                 alt=""
               />
-              <button>Jogar</button>
+              <button style={{ backgroundColor: "#D9D9D9" }}>Em breve</button>
             </div>
           </div>
         </div>

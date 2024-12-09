@@ -15,8 +15,8 @@ function Cadastro () {
         phone: null,
         birthDay: null,
         bio: null,
-        city: null,
-        state: null,
+        city: " ",
+        state: " ",
         gender: null
     });
 
@@ -32,8 +32,21 @@ function Cadastro () {
             navigate("/login");
         })
         .catch((error) => {
-            console.log(error);
-            console.log("Cadastro falhou! Tente novamente");
+            let errors = [];
+            errors = error.response.data.errors || 1;
+            if(errors.length > 1) {
+                let strErrors = ""
+                for(let message of errors) {
+                    strErrors = strErrors + JSON.stringify(message.message) + "\n";
+                }
+                window.alert(strErrors);
+            } else {
+                const strError = JSON.stringify(error.response.data.message);
+                window.alert(strError);
+            }
+            
+            
+            
         });
     }
 
