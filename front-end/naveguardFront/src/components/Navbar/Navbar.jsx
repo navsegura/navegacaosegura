@@ -6,6 +6,9 @@ import {
   DropdownMenu, DropdownItem, UserHover, Line, I, Logo, MenuList, List, A, ListTwo
 } from "./Navbar.styles";
 import LoadingComponent from '../LoadingComponent/LoadingComponent';
+import { isAuthenticated, logout } from '../../services/auth-service';
+import { findMe } from '../../services/user-service';
+import { useEffect } from 'react';
 
 function Navbar() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -17,14 +20,27 @@ function Navbar() {
     setDropdownOpen(!dropdownOpen);
   }
 
+  const [urlPhoto, setUrlPhoto] = useState();
+  const [name, setName] = useState();
+
+  useEffect(() => {
+    findMe()
+    .then((response) => {
+      setUrlPhoto(response.data.urlPhoto);
+      setName(response.data.name);
+    })
+  }, []);
+  
+  console.log(urlPhoto);
+
   const nameProfile = localStorage.getItem('name');
   const imgTest = localStorage.getItem('profilePic');
-  const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+  const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true' || isAuthenticated() === true;
 
   const handleNavigation = (route) => {
     if (route === 'logout') {
       setIsLoading(true);
-
+      logout();
       localStorage.removeItem('isLoggedIn');
       localStorage.removeItem('profilePic');
       localStorage.removeItem('email');
@@ -56,8 +72,8 @@ function Navbar() {
             <UserNavigation>
               <Line />
               <UserHover onClick={toggleDropDown}>
-                <UserPhoto src={imgTest || Images.defaultProfile} alt="Foto de perfil" width={30} height={30} />
-                <NameProfile>{nameProfile}</NameProfile>
+                <UserPhoto src={imgTest || urlPhoto || Images.UserMaster} alt="Foto de perfil" width={30} height={30} />
+                <NameProfile>{nameProfile || name}</NameProfile>
                 <DropDown>
                   <I isOpen={dropdownOpen} className='bx bx-chevron-down' style={{ color: '#a0a0a0' }}></I>
                 </DropDown>

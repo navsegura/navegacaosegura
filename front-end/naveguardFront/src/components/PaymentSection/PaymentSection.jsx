@@ -1,8 +1,8 @@
 import "./PaymentSection.css";
 import { Images } from "../../assets/images";
-import { useState, useNavigate } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import { PapiroContainer, PapiroContent, BtnPapiro } from "./PaymentSection.styles";
+import { PapiroContainer } from "./PaymentSection.styles";
 
 function PaymentSection() {
   const meses = [
@@ -22,9 +22,9 @@ function PaymentSection() {
   ];
 
   const [mesEscolhido, setMesEscolhido] = useState("");
-  const [showPapiro, setShowPapiro] = useState(false);
+  // const [showPapiro, setShowPapiro] = useState(false);
 
-  const navigate = useNavigate;
+  // const navigate = useNavigate();
 
   const escolha = (e) => {
     setMesEscolhido(e.target.value);
@@ -33,25 +33,20 @@ function PaymentSection() {
   return (
     <section className="payment-section">
       <div className="div-pai">
-      <PapiroContainer
-  onMouseEnter={() => setShowPapiro(true)}
-  onMouseLeave={() => setShowPapiro(false)}
->
-  {showPapiro && (
-    <PapiroContent show={showPapiro}>
-      <BtnPapiro onClick={() => navigate("/")}>
-        Tenho um papiro
-      </BtnPapiro>
-    </PapiroContent>
-  )}
-  <img src={Images.Papiro} alt="Papiro" />
-</PapiroContainer>
-        <div className="payment-back-btn"> 
-        <Link to="/">
-        <img src={Images.btnBack} alt="voltar" className="back-img"/></Link>
-        </div>
-        <div className="payment-title">
-          <h1>PAGAMENTO</h1>
+
+        <div className="payment-header">
+          <div className="payment-back-btn">
+          <Link to="/">
+            <img src={Images.btnBack} alt="voltar" className="back-img"/></Link>
+          </div>
+          <div className="payment-title">
+            <h1>PAGAMENTO</h1>
+          </div>
+          <PapiroContainer>
+            <Link to="/papyrus">
+            <img src={Images.Papiro} alt="Papiro" />
+            </Link>
+          </PapiroContainer>
         </div>
 
         <div className="payment-text">

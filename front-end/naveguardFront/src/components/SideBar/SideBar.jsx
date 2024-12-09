@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import { useState } from 'react'; 
 import { SideBarMenu, LogOut, Option, I } from "./SideBar.styles.js";
 import LoadingComponent from '../LoadingComponent/LoadingComponent.jsx';
+import { logout } from '../../services/auth-service.js';
 
 const SideBar = () => {
   const navigate = useNavigate();
@@ -15,6 +16,7 @@ const SideBar = () => {
       localStorage.removeItem('profilePic');
       localStorage.removeItem('email');
       localStorage.removeItem('name');
+      logout();
       
         setTimeout(() => {
           setIsLoading(false);

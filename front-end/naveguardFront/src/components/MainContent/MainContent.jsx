@@ -6,6 +6,7 @@ import SignatureCard from "../SignatureCards/SignatureCard";
 import FrequentlyQuestions from "./FrequentlyAskedQuestions/FrequentlyQuestions";
 // import AnimalsHome from "../Animals-Home/AnimalsHome";
 import "./MainContent.css";
+import Partners from "../Partners/Partners";
 
 function MainContent() {
   return (
@@ -17,6 +18,7 @@ function MainContent() {
         <Carousel />
         <SignatureCard />
         <FrequentlyQuestions />
+        <Partners/>
       </div>
     </>
   );

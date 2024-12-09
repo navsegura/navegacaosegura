@@ -3,7 +3,7 @@ import Header from '../components/Header/Header'
 // import Footer from '../components/footer/Footer'
 import ChoiceScreen from '../pages/ChoiceScreen/ChoiceScreen'
 import NotFound from '../pages/NotFound/NotFound'
-import UserProfile from '../pages/User-Profile/UserProfile'
+import UserProfile from '../pages/User-Profile/UserProfile.jsx'
 import ParentalControl from '../pages/ParentalControl/ParentalControl'
 import Home from '../pages/Home.jsx'
 import Sobre from '../pages/Sobre/Sobre.jsx'
@@ -15,7 +15,7 @@ import PaymentSection from '../components/PaymentSection/PaymentSection.jsx'
 import Quiz from '../pages/Quiz Game/Quiz.jsx'
 import Articles from '../pages/Articles/Articles.jsx'
 import AmeacasOnline from '../pages/AmeacasOnline/AmeacasOnline.jsx'
-
+import Papyrus from '../pages/Papyrus/Papyrus.jsx'
 
 
 const Router = () => {
@@ -34,13 +34,13 @@ const Router = () => {
                     <Route path='/register' element={<Cadastro/>}/>
                     <Route path='/faleconosco' element={<FaleConosco/>}/>
                     <Route path='/articles' element={<Articles/>} />
-                    <Route path='*' element={<NotFound/>} />
                     <Route path='/kids-page' element={<KidsPage/>}/>
                     <Route path='/quiz' element={<Quiz/>} />
                     <Route path='/ameacas-online' element={<AmeacasOnline />} />
-
-                    {/* 404 */}
+                    <Route path='/papyrus' element={<Papyrus />} />
                     <Route path='/payment-page' element={<PaymentSection/>}/>
+                    
+                    <Route path='*' element={<NotFound/>} />
                     
                 </Routes>
             </BrowserRouter>

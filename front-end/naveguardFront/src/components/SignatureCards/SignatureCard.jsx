@@ -10,6 +10,8 @@ const SignatureCard = () => {
   const planCard2 = useRef(null);
   const planCard3 = useRef(null);
 
+  const papyrus = localStorage.getItem('papyrus');
+
   useEffect(() => {
     utilScrollRevealDelayBottom1(planCard1);
     utilScrollRevealDelayBottom2(planCard2);
@@ -48,7 +50,7 @@ const SignatureCard = () => {
 
               </CardPlans>
               {isLoggedin ? (
-                <Link to='/payment-page'>
+                <Link to='/user-profile'>
                   <CardButton>ACESSE</CardButton>
                 </Link>
               ) : (
@@ -85,9 +87,17 @@ const SignatureCard = () => {
                 </Plan>
 
               </CardPlans>
-              <Link to='/payment-page'>
+              {isLoggedin && papyrus ? (
+                <CardButton style={{ backgroundColor: '#D9D9D9' }}>Papiro Ativo</CardButton>
+              ) : isLoggedin && !papyrus ? (
+                <Link to='/payment-page'>
                   <CardButton>ASSINAR</CardButton>
                 </Link>
+              ) : (
+                <Link to='/login'>
+                  <CardButton>ASSINAR</CardButton>
+                </Link>
+              )}
             </Card>
           <Card ref={planCard3}>
             <CardTitle>AVENTURA IMERSIVA</CardTitle>
@@ -114,9 +124,17 @@ const SignatureCard = () => {
                 </Plan>
 
               </CardPlans>
-              <Link to='/payment-page'>
+              {isLoggedin && papyrus ? (
+                <CardButton style={{ backgroundColor: '#D9D9D9' }}>Papiro Ativo</CardButton>
+              ) : isLoggedin && !papyrus ? (
+                <Link to='/payment-page'>
                   <CardButton>ASSINAR</CardButton>
                 </Link>
+              ) : (
+                <Link to='/login'>
+                  <CardButton>ASSINAR</CardButton>
+                </Link>
+              )}
             </Card>
         </CardsContainer>
         <OceanDecorations/>

@@ -22,8 +22,6 @@ import rodrigo from './images/rodrigo.jpg'
 import theofilo from './images/theofilo.jpg'
 import Praia from "./images/praia.svg";
 import Sol from "./images/sol.svg";
-import peixesEsquerda from "./images/peixesEsquerda.svg";
-import peixesDireita from "./images/peixesDireita.svg";
 import papagaio from "./images/Papagaio.svg";
 import check from "./images/check.svg";
 import uncheck from "./images/uncheck.svg";
@@ -72,17 +70,21 @@ import KidLogger from "./images/kidlogger.svg";
 import FamilyLink from "./images/google-family-link.svg";
 import Qustodio from "./images/qustodio.svg";
 import FamilyShield from "./images/family-shield.svg";
-import visaIcon from './images/visaSvg.svg'
-import masterCardIcon from './images/masterCardSvg.svg'
-import amCardIcon from './images/amSvg.svg'
-import eloCardIcon from './images/eloSvg.svg'
-import hiperCardIcon from './images/hiperSvg.svg'
-import btnBack from './images/btnBack.svg'
-import backgroundMainContent from './images/backgroundMainContent.png'
 import Papiro from './images/papiro.png'
+import TeVejoBanner from './images/bannerTeVejo.png'
+import TeVejoBannerResponse from './images/bannerTeVejoResponse.png'
 import TrailerNaveguard from './images/trailer.png'
 import Island from './images/island2.png'
-
+import Siri from './images/siri.png'
+import SiriRight from './images/siri-right.png'
+// aqui vcs criam as variaveis especificando o caminho delas
+import visaIcon from "./images/visaSvg.svg";
+import masterCardIcon from "./images/masterCardSvg.svg";
+import eloCardIcon from "./images/eloSvg.svg";
+import amCardIcon from "./images/amSvg.svg";
+import hiperCardIcon from "./images/hiperSvg.svg";
+import btnBack from "./images/btnBack.svg";
+import backgroundMainContent from "./images/backgroundMainContent.png";
 
 // Videos
 import FamilyLinkVideo from "./videos/familyLinkVideo.mp4";
@@ -171,8 +173,12 @@ const Images = {
     btnBack,
     backgroundMainContent,
     Papiro,
+    TeVejoBanner,
+    TeVejoBannerResponse,
     TrailerNaveguard,
-    Island
+    Island,
+    Siri,
+    SiriRight
     // aqui fica as variaveis com o mesmo nome ali em cima
 }
 
