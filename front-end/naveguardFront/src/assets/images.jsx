@@ -174,7 +174,7 @@ const Images = {
     backgroundMainContent,
     Papiro,
     TeVejoBanner,
-    TeVejoBannerResponse
+    TeVejoBannerResponse,
     TrailerNaveguard,
     Island,
     Siri,
