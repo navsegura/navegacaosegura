@@ -17,8 +17,8 @@ function FooterContent() {
             <li>Todos os direitos reservados</li>
             </ol>
             <div className="social-medias">
-              <img src={Images.logoInsta} alt="Instagram" className="logo"/>
-              <img src={Images.logoDribbble} alt="Dribbble" className="logo"/>
+              <a href="https://www.instagram.com/naveguard/" target="_blank"><img src={Images.logoInsta} alt="Instagram" className="logo"/></a>
+              <a href="https://www.linkedin.com/company/naveguard/posts/?feedView=all" target="_blank"><img src={Images.logoDribbble} alt="Dribbble" className="logo"/></a>
               <img src={Images.logoTwitter} alt="Twitter" className="logo"/>
               <img src={Images.logoYoutube} alt="YouTube" className="logo"/>
             </div>
