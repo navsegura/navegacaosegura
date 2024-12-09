@@ -167,22 +167,21 @@ export const Description = styled.p`
 `
 
 export const Overlay = styled.div`
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
-
     align-items: center;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 2000;
 
     & div {
         display: flex;
-        align-items: start;
+        align-items: center;
         justify-content: center;
         flex-direction: row-reverse;
     }
-`
+`;

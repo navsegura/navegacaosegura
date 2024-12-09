@@ -91,6 +91,7 @@ import FamilyLinkVideo from "./videos/familyLinkVideo.mp4";
 import FamilyShieldVideo from "./videos/familyShieldVideo.mp4";
 import QustodioVideo from "./videos/qustodioVideo.mp4";
 import KidLoggerVideo from "./videos/qustodioVideo.mp4";
+import VideoTrailer from "./videos/videoTrailer.mp4"
 
 const Images = {
     Footer,
@@ -174,7 +175,7 @@ const Images = {
     backgroundMainContent,
     Papiro,
     TeVejoBanner,
-    TeVejoBannerResponse
+    TeVejoBannerResponse,
     TrailerNaveguard,
     Island,
     Siri,
@@ -186,7 +187,8 @@ const Videos = {
     FamilyLinkVideo,
     FamilyShieldVideo,
     QustodioVideo,
-    KidLoggerVideo
+    KidLoggerVideo,
+    VideoTrailer
 }
 
 export { Images, Videos };
