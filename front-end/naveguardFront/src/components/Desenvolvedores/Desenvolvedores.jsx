@@ -130,7 +130,7 @@ function Desenvolvedores () {
                     <div className="img_dev"> <img src={Images.rodrigo} width={'150rem'} alt="img" /></div>
                         <div className="dev">
                             <div className="dev_content">
-                                <h4 className='name'>Rodrigo Fagnerr</h4>
+                                <h4 className='name'>Rodrigo Fagner</h4>
                                 <ul>
                                     <li>Desenvolvedor</li>
                                     <li>Back-End & UI/UX</li>
